@@ -10,6 +10,15 @@ struct MATRIX{
 
 int n,k;  
 MATRIX ori;  
+
+MATRIX eye(){
+    MATRIX tmp;
+    memset(tmp.matrix, 0, sizeof(tmp.matrix));
+    for(int i=0; i<MXAN; i++)
+        tmp[i][i] = 1;
+    return tmp;
+}
+
 // adding operation for matrix
 MATRIX matrix_add(MATRIX a,MATRIX b){  
     MATRIX tmp;  

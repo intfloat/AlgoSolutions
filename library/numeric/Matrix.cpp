@@ -14,8 +14,8 @@ MATRIX ori;
 MATRIX eye(){
     MATRIX tmp;
     memset(tmp.matrix, 0, sizeof(tmp.matrix));
-    for(int i=0; i<MXAN; i++)
-        tmp[i][i] = 1;
+    for(int i=0; i<MAXN; i++)
+        tmp.matrix[i][i] = 1;
     return tmp;
 }
 

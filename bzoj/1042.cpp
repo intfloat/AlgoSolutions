@@ -1,53 +1,51 @@
-#include <vector>
-#include <list>
-#include <limits.h>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <algorithm>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <sstream>
+/**************************************************************
+    Problem: 1042
+    User: BananaTree
+    Language: C++
+    Result: Accepted
+    Time:40 ms
+    Memory:2052 kb
+****************************************************************/
+ 
 #include <iostream>
-#include <iomanip>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
+#include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include <cassert>
-
+ 
 using namespace std;
-
+ 
+const int MAX_S = 100005;
+int val[4], tot;
+long long dp[MAX_S];
+ 
+long long get(int i) {
+    if (i < 0) return 0;
+    else return dp[i];
+}
+ 
 int main() {
-    int c[4], total, cnt[4];
-    int dp[4][100005];
-    for (int i = 0; i < 4; ++i) scanf("%d", c + i);
-    scanf("%d", &total);
-    while (total--) {
-        int s;
-        for (int i = 0; i < 4; ++i) scanf("%d", cnt + i);
-        scanf("%d", &s);
-        memset(dp, 0, sizeof(dp));
-        // first currency
-        for (int i = 0; i <= cnt[0]; ++i) {
-            if (i * c[0] > s) break;
-            dp[0][i * c[0]] = 1;
-        }
-        // remaining currency
-        for (int i = 1; i < 4; ++i) {
-            for (int j = 0; j <= cnt[i]; ++j) {
-                for (int t = j * c[i]; t <= s; ++t) {
-                    dp[i][t] += dp[i - 1][t - j * c[i]];
-                }
-            }
-        }
-        printf("%d\n", dp[3][s]);
+    for (int i = 0; i < 4; ++i) scanf("%d", val + i);
+    scanf("%d", &tot);
+    memset(dp, 0, sizeof(dp));
+    dp[0] = 1;
+    for (int i = 0; i < 4; ++i) {
+        for (int j = val[i]; j < MAX_S; ++j)
+            dp[j] += dp[j - val[i]];
+    }
+    while (tot--) {
+        long long cnt[4], target;
+        for (int i = 0; i < 4; ++i) scanf("%lld", cnt + i);
+        scanf("%lld", &target);
+        long long res = dp[target];
+        for (int i = 0; i < 4; ++i) res -= get(target - (cnt[i] + 1) * val[i]);
+        for (int i = 0; i < 4; ++i)
+            for (int j = i + 1; j < 4; ++j)
+                res += get(target - (cnt[i] + 1) * val[i] - (cnt[j] + 1) * val[j]);
+        for (int i = 0; i < 4; ++i)
+            for (int j = i + 1; j < 4; ++j)
+                for (int k = j + 1; k < 4; ++k)
+                    res -= get(target - (cnt[i] + 1) * val[i] - (cnt[j] + 1) * val[j]
+                                      - (cnt[k] + 1) * val[k]);
+        printf("%lld\n", res);
     }
     return 0;
-}
+} 

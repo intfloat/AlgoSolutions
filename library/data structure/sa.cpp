@@ -54,6 +54,30 @@ void height() {
     return;
 }
 
+int rmq[maxn][18];
+void rmq_init() {
+    for (int i = 1; i <= n; ++i) rmq[i][0] = h[i];
+    for (int p = 1; (1 << p) <= n; ++p) {
+        for (int i = 1; i + (1 << p) <= n; ++i)
+            rmq[i][p] = min(rmq[i][p - 1], rmq[i + (1 << (p - 1))][p - 1]);
+    }
+    return;
+}
+
+// longest common prefix
+int lcp(int x, int y) {
+    int rx = rank[x];
+    int ry = rank[y];
+    if (rx > ry) swap(rx, ry);
+    ++rx;
+    int pw = 0;
+    while ((1 << (pw + 1)) < (ry - rx + 1)) ++pw;
+    int res = min(rmq[rx][pw], rmq[ry - (1 << pw) + 1][pw]);
+    // cout << "lcp " << x << " " << y << ": " << res << endl;
+    return res;
+}
+
+
 int main() {
     s = "ccabababc";    
     n = s.size();

@@ -45,25 +45,25 @@ void da(int *r, int *sa, int n, int m) {
 }
 
 void height() {
-	int j, k = 0;
-	for (int i = 0; i < n; ++i) {
-		for (k > 0? k--:0, j = sa[rank[i] - 1]; r[i + k] == r[j + k]; ++k);
-		h[rank[i]] = k;
-	}
-	return;
+    int j, k = 0;
+    for (int i = 1; i <= n; ++i) rank[sa[i]] = i;
+    for (int i = 0; i < n; ++i) {
+        for (k > 0? k--:0, j = sa[rank[i] - 1]; r[i + k] == r[j + k]; ++k);
+        h[rank[i]] = k;
+    }
+    return;
 }
 
-int main() {    
-    while(cin >> s) {
-        n = s.size();
-        for(int i = 0; i < n; ++i) r[i] = s[i]-'a'+1;
-        r[n] = 0;
-        da(r, sa, n + 1, 27);
-        height();
-        for (int i = 1; i <= s.size(); ++i) {
-        	cout << "sorted suffix substring: " << s.substr(sa[i], s.size() - sa[i]) << endl;
-        	cout << "adjacent longest substring length: " << h[i] << endl;
-        }
-    }
+int main() {
+    s = "ccabababc";    
+    n = s.size();
+    for(int i = 0; i < n; ++i) r[i] = s[i] - 'a' + 1;
+    r[n] = 0;
+    da(r, sa, n + 1, 27);
+    height();
+    for (int i = 1; i <= s.size(); ++i) {
+      	cout << "sorted suffix substring: " << s.substr(sa[i], s.size() - sa[i]) << endl;
+       	cout << "adjacent longest substring length: " << h[i] << endl;
+    }    
     return 0;
 }

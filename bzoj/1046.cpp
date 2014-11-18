@@ -29,9 +29,9 @@ int main() {
 	cin >> n;
 	for (int i = 0; i < n; ++i) cin >> arr[i];
 	for (int i = n - 1; i >= 0; --i) {
-		int left = 0, right = ptr - 1;
+		int left = 0, right = ptr - 1;        
 		if (right < left || dp[right] > arr[i]) {
-			dp[ptr++] = arr[i];
+			dp[ptr++] = arr[i];            
 			lis[i] = ptr;			
 			continue;
 		}

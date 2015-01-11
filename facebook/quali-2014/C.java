@@ -2,7 +2,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 
-public class facebook {
+public class C {
 
 	/**
 	 * @param args

@@ -72,31 +72,31 @@ void height() {
 }
 
 int main() {
-	int N, K;
-	scanf("%d%d", &N, &K);
-	n = N;
-	for (int i = 0; i < N; ++i) { scanf("%d", r + i); ++r[i]; }
-	r[N] = 0;
-	da(r, sa, N + 1, 50);
-	height();
+    int N, K;
+    scanf("%d%d", &N, &K);
+    n = N;
+    for (int i = 0; i < N; ++i) { scanf("%d", r + i); ++r[i]; }
+    r[N] = 0;
+    da(r, sa, N + 1, 50);
+    height();
 
-	// for (int i = 1; i <= N; ++i) cout << h[i] << endl;
+    // for (int i = 1; i <= N; ++i) cout << h[i] << endl;
 
-	int left = 1, right = N;
-	while (left < right) {
-		int mid = (left + right) / 2;
-		// avoid looping forever
-		if (mid == left) mid = right;
-		int cnt = 0;
-		bool ok = false;
-		for (int i = 1; i <= N; ++i) {
-			if (cnt >= K - 1) { ok = true; break; }
-			if (h[i] >= mid) ++cnt;
-			else cnt = 0;
-		}
-		if (ok || cnt >= K - 1) left = mid;
-		else right = mid - 1;
-	}
-	printf("%d\n", left);
-	return 0;
+    int left = 1, right = N;
+    while (left < right) {
+        int mid = (left + right) / 2;
+        // avoid looping forever
+        if (mid == left) mid = right;
+        int cnt = 0;
+        bool ok = false;
+        for (int i = 1; i <= N; ++i) {
+            if (cnt >= K - 1) { ok = true; break; }
+            if (h[i] >= mid) ++cnt;
+            else cnt = 0;
+        }
+        if (ok || cnt >= K - 1) left = mid;
+        else right = mid - 1;
+    }
+    printf("%d\n", left);
+    return 0;
 }

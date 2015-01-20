@@ -22,7 +22,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
+int main(){ 
     int a, b, n;
     int arr[10005];
     while(cin>>n>>a>>b){
@@ -72,5 +72,5 @@ int main(){
         if(all == true) cout<<n<<endl;
         else cout<<res<<endl;
     }
-	return 0;
+    return 0;
 }

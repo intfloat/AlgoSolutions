@@ -61,43 +61,43 @@ void da(int *r, int *sa, int n, int m) {
 }
 
 void height() {
-	int j, k = 0;
-	for (int i = 1; i <= n; ++i) rank[sa[i]] = i;
-	for (int i = 0; i < n; ++i) {
-		for (k > 0? k--:0, j = sa[rank[i] - 1]; r[i + k] == r[j + k]; ++k);
-		h[rank[i]] = k;
-	}
-	return;
+    int j, k = 0;
+    for (int i = 1; i <= n; ++i) rank[sa[i]] = i;
+    for (int i = 0; i < n; ++i) {
+        for (k > 0? k--:0, j = sa[rank[i] - 1]; r[i + k] == r[j + k]; ++k);
+        h[rank[i]] = k;
+    }
+    return;
 }
 
 int rmq[maxn][18];
 void rmq_init() {
-	for (int i = 1; i <= n; ++i) rmq[i][0] = h[i];
-	for (int p = 1; (1 << p) <= n; ++p) {
-		for (int i = 1; i + (1 << p) <= n; ++i)
-			rmq[i][p] = min(rmq[i][p - 1], rmq[i + (1 << (p - 1))][p - 1]);
-	}
-	return;
+    for (int i = 1; i <= n; ++i) rmq[i][0] = h[i];
+    for (int p = 1; (1 << p) <= n; ++p) {
+        for (int i = 1; i + (1 << p) <= n; ++i)
+            rmq[i][p] = min(rmq[i][p - 1], rmq[i + (1 << (p - 1))][p - 1]);
+    }
+    return;
 }
 
 // longest common prefix
 int lcp(int x, int y) {
-	int rx = rank[x];
-	int ry = rank[y];
-	if (rx > ry) swap(rx, ry);
-	++rx;
-	int pw = 0;
-	while ((1 << (pw + 1)) < (ry - rx + 1)) ++pw;
-	int res = min(rmq[rx][pw], rmq[ry - (1 << pw) + 1][pw]);
-	// cout << "lcp " << x << " " << y << ": " << res << endl;
-	return res;
+    int rx = rank[x];
+    int ry = rank[y];
+    if (rx > ry) swap(rx, ry);
+    ++rx;
+    int pw = 0;
+    while ((1 << (pw + 1)) < (ry - rx + 1)) ++pw;
+    int res = min(rmq[rx][pw], rmq[ry - (1 << pw) + 1][pw]);
+    // cout << "lcp " << x << " " << y << ": " << res << endl;
+    return res;
 }
 
 // ccabababc
 int main() {
-	int t = 1;
-	while (cin >> s && s != "#") {
-		n = s.size();
+    int t = 1;
+    while (cin >> s && s != "#") {
+        n = s.size();
         for(int i = 0; i < n; ++i) r[i] = s[i] - 'a' + 1;
         r[n] = 0;
         da(r, sa, n + 1, 27);
@@ -107,34 +107,34 @@ int main() {
         set<int> vlen;
         int tlen, mx = -1;
         for (int len = 1; len <= n; ++len) {
-        	for (int i = 0; i + len < n; i += len) {
-        		int cur = lcp(i, i + len);
-        		int rep = cur / len + 1;
-        		int st = i - (len - cur % len);
-        		if (st >= 0 && (cur % len > 0)) rep = max(rep, lcp(st, st + len) / len + 1);
-        		if (rep > mx) { mx = rep; tlen = len; vlen.clear(); vlen.insert(len); }
-        		else if (rep == mx) { vlen.insert(len); }
-        	}
+            for (int i = 0; i + len < n; i += len) {
+                int cur = lcp(i, i + len);
+                int rep = cur / len + 1;
+                int st = i - (len - cur % len);
+                if (st >= 0 && (cur % len > 0)) rep = max(rep, lcp(st, st + len) / len + 1);
+                if (rep > mx) { mx = rep; tlen = len; vlen.clear(); vlen.insert(len); }
+                else if (rep == mx) { vlen.insert(len); }
+            }
         }
 
         // cout << "target length: " << tlen << endl;
         // cout << "max rep: " << mx << endl;
         // for (set<int>::iterator it = vlen.begin(); it != vlen.end(); ++it) {
-        	// cout << "possible length: " << *it << endl;
+            // cout << "possible length: " << *it << endl;
         // }
         bool ok = false;
         for (int i = 1; i <= n && !ok; ++i) {
-        	for (set<int>::iterator it = vlen.begin(); it != vlen.end(); ++it) {
-        		int index = sa[i];        		
-        		// cout << s.substr(index, n - index) << endl;
-        		if (index + *it * mx <= n && (lcp(index, index + *it) / *it + 1) == mx) {
-        			cout << "Case " << t++ << ": " << s.substr(index, *it * mx) << endl;
-        			ok = true;
-        			break;
-        		}
-        	}
+            for (set<int>::iterator it = vlen.begin(); it != vlen.end(); ++it) {
+                int index = sa[i];              
+                // cout << s.substr(index, n - index) << endl;
+                if (index + *it * mx <= n && (lcp(index, index + *it) / *it + 1) == mx) {
+                    cout << "Case " << t++ << ": " << s.substr(index, *it * mx) << endl;
+                    ok = true;
+                    break;
+                }
+            }
         }
 
-	}
-	return 0;
+    }
+    return 0;
 }

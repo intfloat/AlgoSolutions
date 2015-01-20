@@ -22,7 +22,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
-	cout<<"Hello POJ~"<<endl;
+int main(){ 
+    cout<<"Hello POJ~"<<endl;
     return 0;
 }

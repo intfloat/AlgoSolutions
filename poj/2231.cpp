@@ -23,12 +23,12 @@
 using namespace std;
 
 int main() {
-	int n, arr[10005];
-	cin >> n;
-	for (int i = 0; i < n; ++i) cin >> arr[i];
-	long long res = 0;
-	sort(arr, arr + n);
-	for (int i = 1; i < n; ++i) res += 2ll * i * (n - i) * (long long)(arr[i] - arr[i - 1]);
-	cout << res << endl;
-	return 0;
+    int n, arr[10005];
+    cin >> n;
+    for (int i = 0; i < n; ++i) cin >> arr[i];
+    long long res = 0;
+    sort(arr, arr + n);
+    for (int i = 1; i < n; ++i) res += 2ll * i * (n - i) * (long long)(arr[i] - arr[i - 1]);
+    cout << res << endl;
+    return 0;
 }

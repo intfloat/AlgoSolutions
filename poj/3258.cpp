@@ -24,23 +24,23 @@
 using namespace std;
 
 int main() {
-	int L, N, M, pos[50005];
-	cin >> L >> N >> M;
-	pos[0] = 0; pos[N + 1] = L;
-	for (int i = 1; i <= N; ++i) cin >> pos[i];
-	int left = 0, right = L;
-	sort(pos, pos + N + 2);
-	while (left < right) {
-		int mid = (left + right) / 2;
-		if (mid == left) mid = right;
-		int cnt = 0, ptr = 1, cur = 0;
-		while (ptr <= N + 1) {
-			if (pos[ptr] - pos[cur] < mid) { ++cnt; ++ptr; }
-			else { cur = ptr; ++ptr; }
-		}
-		if (cnt > M) right = mid - 1;
-		else left = mid;
-	}
-	cout << left << endl;
-	return 0;
+    int L, N, M, pos[50005];
+    cin >> L >> N >> M;
+    pos[0] = 0; pos[N + 1] = L;
+    for (int i = 1; i <= N; ++i) cin >> pos[i];
+    int left = 0, right = L;
+    sort(pos, pos + N + 2);
+    while (left < right) {
+        int mid = (left + right) / 2;
+        if (mid == left) mid = right;
+        int cnt = 0, ptr = 1, cur = 0;
+        while (ptr <= N + 1) {
+            if (pos[ptr] - pos[cur] < mid) { ++cnt; ++ptr; }
+            else { cur = ptr; ++ptr; }
+        }
+        if (cnt > M) right = mid - 1;
+        else left = mid;
+    }
+    cout << left << endl;
+    return 0;
 }

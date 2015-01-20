@@ -50,5 +50,5 @@ int main(){
             printf("%d\n", mn);
         }
     }
-	return 0;
+    return 0;
 }

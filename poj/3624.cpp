@@ -24,14 +24,14 @@ using namespace std;
 
 const int MAX_M = 13000;
 int main() {
-	int n, m, dp[MAX_M];
-	scanf("%d%d", &n, &m);
-	memset(dp, 0, sizeof(dp));
-	for (int i = 0; i < n; ++i) {
-		int w, d;
-		scanf("%d%d", &w, &d);
-		for (int j = m; j >= w; --j) dp[j] = max(dp[j], dp[j - w] + d);
-	}
-	printf("%d\n", dp[m]);
-	return 0;
+    int n, m, dp[MAX_M];
+    scanf("%d%d", &n, &m);
+    memset(dp, 0, sizeof(dp));
+    for (int i = 0; i < n; ++i) {
+        int w, d;
+        scanf("%d%d", &w, &d);
+        for (int j = m; j >= w; --j) dp[j] = max(dp[j], dp[j - w] + d);
+    }
+    printf("%d\n", dp[m]);
+    return 0;
 }

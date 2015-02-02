@@ -188,6 +188,8 @@ int query_sum(int i, int left, int right) {
 }
 
 int main() {
+    // freopen("bzoj_1036.in", "r", stdin);
+    // freopen("bzoj_1036.out", "w", stdout);
 	scanf("%d", &n);
 	for (int i = 0; i < n - 1; ++i) {
         int x, y;
@@ -195,26 +197,24 @@ int main() {
         g[x].push_back(y); g[y].push_back(x);		
 	}
 	for (int i = 1; i <= n; ++i) scanf("%d", wei + i);
-	memset(son_cnt, 0, sizeof(son_cnt));
-    // cout << "tag1" << endl;
+	memset(son_cnt, 0, sizeof(son_cnt));    
     dfs1(1, 0, 0);
     // need to ensure first node's head was set
-    head[1] = 1;
-    // cout << "tag3" << endl;
-    dfs2(1, 1);
-    // cout << "tag5" << endl;
+    head[1] = 1;    
+    dfs2(1, 1);    
     tr_pos = 2;
     build_tree(1, 1, n);
     // initialize value of segment tree
     for (int i = 1; i <= n; ++i) update(1, mp[i], wei[i]);
-
-    // cout << "tag2" << endl;
+    
     int q;
     scanf("%d", &q);
     while (q--) {
     	string cmd;
-    	int x, y;
-    	cin >> cmd >> x >> y;
+        char tmp[30];
+        int x, y;
+        scanf("%s %d %d", tmp, &x, &y);
+        cmd = tmp;    	
     	if (cmd == "CHANGE") update(1, mp[x], y);
     	// query maximum value
     	else if (cmd == "QMAX") {

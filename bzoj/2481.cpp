@@ -13,7 +13,7 @@ struct Edge {
     Edge() {}
 };
 
-const int MAX_N = 105;
+const int MAX_N = 1005;
 pair<int, int> points[MAX_N];
 Edge edges[MAX_N * MAX_N + MAX_N];
 int pre[MAX_N], mp[MAX_N];

@@ -3,3 +3,5 @@ a.out
 sample*.txt
 *.exe
 out*.txt
+*.in
+*.out

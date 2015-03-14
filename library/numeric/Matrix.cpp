@@ -2,20 +2,13 @@
 #define FOR(i, n) for (int i = 0; i < n; ++i) 
 using namespace std;  
 
-// all operations are in MOD sense
+// all operations are in MOD space
 const int MOD = 100000007;
 const int MAXN = 31;
+const int n = MAXN;
 struct MATRIX {
     int matrix[MAXN][MAXN];  
-}; 
-
-int n = MAXN; 
-
-MATRIX eye() {
-    MATRIX tmp;    
-    FOR(i, MAXN) tmp.matrix[i][i] = 1;
-    return tmp;
-}
+};
 
 // adding operation for matrix
 MATRIX matrix_add(MATRIX a, MATRIX b){  
@@ -29,7 +22,7 @@ MATRIX matrix_add(MATRIX a, MATRIX b){
 MATRIX matrix_mul(MATRIX a, MATRIX b){  
     MATRIX res;  
     FOR(i, n) FOR(j, n) 
-        res.matrix[i][j]=0;  
+        res.matrix[i][j] = 0;  
     FOR(i, n) FOR(j, n) FOR(k, n) {
         res.matrix[i][j] += (a.matrix[i][k] * b.matrix[k][j])%MOD;
         res.matrix[i][j] %= MOD;

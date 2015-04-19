@@ -1,12 +1,29 @@
+// modified from cyg4ever
 #include <bits/stdc++.h>
 #define FOR(i, n) for (int i = 0; i < n; ++i)
 using namespace std;
 
-int main() {
-    int T;    
-    cin >> T;
-    FOR(tt, T) {
-        cout << "Case #" << tt + 1 << ": ";        
+void solve() {
+    return;
+}
+
+int MAIN() {
+    int TestCase;
+    cin >> TestCase;
+    FOR(caseID, TestCase) {
+        cout << "Case #" << caseID + 1 << ": ";
+        solve();
     }
     return 0;
+}
+
+int main() {
+    int start = clock();    
+    ios :: sync_with_stdio(false);
+    cout << fixed << setprecision(16);
+    int ret = MAIN();
+    #ifdef LOCAL
+        cout << "[Finished in " << clock() - start << " ms]" << endl;
+    #endif
+    return ret;    
 }

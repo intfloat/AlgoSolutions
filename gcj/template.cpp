@@ -1,7 +1,9 @@
-// modified from cyg4ever
+// modified from cgy4ever
 #include <bits/stdc++.h>
 #define FOR(i, n) for (int i = 0; i < n; ++i)
 using namespace std;
+
+typedef long long ll;
 
 void solve() {
     return;

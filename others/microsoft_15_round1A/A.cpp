@@ -1,66 +1,72 @@
-// by xyz111
-#include <cstdio>
+#include <iostream>
+#include <stdio.h>
+#include <vector>
 #include <map>
+#include <queue>
+#define FOR(i, n) for (int i = 0; i < n; ++i)
 using namespace std;
 
-int T, len, ans, till[210000], go[210000], Next[210000], fa[210000], n1[210000], used[210000], color[210000], m, k, x, y, n;
-map <int, int> mm[110000];
+const int MAX_N = 100005;
+map<int, int> m[MAX_N];
+int parent[MAX_N], color[MAX_N];
+bool visited[MAX_N];
+vector<vector<int> > g;
 
-void add(int x, int y) {
-    Next[++len] = till[x];
-    till[x] = len;
-    go[len] = y;
-}
-
-void bfs() {
-    int q, h, i;
-    for (i = 1; i <= n; i++)
-        used[i] = false;
-    for (n1[q = h = 1] = 1, used[1] = true; q <= h; q++)
-        for (i = till[n1[q]]; i; i = Next[i]) {
-            if (!used[go[i]]) {
-                fa[go[i]] = n1[q];
-                n1[++h] = go[i];
-                used[go[i]] = true;
-            }
+void solve() {
+    int N, x, y, type, node, ncolor;
+    scanf("%d", &N);
+    g.resize(N);
+    FOR(i, N) g[i].clear();
+    FOR(i, N - 1) {
+        scanf("%d %d", &x, &y);
+        --x; --y;
+        g[x].push_back(y); g[y].push_back(x);
+    }
+    FOR(i, N) { color[i] = 0; visited[i] = false; }
+    FOR(i, N) m[i].clear();
+    // bfs
+    visited[0] = true; parent[0] = -1;
+    queue<int> q; q.push(0);
+    while (!q.empty()) {
+        int tp = q.front(); q.pop();
+        FOR(i, g[tp].size()) {
+            int to = g[tp][i];
+            if (visited[to]) continue;
+            visited[to] = true; parent[to] = tp;
+            q.push(to); ++m[tp][0];
         }
+    }
+
+    int cc = 1, query;
+    scanf("%d", &query);
+    FOR(i, query) {
+        scanf("%d", &type);
+        if (type == 1) printf("%d\n", cc);
+        else {
+            scanf("%d %d", &node, &ncolor);            
+            --node;
+            if (ncolor == color[node]) continue;
+            int pcnt = m[node][color[node]], ncnt = m[node][ncolor];
+            int pt = parent[node];
+            if (node != 0) {
+                --m[pt][color[node]];
+                ++m[pt][ncolor];
+            }
+            if (node != 0 && color[pt] == color[node]) ++pcnt;
+            else if (node != 0 && color[pt] == ncolor) ++ncnt;
+            color[node] = ncolor;
+            cc += pcnt - ncnt;
+        }
+    }
+    return;
 }
 
 int main() {
+    int T;
     scanf("%d", &T);
-    for (int mm1 = 1; mm1 <= T; mm1++) {
-        scanf("%d", &n);
-        len = 0;
-        for (int i = 1; i <= n; i++)
-            till[i] = 0, color[i] = 0;
-        ans = n - 1;
-        for (int i = 1; i < n; i++) {
-            scanf("%d%d", &x, &y);
-            add(x, y);
-            add(y, x);
-        }
-        printf("Case #%d:\n", mm1);
-        bfs();
-        for (int i = 1; i <= n; i++)
-            mm[i].clear();
-        for (int i = 2; i <= n; i++)
-            mm[fa[i]][color[i]]++;
-        scanf("%d", &m);
-        while (m--) {
-            scanf("%d", &k);
-            if (k == 1) printf("%d\n", n - ans);
-            else {
-                scanf("%d%d", &x, &y);
-                ans -= mm[x][color[x]];
-                ans += mm[x][y];
-                if (x != 1) {
-                    if (color[x] == color[fa[x]]) ans--;
-                    if (y == color[fa[x]]) ans++;
-                    mm[fa[x]][color[x]]--;
-                    mm[fa[x]][y]++;
-                }
-                color[x] = y;
-            }
-        }
+    FOR(tt, T) {
+        printf("Case #%d:\n", tt + 1);        
+        solve();
     }
+    return 0;
 }

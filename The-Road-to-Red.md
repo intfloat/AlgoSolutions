@@ -75,3 +75,6 @@
 |[基站选址](http://hihocoder.com/problemset/problem/1150) | 首先两个坐标是互相独立的，然后把优化目标写出来，发现最优解就在用户的质心处，扫描小范围内的整数点网格可解。有人搞模拟退火，什么鬼。。 | 优化 |
 |[彩色的树](http://hihocoder.com/problemset/problem/1156) | 很感人的一道题。。。就是如何高效维护树中的信息，每个节点只维护子节点信息，就可以实现O(1)查询和O(1)更新了 | 树 |
 |[攻城略地](http://hihocoder.com/problemset/problem/1160) | 每个连通分量，只需要选择权重最小的顶点，并且一个连通分量删掉不影响连通性的多余边不会影响最终结果；如果还不够，就把其余顶点排序，从小到大选。。 | 图论 连通分量 |
+|[质数相关](http://hihocoder.com/problemset/problem/1158) | 二部图最大独立点集，我太渣了。。。建立二部图，做最大匹配，总数减掉最大匹配的一半就是答案 | 二部图； 独立点集 |
+|[Girls and Boys](poj.org/problem?id=1466) | 还是二部图最大独立点集，嗯。。 | 二部图 |
+|[扑克牌](http://hihocoder.com/problemset/problem/1159) | 组合dp，感人肺腑不能多说。。 | 组合计数；动态规划 |

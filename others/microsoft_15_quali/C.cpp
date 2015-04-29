@@ -41,13 +41,13 @@ ll get_cost(const ll x, const ll y) {
 
 ll solve(vector<ll>& us) {
     ll nuser = us.size();    
-    ll sm = accumulate(us.begin(), us.end(), 0);
+    ll sm = accumulate(us.begin(), us.end(), 0ll);
     ll pos = sm / nuser;
     return pos;
 }
 
 int main() {
-    ll T, row, col, user, com;    
+    ll T, row, col, user, com;
     cin >> T;    
     FOR(tt, T) {
         cin >> row >> col >> user >> com;
@@ -57,8 +57,8 @@ int main() {
         ll posx = solve(ux);
         ll posy = solve(uy);
         ll cost = INF;
-        for (ll i = max(posx - 5, 1ll); i <= min(posx + 5, row); ++i) {
-            for (ll j = max(posy - 5, 1ll); j <= min(posy + 5, col); ++j) {
+        for (ll i = max(posx - 50, 1ll); i <= min(posx + 50, row); ++i) {
+            for (ll j = max(posy - 50, 1ll); j <= min(posy + 50, col); ++j) {
                 cost = min(cost, get_cost(i, j));
             }
         }

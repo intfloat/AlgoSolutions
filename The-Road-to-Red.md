@@ -70,3 +70,8 @@
 |[排列perm](http://www.lydsy.com/JudgeOnline/problem.php?id=1072) | 看到字符串长度只有10，显然暴力枚举……                                                                                                                                                                                                            | 枚举                             |
 |[移动玩具](http://www.lydsy.com/JudgeOnline/problem.php?id=1054) | 把棋盘压缩成一个16位的整数，进行广度优先搜索即可                                                                                                                                                                                                | 广搜                             |
 |[反素数](http://www.lydsy.com/JudgeOnline/problem.php?id=1053) | 列出素数表来，对每个素数可取的个数进行递归搜索即可，注意边界上的结果更新以及恰当剪枝                                                                                                                                                            | 数论；递归                       |
+|[2月29日](http://hihocoder.com/problemset/problem/1148) | 用容斥原理随便搞搞就行了。。 | 数学 |
+|[回文字符序列](http://hihocoder.com/problemset/problem/1149) | 和公共子序列计数本质上是一样的，分最开头的字母是否相等两种情况，注意减掉重复计算的部分 | 动态规划；组合计数 |
+|[基站选址](http://hihocoder.com/problemset/problem/1150) | 首先两个坐标是互相独立的，然后把优化目标写出来，发现最优解就在用户的质心处，扫描小范围内的整数点网格可解。有人搞模拟退火，什么鬼。。 | 优化 |
+|[彩色的树](http://hihocoder.com/problemset/problem/1156) | 很感人的一道题。。。就是如何高效维护树中的信息，每个节点只维护子节点信息，就可以实现O(1)查询和O(1)更新了 | 树 |
+|[攻城略地](http://hihocoder.com/problemset/problem/1160) | 每个连通分量，只需要选择权重最小的顶点，并且一个连通分量删掉不影响连通性的多余边不会影响最终结果；如果还不够，就把其余顶点排序，从小到大选。。 | 图论 连通分量 |

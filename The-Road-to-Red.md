@@ -78,3 +78,8 @@
 |[质数相关](http://hihocoder.com/problemset/problem/1158) | 二部图最大独立点集，我太渣了。。。建立二部图，做最大匹配，总数减掉最大匹配的一半就是答案 | 二部图； 独立点集 |
 |[Girls and Boys](poj.org/problem?id=1466) | 还是二部图最大独立点集，嗯。。 | 二部图 |
 |[扑克牌](http://hihocoder.com/problemset/problem/1159) | 组合dp，感人肺腑不能多说。。 | 组合计数；动态规划 |
+|[Cutting Banner](http://codeforces.com/problemset/problem/538/A) | 表述不清，第一次被别人成功hack，超级不爽。。 | 暴力枚举 |
+|[Quasi Binary](http://codeforces.com/problemset/problem/538/B) | 对每一个非零位进行贪心构造，直到变成0 | 贪心 |
+|[Tourist's Notes](http://codeforces.com/problemset/problem/538/C) | 水题不想多说。。 | 贪心 |
+|[Weird Chess](http://codeforces.com/problemset/problem/538/D) | 看上去很难，其实就是根据约束条件不断删除候选解 | 构造算法 |
+|[Demiurges Play Again](http://codeforces.com/problemset/problem/538/E) | 博弈论相关，当轮到对手时，要选择所有可能的路径最优解中的最差解；当轮到自己时，选择所有可能路径中最优解的最优解，大概就是这样，比较绕。。 | 博弈论 |

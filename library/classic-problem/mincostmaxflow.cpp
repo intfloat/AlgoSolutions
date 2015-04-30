@@ -1,37 +1,3 @@
-/**************************************************************
-    Problem: 1061
-    User: BananaTree
-    Language: C++
-    Result: Accepted
-    Time:2364 ms
-    Memory:3140 kb
-****************************************************************/
-
-#include <vector>
-#include <list>
-#include <limits.h>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <algorithm>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <string.h>
-#include <stdlib.h>
-#include <cassert>
-
-using namespace std;
 
 const int MAX_N = 60000;
 const int INF = INT_MAX / 2;
@@ -98,33 +64,3 @@ public:
         return mincost;
     }
 };
-
-int main() {
-    int n, m;
-    MinCostMaxFlow net;
-    int arr[1005];
-    scanf("%d%d", &n, &m);
-    memset(arr, 0, sizeof(arr));
-    S = 0; T = n + 2;
-    for (int i = 1; i <= n; ++i) scanf("%d", arr+i);
-    for (int i = 1; i <= m; ++i) {
-        int si, ti, ci;
-        scanf("%d%d%d", &si, &ti, &ci);
-        // X[i]
-        net.addedge(ti+1, si, INF, ci);     
-    }
-    for (int i = 1; i <= n; ++i) {
-        net.addedge(i, i+1, INF, 0);
-    }
-    for (int i = 1; i <=n+1; ++i) {
-        int cc = -(arr[i] - arr[i-1]);
-        // cout << "cc: " << cc << endl;
-        if (cc > 0) net.addedge(S, i, cc, 0);
-        else if(cc < 0) net.addedge(i, T, -cc, 0);
-    }
-    int maxflow;
-    int res = net.mincost(maxflow);
-    printf("%d\n", res);
-    // printf("maxflow: %d\n", maxflow);
-    return 0;
-}

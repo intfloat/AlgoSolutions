@@ -51,7 +51,7 @@ int query(int left, int right){
     return mx;
 }
 
-int main(){	
+int main(){ 
     cin>>N;
     for(int i=0; i<N; i++)
         cin>>val[i];
@@ -59,5 +59,5 @@ int main(){
     int left = 1;
     int right = N-1;
     cout<<query(left, right)<<endl;
-	return 0;
+    return 0;
 }

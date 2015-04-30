@@ -21,22 +21,22 @@ using namespace std;
 
 class PenguinTiles {
 public:
-	int minMoves(vector <string>);
+    int minMoves(vector <string>);
 };
 
 int PenguinTiles::minMoves(vector <string> tiles) {
-	int row=tiles.size();
-	int col=tiles[0].size();
-	for(int i=0;i<row;i++)
-	for(int j=0;j<col;j++){
-		if(tiles[i][j]=='.'){
-			if(i==(row-1) && j==(col-1))
-				return 0;
-			else if(i==(row-1) || j==(col-1))
-				return 1;
-			else return 2;
-		}
-	}
+    int row=tiles.size();
+    int col=tiles[0].size();
+    for(int i=0;i<row;i++)
+    for(int j=0;j<col;j++){
+        if(tiles[i][j]=='.'){
+            if(i==(row-1) && j==(col-1))
+                return 0;
+            else if(i==(row-1) || j==(col-1))
+                return 1;
+            else return 2;
+        }
+    }
 }
 
 <%:testing-code%>

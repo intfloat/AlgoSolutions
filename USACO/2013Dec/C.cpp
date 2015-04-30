@@ -78,5 +78,5 @@ int main(){
         scanf("%d", &qi);
         printf("%d\n", N-v[qi]+1);
     }
-	return 0;
+    return 0;
 }

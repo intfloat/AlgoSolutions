@@ -22,14 +22,14 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){		
-	double p1, p2;
-	int a, b, c, d;
-	cin>>a>>b>>c>>d;
-	p1 = (double)a/b;
-	p2 = (double)c/d;
-	double res = p1/(p1+p2-p1*p2);
-	cout<<fixed<<setprecision(10)<<res<<endl;
-//	system("pause");
-	return 0;
+int main(){     
+    double p1, p2;
+    int a, b, c, d;
+    cin>>a>>b>>c>>d;
+    p1 = (double)a/b;
+    p2 = (double)c/d;
+    double res = p1/(p1+p2-p1*p2);
+    cout<<fixed<<setprecision(10)<<res<<endl;
+//  system("pause");
+    return 0;
 }

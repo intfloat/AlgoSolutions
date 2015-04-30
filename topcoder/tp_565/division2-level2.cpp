@@ -21,37 +21,37 @@ using namespace std;
 
 class MonstersValley2 {
 public:
-	int res, len;
-	vector<int> d, p;
-	int minimumPrice(vector <int>, vector <int>);
-	void rec(int step, int cost, long long sum);
+    int res, len;
+    vector<int> d, p;
+    int minimumPrice(vector <int>, vector <int>);
+    void rec(int step, int cost, long long sum);
 };
 
 void MonstersValley2::rec(int step, int cost, long long sum){
-	//boundary of recurrence
-	if(step == len){
-		res = min(res, cost);
-		return;
-	}
-	if(cost >= res)
-		return;
-	//can only bribe the monster
-	if(sum < d[step]){
-		rec(step+1, cost+p[step], sum+d[step]);		
-	}
-	else{
-		rec(step+1, cost, sum);
-		rec(step+1, cost+p[step], sum+d[step]);
-	}
-	return;
+    //boundary of recurrence
+    if(step == len){
+        res = min(res, cost);
+        return;
+    }
+    if(cost >= res)
+        return;
+    //can only bribe the monster
+    if(sum < d[step]){
+        rec(step+1, cost+p[step], sum+d[step]);     
+    }
+    else{
+        rec(step+1, cost, sum);
+        rec(step+1, cost+p[step], sum+d[step]);
+    }
+    return;
 }
 
 int MonstersValley2::minimumPrice(vector <int> dread, vector <int> price) {
-	d = dread, p = price;
-	len = dread.size();
-	res = len*2;
-	rec(1, price[0], dread[0]);
-	return res;
+    d = dread, p = price;
+    len = dread.size();
+    res = len*2;
+    rec(1, price[0], dread[0]);
+    return res;
 }
 
 //<%:testing-code%>

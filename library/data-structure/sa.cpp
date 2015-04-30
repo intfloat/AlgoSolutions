@@ -86,8 +86,8 @@ int main() {
     da(r, sa, n + 1, 27);
     height();
     for (int i = 1; i <= s.size(); ++i) {
-      	cout << "sorted suffix substring: " << s.substr(sa[i], s.size() - sa[i]) << endl;
-       	cout << "adjacent longest substring length: " << h[i] << endl;
+        cout << "sorted suffix substring: " << s.substr(sa[i], s.size() - sa[i]) << endl;
+        cout << "adjacent longest substring length: " << h[i] << endl;
     }    
     return 0;
 }

@@ -22,7 +22,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
+int main(){ 
     int t, n, m, p;
     // shot, height, name
     vector<pair<int, pair<int, string> > > v;
@@ -78,5 +78,5 @@ int main(){
             cout<<" "<<res[i];
         cout<<endl;
     }
-	return 0;
+    return 0;
 }

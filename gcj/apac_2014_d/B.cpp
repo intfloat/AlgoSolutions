@@ -25,22 +25,22 @@
 using namespace std;
 
 int main() {
-	int T, N, res, city, P;
-	cin >> T;
-	for (int tt = 1; tt <= T; ++tt) {
-		cin >> N;
-		vector<pair<int, int> > v;
-		int x, y;
-		FOR(i, N) { cin >> x >> y; v.push_back(make_pair(x, y)); }
-		cin >> P;
-		cout << "Case #" << tt << ":";
-		FOR(i, P) {
-			cin >> city;
-			res = 0;
-			FOR(j, v.size()) res += (city >= v[j].first && city <= v[j].second);
-			cout << " " << res;
-		}
-		cout << endl;
-	}
-	return 0;
+    int T, N, res, city, P;
+    cin >> T;
+    for (int tt = 1; tt <= T; ++tt) {
+        cin >> N;
+        vector<pair<int, int> > v;
+        int x, y;
+        FOR(i, N) { cin >> x >> y; v.push_back(make_pair(x, y)); }
+        cin >> P;
+        cout << "Case #" << tt << ":";
+        FOR(i, P) {
+            cin >> city;
+            res = 0;
+            FOR(j, v.size()) res += (city >= v[j].first && city <= v[j].second);
+            cout << " " << res;
+        }
+        cout << endl;
+    }
+    return 0;
 }

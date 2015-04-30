@@ -42,5 +42,5 @@ int main(){
             res += '\n';
     }
     cout<<res;
-	return 0;
+    return 0;
 }

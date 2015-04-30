@@ -21,17 +21,17 @@ using namespace std;
 
 class HingedDoor {
 public:
-	int numSwings(int, int);
+    int numSwings(int, int);
 };
 
 int HingedDoor::numSwings(int initialAngle, int reduction) {
-	int res = 0;
-	double angle = initialAngle;
-	while(angle > 5.0){
-		angle = angle/reduction;
-		res++;
-	}
-	return res;
+    int res = 0;
+    double angle = initialAngle;
+    while(angle > 5.0){
+        angle = angle/reduction;
+        res++;
+    }
+    return res;
 }
 
 <%:testing-code%>

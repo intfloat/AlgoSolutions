@@ -65,7 +65,7 @@ long long manDis(long long x, long long y, int p1, int p2){
     return res;
 }
 
-int main(){	
+int main(){ 
     int t;    
     cin>>t;
     for(int i=1; i<=t; i++){
@@ -104,5 +104,5 @@ int main(){
         cout<<"Case #"<<i<<": "<<res.first
             <<" "<<res.second<<" "<<dis<<endl;      
     }
-	return 0;
+    return 0;
 }

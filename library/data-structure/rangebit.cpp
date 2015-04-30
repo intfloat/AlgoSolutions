@@ -77,7 +77,7 @@ long long queryRange(int id, int left, int right){
     return res;
 }
 
-int main(){	
+int main(){ 
     scanf("%d%d%d", &n, &m, &w);
     init();
     for(int i=0; i<w; i++){
@@ -100,5 +100,5 @@ int main(){
             cout<<ans<<endl;
         }
     }
-	return 0;
+    return 0;
 }

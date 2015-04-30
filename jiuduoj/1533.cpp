@@ -23,22 +23,22 @@
 using namespace std;
 
 int main() {
-	int n, t;
-	set<int> s;
-	set<int>::iterator it;
-	while(cin>>n) {
-		s.clear();
-		for(int i=0; i<n; i++) {
-			cin>>t;			
-			it = s.find(t);
-			if (it != s.end()) continue;
-			s.insert(t);
-			it = s.find(t);
-			it++;
-			if (it == s.end()) continue;
-			else s.erase(it);
-		}
-		cout<<s.size()<<endl;
-	}
-	return 0;
+    int n, t;
+    set<int> s;
+    set<int>::iterator it;
+    while(cin>>n) {
+        s.clear();
+        for(int i=0; i<n; i++) {
+            cin>>t;         
+            it = s.find(t);
+            if (it != s.end()) continue;
+            s.insert(t);
+            it = s.find(t);
+            it++;
+            if (it == s.end()) continue;
+            else s.erase(it);
+        }
+        cout<<s.size()<<endl;
+    }
+    return 0;
 }

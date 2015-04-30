@@ -30,29 +30,29 @@ const int dir_x[] = {0, 0, -1, 1};
 const int dir_y[] = {1, -1, 0, 0};
 int S;
 int solve(int x, int y) {
-	if (dp[x][y] > 0) return dp[x][y];
-	dp[x][y] = 1;
-	FOR(k, 4) {
-		int xx = x + dir_x[k], yy = y + dir_y[k];
-		if (xx < 0 || yy < 0 || xx >= S || yy >= S) continue;
-		if (arr[x][y] + 1 != arr[xx][yy]) continue;
-		dp[x][y] = max(dp[x][y], solve(xx, yy) + 1);
-	}
-	return dp[x][y];
+    if (dp[x][y] > 0) return dp[x][y];
+    dp[x][y] = 1;
+    FOR(k, 4) {
+        int xx = x + dir_x[k], yy = y + dir_y[k];
+        if (xx < 0 || yy < 0 || xx >= S || yy >= S) continue;
+        if (arr[x][y] + 1 != arr[xx][yy]) continue;
+        dp[x][y] = max(dp[x][y], solve(xx, yy) + 1);
+    }
+    return dp[x][y];
 }
 int main() {
-	int T;
-	cin >> T;	
-	for (int tt = 1; tt <= T; ++tt) {
-		cin >> S;
-		FOR(i, S) FOR(j, S) { cin >> arr[i][j]; dp[i][j] = 0; }
-		int mx = -1, pos = -1;
-		FOR(i, S) FOR(j, S) {
-			solve(i, j);
-			if (dp[i][j] > mx) { mx = dp[i][j]; pos = arr[i][j]; }
-			else if (dp[i][j] == mx && arr[i][j] < pos) pos = arr[i][j];
-		}
-		cout << "Case #" << tt << ": " << pos << " " << mx << endl;
-	}
-	return 0;
+    int T;
+    cin >> T;   
+    for (int tt = 1; tt <= T; ++tt) {
+        cin >> S;
+        FOR(i, S) FOR(j, S) { cin >> arr[i][j]; dp[i][j] = 0; }
+        int mx = -1, pos = -1;
+        FOR(i, S) FOR(j, S) {
+            solve(i, j);
+            if (dp[i][j] > mx) { mx = dp[i][j]; pos = arr[i][j]; }
+            else if (dp[i][j] == mx && arr[i][j] < pos) pos = arr[i][j];
+        }
+        cout << "Case #" << tt << ": " << pos << " " << mx << endl;
+    }
+    return 0;
 }

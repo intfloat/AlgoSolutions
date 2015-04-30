@@ -22,7 +22,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
+int main(){ 
     int t, n;
     string str[50];
     cin>>t;
@@ -71,5 +71,5 @@ int main(){
             cout<<"Case #"<<test<<": YES"<<endl;
         else cout<<"Case #"<<test<<": NO"<<endl;
     }
-	return 0;
+    return 0;
 }

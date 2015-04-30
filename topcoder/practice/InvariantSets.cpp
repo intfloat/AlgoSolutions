@@ -32,65 +32,65 @@ int p[MAX_N], conn;
 
 class InvariantSets {
 public:
-	long long countSets(vector <int>);
-	void dfs(int pos) {
-		visited[pos] = true;
-		scc[pos] = conn;
-		for (int i = 0; i < n; ++i) {
-			if (!visited[i] && g[i][pos] && g[pos][i]) {
-				dfs(i);
-			}
-		}
-		return;
-	}
+    long long countSets(vector <int>);
+    void dfs(int pos) {
+        visited[pos] = true;
+        scc[pos] = conn;
+        for (int i = 0; i < n; ++i) {
+            if (!visited[i] && g[i][pos] && g[pos][i]) {
+                dfs(i);
+            }
+        }
+        return;
+    }
 
-	long long get(int pos) {
-		if (dp[pos] > 0) return dp[pos];
-		long long cur = 1;
-		for (int i = 0; i < conn; ++i) {
-			if (ng[pos][i]) cur = cur * get(i);
-		}
-		dp[pos] = 1 + cur;
-		return dp[pos];
-	}
+    long long get(int pos) {
+        if (dp[pos] > 0) return dp[pos];
+        long long cur = 1;
+        for (int i = 0; i < conn; ++i) {
+            if (ng[pos][i]) cur = cur * get(i);
+        }
+        dp[pos] = 1 + cur;
+        return dp[pos];
+    }
 };
 
-long long InvariantSets::countSets(vector <int> f) {	
-	memset(g, false, sizeof(g));
-	n = f.size();
-	for (int i = 0; i < n; ++i) g[f[i]][i] = true;
-	for (int i = 0; i < n; ++i)
-	for (int j = 0; j < n; ++j)
-	for (int k = 0; k < n; ++k) {
-		g[j][k] = g[j][k] || (g[j][i] && g[i][k]);
-	}	
-	memset(visited, false, sizeof(visited));	
-	conn = 0;
-	for (int i = 0; i < n; ++i) {
-		if (!visited[i]) {
-			dfs(i);
-			++conn;
-		}
-	}
+long long InvariantSets::countSets(vector <int> f) {    
+    memset(g, false, sizeof(g));
+    n = f.size();
+    for (int i = 0; i < n; ++i) g[f[i]][i] = true;
+    for (int i = 0; i < n; ++i)
+    for (int j = 0; j < n; ++j)
+    for (int k = 0; k < n; ++k) {
+        g[j][k] = g[j][k] || (g[j][i] && g[i][k]);
+    }   
+    memset(visited, false, sizeof(visited));    
+    conn = 0;
+    for (int i = 0; i < n; ++i) {
+        if (!visited[i]) {
+            dfs(i);
+            ++conn;
+        }
+    }
 
-	memset(ng, false, sizeof(ng));	
-	for (int i = 0; i < n; ++i) p[i] = -1;
-	for (int i = 0; i < n; ++i) {
-		int x = scc[f[i]];
-		int y = scc[i];
-		ng[x][y] = true;
-		p[y] = x;
-	}	
+    memset(ng, false, sizeof(ng));  
+    for (int i = 0; i < n; ++i) p[i] = -1;
+    for (int i = 0; i < n; ++i) {
+        int x = scc[f[i]];
+        int y = scc[i];
+        ng[x][y] = true;
+        p[y] = x;
+    }   
 
-	res = 1;
-	memset(dp, 0, sizeof(dp));	
-	for (int i = 0; i < conn; ++i) {
-		if (dp[i] == 0) {
-			dp[i] = get(i);
-			if (p[i] < 0) res = res * dp[i];
-		}
-	}
-	return res;
+    res = 1;
+    memset(dp, 0, sizeof(dp));  
+    for (int i = 0; i < conn; ++i) {
+        if (dp[i] == 0) {
+            dp[i] = get(i);
+            if (p[i] < 0) res = res * dp[i];
+        }
+    }
+    return res;
 }
 
 <%:testing-code%>

@@ -21,12 +21,12 @@ using namespace std;
 
 class BitwiseAnd {
 public:
-	vector<long long> lexSmallest(vector<long long>, int);
+    vector<long long> lexSmallest(vector<long long>, int);
 };
 
 // it is a great pity, I should use (1LL<<k) rather than (1<<k)...
 vector<long long> BitwiseAnd::lexSmallest(vector<long long> subset, int N) {
-	bool used[100];
+    bool used[100];
     bool single[100];
     vector<long long> res;
     vector<int> record[100];

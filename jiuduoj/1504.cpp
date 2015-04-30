@@ -23,28 +23,28 @@
 using namespace std;
 
 bool cmp(string a, string b) {
-	int len = min(a.size(), b.size());
-	for(int i=0; i<len; i++) {
-		if(a[i]!=b[i]) return a[i]<b[i];
-	}
-	if(a+b < b+a) return true;
-	else return false;
+    int len = min(a.size(), b.size());
+    for(int i=0; i<len; i++) {
+        if(a[i]!=b[i]) return a[i]<b[i];
+    }
+    if(a+b < b+a) return true;
+    else return false;
 }
 
 int main() {
-	int m;
-	while(cin>>m) {
-		vector<string> v;
-		v.clear();
-		for(int i=0; i<m; i++) {
-			string s;
-			cin>>s;
-			v.push_back(s);
-		}
-		sort(v.begin(), v.end(), cmp);
-		string res = "";
-		for(int i=0; i<m; i++) res += v[i];
-		cout<<res<<endl;
-	}
-	return 0;
+    int m;
+    while(cin>>m) {
+        vector<string> v;
+        v.clear();
+        for(int i=0; i<m; i++) {
+            string s;
+            cin>>s;
+            v.push_back(s);
+        }
+        sort(v.begin(), v.end(), cmp);
+        string res = "";
+        for(int i=0; i<m; i++) res += v[i];
+        cout<<res<<endl;
+    }
+    return 0;
 }

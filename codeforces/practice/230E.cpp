@@ -66,45 +66,45 @@ MATRIX matrix_mi(MATRIX ma,long long p){
 }  
 
 int main(){
-	long long nn;
-	int k;
-	cin>>nn>>k;
-	long long c[45][45];
-	memset(c, 0, sizeof(c));
-	c[0][0] = 1;
-	for(int i=1; i<45; i++){
-		c[i][0] = 1;
-		for(int j=1; j<=i; j++){
-			c[i][j] = (c[i-1][j-1]+c[i-1][j])%MOD;
-		}
-	}
-	long long two[45];
-	memset(two, 0, sizeof(two));
-	two[0] = 1;
-	for(int i=1; i<45; i++) two[i] = (two[i-1]*2)%MOD;
-	MATRIX mat;
-	memset(mat.matrix, 0, sizeof(mat.matrix));
-	for(int i=0; i<=40; i++){
-		mat.matrix[i+41][i] = 1;
-		for(int j=0; j<=40; j++){
-			if(i>=j){
-				mat.matrix[i][j] = c[i][j]%MOD;
-				mat.matrix[i][j+41] = (c[i][j]*two[i-j])%MOD;
-			}
-		}
-	}
-	mat.matrix[82][82] = 1;
-	mat.matrix[82][k] = 1;
-	MATRIX A = matrix_mi(mat, nn-1);
-	long long cur[83];
-	memset(cur, 0, sizeof(cur));
-	for(int i=0; i<=40; i++){
-		cur[i] = two[i+1];
-		cur[i+41] = 1;
-	}
-	cur[82] = 1;
-	long long res = 0;
-	for(int i=0; i<83; i++)
-		res = (res+(A.matrix[82][i]*cur[i])%MOD)%MOD;
-	cout<<res<<endl;
+    long long nn;
+    int k;
+    cin>>nn>>k;
+    long long c[45][45];
+    memset(c, 0, sizeof(c));
+    c[0][0] = 1;
+    for(int i=1; i<45; i++){
+        c[i][0] = 1;
+        for(int j=1; j<=i; j++){
+            c[i][j] = (c[i-1][j-1]+c[i-1][j])%MOD;
+        }
+    }
+    long long two[45];
+    memset(two, 0, sizeof(two));
+    two[0] = 1;
+    for(int i=1; i<45; i++) two[i] = (two[i-1]*2)%MOD;
+    MATRIX mat;
+    memset(mat.matrix, 0, sizeof(mat.matrix));
+    for(int i=0; i<=40; i++){
+        mat.matrix[i+41][i] = 1;
+        for(int j=0; j<=40; j++){
+            if(i>=j){
+                mat.matrix[i][j] = c[i][j]%MOD;
+                mat.matrix[i][j+41] = (c[i][j]*two[i-j])%MOD;
+            }
+        }
+    }
+    mat.matrix[82][82] = 1;
+    mat.matrix[82][k] = 1;
+    MATRIX A = matrix_mi(mat, nn-1);
+    long long cur[83];
+    memset(cur, 0, sizeof(cur));
+    for(int i=0; i<=40; i++){
+        cur[i] = two[i+1];
+        cur[i+41] = 1;
+    }
+    cur[82] = 1;
+    long long res = 0;
+    for(int i=0; i<83; i++)
+        res = (res+(A.matrix[82][i]*cur[i])%MOD)%MOD;
+    cout<<res<<endl;
 }

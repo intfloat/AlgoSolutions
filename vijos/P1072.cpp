@@ -22,11 +22,11 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
-	double l, v;
-	cin>>l>>v;
-	cout<<fixed<<setprecision(1)<<(2.0/3.0)*l<<endl;
-	cout<<fixed<<setprecision(1)<<(2.0/3.0)*l/v<<endl;
-	system("pause");
-	return 0;
+int main(){ 
+    double l, v;
+    cin>>l>>v;
+    cout<<fixed<<setprecision(1)<<(2.0/3.0)*l<<endl;
+    cout<<fixed<<setprecision(1)<<(2.0/3.0)*l/v<<endl;
+    system("pause");
+    return 0;
 }

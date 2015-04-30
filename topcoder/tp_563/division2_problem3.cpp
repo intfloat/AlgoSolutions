@@ -22,33 +22,33 @@ using namespace std;
 
 class SpellCardsEasy {
 public:
-	int dp[55][55];
-	int len;
-	vector<int> lev,dam;
-	int maxDamage(vector <int>, vector <int>);
-	int solve(int pos, int owed);
+    int dp[55][55];
+    int len;
+    vector<int> lev,dam;
+    int maxDamage(vector <int>, vector <int>);
+    int solve(int pos, int owed);
 };
 
-int SpellCardsEasy::maxDamage(vector <int> level, vector <int> damage) {	
-	len=level.size();
-	lev=level; dam=damage;
-	memset(dp,-1,sizeof(dp));
-	return solve(0,0);
+int SpellCardsEasy::maxDamage(vector <int> level, vector <int> damage) {    
+    len=level.size();
+    lev=level; dam=damage;
+    memset(dp,-1,sizeof(dp));
+    return solve(0,0);
 }
 
 //solution to it is simple and excellent
 int SpellCardsEasy::solve(int pos, int owed){
-	if(dp[pos][owed] >= 0)
-		return dp[pos][owed];
-	if(owed == (len-pos)){
-		dp[pos][owed]=0;		
-	}
-	else{
-		dp[pos][owed]=max(dp[pos][owed], solve(pos+1, max(0,owed-1)));
-		if((owed+lev[pos]) <= (len-pos))
-			dp[pos][owed]=max(dp[pos][owed], dam[pos]+solve(pos+1, owed+lev[pos]-1));
-	}
-	return dp[pos][owed];
+    if(dp[pos][owed] >= 0)
+        return dp[pos][owed];
+    if(owed == (len-pos)){
+        dp[pos][owed]=0;        
+    }
+    else{
+        dp[pos][owed]=max(dp[pos][owed], solve(pos+1, max(0,owed-1)));
+        if((owed+lev[pos]) <= (len-pos))
+            dp[pos][owed]=max(dp[pos][owed], dam[pos]+solve(pos+1, owed+lev[pos]-1));
+    }
+    return dp[pos][owed];
 }
 
 //<%:testing-code%>

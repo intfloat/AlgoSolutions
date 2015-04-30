@@ -28,7 +28,7 @@ using namespace std;
 const int dir_x[] = {0, 0, -1, 1};
 const int dir_y[] = {-1, 1, 0, 0};
 
-int main(){	
+int main(){ 
     int t;
     cin>>t;
     queue<pair<point, point> > q;
@@ -95,5 +95,5 @@ int main(){
         else
             cout<<"Case #"<<i<<": Mission Impossible."<<endl;
     }
-	return 0;
+    return 0;
 }

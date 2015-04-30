@@ -21,19 +21,19 @@ using namespace std;
 
 class EllysPairs {
 public:
-	int getDifference(vector <int>);
+    int getDifference(vector <int>);
 };
 
 int EllysPairs::getDifference(vector <int> knowledge) {
-	int maxi = 0;
-	int mini = 1000000;
-	int len = knowledge.size();
-	sort(knowledge.begin(), knowledge.end());
-	for(int i=0; i<len; i++){
-		maxi = max(maxi, knowledge[i]+knowledge[len-1-i]);
-		mini = min(mini, knowledge[i]+knowledge[len-1-i]);
-	}
-	return maxi-mini;
+    int maxi = 0;
+    int mini = 1000000;
+    int len = knowledge.size();
+    sort(knowledge.begin(), knowledge.end());
+    for(int i=0; i<len; i++){
+        maxi = max(maxi, knowledge[i]+knowledge[len-1-i]);
+        mini = min(mini, knowledge[i]+knowledge[len-1-i]);
+    }
+    return maxi-mini;
 }
 
 <%:testing-code%>

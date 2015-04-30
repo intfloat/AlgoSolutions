@@ -55,7 +55,7 @@ int query(int left, int right){
     return mx;
 }
 
-int main(){	
+int main(){ 
     freopen("crowded.in", "r", stdin);
     freopen("crowded.out", "w", stdout);
     scanf("%d%d", &N, &D);
@@ -86,5 +86,5 @@ int main(){
         }
     }
     cout<<res<<endl;
-	return 0;
+    return 0;
 }

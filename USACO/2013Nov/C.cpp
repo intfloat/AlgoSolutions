@@ -25,7 +25,7 @@ int **dpl, **dpr;
 pair<int, int> p[1005];
 int n, pos[1005], val[1005];
 
-int main(){	
+int main(){ 
     //freopen("pogocow.in", "r", stdin);
     //freopen("pogocow.out", "w", stdout);
     int begin = clock();
@@ -79,5 +79,5 @@ int main(){
     }
     cout<<"time: "<<(clock()-begin)<<endl;
     cout<<res<<endl;
-	return 0;
+    return 0;
 }

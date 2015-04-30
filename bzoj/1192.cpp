@@ -25,13 +25,13 @@ using namespace std;
 
 // so easy...
 int main() {
-	long long number;
-	cin >> number;
-	int res = 0;
-	while (number > 0) {
-		++res;
-		number >>= 1;
-	}
-	cout << res << endl;
-	return 0;
+    long long number;
+    cin >> number;
+    int res = 0;
+    while (number > 0) {
+        ++res;
+        number >>= 1;
+    }
+    cout << res << endl;
+    return 0;
 }

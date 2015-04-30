@@ -41,7 +41,7 @@ int query(int pos){
     return sum;
 }
 
-int main(){	
+int main(){ 
     cin>>len;
-	return 0;
+    return 0;
 }

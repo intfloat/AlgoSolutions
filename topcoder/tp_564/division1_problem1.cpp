@@ -21,19 +21,19 @@ using namespace std;
 
 class KnightCircuit2 {
 public:
-	int maxSize(int, int);
+    int maxSize(int, int);
 };
 
 int KnightCircuit2::maxSize(int w, int h) {
-	if(w==1 || h==1)
-		return 1;
-	else if(w==2)
-		return (h+1)/2;
-	else if(h==2)
-		return (w+1)/2;
-	else if(h==3 && w==3)
-		return 8;
-	else return w*h;
+    if(w==1 || h==1)
+        return 1;
+    else if(w==2)
+        return (h+1)/2;
+    else if(h==2)
+        return (w+1)/2;
+    else if(h==3 && w==3)
+        return 8;
+    else return w*h;
 }
 
 <%:testing-code%>

@@ -21,18 +21,18 @@ using namespace std;
 
 class NoOrderOfOperations {
 public:
-	int evaluate(string);
+    int evaluate(string);
 };
 
 int NoOrderOfOperations::evaluate(string expr) {
-	int res = expr[0] - '0';
-	for (int i = 0; i < expr.size(); ++i) {
-		if (expr[i] == '+') res += expr[i+1] - '0';
-		if (expr[i] == '-') res -= expr[i+1] - '0';
-		if (expr[i] == '/') res /= expr[i+1] - '0';
-		if (expr[i] == '*') res *= expr[i+1] - '0';
-	}
-	return res;
+    int res = expr[0] - '0';
+    for (int i = 0; i < expr.size(); ++i) {
+        if (expr[i] == '+') res += expr[i+1] - '0';
+        if (expr[i] == '-') res -= expr[i+1] - '0';
+        if (expr[i] == '/') res /= expr[i+1] - '0';
+        if (expr[i] == '*') res *= expr[i+1] - '0';
+    }
+    return res;
 }
 
 

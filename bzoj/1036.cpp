@@ -32,7 +32,7 @@ int n, parent[MAXN], hson[MAXN], head[MAXN];
 int mp[MAXN], dep[MAXN], son_cnt[MAXN], wei[MAXN];
 
 struct Node {
-	// [left, right] interval
+    // [left, right] interval
     int l, r, pl, pr;
     int s, mx_val;       
     Node(): pl(0), pr(0), l(0), r(0) {}
@@ -47,51 +47,51 @@ struct Rec {
     bool first;
     Rec(int _cur, int _prev, int _d): cur(_cur), prev(_prev), d(_d), first(true) {}
 };
-void dfs1(int _cur, int _prev, int _d) {	
-	// use nonrecursive implementation to avoid stack overflow, danteng...
-	stack<Rec> s;
-	s.push(Rec(_cur, _prev, _d));
-	while (!s.empty()) {
-		Rec t = s.top(); s.pop();
-		if (t.first) {
-			parent[t.cur] = t.prev;
-			dep[t.cur] = t.d;
-			son_cnt[t.cur] = 1;
-			hson[t.cur] = -1;
-			t.first = false;
-			s.push(t);
-			vector<int>::iterator it = g[t.cur].begin();
-			for (; it != g[t.cur].end(); ++it) {
-				if (*it == t.prev) continue;
-				s.push(Rec(*it, t.cur, t.d + 1));
-			}
-		}
-		else {			
-			son_cnt[t.prev] += son_cnt[t.cur];
-			if (hson[t.prev] < 0 || son_cnt[t.cur] > son_cnt[hson[t.prev]]) {
-				hson[t.prev] = t.cur;
-			}
-		}
-	}
-	return;
-	/* parent[cur] = prev;
-	dep[cur] = d;
-	son_cnt[cur] = 1;	
-	vector<int>::iterator it = g[cur].begin();
-	int mx = -1;
-	// int index = -1;
-	for (; it != g[cur].end(); ++it) {
-		// cout << "cur: " << cur << " tag4: " << *it << endl;
+void dfs1(int _cur, int _prev, int _d) {    
+    // use nonrecursive implementation to avoid stack overflow, danteng...
+    stack<Rec> s;
+    s.push(Rec(_cur, _prev, _d));
+    while (!s.empty()) {
+        Rec t = s.top(); s.pop();
+        if (t.first) {
+            parent[t.cur] = t.prev;
+            dep[t.cur] = t.d;
+            son_cnt[t.cur] = 1;
+            hson[t.cur] = -1;
+            t.first = false;
+            s.push(t);
+            vector<int>::iterator it = g[t.cur].begin();
+            for (; it != g[t.cur].end(); ++it) {
+                if (*it == t.prev) continue;
+                s.push(Rec(*it, t.cur, t.d + 1));
+            }
+        }
+        else {          
+            son_cnt[t.prev] += son_cnt[t.cur];
+            if (hson[t.prev] < 0 || son_cnt[t.cur] > son_cnt[hson[t.prev]]) {
+                hson[t.prev] = t.cur;
+            }
+        }
+    }
+    return;
+    /* parent[cur] = prev;
+    dep[cur] = d;
+    son_cnt[cur] = 1;   
+    vector<int>::iterator it = g[cur].begin();
+    int mx = -1;
+    // int index = -1;
+    for (; it != g[cur].end(); ++it) {
+        // cout << "cur: " << cur << " tag4: " << *it << endl;
         if (prev == *it) continue;
         dfs1(*it, cur, d + 1);
         son_cnt[cur] += son_cnt[*it];
         if (son_cnt[*it] > mx) {
-        	mx = son_cnt[*it];
-        	hson[cur] = *it;
+            mx = son_cnt[*it];
+            hson[cur] = *it;
         }
-	}
-	if (mx == -1) hson[cur] = -1;
-	return; */
+    }
+    if (mx == -1) hson[cur] = -1;
+    return; */
 }
 
 struct Rec2 {
@@ -101,43 +101,43 @@ struct Rec2 {
 };
 
 void dfs2(int cur, int prev) {
-	// use nonrecursive implementation to avoid stack overflow, danteng...
-	stack<Rec2> s;
-	s.push(Rec2(cur, prev));
-	while (!s.empty()) {
-		Rec2 t = s.top(); s.pop();
-		if (t.first) {
-			mp[t.cur] = ptr++;
-			if (hson[t.cur] < 0) continue;
-			head[hson[t.cur]] = head[t.cur];
-			t.first = false;
-			s.push(t);
-			vector<int>::iterator it = g[t.cur].begin();
-			for (; it != g[t.cur].end(); ++it) {
-				if ((*it == t.prev) || (*it == hson[t.cur])) continue;
-				head[*it] = *it;
-				s.push(Rec2(*it, t.cur));
-			}
-			s.push(Rec2(hson[t.cur], t.cur));			
-		}		
-	}
-	return;
+    // use nonrecursive implementation to avoid stack overflow, danteng...
+    stack<Rec2> s;
+    s.push(Rec2(cur, prev));
+    while (!s.empty()) {
+        Rec2 t = s.top(); s.pop();
+        if (t.first) {
+            mp[t.cur] = ptr++;
+            if (hson[t.cur] < 0) continue;
+            head[hson[t.cur]] = head[t.cur];
+            t.first = false;
+            s.push(t);
+            vector<int>::iterator it = g[t.cur].begin();
+            for (; it != g[t.cur].end(); ++it) {
+                if ((*it == t.prev) || (*it == hson[t.cur])) continue;
+                head[*it] = *it;
+                s.push(Rec2(*it, t.cur));
+            }
+            s.push(Rec2(hson[t.cur], t.cur));           
+        }       
+    }
+    return;
 
-	/*mp[cur] = ptr++;
-	// a leaf node
-	if (hson[cur] < 0) {		
-	    return;
-	}
-	vector<int>::iterator it = g[cur].begin();
-	// first traverse heavy son to ensure continuation
-	head[hson[cur]] = head[cur];
-	dfs2(hson[cur], cur);	
-	for (; it != g[cur].end(); ++it) {
-		if ((*it == prev) || (*it == hson[cur])) continue;
-		head[*it] = *it;
-		dfs2(*it, cur);
-	}
-	return;*/
+    /*mp[cur] = ptr++;
+    // a leaf node
+    if (hson[cur] < 0) {        
+        return;
+    }
+    vector<int>::iterator it = g[cur].begin();
+    // first traverse heavy son to ensure continuation
+    head[hson[cur]] = head[cur];
+    dfs2(hson[cur], cur);   
+    for (; it != g[cur].end(); ++it) {
+        if ((*it == prev) || (*it == hson[cur])) continue;
+        head[*it] = *it;
+        dfs2(*it, cur);
+    }
+    return;*/
 }
 
 void build_tree(int i, int left, int right) {
@@ -158,15 +158,15 @@ void build_tree(int i, int left, int right) {
 }
 
 void update(int i, int pos, int val) {
-	if (tree[i].l == pos && tree[i].r == pos) {
-		tree[i].mx_val = tree[i].s = val;
-		return;
-	}
-	// assert(pos >= tree[i].l && pos <= tree[i].r);
-	int mid = (tree[i].l + tree[i].r) / 2;
-	if (pos <= mid) update(tree[i].pl, pos, val);			
-	else update(tree[i].pr, pos, val);
-	tree[i].mx_val = max(tree[tree[i].pl].mx_val, tree[tree[i].pr].mx_val);
+    if (tree[i].l == pos && tree[i].r == pos) {
+        tree[i].mx_val = tree[i].s = val;
+        return;
+    }
+    // assert(pos >= tree[i].l && pos <= tree[i].r);
+    int mid = (tree[i].l + tree[i].r) / 2;
+    if (pos <= mid) update(tree[i].pl, pos, val);           
+    else update(tree[i].pr, pos, val);
+    tree[i].mx_val = max(tree[tree[i].pl].mx_val, tree[tree[i].pr].mx_val);
     tree[i].s = tree[tree[i].pl].s + tree[tree[i].pr].s;
     return;
 }
@@ -190,14 +190,14 @@ int query_sum(int i, int left, int right) {
 int main() {
     // freopen("bzoj_1036.in", "r", stdin);
     // freopen("bzoj_1036.out", "w", stdout);
-	scanf("%d", &n);
-	for (int i = 0; i < n - 1; ++i) {
+    scanf("%d", &n);
+    for (int i = 0; i < n - 1; ++i) {
         int x, y;
         scanf("%d%d", &x, &y);
-        g[x].push_back(y); g[y].push_back(x);		
-	}
-	for (int i = 1; i <= n; ++i) scanf("%d", wei + i);
-	memset(son_cnt, 0, sizeof(son_cnt));    
+        g[x].push_back(y); g[y].push_back(x);       
+    }
+    for (int i = 1; i <= n; ++i) scanf("%d", wei + i);
+    memset(son_cnt, 0, sizeof(son_cnt));    
     dfs1(1, 0, 0);
     // need to ensure first node's head was set
     head[1] = 1;    
@@ -210,56 +210,56 @@ int main() {
     int q;
     scanf("%d", &q);
     while (q--) {
-    	string cmd;
+        string cmd;
         char tmp[30];
         int x, y;
         scanf("%s %d %d", tmp, &x, &y);
-        cmd = tmp;    	
-    	if (cmd == "CHANGE") update(1, mp[x], y);
-    	// query maximum value
-    	else if (cmd == "QMAX") {
-    		int res = INT_MIN;
-    		int h1 = head[x]; int h2 = head[y];    		
-    		while (h1 != h2) {    			
-    			if (dep[h1] > dep[h2]) {
-    				// assert(mp[h1] <= mp[x]);
-    				res = max(res, query_mx(1, mp[h1], mp[x]));
-    				x = parent[h1];
-    			}
-    			else {
-    				// assert(mp[h2] <= mp[y]);
-    				res = max(res, query_mx(1, mp[h2], mp[y]));
-    				y = parent[h2];
-    			}
-    			h1 = head[x]; h2 = head[y];
-    		}
-    		// if (mp[x] > [y]) res = max(res, query_mx(1, mp[h1], mp[x]));
-    		res = max(res, query_mx(1, min(mp[x], mp[y]), max(mp[x], mp[y])));
-    		printf("%d\n", res);
-    	}
-    	// query sum on a specific path
-    	else if (cmd == "QSUM") {
-    	    int res = 0;
-    		int h1 = head[x]; int h2 = head[y];
-    		while (h1 != h2) {
-    			if (dep[h1] > dep[h2]) {
-    				// assert(mp[h1] <= mp[x]);
-    				res += query_sum(1, mp[h1], mp[x]);
-    				x = parent[h1];
-    			}
-    			else {
-    				// assert(mp[h2] <= mp[y]);
-    				res += query_sum(1, mp[h2], mp[y]);
-    				y = parent[h2];
-    			}
-    			h1 = head[x]; h2 = head[y];
-    		}    		
-    		// if (dep[x] > dep[y]) res += query_mx(1, mp[h1], mp[x]);
-    		res += query_sum(1, min(mp[x], mp[y]), max(mp[x], mp[y]));
-    		printf("%d\n", res);	
-    	}
-    	// impossible to reach here
-    	// else assert(0 == 1);
+        cmd = tmp;      
+        if (cmd == "CHANGE") update(1, mp[x], y);
+        // query maximum value
+        else if (cmd == "QMAX") {
+            int res = INT_MIN;
+            int h1 = head[x]; int h2 = head[y];         
+            while (h1 != h2) {              
+                if (dep[h1] > dep[h2]) {
+                    // assert(mp[h1] <= mp[x]);
+                    res = max(res, query_mx(1, mp[h1], mp[x]));
+                    x = parent[h1];
+                }
+                else {
+                    // assert(mp[h2] <= mp[y]);
+                    res = max(res, query_mx(1, mp[h2], mp[y]));
+                    y = parent[h2];
+                }
+                h1 = head[x]; h2 = head[y];
+            }
+            // if (mp[x] > [y]) res = max(res, query_mx(1, mp[h1], mp[x]));
+            res = max(res, query_mx(1, min(mp[x], mp[y]), max(mp[x], mp[y])));
+            printf("%d\n", res);
+        }
+        // query sum on a specific path
+        else if (cmd == "QSUM") {
+            int res = 0;
+            int h1 = head[x]; int h2 = head[y];
+            while (h1 != h2) {
+                if (dep[h1] > dep[h2]) {
+                    // assert(mp[h1] <= mp[x]);
+                    res += query_sum(1, mp[h1], mp[x]);
+                    x = parent[h1];
+                }
+                else {
+                    // assert(mp[h2] <= mp[y]);
+                    res += query_sum(1, mp[h2], mp[y]);
+                    y = parent[h2];
+                }
+                h1 = head[x]; h2 = head[y];
+            }           
+            // if (dep[x] > dep[y]) res += query_mx(1, mp[h1], mp[x]);
+            res += query_sum(1, min(mp[x], mp[y]), max(mp[x], mp[y]));
+            printf("%d\n", res);    
+        }
+        // impossible to reach here
+        // else assert(0 == 1);
     }
-	return 0;
+    return 0;
 }

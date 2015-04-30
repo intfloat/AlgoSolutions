@@ -84,5 +84,5 @@ int main(){
         cout<<endl;
         cout<<"Number of disjoint sets: "<<numberOfSet<<endl;
     }
-	return 0;
+    return 0;
 }

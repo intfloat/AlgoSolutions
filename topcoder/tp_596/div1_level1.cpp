@@ -21,7 +21,7 @@ using namespace std;
 
 class IncrementAndDoubling {
 public:
-	int getMin(vector <int>);
+    int getMin(vector <int>);
 };
 
 int IncrementAndDoubling::getMin(vector <int> desiredArray) {

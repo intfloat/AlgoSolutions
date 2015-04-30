@@ -21,27 +21,27 @@ using namespace std;
 
 class BlackAndWhiteSolitaire {
 public:
-	int minimumTurns(string);
+    int minimumTurns(string);
 };
 
 int BlackAndWhiteSolitaire::minimumTurns(string cardFront) {
-	int len = cardFront.size();
-	int res = 0;
-	for(int i=0; i<len; i++){
-		if(i%2==0 && cardFront[i]!='B')
-			res++;
-		if(i%2==1 && cardFront[i]!='W')
-			res++;
-	}
-	int tmp = res;
-	res = 0;
-	for(int i=0; i<len; i++){
-		if(i%2==1 && cardFront[i]!='B')
-			res++;
-		if(i%2==0 && cardFront[i]!='W')
-			res++;
-	}
-	return min(res, tmp);
+    int len = cardFront.size();
+    int res = 0;
+    for(int i=0; i<len; i++){
+        if(i%2==0 && cardFront[i]!='B')
+            res++;
+        if(i%2==1 && cardFront[i]!='W')
+            res++;
+    }
+    int tmp = res;
+    res = 0;
+    for(int i=0; i<len; i++){
+        if(i%2==1 && cardFront[i]!='B')
+            res++;
+        if(i%2==0 && cardFront[i]!='W')
+            res++;
+    }
+    return min(res, tmp);
 }
 
 <%:testing-code%>

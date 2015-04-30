@@ -21,17 +21,17 @@ using namespace std;
 
 class SkiResortsEasy {
 public:
-	int minCost(vector <int>);
+    int minCost(vector <int>);
 };
 
 int SkiResortsEasy::minCost(vector <int> altitude) {
-	int len = altitude.size();
-	int res = 0;
-	for(int i=1; i<len; i++){
-		res += max(altitude[i]-altitude[i-1], 0);
-		altitude[i] = min(altitude[i], altitude[i-1]);
-	}
-	return res;
+    int len = altitude.size();
+    int res = 0;
+    for(int i=1; i<len; i++){
+        res += max(altitude[i]-altitude[i-1], 0);
+        altitude[i] = min(altitude[i], altitude[i-1]);
+    }
+    return res;
 }
 
 

@@ -23,24 +23,24 @@
 using namespace std;
 
 // Most frequent number should  not exceed half of array size
-int main(){		
-	int arr[1005], n;
-	bool okay = true;
-	memset(arr, 0, sizeof(arr));
-	cin>>n;
-	for(int i=0; i<n; i++){
-		int tmp;
-		cin>>tmp;
-		arr[tmp]++;
-	}
-	for(int i=0; i<1005; i++){
-		if(arr[i] > (n+1)/2)
-			okay = false;
-	}
-	if(okay == false)	
-		cout<<"NO"<<endl;
-	else
-		cout<<"YES"<<endl;	
-	//system("pause");
-	return 0;
+int main(){     
+    int arr[1005], n;
+    bool okay = true;
+    memset(arr, 0, sizeof(arr));
+    cin>>n;
+    for(int i=0; i<n; i++){
+        int tmp;
+        cin>>tmp;
+        arr[tmp]++;
+    }
+    for(int i=0; i<1005; i++){
+        if(arr[i] > (n+1)/2)
+            okay = false;
+    }
+    if(okay == false)   
+        cout<<"NO"<<endl;
+    else
+        cout<<"YES"<<endl;  
+    //system("pause");
+    return 0;
 }

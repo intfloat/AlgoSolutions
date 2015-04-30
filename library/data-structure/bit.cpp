@@ -50,7 +50,7 @@ long long query(int pos){
     return sum;
 }
 
-int main(){	
+int main(){ 
     cin>>n;
-	return 0;
+    return 0;
 }

@@ -70,5 +70,5 @@ int main(){
     }
     cout<<number<<endl;
     cout<<res<<endl;
-	return 0;
+    return 0;
 }

@@ -73,41 +73,41 @@ MATRIX matrix_mi(MATRIX ma,int p){
 MATRIX mat;
 string s;
 MATRIX calc() {
-	MATRIX r;
-	for(int i=0; i<=n; i++)
-		for(int j=0; j<=n; j++)
-			r.matrix[i][j] = 0;
+    MATRIX r;
+    for(int i=0; i<=n; i++)
+        for(int j=0; j<=n; j++)
+            r.matrix[i][j] = 0;
 
-	for(int i=0; i<=n; i++) {
-		string cur = s.substr(0, i);
-		for(char c='0'; c<='9'; c++) {
-			string t1 = cur + c;
-			bool check = false;
-			for(int j=t1.size(); j>0; j--) {
-				if(s.substr(0, j)==t1.substr(t1.size()-j, j)) {
-					r.matrix[j][i]++;
-					check = true;
-					break;
-				}
-			}
-			if(!check) r.matrix[0][i]++;
-		}
-	}
-	return r;
+    for(int i=0; i<=n; i++) {
+        string cur = s.substr(0, i);
+        for(char c='0'; c<='9'; c++) {
+            string t1 = cur + c;
+            bool check = false;
+            for(int j=t1.size(); j>0; j--) {
+                if(s.substr(0, j)==t1.substr(t1.size()-j, j)) {
+                    r.matrix[j][i]++;
+                    check = true;
+                    break;
+                }
+            }
+            if(!check) r.matrix[0][i]++;
+        }
+    }
+    return r;
 }
 
 int main(){
-	int total;
-	cin>>total>>n>>MOD;	
-	cin>>s;
-	assert(s.size() == n);
-	mat = calc();
-	mat = matrix_mi(mat, total);
-	long long res = 0;
-	// the sum of first column is final result
-	for(int i=0; i<=n; i++) {
-		res = (res + mat.matrix[i][0]) % MOD;
-	}
-	cout<<res<<endl;
-	return 0;
+    int total;
+    cin>>total>>n>>MOD; 
+    cin>>s;
+    assert(s.size() == n);
+    mat = calc();
+    mat = matrix_mi(mat, total);
+    long long res = 0;
+    // the sum of first column is final result
+    for(int i=0; i<=n; i++) {
+        res = (res + mat.matrix[i][0]) % MOD;
+    }
+    cout<<res<<endl;
+    return 0;
 }

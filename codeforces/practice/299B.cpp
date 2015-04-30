@@ -22,27 +22,27 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){		
-	int n, k;
-	string road;
-	cin>>n>>k;
-	cin>>road;
-	int cur = 0;
-	bool okay = true;
-	for(int i=0; i<n; i++){
-		if(road[i] == '#')
-			cur++;
-		else
-			cur = 0;
-		if(cur >= k){
-			okay = false;
-			break;
-		}
-	}
-	if(okay == true)
-		cout<<"YES"<<endl;
-	else
-		cout<<"NO"<<endl;
+int main(){     
+    int n, k;
+    string road;
+    cin>>n>>k;
+    cin>>road;
+    int cur = 0;
+    bool okay = true;
+    for(int i=0; i<n; i++){
+        if(road[i] == '#')
+            cur++;
+        else
+            cur = 0;
+        if(cur >= k){
+            okay = false;
+            break;
+        }
+    }
+    if(okay == true)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
 
-	return 0;
+    return 0;
 }

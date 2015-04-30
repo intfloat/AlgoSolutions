@@ -21,25 +21,25 @@ using namespace std;
 
 class HouseBuilding {
 public:
-	int getMinimum(vector <string>);
+    int getMinimum(vector <string>);
 };
 
 int HouseBuilding::getMinimum(vector <string> area) {
-	int row = area.size();
-	int col = area[0].size();
-	int res = 100000;
-	for(int i=0; i<=9; i++){
-		int counter=0;
-		for(int j=0; j<row; j++)
-		for(int k=0; k<col; k++){
-			if(area[j][k] > '0'+i)
-				counter+=area[j][k]-'0'-i-1;
-			else if(area[j][k] < '0'+i)
-				counter+='0'+i-(area[j][k]);
-		}
-		res = min(res, counter);
-	}
-	return res;
+    int row = area.size();
+    int col = area[0].size();
+    int res = 100000;
+    for(int i=0; i<=9; i++){
+        int counter=0;
+        for(int j=0; j<row; j++)
+        for(int k=0; k<col; k++){
+            if(area[j][k] > '0'+i)
+                counter+=area[j][k]-'0'-i-1;
+            else if(area[j][k] < '0'+i)
+                counter+='0'+i-(area[j][k]);
+        }
+        res = min(res, counter);
+    }
+    return res;
 }
 
 //<%:testing-code%>

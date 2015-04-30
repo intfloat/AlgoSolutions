@@ -23,31 +23,31 @@ using namespace std;
 
 class TheNumberGameDivTwo {
 public:
-	string find(int);
+    string find(int);
 };
 
 string TheNumberGameDivTwo::find(int n) {
-	int res[1005];
-	res[1] = Brus;
-	for(int i=2; i<=n; i++){
-		res[i] = Brus;
-		for(int j=2; j*j<=i; j++){
-			if(i%j == 0){
-				if(res[i-j]==Brus){
-					res[i] = John;
-					break;
-				}
-				if(res[i-i/j]==Brus){
-					res[i] = John;
-					break;
-				}
-			}
-		}// end inner for loop
-	}
-	if(res[n]==John)
-		return "John";
-	else
-		return "Brus";
+    int res[1005];
+    res[1] = Brus;
+    for(int i=2; i<=n; i++){
+        res[i] = Brus;
+        for(int j=2; j*j<=i; j++){
+            if(i%j == 0){
+                if(res[i-j]==Brus){
+                    res[i] = John;
+                    break;
+                }
+                if(res[i-i/j]==Brus){
+                    res[i] = John;
+                    break;
+                }
+            }
+        }// end inner for loop
+    }
+    if(res[n]==John)
+        return "John";
+    else
+        return "Brus";
 }
 
 <%:testing-code%>

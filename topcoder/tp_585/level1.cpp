@@ -21,21 +21,21 @@ using namespace std;
 
 class TrafficCongestion {
 public:
-	int theMinCars(int);
+    int theMinCars(int);
 };
 
 int TrafficCongestion::theMinCars(int treeHeight) {
-	const long long MOD = 1000000007;
-	if(treeHeight==0 || treeHeight==1)
-		return 1;
-	long long res = 0;
-	long long pre = 2, prepre=1;
-	for(int i=2; i<=treeHeight; i++){
-		res = (1+2*prepre)%MOD;
-		prepre = pre;
-		pre = (res+pre)%MOD;
-	}
-	return res;
+    const long long MOD = 1000000007;
+    if(treeHeight==0 || treeHeight==1)
+        return 1;
+    long long res = 0;
+    long long pre = 2, prepre=1;
+    for(int i=2; i<=treeHeight; i++){
+        res = (1+2*prepre)%MOD;
+        prepre = pre;
+        pre = (res+pre)%MOD;
+    }
+    return res;
 }
 
 <%:testing-code%>

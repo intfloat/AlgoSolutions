@@ -23,12 +23,12 @@
 using namespace std;
 
 int main() {
-	int t;
-	scanf("%d", &t);
-	while(t--) {
-		int n;
-		scanf("%d", &n);
-		printf("%d\n", __builtin_popcount(n));
-	}
-	return 0;
+    int t;
+    scanf("%d", &t);
+    while(t--) {
+        int n;
+        scanf("%d", &n);
+        printf("%d\n", __builtin_popcount(n));
+    }
+    return 0;
 }

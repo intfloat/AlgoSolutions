@@ -22,7 +22,7 @@
 #include <stdlib.h>
 using namespace std;
 
-int main(){	
+int main(){ 
     int t;
     cin>>t;
     vector<int> v[40];
@@ -60,5 +60,5 @@ int main(){
         else
             cout<<"Case #"<<i<<": No"<<endl;
     }
-	return 0;
+    return 0;
 }

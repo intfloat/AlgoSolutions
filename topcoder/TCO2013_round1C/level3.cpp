@@ -21,11 +21,11 @@ using namespace std;
 
 class TheKnights {
 public:
-	double find(int, int, int);
+    double find(int, int, int);
 };
 
 double TheKnights::find(int n, int a, int b) {
-	
+    
 }
 
 <%:testing-code%>

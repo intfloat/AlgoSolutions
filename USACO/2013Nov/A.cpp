@@ -113,5 +113,5 @@ int main(){
     cout<<res[0];
     for(int i=1; i<total; i++) cout<<" "<<res[i];
     cout<<endl;
-	return 0;
+    return 0;
 }

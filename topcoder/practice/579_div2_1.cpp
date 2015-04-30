@@ -21,23 +21,23 @@ using namespace std;
 
 class PrimalUnlicensedCreatures {
 public:
-	int maxWins(int, vector <int>);
+    int maxWins(int, vector <int>);
 };
 
 int PrimalUnlicensedCreatures::maxWins(int initialLevel, vector <int> grezPower) {
-	int res = 0;
-	int len = grezPower.size();
-	sort(grezPower.begin(), grezPower.end());
-	int power = initialLevel;
-	for(int i=0; i<len; i++){
-		if(power > grezPower[i]){
-			res++;
-			power += grezPower[i]/2;
-		}
-		else
-			break;
-	}
-	return res;
+    int res = 0;
+    int len = grezPower.size();
+    sort(grezPower.begin(), grezPower.end());
+    int power = initialLevel;
+    for(int i=0; i<len; i++){
+        if(power > grezPower[i]){
+            res++;
+            power += grezPower[i]/2;
+        }
+        else
+            break;
+    }
+    return res;
 }
 
 <%:testing-code%>

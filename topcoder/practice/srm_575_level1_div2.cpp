@@ -21,24 +21,24 @@ using namespace std;
 
 class TheSwapsDivTwo {
 public:
-	int find(vector <int>);
+    int find(vector <int>);
 };
 
 int TheSwapsDivTwo::find(vector <int> sequence) {
-	int len = sequence.size();
-	int counter = 0;
-	bool dup = false;
-	for(int i=0; i<len; i++)
-	for(int j=i+1; j<len; j++){
-		if(sequence[i]!=sequence[j])
-			counter++;
-		else
-			dup = true;
-	}
-	if(dup == false)
-		return counter;
-	else
-		return counter+1;
+    int len = sequence.size();
+    int counter = 0;
+    bool dup = false;
+    for(int i=0; i<len; i++)
+    for(int j=i+1; j<len; j++){
+        if(sequence[i]!=sequence[j])
+            counter++;
+        else
+            dup = true;
+    }
+    if(dup == false)
+        return counter;
+    else
+        return counter+1;
 }
 
 <%:testing-code%>

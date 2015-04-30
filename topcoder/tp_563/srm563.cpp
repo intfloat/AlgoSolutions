@@ -5,9 +5,9 @@
 string isPossible(string S, string T)
 {
     for (int i=0; i < S.length(); i++) {
-	//substr(begin,length)
-	//if no length parameter, you will get a substr 
-	//to the end
+    //substr(begin,length)
+    //if no length parameter, you will get a substr 
+    //to the end
         string V = S.substr(0,i) + S + S.substr(i);
         if (V==T) {
             return "Yes";

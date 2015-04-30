@@ -83,3 +83,5 @@
 |[Tourist's Notes](http://codeforces.com/problemset/problem/538/C) | 水题不想多说。。 | 贪心 |
 |[Weird Chess](http://codeforces.com/problemset/problem/538/D) | 看上去很难，其实就是根据约束条件不断删除候选解 | 构造算法 |
 |[Demiurges Play Again](http://codeforces.com/problemset/problem/538/E) | 博弈论相关，当轮到对手时，要选择所有可能的路径最优解中的最差解；当轮到自己时，选择所有可能路径中最优解的最优解，大概就是这样，比较绕。。 | 博弈论 |
+|[A Heap of Heaps](http://codeforces.com/contest/538/problem/F) | 枚举显然超时，关键点在于一个节点的父节点只可能有平方根量级个，区间和维护的时候不要挨个更新，只更新两端，最后累加。 | 数学 数据结构 |
+|[Remmarguts' Date](http://poj.org/problem?id=2449) | 第一次写K短路，弱菜。。和最短路的A Star算法类似，只是把第K次出优先队列的值作为结果 | 图论； A Star |

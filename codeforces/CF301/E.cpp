@@ -55,10 +55,8 @@ int main() {
     }
     sort(arr.begin(), arr.end());    
     for (it = m.begin(); it != m.end(); ++it) {
-        // if (it->first <= it->second) continue;
         int left = get(it->first);
         int right = get(it->second);
-        // cout << it->first << " " << left << " " << it->second << " " << right << endl;
         res += abs(left - right);
     }
     merge_sort(0, val.size() - 1);

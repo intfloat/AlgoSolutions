@@ -90,3 +90,4 @@
 |[Ice Cave](http://codeforces.com/problemset/problem/540/C) | 很不错的小题目，我智商太低。。关键是从一个完整点出发，只要相邻的有一个完整点，就可以回到原点，边界情况比较多 | 广度搜索；考智商 |
 |[Bad Luck Island](http://codeforces.com/problemset/problem/540/D) | 感觉跟AI里面的markov decision process很像啊。。根据前一步的概率分布去计算下一步的概率分布直到稳定状态 | 概率；动态规划 |
 |[Infinite Inversions](http://codeforces.com/problemset/problem/540/E) | 归并排序可以用来高效计算逆序数，但是这里序列无限长，所以只能分别计算更改部分的逆序数，和未更改的逆序数，最后加起来 | 分治法 |
+|[Ultra-QuickSort](http://poj.org/problem?id=2299) | 经典的计算逆序数，不过刚知道原来还可以用树状数组搞，离散化的基本思想 | 树状数组 |

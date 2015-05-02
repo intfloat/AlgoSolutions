@@ -5,17 +5,12 @@ using namespace std;
 typedef long long ll;
 void solve() {
     string s;
-    cin >> s;
-    // cout << s << " ";
+    cin >> s;    
     int len = s.size();
     if (len == 1) {
         cout << s[0] - '0' << endl;
         return;
-    }
-    if (len == 2 && s[0] == '1') {
-        cout << s << endl;
-        return;
-    }
+    }    
     ll res = 0ll;
     for (int i = 1; i <= len - 1; ++i) {
         ll start = 1ll;
@@ -28,12 +23,7 @@ void solve() {
         if (i % 2 == 1) cur += start * 9;
         res += cur;
         ++res;
-    }
-    if (len == 3 && s[0] == '1') {
-        res += (s[1] - '0') * 10 + (s[2] - '0');
-        cout << res << endl;
-        return;
-    }
+    }    
     int pos = len - 1;
     while (s[pos] == '0') --pos;
     if (pos == 0 && s[0] == '1') {
@@ -48,8 +38,7 @@ void solve() {
     }
     int sm = 0;
     for (int i = 0; i < len / 2; ++i) sm += s[i] - '0';
-    if (sm == 1) --res;
-    // cout << "DEBUG: " << res << endl;
+    if (sm == 1) --res;    
     ll val = 0ll;
     ll start = 1ll;
     for (int i = 0; i < len / 2; ++i) {

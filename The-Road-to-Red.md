@@ -94,4 +94,4 @@
 |[Mushroom Monster](https://code.google.com/codejam/contest/4224486/dashboard#s=p0) | 题意不是很清楚，找极端临界情况就行了 | 贪心 |
 |[Haircut](https://code.google.com/codejam/contest/4224486/dashboard#s=p1) | 明显的二分，但比赛的时候我死活没想出来对什么进行二分。。。二分找到最小的已经有N个人已经完成或正在理发的时刻，智商是硬伤。。 | 二分 |
 |[Logging](https://code.google.com/codejam/contest/4224486/dashboard#s=p2) | 神题。。。利用了凸包的性质：肯定有经过这个点的一条直线，使得其他所有点都在这条直线一侧。可能的直线数目无限多，但可以离散化，扫描有限条，对于每条直线，利用类似于旋转卡壳的思想，可以线性时间完成一轮扫描 | 几何 |
-|[Counter Culture](https://code.google.com/codejam/contest/8224486/dashboard#s=p0) | 我是彻底给google跪烂了。。。考智商找规律啊。。观察到位数少的无论怎么翻转都不能有更多位，因此必须先变到9999...999这种，左半部分可以通过右半部分逐次加1并翻转得到（但左边只有一个打头0是特殊情况！），而且这就是最优方案；另外还得处理右半部分全零的特殊情况。。。 | 无他，赤裸裸考智商 |
+|[Counter Culture](https://code.google.com/codejam/contest/8224486/dashboard#s=p0) | 我是彻底给google跪烂了。。。考智商找规律啊。。观察到位数少的无论怎么翻转都不能有更多位，因此必须先变到9999...999这种，左半部分可以通过右半部分逐次加1并翻转得到（但左边只有一个打头1是特殊情况！），而且这就是最优方案；另外还得处理右半部分全零的特殊情况。。。 | 无他，赤裸裸考智商 |

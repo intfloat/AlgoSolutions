@@ -99,3 +99,5 @@
 |[Movie](http://acm.hdu.edu.cn/showproblem.php?pid=5214) | 只要求找出三个区间来，因此线性扫描，找到结束时间最早和开始时间最晚的区间，再扫描一遍看是否有中间区间即可 | 贪心 |
 |[Game](http://acm.hdu.edu.cn/showproblem.php?pid=5218) | 像是博弈论跟约瑟夫环问题，想了想是动态规划，什么鬼。。。按照长度递增顺序进行迭代就行了 | 动态规划 |
 |[Exploration](http://acm.hdu.edu.cn/showproblem.php?pid=5222) | 很好的一道题啊。。。先用并查集考虑无向边，再利用拓扑排序考虑有向边 | 并查集；拓扑排序 |
+|[Noisy Neighbors](https://code.google.com/codejam/contest/8224486/dashboard#s=p1) | 智商余额不足。。国际象棋那种交错排列是比较优的方案，如果有很多非空元素，则需要从4到3到2进行枚举，针对行列数的奇偶性来计算，小中取小，边界情况很多。。。 | 拼智商找规律😢 |
+|[Hiking Deer](https://code.google.com/codejam/contest/8224486/dashboard#s=p2) | 神啊。。考虑目标到达终点的时间与其他人所转的圈数，只有第一圈和第二圈之间会减一，其他时候都是加一，因此枚举时间点。对于大数据，注意到H是最优解的上界，因此用优先队列只考察前2H个事件。 | 拼智商 |

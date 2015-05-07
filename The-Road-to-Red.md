@@ -101,3 +101,4 @@
 |[Exploration](http://acm.hdu.edu.cn/showproblem.php?pid=5222) | 很好的一道题啊。。。先用并查集考虑无向边，再利用拓扑排序考虑有向边 | 并查集；拓扑排序 |
 |[Noisy Neighbors](https://code.google.com/codejam/contest/8224486/dashboard#s=p1) | 智商余额不足。。国际象棋那种交错排列是比较优的方案，如果有很多非空元素，则需要从4到3到2进行枚举，针对行列数的奇偶性来计算，小中取小，边界情况很多。。。 | 拼智商找规律😢 |
 |[Hiking Deer](https://code.google.com/codejam/contest/8224486/dashboard#s=p2) | 神啊。。考虑目标到达终点的时间与其他人所转的圈数，只有第一圈和第二圈之间会减一，其他时候都是加一，因此枚举时间点。对于大数据，注意到H是最优解的上界，因此用优先队列只考察前2H个事件。 | 拼智商 |
+|[Segment](http://acm.hdu.edu.cn/showproblem.php?pid=5216) | 灰常具有迷惑性。。排序之后不满足严格单调则无解，更关键在于：每种排列的最优值都是一样的，所以根本不需要求期望值。。 | 概率；排列 |

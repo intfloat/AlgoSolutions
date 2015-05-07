@@ -95,3 +95,7 @@
 |[Haircut](https://code.google.com/codejam/contest/4224486/dashboard#s=p1) | 明显的二分，但比赛的时候我死活没想出来对什么进行二分。。。二分找到最小的已经有N个人已经完成或正在理发的时刻，智商是硬伤。。 | 二分 |
 |[Logging](https://code.google.com/codejam/contest/4224486/dashboard#s=p2) | 神题。。。利用了凸包的性质：肯定有经过这个点的一条直线，使得其他所有点都在这条直线一侧。可能的直线数目无限多，但可以离散化，扫描有限条，对于每条直线，利用类似于旋转卡壳的思想，可以线性时间完成一轮扫描 | 几何 |
 |[Counter Culture](https://code.google.com/codejam/contest/8224486/dashboard#s=p0) | 我是彻底给google跪烂了。。。考智商找规律啊。。观察到位数少的无论怎么翻转都不能有更多位，因此必须先变到9999...999这种，左半部分可以通过右半部分逐次加1并翻转得到（但左边只有一个打头1是特殊情况！），而且这就是最优方案；另外还得处理右半部分全零的特殊情况。。。 | 无他，赤裸裸考智商 |
+|[GCD](http://acm.hdu.edu.cn/showproblem.php?pid=5223) | 从全1开始构造，从大到小扫描公约数，如果现有元素的公约数已经超过，则无解，否则把整个区间变成最小公倍数 | 贪心构造； 数学 |
+|[Movie](http://acm.hdu.edu.cn/showproblem.php?pid=5214) | 只要求找出三个区间来，因此线性扫描，找到结束时间最早和开始时间最晚的区间，再扫描一遍看是否有中间区间即可 | 贪心 |
+|[Game](http://acm.hdu.edu.cn/showproblem.php?pid=5218) | 像是博弈论跟约瑟夫环问题，想了想是动态规划，什么鬼。。。按照长度递增顺序进行迭代就行了 | 动态规划 |
+|[Exploration](http://acm.hdu.edu.cn/showproblem.php?pid=5222) | 很好的一道题啊。。。先用并查集考虑无向边，再利用拓扑排序考虑有向边 | 并查集；拓扑排序 |

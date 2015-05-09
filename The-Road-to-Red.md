@@ -109,3 +109,5 @@
 |[Remembering Strings](http://codeforces.com/contest/543/problem/C) | 数位dp，但是状态转移方程很不好想，到现在也有点糊涂。。 | 动态规划 |
 |[Road Improvement](http://codeforces.com/contest/543/problem/D) | 折腾了我好几个小时的神题啊。。本来天真以为乘法逆元加树的动态规划随便搞搞就行，结果还有整除性导致逆元不存在的情况。。。只好对因子做分解，从父节点一层层向子节点传递 | 动态规划；树；组合计数 |
 |[运输货物](http://hihocoder.com/contest/msbop2015round3/problem/1) | 从叶结点向父节点一层层传递，总是选择最早的可能时间，于是形象讲就是一大堆区间不断上浮。。复杂度具体也不好说，反正AC了。。 | 树；贪心 |
+|[Tom and Paper](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=580&pid=1001) | 枚举面积的因子就行了 | 数学 |
+|[Tom and Permutation](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=580&pid=1002) | 对于字典序，只要有个前缀构成单调性，后面的就可以随便排列了，根据这个性质构造状态转移方程 | 动态规划 |

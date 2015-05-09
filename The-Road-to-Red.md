@@ -107,4 +107,5 @@
 |[Sea and Islands](http://codeforces.com/problemset/problem/544/B) | gcj题目的超级简化版。。按照国际象棋那种方式放置就好了 | 贪心构造 |
 |[Destroying Roads](http://codeforces.com/problemset/problem/543/B) | 其实不难啊，比赛的时候居然看错题意了摔！删掉最多边显然要保留最短路，再考虑两条路径可能重合的情形，数据规模不大，枚举重合的起点和终点即可。 | 最短路；图论 |
 |[Remembering Strings](http://codeforces.com/contest/543/problem/C) | 数位dp，但是状态转移方程很不好想，到现在也有点糊涂。。 | 动态规划 |
-|[Road Imrpovement](http://codeforces.com/contest/543/problem/D) | 折腾了我好几个小时的神题啊。。本来天真以为乘法逆元加树的动态规划随便搞搞就行，结果还有整除性导致逆元不存在的情况。。。只好对因子做分解，从父节点一层层像子节点传递 | 动态规划；树；组合计数 |
+|[Road Improvement](http://codeforces.com/contest/543/problem/D) | 折腾了我好几个小时的神题啊。。本来天真以为乘法逆元加树的动态规划随便搞搞就行，结果还有整除性导致逆元不存在的情况。。。只好对因子做分解，从父节点一层层向子节点传递 | 动态规划；树；组合计数 |
+|[运输货物](http://hihocoder.com/contest/msbop2015round3/problem/1) | 从叶结点向父节点一层层传递，总是选择最早的可能时间，于是形象讲就是一大堆区间不断上浮。。复杂度具体也不好说，反正AC了。。 | 树；贪心 |

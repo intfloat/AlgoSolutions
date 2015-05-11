@@ -111,3 +111,6 @@
 |[运输货物](http://hihocoder.com/contest/msbop2015round3/problem/1) | 从叶结点向父节点一层层传递，总是选择最早的可能时间，于是形象讲就是一大堆区间不断上浮。。复杂度具体也不好说，反正AC了。。 | 树；贪心 |
 |[Tom and Paper](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=580&pid=1001) | 枚举面积的因子就行了 | 数学 |
 |[Tom and Permutation](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=580&pid=1002) | 对于字典序，只要有个前缀构成单调性，后面的就可以随便排列了，根据这个性质构造状态转移方程 | 动态规划 |
+|[Less Money, More Problems](https://code.google.com/codejam/contest/4244486/dashboard#s=p2) | 越发对自己的智商表示怀疑了。。。已有面值构成1到x之间的所有数值之后，添加x+1是最优结果，更小的只会缩短延长的区间，非常简洁的解答 | 贪心 |
+|[Brattleship](https://code.google.com/codejam/contest/4244486/dashboard#s=p0) | 考虑找到目标的最坏情况就行 | 贪心 |
+|[Typewriter Monkey](https://code.google.com/codejam/contest/4244486/dashboard#s=p1) | 万万没想到。。利用期望值的独立性质可以大大简化计算过程，cf上也有动态规划的解法 | 概率；动态规划 |

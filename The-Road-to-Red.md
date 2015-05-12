@@ -114,3 +114,4 @@
 |[Less Money, More Problems](https://code.google.com/codejam/contest/4244486/dashboard#s=p2) | 越发对自己的智商表示怀疑了。。。已有面值构成1到x之间的所有数值之后，添加x+1是最优结果，更小的只会缩短延长的区间，非常简洁的解答 | 贪心 |
 |[Brattleship](https://code.google.com/codejam/contest/4244486/dashboard#s=p0) | 考虑找到目标的最坏情况就行 | 贪心 |
 |[Typewriter Monkey](https://code.google.com/codejam/contest/4244486/dashboard#s=p1) | 万万没想到。。利用期望值的独立性质可以大大简化计算过程，cf上也有动态规划的解法 | 概率；动态规划 |
+|[迎春舞会之三人组舞](https://vijos.org/p/1061) | 突然发现了这道两年之前没有AC的题目。。。按照位置进行状态转移，每个人只可能与最邻近的结合在一起，同时还要保证有足够个数的高个子 | 动态规划 |

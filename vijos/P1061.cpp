@@ -1,55 +1,25 @@
-#include <vector>
-#include <list>
-#include <limits.h>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <algorithm>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <sstream>
 #include <iostream>
-#include <iomanip>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <string.h>
-#include <stdlib.h>
+#include <vector>
+#include <algorithm>
+#define FOR(i, n) for (int i = 0; i < n; ++i)
 using namespace std;
 
-// Runtime Error T_T
+typedef long long ll;
+const ll INF = static_cast<ll>(1e15);
 int main(){ 
-    long long dp[5001][1001];
-    long long arr[5005];
     int n, m;
-    scanf("%d%d", &m, &n);
-    for(int i=n-1; i>=0; i--)
-        cin>>arr[i];
-    for(int i=0; i<n; i++)
-    for(int j=0; j<=m; j++)
-        dp[i][j] = 999999999;
-    for(int i=0; i<n; i++)
-        dp[i][0] = 0;
-        
-    for(int i=0; i<n; i++)
-    for(int j=1; j<=i; j++){
-        if((3*j) > (i+1)){
-            break;
-        }
-        long long tmp1 = dp[i-1][j];
-        if((i+1-2*j) >= j)
-            dp[i][j] = min(tmp1, 
-                dp[i-2][j-1]+(arr[i]-arr[i-1])*(arr[i]-arr[i-1]));
-        else
-            dp[i][j] = tmp1;
+    cin >> m >> n;
+    vector<ll> h(n);
+    FOR(i, n) cin >> h[i];
+    reverse(h.begin(), h.end());
+    vector<vector<ll> > dp(n + 5, vector<ll>(m + 5, INF));
+    dp[0][0] = 0;
+    FOR(i, n + 1) FOR(j, m + 1) {
+        if (dp[i][j] >= INF) continue;
+        dp[i + 1][j] = min(dp[i + 1][j], dp[i][j]);
+        if (3 * (j + 1) <= i + 2) 
+            dp[i + 2][j + 1] = min(dp[i + 2][j + 1], dp[i][j] + (h[i] - h[i + 1]) * (h[i] - h[i + 1]));
     }
-    
-    cout<<dp[n-1][m]<<endl;
-    system("pause");
+    cout << dp[n][m] << endl;
     return 0;
 }

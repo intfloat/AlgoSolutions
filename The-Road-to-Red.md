@@ -117,3 +117,4 @@
 |[迎春舞会之三人组舞](https://vijos.org/p/1061) | 突然发现了这道两年之前没有AC的题目。。。按照位置进行状态转移，每个人只可能与最邻近的结合在一起，同时还要保证有足够个数的高个子 | 动态规划 |
 |[Xiao Ming's Hope](http://acm.hdu.edu.cn/showproblem.php?pid=4349) | 很神奇的一道题目，一行代码得答案。。。求对2取模结果为1的组合数的个数，低位为1则有两种选择，低位为0则只有一种选择，因此只需统计1的数目 | 组合计数 |
 |[Saving Beans](http://acm.hdu.edu.cn/showproblem.php?pid=3037) | 计算从n+m中选择m个的组合数，关键是要在模域中计算，于是就有了lucas定理，我孤陋寡闻，第一次听说。。。 | 组合计数 |
+|[Tom and Matrix](http://acm.hdu.edu.cn/showproblem.php?pid=5226) | 组合数学太渣。。。每一列的和原来是有解析表达式的。。然后把每一列用lucas定理算出来相加就可以了 | 组合计数 |

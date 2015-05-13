@@ -118,3 +118,6 @@
 |[Xiao Ming's Hope](http://acm.hdu.edu.cn/showproblem.php?pid=4349) | 很神奇的一道题目，一行代码得答案。。。求对2取模结果为1的组合数的个数，低位为1则有两种选择，低位为0则只有一种选择，因此只需统计1的数目 | 组合计数 |
 |[Saving Beans](http://acm.hdu.edu.cn/showproblem.php?pid=3037) | 计算从n+m中选择m个的组合数，关键是要在模域中计算，于是就有了lucas定理，我孤陋寡闻，第一次听说。。。 | 组合计数 |
 |[Tom and Matrix](http://acm.hdu.edu.cn/showproblem.php?pid=5226) | 组合数学太渣。。。每一列的和原来是有解析表达式的。。然后把每一列用lucas定理算出来相加就可以了 | 组合计数 |
+|[Googol](http://usaco.org/index.php?page=viewproblem2&cpid=552) | 很好的交互题。。。关键点在于如果右子树的大小确定，则左子树的根的左右子树中必定有一个大小确定，于是可以将复杂度降到对数级别 | 树 |
+|[Palindromic Paths](http://usaco.org/index.php?page=viewproblem2&cpid=553) | 一看就是动态规划，但是状态表示不好想。。弱渣。。从对角线向两侧，按照金字塔状一层层向外递推，每一步递推常数可完成，滚动数组降低存储空间要求 | 动态规划 计数 |
+|[Trapped in the Haybales](http://usaco.org/index.php?page=viewproblem2&cpid=554) | 我智商太低。。。如果两侧墙高超过区间长度则必定无解，反之则需要继续检验 | 贪心 考智商 |

@@ -121,3 +121,8 @@
 |[Googol](http://usaco.org/index.php?page=viewproblem2&cpid=552) | 很好的交互题。。。关键点在于如果右子树的大小确定，则左子树的根的左右子树中必定有一个大小确定，于是可以将复杂度降到对数级别 | 树 |
 |[Palindromic Paths](http://usaco.org/index.php?page=viewproblem2&cpid=553) | 一看就是动态规划，但是状态表示不好想。。弱渣。。从对角线向两侧，按照金字塔状一层层向外递推，每一步递推常数可完成，滚动数组降低存储空间要求 | 动态规划 计数 |
 |[Trapped in the Haybales](http://usaco.org/index.php?page=viewproblem2&cpid=554) | 我智商太低。。。如果两侧墙高超过区间长度则必定无解，反之则需要继续检验 | 贪心 考智商 |
+|[Moo Cryption](http://usaco.org/index.php?page=viewproblem2&cpid=545) | 水题不多说。。 | 枚举 |
+|[Bessie Get Even](http://usaco.org/index.php?page=viewproblem2&cpid=546) | 大概是初中数学的水平。。偶数个变量不用管，乘积为奇数要求每个因子都得是奇数，随便搞搞就差不多了。。 | 数学 |
+|[Bessie Goes Moo](http://usaco.org/index.php?page=viewproblem2&cpid=549) | 上面问题的一个推广，关键点在于两个数只需要考虑在模7域中的值就行了，复杂度7**7 | 数学 |
+|[Trapped in Haybales Silver](http://usaco.org/index.php?page=viewproblem2&cpid=550) | 枚举每一个可能变化的位置，注意到指针总是朝一个方向移动，因此线性扫描适用 | 双指针 |
+|[Bessie Birthday Buffet](http://usaco.org/index.php?page=viewproblem2&cpid=551) | 看上去难，其实超级简单。。从一个递增序列中选一个最优子序列，只不过状态转移的代价需要计算图的最短路径得出 | 动态规划 宽搜 |

@@ -126,3 +126,6 @@
 |[Bessie Goes Moo](http://usaco.org/index.php?page=viewproblem2&cpid=549) | 上面问题的一个推广，关键点在于两个数只需要考虑在模7域中的值就行了，复杂度7**7 | 数学 |
 |[Trapped in Haybales Silver](http://usaco.org/index.php?page=viewproblem2&cpid=550) | 枚举每一个可能变化的位置，注意到指针总是朝一个方向移动，因此线性扫描适用 | 双指针 |
 |[Bessie Birthday Buffet](http://usaco.org/index.php?page=viewproblem2&cpid=551) | 看上去难，其实超级简单。。从一个递增序列中选一个最优子序列，只不过状态转移的代价需要计算图的最短路径得出 | 动态规划 宽搜 |
+|[ZCC loves staight flush](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1001) | 同花顺就那么多，枚举一下，千万不要天真地排序。。 | 枚举 |
+|[ZCC loves string](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1002) | 博弈。。先手胜只有两种情形：两个初始字符串相同；字符串的长度相加为奇数。其余情形均为后手胜 | 博弈 |
+|[ZCC loves hacking](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1003) | naive的动态规划n^2会挂，关键点在于和为n的序列长度肯定不会超过sqrt(n)量级，状态转移时，分最小数是否包含1两种情形来进行规约 | 动态规划 |

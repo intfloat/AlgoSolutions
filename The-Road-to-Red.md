@@ -129,3 +129,6 @@
 |[ZCC loves staight flush](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1001) | 同花顺就那么多，枚举一下，千万不要天真地排序。。 | 枚举 |
 |[ZCC loves string](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1002) | 博弈。。先手胜只有两种情形：两个初始字符串相同；字符串的长度相加为奇数。其余情形均为后手胜 | 博弈 |
 |[ZCC loves hacking](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=582&pid=1003) | naive的动态规划n^2会挂，关键点在于和为n的序列长度肯定不会超过sqrt(n)量级，状态转移时，分最小数是否包含1两种情形来进行规约 | 动态规划 |
+|[猜数字](http://hihocoder.com/problemset/problem/1169) | 我太弱了。。。其实就一个划分树，用线段树维护一下就行了 | 树 |
+|[机器人](http://hihocoder.com/problemset/problem/1170) | 首先注意到如果颜色的相对大小确定了，那么归并求一下逆序数就行，但是所有的颜色排列是阶乘量级的，状态压缩就冒出来了。。 | 状态压缩 动态规划 |
+|[城市和魔法塔](http://hihocoder.com/problemset/problem/1171) | 跪烂膝盖。。。没注意到魔法塔的代价是很小的，最小凸包能够保证每个内点都在一个三角形内，所以能用魔法塔包围的就尽量包围。。。然后需要求最小凸包，居然是floyd最短路啊。。三观都被毁了。。 | 计算几何 最短路 |

@@ -132,3 +132,8 @@
 |[猜数字](http://hihocoder.com/problemset/problem/1169) | 我太弱了。。。其实就一个划分树，用线段树维护一下就行了 | 树 |
 |[机器人](http://hihocoder.com/problemset/problem/1170) | 首先注意到如果颜色的相对大小确定了，那么归并求一下逆序数就行，但是所有的颜色排列是阶乘量级的，状态压缩就冒出来了。。 | 状态压缩 动态规划 |
 |[城市和魔法塔](http://hihocoder.com/problemset/problem/1171) | 跪烂膝盖。。。没注意到魔法塔的代价是很小的，最小凸包能够保证每个内点都在一个三角形内，所以能用魔法塔包围的就尽量包围。。。然后需要求最小凸包，居然是floyd最短路啊。。三观都被毁了。。 | 计算几何 最短路 |
+|[Toy Cars](http://codeforces.com/problemset/problem/545/A) | 水题不多说。。 | 水 |
+|[Equidistant String](http://codeforces.com/problemset/problem/545/B) | 距离为偶数时可构造解，为奇数无解 | 构造 |
+|[Woodcutters](http://codeforces.com/problemset/problem/545/C) | 如果能向左就向左，实在不行就向右，还不行就不管那棵树了 | 贪心 |
+|[Queue](http://codeforces.com/problemset/problem/545/D) | 从小到大排序贪心 | 贪心|
+|[Paths and Trees](http://codeforces.com/problemset/problem/545/E) | Dijkstra变形，每次选择边的时候选择保持最短路径的权重最小的边 | 图论 最短路径 |

@@ -13,19 +13,15 @@ public:
     int dis[MAX_N];
     MinCostMaxFlow() {
         total = 0;
-        for (int i = 0; i < MAX_N; ++i) {
-            head[i] = -1;           
-        }
+        memset(head, -1, sizeof head);        
     }
-
     void addedge(int f, int t, int cp, int cs) {
         next[total] = head[f]; head[f] = total; pnt[total] = t; flow[total] = cp; cost[total++] = cs;
         next[total] = head[t]; head[t] = total; pnt[total] = f; flow[total] = 0; cost[total++] = -cs;
     }
-
     int mincost(int& maxflow) {
         int mincost = 0;
-        maxflow = 0;                
+        maxflow = 0;
         while (true) {
             memset(visited, false, sizeof(visited));
             for (int i = 0; i < MAX_N; ++i) {
@@ -45,12 +41,10 @@ public:
                     }
                 }
             }
-            // for (int i = S; i <= T; ++i) cout << "dis: " << dis[i] << endl;
-            if (dis[T] == INF) break;
-            // cout << "here" << endl;
+            if (dis[T] == INF) break; 
             // find minimal flow on shortest
             int mn_flow = INF;
-            for (int i = T; i != S; i = pv[i]) {                
+            for (int i = T; i != S; i = pv[i]) {
                 mn_flow = min(mn_flow, flow[pe[i]]);
             }
             maxflow += mn_flow;

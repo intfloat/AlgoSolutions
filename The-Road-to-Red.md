@@ -142,3 +142,7 @@
 |[Soldier and Cards](http://codeforces.com/problemset/problem/546/C) | 模拟一下就行了，卡最大状态数 | 模拟 |
 |[Soldier and Number Game](http://codeforces.com/problemset/problem/546/D) | 高效筛素数的变形，需要对平方、立方项等进行考虑 | 数论 |
 |[Soldier and Travelling](http://codeforces.com/problemset/problem/546/E) | 我太渣了。。知道是流网络，也会写最大流算法，就是没想出来怎么建立流网络。。。把顶点复制一份，从左向右连边表示转移的数目，最后判断是否满流，并且根据反向边容量回推实际操作 | 最大流 |
+|[大搬家](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1001) | 对于n的情形，考虑最后一个点，要么原地不动，要么选择前面n-1中的一个，变成规模为n-2的问题 | 动态规划 |
+|[列变位法解密](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1002) | 默默算一下坐标映射就行了。。。 | 数学 |
+|[IP聚合](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1003) | 随便搞搞就行了 | 水 |
+|[放盘子](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1004) | 先手输只有一种情形，就是多边形半径小于圆的半径 | 博弈 几何 |

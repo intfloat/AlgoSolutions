@@ -137,3 +137,8 @@
 |[Woodcutters](http://codeforces.com/problemset/problem/545/C) | 如果能向左就向左，实在不行就向右，还不行就不管那棵树了 | 贪心 |
 |[Queue](http://codeforces.com/problemset/problem/545/D) | 从小到大排序贪心 | 贪心|
 |[Paths and Trees](http://codeforces.com/problemset/problem/545/E) | Dijkstra变形，每次选择边的时候选择保持最短路径的权重最小的边 | 图论 最短路径 |
+|[Soldier and Bananas](http://codeforces.com/problemset/problem/546/A) | 水题不多说。。 | 小学数学？ |
+|[Soldier and Badges](http://codeforces.com/problemset/problem/546/B) | 要从小到大贪心，反过来不对啊就这个被hack了超级不爽。。。 | 贪心 |
+|[Soldier and Cards](http://codeforces.com/problemset/problem/546/C) | 模拟一下就行了，卡最大状态数 | 模拟 |
+|[Soldier and Number Game](http://codeforces.com/problemset/problem/546/D) | 高效筛素数的变形，需要对平方、立方项等进行考虑 | 数论 |
+|[Soldier and Travelling](http://codeforces.com/problemset/problem/546/E) | 我太渣了。。知道是流网络，也会写最大流算法，就是没想出来怎么建立流网络。。。把顶点复制一份，从左向右连边表示转移的数目，最后判断是否满流，并且根据反向边容量回推实际操作 | 最大流 |

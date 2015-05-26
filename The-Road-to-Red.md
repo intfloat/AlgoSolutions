@@ -147,6 +147,7 @@
 |[IP聚合](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1003) | 随便搞搞就行了 | 水 |
 |[放盘子](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1004) | 先手输只有一种情形，就是多边形半径小于圆的半径 | 博弈 几何 |
 |[下棋](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1005) | 朴素的办法就是去广度搜索，不爆内存也得超时，关键点在于king的移动方式是很特别的，一圈一圈往外扩展，于是knight可以贪心，每一步都最小化横纵坐标绝对差值的最大值。注意1步可达是个边界情况 | 找规律 |
+|[单调区间](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=584&pid=1006) | 按照位置、数字、单调性建立状态，状态之间进行概率转移 | 概率 动态规划 |
 |[Shaking Hands](http://acm.hdu.edu.cn/showproblem.php?pid=5232) | 随便搞搞就行了。。。 | 图论 |
 |[Gunner II](http://acm.hdu.edu.cn/showproblem.php?pid=5233) | 离散化，高效查找，随便搞 | 离散化 |
 |[Happy Birthday](http://acm.hdu.edu.cn/showproblem.php?pid=5234) | 背包问题的简单变形，按照两个方向进行状态转移就行了 | 动态规划 |

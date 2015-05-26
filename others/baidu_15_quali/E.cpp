@@ -1,4 +1,3 @@
-// greedy algorithm got wrong answer...
 #include <stdio.h>
 #include <algorithm>
 #include <cmath>

@@ -151,3 +151,7 @@
 |[Shaking Hands](http://acm.hdu.edu.cn/showproblem.php?pid=5232) | 随便搞搞就行了。。。 | 图论 |
 |[Gunner II](http://acm.hdu.edu.cn/showproblem.php?pid=5233) | 离散化，高效查找，随便搞 | 离散化 |
 |[Happy Birthday](http://acm.hdu.edu.cn/showproblem.php?pid=5234) | 背包问题的简单变形，按照两个方向进行状态转移就行了 | 动态规划 |
+|[Mike and Frog](http://codeforces.com/problemset/problem/547/A) | 比赛的时候折磨了我两个小时，还好提前10分钟AC。。。循环的结果是形状类似p的环，分情况讨论目标点是否在环上，对于在环上的情形，通过gcd判断是否有解，有解则可以枚举 | 数学 |
+|[Mike and Feet](http://codeforces.com/problemset/problem/547/B) | 注意到答案是满足单调性的，因此可从小到大插入元素并进行下界更新 | 数据结构 |
+|[Mike and Fax](http://codeforces.com/problemset/problem/548/A) | 随便搞搞就行。。。 | 字符串水题 |
+|[Mike and Fun](http://codeforces.com/problemset/problem/548/B) | 每次只更新相应行，水。。 | 水 |

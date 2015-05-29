@@ -155,3 +155,5 @@
 |[Mike and Feet](http://codeforces.com/problemset/problem/547/B) | 注意到答案是满足单调性的，因此可从小到大插入元素并进行下界更新 | 数据结构 |
 |[Mike and Fax](http://codeforces.com/problemset/problem/548/A) | 随便搞搞就行。。。 | 字符串水题 |
 |[Mike and Fun](http://codeforces.com/problemset/problem/548/B) | 每次只更新相应行，水。。 | 水 |
+|[Mike and Foam](http://codeforces.com/contest/547/problem/C) | 很好的题目。。质数分解之后利用容斥原理进行计数的维护，注意1是一个边界情况 | 数论 容斥原理 |
+|[Mike and Fish](http://codeforces.com/contest/547/problem/D) | 我智商太低。。。这他喵的居然是二分图的边染色。。如果所有点的度数均为偶数，则寻找欧拉回路染色，否则删掉奇数度数顶点的一条边，递归求解 | 二分图 欧拉路径 深度搜索 |

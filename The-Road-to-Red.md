@@ -157,3 +157,5 @@
 |[Mike and Fun](http://codeforces.com/problemset/problem/548/B) | 每次只更新相应行，水。。 | 水 |
 |[Mike and Foam](http://codeforces.com/contest/547/problem/C) | 很好的题目。。质数分解之后利用容斥原理进行计数的维护，注意1是一个边界情况 | 数论 容斥原理 |
 |[Mike and Fish](http://codeforces.com/contest/547/problem/D) | 我智商太低。。。这他喵的居然是二分图的边染色。。如果所有点的度数均为偶数，则寻找欧拉回路染色，否则删掉奇数度数顶点的一条边，递归求解 | 二分图 欧拉路径 深度搜索 |
+|[KQUERY](http://www.spoj.com/problems/KQUERY/en/) | 很好的题目啊。。。本来利用归并树可以得到O(nlgnlgn)的解，但是居然卡这个复杂度。。。必须是O(nlgn)才能行。。。查询的离线处理 + BIT来搞 | 树状数组 |
+|[Sereja and Brackets](http://codeforces.com/contest/380/problem/C) | 线段树建模，父节点一方面继承左右子节点中的所有配对括号，另一方面还可以左右结合配对 | 线段树 |

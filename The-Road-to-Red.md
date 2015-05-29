@@ -80,11 +80,11 @@
 |[扑克牌](http://hihocoder.com/problemset/problem/1159) | 组合dp，感人肺腑不能多说。。 | 组合计数；动态规划 |
 |[Cutting Banner](http://codeforces.com/problemset/problem/538/A) | 表述不清，第一次被别人成功hack，超级不爽。。 | 暴力枚举 |
 |[Quasi Binary](http://codeforces.com/problemset/problem/538/B) | 对每一个非零位进行贪心构造，直到变成0 | 贪心 |
-|[Tourist's Notes](http://codeforces.com/problemset/problem/538/C) | 水题不想多说。。 | 贪心 |
+|[Tourists Notes](http://codeforces.com/problemset/problem/538/C) | 水题不想多说。。 | 贪心 |
 |[Weird Chess](http://codeforces.com/problemset/problem/538/D) | 看上去很难，其实就是根据约束条件不断删除候选解 | 构造算法 |
 |[Demiurges Play Again](http://codeforces.com/problemset/problem/538/E) | 博弈论相关，当轮到对手时，要选择所有可能的路径最优解中的最差解；当轮到自己时，选择所有可能路径中最优解的最优解，大概就是这样，比较绕。。 | 博弈论 |
 |[A Heap of Heaps](http://codeforces.com/contest/538/problem/F) | 枚举显然超时，关键点在于一个节点的父节点只可能有平方根量级个，区间和维护的时候不要挨个更新，只更新两端，最后累加。 | 数学 数据结构 |
-|[Remmarguts' Date](http://poj.org/problem?id=2449) | 第一次写K短路，弱菜。。和最短路的A Star算法类似，只是把第K次出优先队列的值作为结果 | 图论； A Star |
+|[Remmarguts Date](http://poj.org/problem?id=2449) | 第一次写K短路，弱菜。。和最短路的A Star算法类似，只是把第K次出优先队列的值作为结果 | 图论； A Star |
 |[Combination Lock](http://codeforces.com/problemset/problem/540/A) | 水题不多说。。 | 水 |
 |[School Marks](http://codeforces.com/problemset/problem/540/B) | 贪心构造，满足中位数要求就不断填充临界值，一旦满足就只放最低分 | 贪心 |
 |[Ice Cave](http://codeforces.com/problemset/problem/540/C) | 很不错的小题目，我智商太低。。关键是从一个完整点出发，只要相邻的有一个完整点，就可以回到原点，边界情况比较多 | 广度搜索；考智商 |
@@ -115,7 +115,7 @@
 |[Brattleship](https://code.google.com/codejam/contest/4244486/dashboard#s=p0) | 考虑找到目标的最坏情况就行 | 贪心 |
 |[Typewriter Monkey](https://code.google.com/codejam/contest/4244486/dashboard#s=p1) | 万万没想到。。利用期望值的独立性质可以大大简化计算过程，cf上也有动态规划的解法 | 概率；动态规划 |
 |[迎春舞会之三人组舞](https://vijos.org/p/1061) | 突然发现了这道两年之前没有AC的题目。。。按照位置进行状态转移，每个人只可能与最邻近的结合在一起，同时还要保证有足够个数的高个子 | 动态规划 |
-|[Xiao Ming's Hope](http://acm.hdu.edu.cn/showproblem.php?pid=4349) | 很神奇的一道题目，一行代码得答案。。。求对2取模结果为1的组合数的个数，低位为1则有两种选择，低位为0则只有一种选择，因此只需统计1的数目 | 组合计数 |
+|[Xiao Mings Hope](http://acm.hdu.edu.cn/showproblem.php?pid=4349) | 很神奇的一道题目，一行代码得答案。。。求对2取模结果为1的组合数的个数，低位为1则有两种选择，低位为0则只有一种选择，因此只需统计1的数目 | 组合计数 |
 |[Saving Beans](http://acm.hdu.edu.cn/showproblem.php?pid=3037) | 计算从n+m中选择m个的组合数，关键是要在模域中计算，于是就有了lucas定理，我孤陋寡闻，第一次听说。。。 | 组合计数 |
 |[Tom and Matrix](http://acm.hdu.edu.cn/showproblem.php?pid=5226) | 组合数学太渣。。。每一列的和原来是有解析表达式的。。然后把每一列用lucas定理算出来相加就可以了 | 组合计数 |
 |[Googol](http://usaco.org/index.php?page=viewproblem2&cpid=552) | 很好的交互题。。。关键点在于如果右子树的大小确定，则左子树的根的左右子树中必定有一个大小确定，于是可以将复杂度降到对数级别 | 树 |

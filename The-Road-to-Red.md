@@ -159,3 +159,8 @@
 |[Mike and Fish](http://codeforces.com/contest/547/problem/D) | 我智商太低。。。这他喵的居然是二分图的边染色。。如果所有点的度数均为偶数，则寻找欧拉回路染色，否则删掉奇数度数顶点的一条边，递归求解 | 二分图 欧拉路径 深度搜索 |
 |[KQUERY](http://www.spoj.com/problems/KQUERY/en/) | 很好的题目啊。。。本来利用归并树可以得到O(nlgnlgn)的解，但是居然卡这个复杂度。。。必须是O(nlgn)才能行。。。查询的离线处理 + BIT来搞 | 树状数组 |
 |[Sereja and Brackets](http://codeforces.com/contest/380/problem/C) | 线段树建模，父节点一方面继承左右子节点中的所有配对括号，另一方面还可以左右结合配对 | 线段树 |
+|[超级赛亚ACMer](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=600&pid=1001) | 只要有办法达到最高数值就可以取胜，于是排序之后贪心。。一开始看错题目了。。。 | 贪心 |
+|[连续数](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=600&pid=1002) | 需要O(1)判断一个区间是否连续，只需要看最大值和最小值的差，以及其中是否有重复元素，rmq预处理，每个请求线性时间搞定 | 区间查询 |
+|[序列变换](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=600&pid=1003) | 又看错题了，我真是智商捉急。。二分，每次尽可能把元素往左边排以留出最大的间隙 | 二分 贪心 |
+|[KPI](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=600&pid=1004) | 动态查询中位数，用个splay维护一下就好 | splay |
+|[矩形面积](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=600&pid=1006) | 本质是求出最小覆盖矩形的面积，先求一下点集的凸包，然后再枚举每一条可能的底边就行了 | 计算几何 |

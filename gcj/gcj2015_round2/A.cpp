@@ -19,22 +19,15 @@ void solve() {
     int row, col, nx, ny;
     cin >> row >> col;
     FOR(i, row) cin >> g[i];
-    int idx = 2;
-    map<pair<int, int>, int> mp;
+    set<pair<int, int> > mp;
     FOR(i, row) FOR(j, col) {
-        if (g[i][j] != '.') mp[make_pair(i, j)] = idx++;
+        if (g[i][j] != '.') mp.insert(make_pair(i, j));
     }
-    if (mp.size() == 1) {
-        cout << "IMPOSSIBLE" << endl;
-        return;
-    }
-    if (mp.size() == 0) { cout << 0 << endl; return; }
-    int start = mp.size() + 5;
-    int pp, res = 0;
+    int res = 0;
     FOR(i, row) FOR(j, col) {
         if (g[i][j] == '.') continue;
         int x = i, y = j;
-        pair<int, int> from = make_pair(i, j);        
+        pair<int, int> from = make_pair(i, j);
         int cc = get(g[i][j]);
         set<int> st;
         FOR(k, 4) {
@@ -44,13 +37,14 @@ void solve() {
             }
             pair<int, int> t = make_pair(nx, ny);
             if (mp.find(t) != mp.end()) {
-                st.insert(k);                
+                st.insert(k);
             }
         }
         if (st.empty()) { cout << "IMPOSSIBLE" << endl; return; }
         else res += (st.find(cc) == st.end());
     }
-    cout << res << endl; return;    
+    cout << res << endl;
+    return;
 }
 
 int main() {

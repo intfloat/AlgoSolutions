@@ -27,7 +27,7 @@ void solve() {
     double res = 0.0;
     prob.clear();
     cin >> K >> L >> S;
-    cin >> board >> target;    
+    cin >> board >> target;
     assert(K == board.size() && L == target.size());
     if (target.size() > S || !check(board, target)) {
         cout << 0.0 << endl;
@@ -47,7 +47,7 @@ void solve() {
     double tp = 1.0;
     FOR(i, target.size()) tp *= prob[target[i]];
     res = tp * (S - target.size() + 1);
-    res = mx - res;    
+    res = mx - res;
     cout << fixed << setprecision(10) << res << endl;
     return;
 }

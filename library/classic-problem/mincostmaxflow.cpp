@@ -12,8 +12,11 @@ public:
     bool visited[MAX_N];
     int dis[MAX_N];
     MinCostMaxFlow() {
+        init();
+    }
+    void init() {
         total = 0;
-        memset(head, -1, sizeof head);        
+        memset(head, -1, sizeof head);
     }
     void addedge(int f, int t, int cp, int cs) {
         next[total] = head[f]; head[f] = total; pnt[total] = t; flow[total] = cp; cost[total++] = cs;
@@ -32,7 +35,7 @@ public:
             dis[S] = 0; q.push(S); visited[S] = true;
             while (!q.empty()) {
                 int cur = q.front(); q.pop(); visited[cur] = false;
-                for (int i = head[cur]; i >=0; i = next[i]) {
+                for (int i = head[cur]; i >= 0; i = next[i]) {
                     int b = pnt[i];
                     if (flow[i] > 0 && dis[b] > dis[cur]+cost[i]) {
                         dis[b] = dis[cur] + cost[i];
@@ -41,7 +44,7 @@ public:
                     }
                 }
             }
-            if (dis[T] == INF) break; 
+            if (dis[T] == INF) break;
             // find minimal flow on shortest
             int mn_flow = INF;
             for (int i = T; i != S; i = pv[i]) {

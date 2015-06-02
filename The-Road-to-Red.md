@@ -167,3 +167,5 @@
 |[Pegman](https://code.google.com/codejam/contest/8234486/dashboard#s=p0) | 我太弱了，这个都想了一个半小时。。。只要保证从每个点出发，一直走能够碰到另外一个非空点就行了，无法保证这个条件就无解 | 图论？ 考智商 |
 |[Kiddie Pool](https://code.google.com/codejam/contest/8234486/dashboard#s=p1) | 被精度折磨到死。。。进行二分，每次找最高温度和最低温度，判断体积和温度是否在相应区间内 | 二分 考智商 |
 |[Bilingual](https://code.google.com/codejam/contest/8234486/dashboard#s=p2) | 神题啊。。到现在还不是特别理解为什么就能变成最大流模型去求解。。 | 网络流 组合优化 |
+|[连接的管道](http://acm.hdu.edu.cn/showproblem.php?pid=5253) | 红果果最小生成树，居然卡Kruskal算法的内存，无聊。。逼着我用优先队列写prim | 最小生成树 |
+|[棋盘占领](http://acm.hdu.edu.cn/showproblem.php?pid=5254) | 类似于spfa，一层层扩展 | 递推？ |

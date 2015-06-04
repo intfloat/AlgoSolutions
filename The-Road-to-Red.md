@@ -169,3 +169,4 @@
 |[Bilingual](https://code.google.com/codejam/contest/8234486/dashboard#s=p2) | 神题啊。。到现在还不是特别理解为什么就能变成最大流模型去求解。。 | 网络流 组合优化 |
 |[连接的管道](http://acm.hdu.edu.cn/showproblem.php?pid=5253) | 红果果最小生成树，居然卡Kruskal算法的内存，无聊。。逼着我用优先队列写prim | 最小生成树 |
 |[棋盘占领](http://acm.hdu.edu.cn/showproblem.php?pid=5254) | 类似于spfa，一层层扩展 | 递推？ |
+|[序列变换](http://acm.hdu.edu.cn/showproblem.php?pid=5256) | 很好的小题目。。第一场初赛的变形。。。严格递增可转化成非降序列，然后改变最少的元素等价于保留最多的元素，然后就是熟悉的最长非降子序列问题了 | 动态规划 考智商 |

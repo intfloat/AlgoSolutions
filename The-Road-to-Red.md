@@ -180,3 +180,4 @@
 |[Divisibility By Eight](http://codeforces.com/problemset/problem/550/C) | 我大脑短路了20分钟。。。1000是被8整除的，于是只关心低三位就行了 | 小学数学？。。 |
 |[Regular Bridge](http://codeforces.com/problemset/problem/550/D) | 我太弱了。。k是偶数的时候赤裸裸满足欧拉回路条件必然不会有桥啊，图论怎么学的。。奇数的时候需要拼凑构造，很巧妙，我这个智商没想出来。。 | 图论 构造算法 |
 |[Brackets in Implication](http://codeforces.com/problemset/problem/550/E) | naive动态规划n * n肯定挂，注意到可以按照111...110来划分，最末尾是1肯定无解，奇数组两两配对必然有解。偶数组需要把前三组合并到第四组变成奇数组，只有两组是个特殊情况，需要特判，比赛要是延长20分钟就AC了。。 | 数理逻辑 考智商 |
+|[和谐答案](http://ac.jobdu.com/problem.php?pid=1557) | 最长上升序列的变形，每个位置可以取多个值，为了防止同一位置覆盖，需要从大到小进行二分 | 最长上升序列变种？ |

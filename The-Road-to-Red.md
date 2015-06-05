@@ -174,3 +174,8 @@
 |[Private Party](SRM 660 division 1 level 2) | 期望是线性的，鬼都知道。。要命的地方就在于有环，但是，只要确定第一个元素，就可以破环，变成线性链，用dp求出当前元素的贡献，膜拜的clj的代码。。。 | 概率 动态规划 |
 |[Cycle Min](SRM division 2 level 1) | 卧槽。。为何这题都有那么多坑。。。字符a要跳过去，留意非a数目小于k时可能导致的死循环 | 字符串 |
 |[Private D2 Party](SRM division 2 level 2) | 分两种情况讨论，线性链则可以全部加进去，有长度大于一的环则需要扔掉一个元素 | 数学？ |
+|[Two Substrings](http://codeforces.com/problemset/problem/550/A) | 找到最左边和最右边的，判断是否重合 | 水 |
+|[Preparing Olympiad](http://codeforces.com/problemset/problem/550/B) | 随便搞搞就好。。。 | 枚举 |
+|[Divisibility By Eight](http://codeforces.com/problemset/problem/550/C) | 我大脑短路了20分钟。。。1000是被8整除的，于是只关心低三位就行了 | 小学数学？。。 |
+|[Regular Bridge](http://codeforces.com/problemset/problem/550/D) | 我太弱了。。k是偶数的时候赤裸裸满足欧拉回路条件必然不会有桥啊，图论怎么学的。。奇数的时候需要拼凑构造，很巧妙，我这个智商没想出来。。 | 图论 构造算法 |
+|[Brackets in Implication](http://codeforces.com/problemset/problem/550/E) | naive动态规划n * n肯定挂，注意到可以按照111...110来划分，最末尾是1肯定无解，奇数组两两配对必然有解。偶数组需要把前三组合并到第四组变成奇数组，只有两组是个特殊情况，需要特判，比赛要是延长20分钟就AC了。。 | 数理逻辑 考智商 |

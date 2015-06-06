@@ -181,3 +181,9 @@
 |[Regular Bridge](http://codeforces.com/problemset/problem/550/D) | 我太弱了。。k是偶数的时候赤裸裸满足欧拉回路条件必然不会有桥啊，图论怎么学的。。奇数的时候需要拼凑构造，很巧妙，我这个智商没想出来。。 | 图论 构造算法 |
 |[Brackets in Implication](http://codeforces.com/problemset/problem/550/E) | naive动态规划n * n肯定挂，注意到可以按照111...110来划分，最末尾是1肯定无解，奇数组两两配对必然有解。偶数组需要把前三组合并到第四组变成奇数组，只有两组是个特殊情况，需要特判，比赛要是延长20分钟就AC了。。 | 数理逻辑 考智商 |
 |[和谐答案](http://ac.jobdu.com/problem.php?pid=1557) | 最长上升序列的变形，每个位置可以取多个值，为了防止同一位置覆盖，需要从大到小进行二分 | 最长上升序列变种？ |
+|[数长方形](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1001) | 枚举每一对水平边和垂直边 | 简单几何 |
+|[弹吉他](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1002) | 一开始看错题了。。以为顺序任意，果然脑子经常进水。。对各种可能的排列进行状态转移，取代价最小的可行解 | 动态规划 |
+|[蜀道难](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1004) | 有很naive的O(n * n)解法，显然超时。。办法是统计每相邻两个点对解产生的影响，求partial sum，再用rmq去对每一个半圆查询 | 区间最值查询 |
+|[最强密码](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1005) | 每一串覆盖a-z的分一组，能分多少组，最短串就是组数+1，然后个数就是总数减掉长为k的子串的个数，自己yy出来了一个动态规划算法，居然还AC了，给自己跪。。。 | 字符串 动态规划 |
+|[Face Detection](http://codeforces.com/contest/549/problem/A) | 随便搞搞就行了。。 | 水 |
+|[Haar Features](http://codeforces.com/contest/549/problem/D) | 亮瞎我的狗眼。。居然是贪心，注意到最右下角不符合要求的点必须单独进行一次操作，然后不断向前推进，我YY了2个小时才搞出来，太弱了。。。 | 贪心 |

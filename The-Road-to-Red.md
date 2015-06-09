@@ -187,3 +187,4 @@
 |[最强密码](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1005) | 每一串覆盖a-z的分一组，能分多少组，最短串就是组数+1，然后个数就是总数减掉长为k的子串的个数，自己yy出来了一个动态规划算法，居然还AC了，给自己跪。。。 | 字符串 动态规划 |
 |[Face Detection](http://codeforces.com/contest/549/problem/A) | 随便搞搞就行了。。 | 水 |
 |[Haar Features](http://codeforces.com/contest/549/problem/D) | 亮瞎我的狗眼。。居然是贪心，注意到最右下角不符合要求的点必须单独进行一次操作，然后不断向前推进，我YY了2个小时才搞出来，太弱了。。。 | 贪心 |
+|[Flowers](http://codeforces.com/problemset/problem/474/D) | 赤裸裸动态规划，没什么好说的。。 | 动态规划 |

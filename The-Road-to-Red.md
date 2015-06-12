@@ -187,6 +187,8 @@
 |[最强密码](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1005) | 每一串覆盖a-z的分一组，能分多少组，最短串就是组数+1，然后个数就是总数减掉长为k的子串的个数，自己yy出来了一个动态规划算法，居然还AC了，给自己跪。。。 | 字符串 动态规划 |
 |[Face Detection](http://codeforces.com/contest/549/problem/A) | 随便搞搞就行了。。 | 水 |
 |[Looksery Party](http://codeforces.com/contest/549/problem/B) | 我太笨了。。。如果全部非零，一个都不选就行了；只要有一个非0的，那么就选对应的元素，每次操作都能保证至少消耗数组中的一个元素，因此必然有可行解 | 贪心构造 考智商 |
+|[The Game of Parity](http://codeforces.com/contest/549/problem/C) | 博弈的题目都要有一个最基本的观察才行，在这里，不管是谁最后一步，如果奇数和偶数都有则必胜。因此对手的操作应当是着力于消除所有的奇数块或者偶数块 | 博弈 |
+|[Yura and Developers](http://codeforces.com/contest/549/problem/F) | 已经被各种高效操作闪瞎。。。关键在于高效计算余数相等的数对个数，在小的那一部分计算，避免O(n * n)的最坏复杂度 | 数据结构 |
 |[Happy Line](http://codeforces.com/contest/549/problem/G) | 神啊。。。每个元素的变化只跟初始和最终位置相关，因此可以先加上i，升序排列再减去j，是完全等价的操作！！ | 考智商 |
 |[Degenerate Matrix](http://codeforces.com/contest/549/problem/H) | 我太弱了。。。degenerate matrix几何上是在一条直线上，所以对答案二分，每次枚举八个顶点，查看是否存在相应的满足要求的直线，tourist 4分钟搞定，膜拜之情无法用言语表达。。。 | 几何 二分 数学 |
 |[Haar Features](http://codeforces.com/contest/549/problem/D) | 亮瞎我的狗眼。。居然是贪心，注意到最右下角不符合要求的点必须单独进行一次操作，然后不断向前推进，我YY了2个小时才搞出来，太弱了。。。 | 贪心 |

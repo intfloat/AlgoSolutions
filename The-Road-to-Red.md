@@ -189,3 +189,7 @@
 |[Haar Features](http://codeforces.com/contest/549/problem/D) | 亮瞎我的狗眼。。居然是贪心，注意到最右下角不符合要求的点必须单独进行一次操作，然后不断向前推进，我YY了2个小时才搞出来，太弱了。。。 | 贪心 |
 |[Flowers](http://codeforces.com/problemset/problem/474/D) | 赤裸裸动态规划，没什么好说的。。 | 动态规划 |
 |[Missing LCM](SRM 661 division 1 level 1) | 缺失一些数仍然能够保证最小公倍数不变，必然是缺失的数进行质因子分解之后，没有一个能够取得质因子指数的最大值 | 数论 |
+|[Colorful Line Graphs Div2](SRM 661 division 2 level 3) | 一看就是动态规划，f(i, j)表示i位置取j颜色的总数，按照连边和不连边两种情形分别计算就行了 | 动态规划 |
+|[Colorful Line Graphs](SRM 661 division 1 level 2) | 通过上面的动态规划可以找到规律，我智商捉急。。。于是写出了一个简单递推式，但是顺序计算仍然会超时，注意到M是比较小的，因此可以把下标按照M的倍数进行划分，用快速幂计算，余数单独考虑 | 找规律？ 组合计数 快速幂 |
+|[Falling Sand](SRM 661 division 2 level 1) | 从最右下角到最左上角不断扫描就行 | 水水的模拟 |
+|[Bridge Building Div2](SRM 661 division 2 level 2) | 数据范围小，于是可以枚举一发，对于每种配置跑一发floyd最短路算法，然后取最优值 | 位运算 最短路 |

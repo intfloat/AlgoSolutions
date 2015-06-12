@@ -188,3 +188,4 @@
 |[Face Detection](http://codeforces.com/contest/549/problem/A) | 随便搞搞就行了。。 | 水 |
 |[Haar Features](http://codeforces.com/contest/549/problem/D) | 亮瞎我的狗眼。。居然是贪心，注意到最右下角不符合要求的点必须单独进行一次操作，然后不断向前推进，我YY了2个小时才搞出来，太弱了。。。 | 贪心 |
 |[Flowers](http://codeforces.com/problemset/problem/474/D) | 赤裸裸动态规划，没什么好说的。。 | 动态规划 |
+|[Missing LCM](SRM 661 division 1 level 1) | 缺失一些数仍然能够保证最小公倍数不变，必然是缺失的数进行质因子分解之后，没有一个能够取得质因子指数的最大值 | 数论 |

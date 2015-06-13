@@ -203,3 +203,5 @@
 |[Gukiz hates Boxes](http://codeforces.com/problemset/problem/551/C) | 注意到最末尾的盒子必须有人过去消除，而且二分性质是满足的，于是对于每一个候选解，去做贪心 | 二分查找 贪心 |
 |[Gukiz and Binary Operations](http://codeforces.com/problemset/problem/551/D) | 异或操作中每个位是独立的，因此计数的话分别相乘就行。k的某一位为0，则不能有连续一；为1则至少有一个连续1，和前面情况互补。然后根据动态规划递推式构造转移矩阵，跑一发矩阵快速幂，我居然半小时就搞出来了。。。 | 组合计数 矩阵快速幂 动态规划 |
 |[GukiZ and GukiZiana](http://codeforces.com/problemset/problem/551/E) | 很好的一个数据结构题。。。第一次接触sqrt decomposition的方法，很神奇，每次查找和更新都是sqrt(n)复杂度的 | 数据结构 |
+|[ZYB loves Score](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=603&pid=1001) | 随便搞搞。。 | 水 |
+|[ZYB loves Xor I](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=603&pid=1002) | 对于每一个位来说，可以按照取0还是取1进行划分，如果两个数的这一位不同，则lowbit就确定了，否则继续向前 | 分治 位运算 |

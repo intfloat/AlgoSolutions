@@ -198,3 +198,8 @@
 |[Colorful Line Graphs](SRM 661 division 1 level 2) | 通过上面的动态规划可以找到规律，我智商捉急。。。于是写出了一个简单递推式，但是顺序计算仍然会超时，注意到M是比较小的，因此可以把下标按照M的倍数进行划分，用快速幂计算，余数单独考虑 | 找规律？ 组合计数 快速幂 |
 |[Falling Sand](SRM 661 division 2 level 1) | 从最右下角到最左上角不断扫描就行 | 水水的模拟 |
 |[Bridge Building Div2](SRM 661 division 2 level 2) | 数据范围小，于是可以枚举一发，对于每种配置跑一发floyd最短路算法，然后取最优值 | 位运算 最短路 |
+|[Gukiz and Contest](http://codeforces.com/problemset/problem/551/A) | upper_bound随便搞。。 | 排序 |
+|[ZgukistringZ](http://codeforces.com/problemset/problem/551/B) | 顺序是没有关系的，因此只要统计各个字母的数目，枚举第一个字符串的出现次数，对第二个贪心计算就行了 | 考智商？ |
+|[Gukiz hates Boxes](http://codeforces.com/problemset/problem/551/C) | 注意到最末尾的盒子必须有人过去消除，而且二分性质是满足的，于是对于每一个候选解，去做贪心 | 二分查找 贪心 |
+|[Gukiz and Binary Operations](http://codeforces.com/problemset/problem/551/D) | 异或操作中每个位是独立的，因此计数的话分别相乘就行。k的某一位为0，则不能有连续一；为1则至少有一个连续1，和前面情况互补。然后根据动态规划递推式构造转移矩阵，跑一发矩阵快速幂，我居然半小时就搞出来了。。。 | 组合计数 矩阵快速幂 动态规划 |
+|[GukiZ and GukiZiana](http://codeforces.com/problemset/problem/551/E) | 很好的一个数据结构题。。。第一次接触sqrt decomposition的方法，很神奇，每次查找和更新都是sqrt(n)复杂度的 | 数据结构 |

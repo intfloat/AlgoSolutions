@@ -205,3 +205,6 @@
 |[GukiZ and GukiZiana](http://codeforces.com/problemset/problem/551/E) | 很好的一个数据结构题。。。第一次接触sqrt decomposition的方法，很神奇，每次查找和更新都是sqrt(n)复杂度的 | 数据结构 |
 |[ZYB loves Score](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=603&pid=1001) | 随便搞搞。。 | 水 |
 |[ZYB loves Xor I](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=603&pid=1002) | 对于每一个位来说，可以按照取0还是取1进行划分，如果两个数的这一位不同，则lowbit就确定了，否则继续向前 | 分治 位运算 |
+|[Chef And Memory Limit](http://www.codechef.com/JUNE15/problems/CBARG) | 我傻叉了。。一开始还naive以为选最大值就行了。。 | 水 |
+|[Chef and Polygons](http://www.codechef.com/problems/CHPLGNS/) | 看错题了。。。任何两个polygon都是包含关系，因此一定就是类似于同心圆那种形状，按照最大的x坐标排序就行了，面积也行 | 几何 |
+|[Steady Table](http://www.codechef.com/problems/STDYTAB/) | 红果果动态规划啦。。。需要记录下partial sum实现常数转移 | 动态规划 |

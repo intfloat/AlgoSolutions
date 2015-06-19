@@ -211,3 +211,8 @@
 |[Chef And Memory Limit](http://www.codechef.com/JUNE15/problems/CBARG) | 我傻叉了。。一开始还naive以为选最大值就行了。。 | 水 |
 |[Chef and Polygons](http://www.codechef.com/problems/CHPLGNS/) | 看错题了。。。任何两个polygon都是包含关系，因此一定就是类似于同心圆那种形状，按照最大的x坐标排序就行了，面积也行 | 几何 |
 |[Steady Table](http://www.codechef.com/problems/STDYTAB/) | 红果果动态规划啦。。。需要记录下partial sum实现常数转移 | 动态规划 |
+|[Vanya and Table](http://codeforces.com/problemset/problem/552/A) | 随便搞搞。。 | 水 |
+|[Vanya and Books](http://codeforces.com/problemset/problem/552/B) | 从最低位到最高位不断进行累加就好了 | 数学 |
+|[Vanya and Scales](http://codeforces.com/problemset/problem/552/C) | 挺好的小题目。。注意m如果能被w整除，则除以w不影响，不能整除的话必定是余数为1或者w-1，否则无解，然后不断重复这一过程就行了 | 数论 考智商？ |
+|[Vanya and Triangles](http://codeforces.com/problemset/problem/552/D) | 只需要减掉三点共线的情形，为了加快统计，可以用哈希表对方向向量计数 | 几何 计数 |
+|[Vanya and Brackets](http://codeforces.com/problemset/problem/552/E) | 一个关键点就在于：必定是在乘法的地方加括号，可以手算验证一下的。。于是枚举任何两个乘法位置，求出表达式的值，然后取最优解就行了 | 考智商？ |

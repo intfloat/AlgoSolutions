@@ -216,3 +216,5 @@
 |[Vanya and Scales](http://codeforces.com/problemset/problem/552/C) | 挺好的小题目。。注意m如果能被w整除，则除以w不影响，不能整除的话必定是余数为1或者w-1，否则无解，然后不断重复这一过程就行了 | 数论 考智商？ |
 |[Vanya and Triangles](http://codeforces.com/problemset/problem/552/D) | 只需要减掉三点共线的情形，为了加快统计，可以用哈希表对方向向量计数 | 几何 计数 |
 |[Vanya and Brackets](http://codeforces.com/problemset/problem/552/E) | 一个关键点就在于：必定是在乘法的地方加括号，可以手算验证一下的。。于是枚举任何两个乘法位置，求出表达式的值，然后取最优解就行了 | 考智商？ |
+|[Dylans loves numbers](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=604&pid=1001) | 随便搞搞。。。 | 位运算 |
+|[Dylans loves sequences](http://acm.hdu.edu.cn/showproblem.php?pid=5273) | 其实有很简单的动态规划的。。我想复杂了，搞了一个划分树，每次去查询 | 动态规划 数据结构 |

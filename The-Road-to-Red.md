@@ -221,3 +221,5 @@
 |[Kyoya and Photobooks](http://codeforces.com/problemset/problem/554/A) | set维护一下就行了。。 | 水 |
 |[Ohana Cleanup](http://codeforces.com/problemset/problem/554/B) | 注意到，只要原始字符串相等，就一定能同时变成全1，否则不行，用map计数就ok了 | 脑筋急转弯？。。 |
 |[Kyoya and Colored Balls](http://codeforces.com/problemset/problem/553/A) | 对于最后一个color的最后一个球，枚举在倒数第二中颜色最后一个球前面有多少个最后一种颜色，组合数 + 递归解决规模更小的子问题 | 组合计数 动态规划 |
+|[Kyoya and Permutations](http://codeforces.com/contest/553/problem/B) | 哭死。。看错题意了。。基本观察：符合要求的置换只能在相邻两个数之间交换，所以用dp计数，从头到尾判断就行了 | 动态规划 置换群 |
+|[Nudist Beach](http://codeforces.com/contest/553/problem/D) | 其实也不是那么难。。对目标进行二分，每次用类似于spfa那种算法去做检验，最后剩余集合非空则可行，反之则不可行 | 图论 二分 贪心 |

@@ -218,3 +218,6 @@
 |[Vanya and Brackets](http://codeforces.com/problemset/problem/552/E) | 一个关键点就在于：必定是在乘法的地方加括号，可以手算验证一下的。。于是枚举任何两个乘法位置，求出表达式的值，然后取最优解就行了 | 考智商？ |
 |[Dylans loves numbers](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=604&pid=1001) | 随便搞搞。。。 | 位运算 |
 |[Dylans loves sequences](http://acm.hdu.edu.cn/showproblem.php?pid=5273) | 其实有很简单的动态规划的。。我想复杂了，搞了一个划分树，每次去查询 | 动态规划 数据结构 |
+|[Kyoya and Photobooks](http://codeforces.com/problemset/problem/554/A) | set维护一下就行了。。 | 水 |
+|[Ohana Cleanup](http://codeforces.com/problemset/problem/554/B) | 注意到，只要原始字符串相等，就一定能同时变成全1，否则不行，用map计数就ok了 | 脑筋急转弯？。。 |
+|[Kyoya and Colored Balls](http://codeforces.com/problemset/problem/553/A) | 对于最后一个color的最后一个球，枚举在倒数第二中颜色最后一个球前面有多少个最后一种颜色，组合数 + 递归解决规模更小的子问题 | 组合计数 动态规划 |

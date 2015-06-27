@@ -224,3 +224,5 @@
 |[Kyoya and Permutations](http://codeforces.com/contest/553/problem/B) | 哭死。。看错题意了。。基本观察：符合要求的置换只能在相邻两个数之间交换，所以用dp计数，从头到尾判断就行了 | 动态规划 置换群 |
 |[Love Triangle](http://codeforces.com/contest/553/problem/C) | 关键点：love相连的两个顶点是可以合并的，合并之后必定是二分图才有解，对于每一个联通分量，只有一种赋值方法，独立的连通分量之间只要确定一个串，也唯一。因此就是2^(n - 1) | 深搜 组合计数 二分图判定 |
 |[Nudist Beach](http://codeforces.com/contest/553/problem/D) | 其实也不是那么难。。对目标进行二分，每次用类似于spfa那种算法去做检验，最后剩余集合非空则可行，反之则不可行 | 图论 二分 贪心 |
+|[Case of Matryoshkas](http://codeforces.com/contest/555/problem/A) | 卧槽！！！只是因为我没搞明白俄罗斯套娃是怎么回事WA了一路！！！其实超级简单的。。判断从1开始的连续数字，只有这个套娃可以不拆，其他都必须拆开 | 俄罗斯文化理解？😢 |
+|[Case of Fugitive](http://codeforces.com/contest/555/problem/B) | 简单分析一下，就可以发现是用贪心。按照最大长度的升序排列，每次选择不小于最小长度的lower_bound，可行则删掉，不可行则无解，用multiset维护一下就好 | 贪心 数据结构 |

@@ -226,3 +226,6 @@
 |[Nudist Beach](http://codeforces.com/contest/553/problem/D) | 其实也不是那么难。。对目标进行二分，每次用类似于spfa那种算法去做检验，最后剩余集合非空则可行，反之则不可行 | 图论 二分 贪心 |
 |[Case of Matryoshkas](http://codeforces.com/contest/555/problem/A) | 卧槽！！！只是因为我没搞明白俄罗斯套娃是怎么回事WA了一路！！！其实超级简单的。。判断从1开始的连续数字，只有这个套娃可以不拆，其他都必须拆开 | 俄罗斯文化理解？😢 |
 |[Case of Fugitive](http://codeforces.com/contest/555/problem/B) | 简单分析一下，就可以发现是用贪心。按照最大长度的升序排列，每次选择不小于最小长度的lower_bound，可行则删掉，不可行则无解，用multiset维护一下就好 | 贪心 数据结构 |
+|[Case of Chocolate](http://codeforces.com/contest/555/problem/C) | 每次query相当于对区间做了一次更新，于是可以用离散化 + 线段树来搞，为了提高效率，每次update要进行lazy propagation，避免每次都更新到叶节点 | 线段树 离散化 |
+|[Case of Zeros and Ones](http://codeforces.com/problemset/problem/556/A) | 最后肯定剩下全0或全1，简单计数。。 | 贪心？ |
+|[Case of Fake Numbers](http://codeforces.com/problemset/problem/556/B) | 第一个数必须减a1，于是后面的都顺着操作，判断一发。。 | 水 |

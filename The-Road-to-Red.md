@@ -230,3 +230,7 @@
 |[Case of Zeros and Ones](http://codeforces.com/problemset/problem/556/A) | 最后肯定剩下全0或全1，简单计数。。 | 贪心？ |
 |[Case of Fake Numbers](http://codeforces.com/problemset/problem/556/B) | 第一个数必须减a1，于是后面的都顺着操作，判断一发。。 | 水 |
 |[Case of Top Secret](http://codeforces.com/contest/555/problem/D) | 很漂亮的一道题。。每次模拟时，如果都能减半就能在log量级完成，但如果不能够减半，则必定是不断在两个端点之间徘徊，直接取余就能够至少减半了 | 二分 考智商 |
+|[Ilya and Diplomas](http://codeforces.com/problemset/problem/557/A) | 先满足所有下限，再尽可能满足最靠前的等级 | 贪心？ |
+|[Pasha and Tea](http://codeforces.com/problemset/problem/557/B) | 三个下限去卡就好了 | 贪心？ |
+|[Arthur and Table](http://codeforces.com/problemset/problem/557/C) | 枚举每一个可能的最大值，然后选择保证stable的其他最大代价的保留，数据范围小直接计数就好了 | 贪心？ |
+|[Vitaly and Cycle](http://codeforces.com/problemset/problem/557/D) | 挺有意思的题目。。。如果不是二分图，一定有奇数长度环，否则对每个连通分量做二染色，分别考虑连通分量包含至少三个顶点、最多包含两个顶点、只包含一个顶点的情形 | 图论 组合计数 二分图染色 |

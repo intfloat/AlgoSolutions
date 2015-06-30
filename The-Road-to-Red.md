@@ -229,3 +229,4 @@
 |[Case of Chocolate](http://codeforces.com/contest/555/problem/C) | 每次query相当于对区间做了一次更新，于是可以用离散化 + 线段树来搞，为了提高效率，每次update要进行lazy propagation，避免每次都更新到叶节点 | 线段树 离散化 |
 |[Case of Zeros and Ones](http://codeforces.com/problemset/problem/556/A) | 最后肯定剩下全0或全1，简单计数。。 | 贪心？ |
 |[Case of Fake Numbers](http://codeforces.com/problemset/problem/556/B) | 第一个数必须减a1，于是后面的都顺着操作，判断一发。。 | 水 |
+|[Case of Top Secret](http://codeforces.com/contest/555/problem/D) | 很漂亮的一道题。。每次模拟时，如果都能减半就能在log量级完成，但如果不能够减半，则必定是不断在两个端点之间徘徊，直接取余就能够至少减半了 | 二分 考智商 |

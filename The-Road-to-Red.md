@@ -235,3 +235,4 @@
 |[Arthur and Table](http://codeforces.com/problemset/problem/557/C) | 枚举每一个可能的最大值，然后选择保证stable的其他最大代价的保留，数据范围小直接计数就好了 | 贪心？ |
 |[Vitaly and Cycle](http://codeforces.com/problemset/problem/557/D) | 挺有意思的题目。。。如果不是二分图，一定有奇数长度环，否则对每个连通分量做二染色，分别考虑连通分量包含至少三个顶点、最多包含两个顶点、只包含一个顶点的情形 | 图论 组合计数 二分图染色 |
 |[Ann and Half-Palindrome](http://codeforces.com/contest/557/problem/E) | 是我太渣。。动态规划判断half palindrome好说，然后求第k个，可以通过建立trie树，一遍dfs去计算左子树和右子树的节点数，非常简洁明了 | 动态规划 前缀树 |
+|[Majority Element](https://leetcode.com/problems/majority-element-ii/) | 一般不会记录leetcode题目，但是这个还挺有意思的。。以前碰到过求绝对众数的问题，这里要求超过n / 3的数，记录两个candidate，当新来的跟目前两个都不一样时，counter自减，这样可以保证n / 3众数最后一定能保留下来，最后再线性扫描检验。更为重要的是，这个框架是具有普适性的，可以直接推广到n / m众数的情形，只需要保留m - 1个candidate就行了 | 考智商？。。 |

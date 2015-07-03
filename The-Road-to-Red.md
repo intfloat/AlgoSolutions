@@ -186,6 +186,7 @@
 |[数长方形](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1001) | 枚举每一对水平边和垂直边 | 简单几何 |
 |[弹吉他](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1002) | 一开始看错题了。。以为顺序任意，果然脑子经常进水。。对各种可能的排列进行状态转移，取代价最小的可行解 | 动态规划 |
 |[蜀道难](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1004) | 有很naive的O(n * n)解法，显然超时。。办法是统计每相邻两个点对解产生的影响，求partial sum，再用rmq去对每一个半圆查询 | 区间最值查询 |
+|[行路难](http://acm.hdu.edu.cn/showproblem.php?pid=5260) | 很神奇的一题。。从终点逆向跑bellman ford，关键在于如何检测无限环的情况，需要迭代6 * n轮才行，我脑补出来了一种这个情况，智商低是硬伤。。。 | 图论 考智商 |
 |[最强密码](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=602&pid=1005) | 每一串覆盖a-z的分一组，能分多少组，最短串就是组数+1，然后个数就是总数减掉长为k的子串的个数，自己yy出来了一个动态规划算法，居然还AC了，给自己跪。。。 | 字符串 动态规划 |
 |[Face Detection](http://codeforces.com/contest/549/problem/A) | 随便搞搞就行了。。 | 水 |
 |[Looksery Party](http://codeforces.com/contest/549/problem/B) | 我太笨了。。。如果全部非零，一个都不选就行了；只要有一个非0的，那么就选对应的元素，每次操作都能保证至少消耗数组中的一个元素，因此必然有可行解 | 贪心构造 考智商 |

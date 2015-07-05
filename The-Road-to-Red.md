@@ -240,3 +240,4 @@
 |[Majority Element](https://leetcode.com/problems/majority-element-ii/) | 一般不会记录leetcode题目，但是这个还挺有意思的。。以前碰到过求绝对众数的问题，这里要求超过n / 3的数，记录两个candidate，当新来的跟目前两个都不一样时，counter自减，这样可以保证n / 3众数最后一定能保留下来，最后再线性扫描检验。更为重要的是，这个框架是具有普适性的，可以直接推广到n / m众数的情形，只需要保留m - 1个candidate就行了 | 考智商？。。 |
 |[YJC tricks time](http://acm.hdu.edu.cn/showproblem.php?pid=5276) | 卧槽。。忘了检查超过180度的情况，第一次在BC被hack成功。。 | 小学数学？ |
 |[YJC counts stars](http://acm.hdu.edu.cn/showproblem.php?pid=5276) | 平面图上的最大团问题，最优解不会超过4，所以分各种情况讨论就行了 | 图论 |
+|[Cycle](http://acm.hdu.edu.cn/showproblem.php?pid=5215) | 可以用二分染色去判定是否存在奇数长度环，用双连通分量判定是否存在偶数长度环，后来发现了一个很感人的算法，把每个顶点分裂，用并查集，我智商不够。。 | 图论 |

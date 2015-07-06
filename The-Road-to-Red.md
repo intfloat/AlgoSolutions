@@ -243,3 +243,4 @@
 |[Cycle](http://acm.hdu.edu.cn/showproblem.php?pid=5215) | 可以用二分染色去判定是否存在奇数长度环，用双连通分量判定是否存在偶数长度环，后来发现了一个很感人的算法，把每个顶点分裂，用并查集，我智商不够。。 | 图论 |
 |[How far away](http://acm.hdu.edu.cn/showproblem.php?pid=2586) | 红果果的lca问题，用rmq或者tarjan离线算法都行 | LCA |
 |[Redundant Paths](http://poj.org/problem?id=3177) | 双连通图可以满足给定的约束，于是可以找出所有的双连通分量，缩成一个点，得到一棵树。对于树来说，需要添加(leaf + 1) / 2条边才能变成双连通图 | 双连通图 树 |
+|[Minimum Cut](http://poj.org/problem?id=2914) | 我太弱了。。。第一次知道还有一个Stoer-Wagner算法来求无向图的最小割，每次求最大生成树，将最后一条边所连接的两个顶点合并，直至最后剩下两个顶点 | 无向图最小割 |

@@ -244,3 +244,8 @@
 |[How far away](http://acm.hdu.edu.cn/showproblem.php?pid=2586) | 红果果的lca问题，用rmq或者tarjan离线算法都行 | LCA |
 |[Redundant Paths](http://poj.org/problem?id=3177) | 双连通图可以满足给定的约束，于是可以找出所有的双连通分量，缩成一个点，得到一棵树。对于树来说，需要添加(leaf + 1) / 2条边才能变成双连通图 | 双连通图 树 |
 |[Minimum Cut](http://poj.org/problem?id=2914) | 我太弱了。。。第一次知道还有一个Stoer-Wagner算法来求无向图的最小割，每次求最大生成树，将最后一条边所连接的两个顶点合并，直至最后剩下两个顶点 | 无向图最小割 |
+|[超级英雄hero](http://www.lydsy.com/JudgeOnline/problem.php?id=1191) | 红果果的二分图最大匹配，按照点的标号去匹配就好了 | 二分图匹配 |
+|[生日礼物](http://www.lydsy.com/JudgeOnline/problem.php?id=1293) | 对于某个固定的终点，起点必须保证所有颜色都有并且恰好是所有颜色都有，所以用two pointers来维护就行了，O(N)复杂度 | 贪心 双指针 |
+|[狡猾的商人](http://www.lydsy.com/JudgeOnline/problem.php?id=1202) | 每次插入一个新的区间，去考虑所有能够因为这个区间而改变的其它区间，检测到矛盾则为false | 考智商？？ |
+|[宠物收养所](http://www.lydsy.com/JudgeOnline/problem.php?id=1208) | 官方写着用splay，其实用set维护一下就行了。。。 | 数据结构 |
+|[打鼹鼠](http://www.lydsy.com/JudgeOnline/problem.php?id=1207) | 将所有事件按照时间排序，线性dp就行了，懒得说了。。 | 动态规划 |

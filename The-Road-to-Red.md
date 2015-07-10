@@ -249,4 +249,8 @@
 |[狡猾的商人](http://www.lydsy.com/JudgeOnline/problem.php?id=1202) | 每次插入一个新的区间，去考虑所有能够因为这个区间而改变的其它区间，检测到矛盾则为false | 考智商？？ |
 |[宠物收养所](http://www.lydsy.com/JudgeOnline/problem.php?id=1208) | 官方写着用splay，其实用set维护一下就行了。。。 | 数据结构 |
 |[打鼹鼠](http://www.lydsy.com/JudgeOnline/problem.php?id=1207) | 将所有事件按照时间排序，线性dp就行了，懒得说了。。 | 动态规划 |
-|[Minimal Difference](SRM 662 div 1 level 1) | 挺神奇的一件事情。。我YY出来了一个贪心算法，不能够证明其正确性，但也举不出反例。。然后pass system test了。。 | 贪心 |
+|[Minimal Difference](SRM 662 div 1 level 1) | 挺神奇的一件事情。。我YY出来了一个贪心算法，不能够证明其正确性，但也举不出反例。。然后pass system test了。。cgy大神有一个[证明](http://codeforces.com/blog/entry/19151)，把数建模成图中的顶点，有合法解当且仅当存在哈密顿回路 | 贪心 |
+|[Exact Tree](SRM 662 div 1 level 2) | 跪烂膝盖。。。dp的状态不好想。。 | 动态规划 |
+|[Hex Speak](SRM 662 div 2 level 1) | 进制转换一下就行了。。 | 初中数学？ |
+|[Exact Tree Easy](SRM 662 div 2 level 2) | 叶节点最多就是一层的情形，然后每次把一个节点挂到最后一个叶子下面都能让叶节点数减一 | 贪心 构造 |
+|[Maximal Safety Level](SRM 662 div 2 level 3) | 只有一种情形需要考虑：原点在三角形内部。枚举原点和每条边上的中点就行了 | 几何 |

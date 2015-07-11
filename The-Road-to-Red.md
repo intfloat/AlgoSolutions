@@ -256,3 +256,4 @@
 |[Maximal Safety Level](SRM 662 div 2 level 3) | 只有一种情形需要考虑：原点在三角形内部。枚举原点和每条边上的中点就行了 | 几何 |
 |[Senior's Array](http://acm.hdu.edu.cn/showproblem.php?pid=5280) | 枚举每一个位置，跑一下最大连续区间和就行了 | 枚举 |
 |[Senior's Gun](http://acm.hdu.edu.cn/showproblem.php?pid=5281) | 最终的结果肯定是最大的若干个gun和最小的若干个monster，但不一定是消灭最多的monster！！ | 贪心 |
+|[Senior's String](http://acm.hdu.edu.cn/showproblem.php?pid=5282) | 一眼就知道是dp，也想到状态表示了，死活没想出来状态如何转移。。。我太弱了。。。对于f(i, j)，分考虑第i个字符和不考虑i个字符两种情形讨论 | 动态规划 |

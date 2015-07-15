@@ -260,3 +260,8 @@
 |[Senior's Fish](http://acm.hdu.edu.cn/showproblem.php?pid=5283) | 膜拜xyz11的代码。。。矩形的查询拆分，这个地球人都知道。。然后维护四个线段树，每次更新之后，将移出边界的点删掉，每次查询只需要看全区间中还有多少个在边界中的点，其实也不是那么难。。。 | 线段树 |
 |[最大子矩阵](http://www.lydsy.com/JudgeOnline/problem.php?id=1084) | 注意到列数<=2，所以红果果的状态压缩动态规划，需要设计一下状态，我觉得自己写麻烦了。。。 | 状压动归 |
 |[骑士精神](http://www.lydsy.com/JudgeOnline/problem.php?id=1085) | 典型的搜索问题，用A*搞搞就行。。注意棋盘状态编码的问题 | A*搜索 |
+|[Lala Land and Apple Tree](http://codeforces.com/problemset/problem/558/A) | 分原点两侧苹果树数目相等和不相等两种情况就好了。。 | 小学数学？ |
+|[Amr and Large Array](http://codeforces.com/problemset/problem/558/B) | 用哈希表去计数，然后线性扫描一发得到左右边界 | 简单计数 |
+|[Amr and Chemistry](http://codeforces.com/problemset/problem/558/C) | 比赛的时候想了20分钟才有思路。。。intuition：如果一个数要保留n个1，那么一定是最左边的n个1，然后找出1 bit最少的数，枚举前缀 | 数论 考智商 |
+|[Guess Your Way Out II](http://codeforces.com/problemset/problem/558/D) | 不敢相信room里面只有我一个人AC了。。其实不是很难吧，对于每一个ancestor，确定一组leaf，这些leaf肯定不是exit，然后贪心扫描这一大堆区间，看看有多少点没有被覆盖 | 树 贪心 |
+|[A Simple Task](http://codeforces.com/problemset/problem/558/E) | 一看就是线段树 + lazy propagation，但是比赛期间没有想清楚怎么propagate，后来看到一种简洁高效的解法，用set去维护区间，每次操作顶多增加两个区间，我还是智商不够。。 | 数据结构 |

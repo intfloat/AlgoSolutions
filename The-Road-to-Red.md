@@ -265,3 +265,8 @@
 |[Amr and Chemistry](http://codeforces.com/problemset/problem/558/C) | 比赛的时候想了20分钟才有思路。。。intuition：如果一个数要保留n个1，那么一定是最左边的n个1，然后找出1 bit最少的数，枚举前缀 | 数论 考智商 |
 |[Guess Your Way Out II](http://codeforces.com/problemset/problem/558/D) | 不敢相信room里面只有我一个人AC了。。其实不是很难吧，对于每一个ancestor，确定一组leaf，这些leaf肯定不是exit，然后贪心扫描这一大堆区间，看看有多少点没有被覆盖 | 树 贪心 |
 |[A Simple Task](http://codeforces.com/problemset/problem/558/E) | 一看就是线段树 + lazy propagation，但是比赛期间没有想清楚怎么propagate，后来看到一种简洁高效的解法，用set去维护区间，每次操作顶多增加两个区间，我还是智商不够。。 | 数据结构 |
+|[Who Is Winner](http://codeforces.com/gym/100712/problem/A) | 排排序就行了。。 | 水 |
+|[Alternating Strings](http://codeforces.com/gym/100712/problem/D) | 考虑以某个位置i结束，前一个分裂点是j的状态，判断是否可行，然后转移就好了 | 动态规划 |
+|[Alternating Strings II](http://codeforces.com/gym/100712/problem/L) | 和上面相同的题目，只是数据规模变大了。转移的时候，用线段树高效查询区间最小值 | 动态规划 线段树 |
+|[Bahosian and Digits](http://codeforces.com/gym/100712/problem/I) | 从大到小枚举K，枚举第一个数，关键在于更新的时候要聪明一点，我用了树状数组，其实可以不用的。。。 | 树状数组 |
+|[Bridges](http://codeforces.com/gym/100712/problem/H) | 找出所有双连通分量，然后缩点构造出一个新图。要想消除尽可能多的桥，就得在树里面找出最长的路径，两次bfs得到树的直径。但是不知道为什么，我的代码一直wrong answer，又看不了别人的代码，无解。。。 | 图论 |

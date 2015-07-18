@@ -270,3 +270,5 @@
 |[Alternating Strings II](http://codeforces.com/gym/100712/problem/L) | 和上面相同的题目，只是数据规模变大了。转移的时候，用线段树高效查询区间最小值 | 动态规划 线段树 |
 |[Bahosian and Digits](http://codeforces.com/gym/100712/problem/I) | 从大到小枚举K，枚举第一个数，关键在于更新的时候要聪明一点，我用了树状数组，其实可以不用的。。。 | 树状数组 |
 |[Bridges](http://codeforces.com/gym/100712/problem/H) | 找出所有双连通分量，然后缩点构造出一个新图。要想消除尽可能多的桥，就得在树里面找出最长的路径，两次bfs得到树的直径。但是不知道为什么，我的代码一直wrong answer，又看不了别人的代码，无解。。。 | 图论 |
+|[A string problem](http://acm.hdu.edu.cn/showproblem.php?pid=5284) | WTF！！！本来能拿room No. 1，还有奖金的。。结果就因为用了cin而不是scanf导致TLE了，68块钱的教训！！！ | 字符串 |
+|[wyh2000 and pupil](http://acm.hdu.edu.cn/showproblem.php?pid=5285) | 红果果二分图判定，但需要注意m = 0的特殊情况，貌似anta和kuangbin神牛都在这个点上挂了 | 图论 |

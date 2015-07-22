@@ -272,5 +272,7 @@
 |[Bridges](http://codeforces.com/gym/100712/problem/H) | 找出所有双连通分量，然后缩点构造出一个新图。要想消除尽可能多的桥，就得在树里面找出最长的路径，两次bfs得到树的直径。但是不知道为什么，我的代码一直wrong answer，又看不了别人的代码，无解。。。 | 图论 |
 |[A string problem](http://acm.hdu.edu.cn/showproblem.php?pid=5284) | WTF！！！本来能拿room No. 1，还有奖金的。。结果就因为用了cin而不是scanf导致TLE了，68块钱的教训！！！ | 字符串 |
 |[wyh2000 and pupil](http://acm.hdu.edu.cn/showproblem.php?pid=5285) | 红果果二分图判定，但需要注意m = 0的特殊情况，貌似anta和kuangbin神牛都在这个点上挂了 | 图论 |
+|[wyh2000 and sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5286) | 目前仍然是TLE，时间常数搞不定，心太累已经弃疗。。。题目好诡异啊，用到了sqrt decomposition，还需要高效查询一个区间里某个数出现的次数 | 分块 数据结构 |
 |[最大土地面积](http://www.lydsy.com/JudgeOnline/problem.php?id=1069) | 脑补一下就可以知道所求的四边形顶点全部都在凸包上，枚举每一对顶点，同时用旋转卡壳来提高扫描速度 | 凸包 旋转卡壳 |
 |[压缩](http://www.lydsy.com/JudgeOnline/problem.php?id=1068) | 红果果的动态规划，保证O(N^3)搞定，状态都是我自己YY出来的，基本思想就是划分区间，并在区间之间进行转移 | 动态规划 |
+|[余数之和sum](http://www.lydsy.com/JudgeOnline/problem.php?id=1257) | 之前在CF上做过很相似的题目，1 ~ sqrt(N)可以枚举，而sqrt(N) ~ N的商只有sqrt(N)个，因此后半部分去枚举商值 | 数论 |

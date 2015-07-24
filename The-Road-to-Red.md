@@ -276,5 +276,7 @@
 |[最大土地面积](http://www.lydsy.com/JudgeOnline/problem.php?id=1069) | 脑补一下就可以知道所求的四边形顶点全部都在凸包上，枚举每一对顶点，同时用旋转卡壳来提高扫描速度 | 凸包 旋转卡壳 |
 |[压缩](http://www.lydsy.com/JudgeOnline/problem.php?id=1068) | 红果果的动态规划，保证O(N^3)搞定，状态都是我自己YY出来的，基本思想就是划分区间，并在区间之间进行转移 | 动态规划 |
 |[余数之和sum](http://www.lydsy.com/JudgeOnline/problem.php?id=1257) | 之前在CF上做过很相似的题目，1 ~ sqrt(N)可以枚举，而sqrt(N) ~ N的商只有sqrt(N)个，因此后半部分去枚举商值 | 数论 |
+|[Currency System in Geraldion](http://codeforces.com/problemset/problem/560/A) | 第一眼吓了我一跳，子集和不是NPC的么。。然后发现自己读错题目了，只要看看是否有1就行了 | 脑筋急转弯 |
+|[Gerald is Into Art](http://codeforces.com/problemset/problem/560/B) | 贪心枚举每一种情形就行了 | 贪心 几何 |
 |[Gerald Hexagon](http://codeforces.com/contest/559/problem/A) | 用余弦公式 + 海伦公式乱搞了一把。。 | 几何 数学 |
 |[Equivalent String](http://codeforces.com/contest/559/problem/B) | 智商太低。。不过挺神奇的是，我YY出来的算法在第104组数据上跪了，而这是最后一组测试数据。。。膜拜了bmerry的代码，非常简洁，分治法。。 | 分治 |

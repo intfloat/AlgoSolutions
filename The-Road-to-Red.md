@@ -280,3 +280,6 @@
 |[Gerald is Into Art](http://codeforces.com/problemset/problem/560/B) | 贪心枚举每一种情形就行了 | 贪心 几何 |
 |[Gerald Hexagon](http://codeforces.com/contest/559/problem/A) | 用余弦公式 + 海伦公式乱搞了一把。。 | 几何 数学 |
 |[Equivalent String](http://codeforces.com/contest/559/problem/B) | 智商太低。。不过挺神奇的是，我YY出来的算法在第104组数据上跪了，而这是最后一组测试数据。。。膜拜了bmerry的代码，非常简洁，分治法。。 | 分治 |
+|[Souvenir](http://acm.hdu.edu.cn/showproblem.php?pid=5310) | 随便搞搞就好 | 贪心 |
+|[Hidden String](http://acm.hdu.edu.cn/showproblem.php?pid=5311) | 注意对目标串枚举，否则就TLE | 枚举？ |
+|[Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5312) | 坑爹的。。。我以为贪心是对的，结果被hack，[三角形数](http://baike.baidu.com/view/1047488.htm)是神马？。。从来没听说过 | 三角形数。。 |

@@ -283,3 +283,4 @@
 |[Souvenir](http://acm.hdu.edu.cn/showproblem.php?pid=5310) | 随便搞搞就好 | 贪心 |
 |[Hidden String](http://acm.hdu.edu.cn/showproblem.php?pid=5311) | 注意对目标串枚举，否则就TLE | 枚举？ |
 |[Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5312) | 坑爹的。。。我以为贪心是对的，结果被hack，[三角形数](http://baike.baidu.com/view/1047488.htm)是神马？。。从来没听说过 | 三角形数。。 |
+|[Bipartite Graph](http://acm.hdu.edu.cn/showproblem.php?pid=5313) | 很奇怪啊。。对于每一个连通分量，都需要白黑染色，最终使得白色和黑色的数量差异最小，我记得这个问题不能贪心啊。。怎么只有贪心才能AC呢。。 | 二分图 贪心 计数 |

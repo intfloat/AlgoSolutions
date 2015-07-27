@@ -280,8 +280,11 @@
 |[Gerald is Into Art](http://codeforces.com/problemset/problem/560/B) | 贪心枚举每一种情形就行了 | 贪心 几何 |
 |[Gerald Hexagon](http://codeforces.com/contest/559/problem/A) | 用余弦公式 + 海伦公式乱搞了一把。。 | 几何 数学 |
 |[Equivalent String](http://codeforces.com/contest/559/problem/B) | 智商太低。。不过挺神奇的是，我YY出来的算法在第104组数据上跪了，而这是最后一组测试数据。。。膜拜了bmerry的代码，非常简洁，分治法。。 | 分治 |
+|[Gerald and Giant Chess](http://codeforces.com/contest/559/problem/C) | 我太弱了。。很明显就是对black cell进行dp，但是没有想到转移方程，对第一个black cell进行转移啊不是最后一个。。智商硬伤 | 动态规划 计数 |
 |[Souvenir](http://acm.hdu.edu.cn/showproblem.php?pid=5310) | 随便搞搞就好 | 贪心 |
 |[Hidden String](http://acm.hdu.edu.cn/showproblem.php?pid=5311) | 注意对目标串枚举，否则就TLE | 枚举？ |
 |[Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5312) | 坑爹的。。。我以为贪心是对的，结果被hack，[三角形数](http://baike.baidu.com/view/1047488.htm)是神马？。。从来没听说过 | 三角形数。。 |
 |[Bipartite Graph](http://acm.hdu.edu.cn/showproblem.php?pid=5313) | 很奇怪啊。。对于每一个连通分量，都需要白黑染色，最终使得白色和黑色的数量差异最小，我记得这个问题不能贪心啊。。怎么只有贪心才能AC呢。。 | 二分图 贪心 计数 |
 |[ABBADiv1](http://community.topcoder.com/stat?c=problem_statement&pm=13922&rd=16512) | 我太弱了。。。关键点在于逆向模拟的时候，只可能有O(N * N)个不同的状态 | 考智商 |
+|[Chess Floor](http://community.topcoder.com/stat?c=problem_statement&pm=13917&rd=16512) | 枚举一发就行了。。 | 水 |
+|[ABBA](http://community.topcoder.com/stat?c=problem_statement&pm=13918&rd=16512) | 很显然逆向 | 字符串 |

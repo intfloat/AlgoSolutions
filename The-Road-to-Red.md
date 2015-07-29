@@ -289,3 +289,4 @@
 |[Chess Floor](http://community.topcoder.com/stat?c=problem_statement&pm=13917&rd=16512) | 枚举一发就行了。。 | 水 |
 |[ABBA](http://community.topcoder.com/stat?c=problem_statement&pm=13918&rd=16512) | 很显然逆向 | 字符串 |
 |[Chess Rolling](http://community.topcoder.com/stat?c=problem_statement&pm=13919&rd=16512) | 朴素想法是对所有permutation枚举，16!必然TLE，但是2^16比较小，一个自然的想法就是数位dp，只关注最终的集合以及胜者，状态数O(2^N * N) | 动态规划 |
+|[Changing Change](http://community.topcoder.com/stat?c=problem_statement&pm=13847&rd=16512) | 膝盖跪烂。。删除操作可以通过生成函数表达，作为弱渣第一次碰到。。而且[神牛的解法](http://codeforces.com/blog/entry/19400)依赖一个组合计数的中间结论，我从来没见过的结论。。。 | 生成函数 组合计数 |

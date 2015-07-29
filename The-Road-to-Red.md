@@ -13,7 +13,7 @@
 |[把数组排成最小数](http://ac.jobdu.com/problem.php?pid=1504) | 不能简单按照字典序，注意一个字符串为另一个字符串前缀的情形 | 排序 |
 |[明明的烦恼](http://www.lydsy.com/JudgeOnline/problem.php?id=1005) | 生成树计数的问题，根据prufer编码（第一次听说这种东西……），有标记的生成树跟一个长度为n-2的序列是一一对应的，因此生成树计数就转化成了组合计数的问题，首先选出有度数限制的顶点，然后根据多项式系数求解。由于涉及高精度运算，python是比较好的选择 | 生成树计数；组合数学；高精度 |
 |[水平可见直线](http://www.lydsy.com/JudgeOnline/problem.php?id=1007) | 注意分析一条直线在什么情况下会被掩盖，将直线按照斜率升序排列，用栈来维护，每遇到一条直线，就从栈中取出两条直线计算交点，如该直线在交点以上，则将原来的直线覆盖，反之则没有覆盖，同时还需注意两条直线斜率相同的情形。 | 栈；排序；几何 |
-|[神奇的国度](http://www.lydsy.com/JudgeOnline/problem.php?id=1006) | graph coloring在一般情况下是NP问题，但对于弦图有多项式算法。于是，先找出弦图中的完美消除序列，在逆向进行标记染色。第一次做和弦图相关的题目，长见识…… | 弦图；图颜色；最大势算法 |
+|[神奇的国度](http://www.lydsy.com/JudgeOnline/problem.php?id=1006) | graph coloring在一般情况下是NP问题，但对于弦图有多项式算法。于是，先找出弦图中的完美消除序列，在逆向进行标记染色。第一次做和弦图相关的题目，长见识…… | 弦图；图染色；最大势算法 |
 |[玩具装箱](http://www.lydsy.com/JudgeOnline/problem.php?id=1010) | 朴素的动态规划复杂度为O(N^2)，会超时；注意到决策具有单调性，于是可以二分更新决策区间，用双端队列来进行维护。神题啊……折腾了一天…… | 动态规划；双端队列；二分 |
 |[最大数](http://www.lydsy.com/JudgeOnline/problem.php?id=1012) | 维护一个单调下降的队列，每次查询采用二分查找 | 单调队列；二分 |
 |[GT考试](http://www.lydsy.com/JudgeOnline/problem.php?id=1009) | 定义状态f(i, j)为长度为i的字符串最后j个字符为模板的前j个字符，f(i+1, j)和f(i, j)之间可以构造一个固定的转移矩阵，不管i的取值是多少，于是可以利用矩阵的快速幂来进行求解 | 动态规划；矩阵快速幂；字符串计数 |
@@ -23,7 +23,7 @@
 |[最小生成树计数](http://www.lydsy.com/JudgeOnline/problem.php?id=1016) | 要求对最小生成树的选边过程有一个比较深刻的了解，不同最小生成树的边权集合是相同的，只是对于特定长度的边，选哪些组合并不确定。用位运算枚举，根据乘法原理可解。 | 最小生成树；并查集；位运算 |
 |[球形空间产生器](http://www.lydsy.com/JudgeOnline/problem.php?id=1013) | 根据球心定义，可以列出n个独立的方程，其中的平方项相互抵消，变成了一个线性方程，高斯消元法求解。 | 几何；高斯消元法 |
 |[How many integers can you find](http://acm.hdu.edu.cn/showproblem.php?pid=1796) | 原子集合定义：可以被第i个数整除的数的个数；利用容斥原理可解，枚举是借助于位运算比较方便，当然，深搜也是可以的。 | 容斥原理；位运算 |
-|[逃生](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?pid=1001&cid=525) | 赤裸裸的拓扑排序，但是要注意字典序的问题，因此需要按照编号从大到小枚举| 拓扑排序 |
+|[逃生](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?pid=1001&cid=525) | CLJ坑了几百人。。注意不是求字典序最小的拓扑顺序！不是字典序最小！不是字典序最小！ | 图论 |
 |[DZY Loves Sequences](http://codeforces.com/problemset/problem/446/A) | 枚举将要被改变的那个数字的位置，把它之前的最长上升序列和之后的最长上升序列拼接起来即可，需要注意边界条件。 | 枚举 |
 |[DZY Loves Modification](http://codeforces.com/problemset/problem/446/B) | 通过简单证明可知，行和列之间的操作顺序是可以交换的，因此可以枚举有i个行操作，剩余的均为列操作，对于所有的行操作而言，显然要遵循贪心的选择过程，为了提高时间效率，可以用堆来进行维护。 | 贪心；最大堆 |
 |[Jzzhu and Cities](http://codeforces.com/problemset/problem/449/B) | 单源最短路径的改编版本，在一个图中，为了维持到一个顶点的最短距离保持不变，事实上只需要n-1条边，对应于Dijkstra算法中每个顶点最后被更新的边；同时为了提高时间效率，同样需要维护堆，否则O(N^2)会超时 | 单源最短路径；堆 |
@@ -288,3 +288,4 @@
 |[ABBADiv1](http://community.topcoder.com/stat?c=problem_statement&pm=13922&rd=16512) | 我太弱了。。。关键点在于逆向模拟的时候，只可能有O(N * N)个不同的状态 | 考智商 |
 |[Chess Floor](http://community.topcoder.com/stat?c=problem_statement&pm=13917&rd=16512) | 枚举一发就行了。。 | 水 |
 |[ABBA](http://community.topcoder.com/stat?c=problem_statement&pm=13918&rd=16512) | 很显然逆向 | 字符串 |
+|[Chess Rolling](http://community.topcoder.com/stat?c=problem_statement&pm=13919&rd=16512) | 朴素想法是对所有permutation枚举，16!必然TLE，但是2^16比较小，一个自然的想法就是数位dp，只关注最终的集合以及胜者，状态数O(2^N * N) | 动态规划 |

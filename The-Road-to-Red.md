@@ -290,3 +290,5 @@
 |[ABBA](http://community.topcoder.com/stat?c=problem_statement&pm=13918&rd=16512) | 很显然逆向 | 字符串 |
 |[Chess Rolling](http://community.topcoder.com/stat?c=problem_statement&pm=13919&rd=16512) | 朴素想法是对所有permutation枚举，16!必然TLE，但是2^16比较小，一个自然的想法就是数位dp，只关注最终的集合以及胜者，状态数O(2^N * N) | 动态规划 |
 |[Changing Change](http://community.topcoder.com/stat?c=problem_statement&pm=13847&rd=16512) | 膝盖跪烂。。删除操作可以通过生成函数表达，作为弱渣第一次碰到。。而且[神牛的解法](http://codeforces.com/blog/entry/19400)依赖一个组合计数的中间结论，我从来没见过的结论。。。 | 生成函数 组合计数 |
+|[Clique in Divisibility Graph](http://codeforces.com/problemset/problem/566/F) | 很好的题。。按照整除性进行动态规划，求出最大团 | 数论 图论 |
+|[Restructuring Company](http://codeforces.com/problemset/problem/566/D) | 我自己YY出来了一个类似并查集的数据结构，然后pass system test了。。关键点在于区间合并要高效，因此可以记录每个节点最右边具有相同根的节点，避免遍历 | 并查集 数据结构 |

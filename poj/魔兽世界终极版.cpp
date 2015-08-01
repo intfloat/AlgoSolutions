@@ -4,22 +4,22 @@
 #include<iomanip>
 #include<cstring>
 using namespace std;
-int life[5],attackpower[5]; 
-int hour,minute; 
+int life[5],attackpower[5];
+int hour,minute;
 char weapon[3][10]={"sword","bomb","arrow"};
 char Standard[5][10]={"dragon","ninja","iceman","lion","wolf"};
 char redorder[5][10]={"iceman","lion","wolf","ninja","dragon"};
 char blueorder[5][10]={"lion","dragon","ninja","iceman","wolf"};
 int RedNumOrder[5]={2,3,4,1,0};
-int BlueNumOrder[5]={3,0,1,2,4}; 
+int BlueNumOrder[5]={3,0,1,2,4};
 class City{
     public:
-        int life;   
-        int warrior;        
-        int RedNum;     
+        int life;
+        int warrior;
+        int RedNum;
         bool redshot;
         bool redbomb;
-        char redwar[10];         
+        char redwar[10];
         int BlueNum;
         bool blueshot;
         bool bluebomb;
@@ -28,44 +28,44 @@ class City{
         int bluewin;
         bool ifredwin;
         bool ifbluewin;
-        bool HaveFlag;  
-        char flag[5];    
-        City(){HaveFlag=false; life=0; warrior=0; 
-            redshot=false; blueshot=false; 
-            redbomb=false; bluebomb=false; 
-            redwin=0; bluewin=0; 
+        bool HaveFlag;
+        char flag[5];
+        City(){HaveFlag=false; life=0; warrior=0;
+            redshot=false; blueshot=false;
+            redbomb=false; bluebomb=false;
+            redwin=0; bluewin=0;
             ifredwin=false; ifbluewin=false;}
 };
 class blueheadquarter;
 class Record{
     public:
         int n;
-        bool Alive; 
-        char Variety[10];       
-        int position;        
-        int nowlife;    
-        int attack; 
-        bool bomb;              
-        bool sword; 
-        bool shot;      
-        double spirit;  
-        int arrow;  
-        int ArrowPower; 
-        int SwordPower;     
-        int step;       
-        int loyalty;    
-        int dec;        
+        bool Alive;
+        char Variety[10];
+        int position;
+        int nowlife;
+        int attack;
+        bool bomb;
+        bool sword;
+        bool shot;
+        double spirit;
+        int arrow;
+        int ArrowPower;
+        int SwordPower;
+        int step;
+        int loyalty;
+        int dec;
         Record(){step=0;}
 };
 class redheadquarter{
-    private:                
-        char Mark[20];      
+    private:
+        char Mark[20];
     public:
         int number;
-        int totallife;      
-        int EnemyNumber;        
-        int WarNum; 
-        Record record[5000];        
+        int totallife;
+        int EnemyNumber;
+        int WarNum;
+        Record record[5000];
         redheadquarter(int M){
             totallife=M; EnemyNumber=0;
             strcpy(Mark,"redheadquarter");
@@ -81,11 +81,11 @@ class redheadquarter{
         int Fight(blueheadquarter& Blue);
 };
 class blueheadquarter{
-    private:            
-        char Mark[20];      
+    private:
+        char Mark[20];
     public:
         int number;
-        int totallife;  
+        int totallife;
         int EnemyNumber;
         int WarNum;
         Record record[5000];
@@ -111,7 +111,7 @@ int acquire(redheadquarter& Red, blueheadquarter& Blue);
 int ShowArrow(redheadquarter& Red, blueheadquarter& Blue);
 int main(){
     cin>>total;
-    for(int k=0;k<total;k++){   
+    for(int k=0;k<total;k++){
         cin>>TotalLife>>nCity>>ArrowPower>>DecLoyalty>>TotalTime;
         delete []city;
         city=new City[nCity+2];
@@ -143,7 +143,7 @@ int main(){
                 Red.LionRun();
                 Blue.LionRun();
             }
-            else if(minute==10){                
+            else if(minute==10){
                 Red.March();
                 Blue.March();
                 PrintMarch(Red,Blue);
@@ -162,10 +162,10 @@ int main(){
                 ShowArrow(Red,Blue);
             }
             else if(minute==38){
-                Red.BombDeath(Blue);                
+                Red.BombDeath(Blue);
             }
             else if(minute==40){
-                Red.Fight(Blue);                
+                Red.Fight(Blue);
             }
             else if(minute==50){
                 Red.ReportLife();
@@ -174,15 +174,15 @@ int main(){
             else if(minute==55){
                 Red.ReportWeapon();
                 Blue.ReportWeapon();
-            }           
-        }           
-    }   
+            }
+        }
+    }
     return 0;
-} 
+}
 int redheadquarter::MakeWarrior(){
     if(number==5)
         number=0;
-    int i=number;   
+    int i=number;
     if(totallife<life[RedNumOrder[i]])
         return 0;
     else if(totallife>=life[RedNumOrder[i]]){
@@ -193,92 +193,92 @@ int redheadquarter::MakeWarrior(){
         number++;
         totallife-=life[RedNumOrder[i]];
         printf("%03d:%02d red %s %d born\n",hour,minute,redorder[i],WarNum);
-        if(strcmp(redorder[i],"dragon")==0){        
-            record[WarNum].attack=attackpower[0];           
-            record[WarNum].nowlife=life[0];     
-            if(strcmp(weapon[WarNum%3],"sword")==0){                
-                record[WarNum].sword=true;          
+        if(strcmp(redorder[i],"dragon")==0){
+            record[WarNum].attack=attackpower[0];
+            record[WarNum].nowlife=life[0];
+            if(strcmp(weapon[WarNum%3],"sword")==0){
+                record[WarNum].sword=true;
                 record[WarNum].SwordPower=record[WarNum].attack/5;
             }
-            else{           
+            else{
                 record[WarNum].sword=false;
             }
-            if(strcmp(weapon[WarNum%3],"arrow")==0){            
-                record[WarNum].arrow=3;             
+            if(strcmp(weapon[WarNum%3],"arrow")==0){
+                record[WarNum].arrow=3;
                 record[WarNum].ArrowPower=ArrowPower;
             }
-            else{               
+            else{
                 record[WarNum].arrow=0;
-            }                   
-            if(strcmp(weapon[WarNum%3],"bomb")==0){         
+            }
+            if(strcmp(weapon[WarNum%3],"bomb")==0){
                 record[WarNum].bomb=true;
             }
-            else{               
+            else{
                 record[WarNum].bomb=false;
-            }               
+            }
             record[WarNum].spirit=totallife*1.0/life[RedNumOrder[i]];
             cout<<"Its morale is "<<fixed<<setprecision(2)<<record[WarNum].spirit<<endl;
         }
-        else if(strcmp(redorder[i],"lion")==0){     
-            record[WarNum].loyalty=totallife;           
-            record[WarNum].attack=attackpower[3];           
-            record[WarNum].dec=DecLoyalty;          
-            record[WarNum].nowlife=life[3];     
+        else if(strcmp(redorder[i],"lion")==0){
+            record[WarNum].loyalty=totallife;
+            record[WarNum].attack=attackpower[3];
+            record[WarNum].dec=DecLoyalty;
+            record[WarNum].nowlife=life[3];
             cout<<"Its loyalty is "<<totallife<<endl;
         }
-        else if(strcmp(redorder[i],"iceman")==0){           
-            record[WarNum].nowlife=life[2];         
-            record[WarNum].step=0;      
+        else if(strcmp(redorder[i],"iceman")==0){
+            record[WarNum].nowlife=life[2];
+            record[WarNum].step=0;
             record[WarNum].attack=attackpower[2];
-            if(strcmp(weapon[WarNum%3],"sword")==0){                
-                record[WarNum].sword=true;              
+            if(strcmp(weapon[WarNum%3],"sword")==0){
+                record[WarNum].sword=true;
                 record[WarNum].SwordPower=record[WarNum].attack/5;
             }
-            else{           
+            else{
                 record[WarNum].sword=false;
             }
-            if(strcmp(weapon[WarNum%3],"arrow")==0){            
-                record[WarNum].arrow=3;             
+            if(strcmp(weapon[WarNum%3],"arrow")==0){
+                record[WarNum].arrow=3;
                 record[WarNum].ArrowPower=ArrowPower;
             }
-            else{               
+            else{
                 record[WarNum].arrow=0;
-            }                   
-            if(strcmp(weapon[WarNum%3],"bomb")==0){
-                record[WarNum].bomb=true;               
             }
-            else{               
+            if(strcmp(weapon[WarNum%3],"bomb")==0){
+                record[WarNum].bomb=true;
+            }
+            else{
                 record[WarNum].bomb=false;
             }
         }
-        else if(strcmp(redorder[i],"wolf")==0){         
-            record[WarNum].bomb=false;          
-            record[WarNum].sword=false;         
-            record[WarNum].arrow=0;         
-            record[WarNum].attack=attackpower[4];           
-            record[WarNum].nowlife=life[4];         
+        else if(strcmp(redorder[i],"wolf")==0){
+            record[WarNum].bomb=false;
+            record[WarNum].sword=false;
+            record[WarNum].arrow=0;
+            record[WarNum].attack=attackpower[4];
+            record[WarNum].nowlife=life[4];
         }
         else if(strcmp(redorder[i],"ninja")==0){
-            record[WarNum].nowlife=life[1];         
+            record[WarNum].nowlife=life[1];
             record[WarNum].attack=attackpower[1];
-            if(strcmp(weapon[WarNum%3],"sword")==0||strcmp(weapon[(WarNum+1)%3],"sword")==0){               
-                record[WarNum].sword=true;              
+            if(strcmp(weapon[WarNum%3],"sword")==0||strcmp(weapon[(WarNum+1)%3],"sword")==0){
+                record[WarNum].sword=true;
                 record[WarNum].SwordPower=record[WarNum].attack/5;
             }
-            else{               
+            else{
                 record[WarNum].sword=false;
             }
-            if(strcmp(weapon[WarNum%3],"arrow")==0||strcmp(weapon[(WarNum+1)%3],"arrow")==0){               
-                record[WarNum].arrow=3;             
+            if(strcmp(weapon[WarNum%3],"arrow")==0||strcmp(weapon[(WarNum+1)%3],"arrow")==0){
+                record[WarNum].arrow=3;
                 record[WarNum].ArrowPower=ArrowPower;
             }
-            else{               
+            else{
                 record[WarNum].arrow=0;
-            }                   
-            if(strcmp(weapon[WarNum%3],"bomb")==0||strcmp(weapon[(WarNum+1)%3],"bomb")==0){             
+            }
+            if(strcmp(weapon[WarNum%3],"bomb")==0||strcmp(weapon[(WarNum+1)%3],"bomb")==0){
                 record[WarNum].bomb=true;
             }
-            else{               
+            else{
                 record[WarNum].bomb=false;
             }
         }
@@ -287,110 +287,110 @@ int redheadquarter::MakeWarrior(){
     }
     return 0;
 }
-int blueheadquarter::MakeWarrior(){ 
+int blueheadquarter::MakeWarrior(){
     if(number==5)
         number=0;
-    int i=number;   
+    int i=number;
     if(totallife<life[BlueNumOrder[i]])
         return 0;
     else if(totallife>=life[BlueNumOrder[i]]){
         record[WarNum].n=WarNum;
-        record[WarNum].position=nCity+1;        
+        record[WarNum].position=nCity+1;
         strcpy(record[WarNum].Variety,blueorder[i]);
         record[WarNum].Alive=true;
         number++;
         totallife-=life[BlueNumOrder[i]];
         printf("%03d:%02d blue %s %d born\n",hour,minute,blueorder[i],WarNum);
-        if(strcmp(blueorder[i],"dragon")==0){       
-            record[WarNum].attack=attackpower[0];           
-            record[WarNum].nowlife=life[0];     
-            if(strcmp(weapon[WarNum%3],"sword")==0){                
-                record[WarNum].sword=true;              
+        if(strcmp(blueorder[i],"dragon")==0){
+            record[WarNum].attack=attackpower[0];
+            record[WarNum].nowlife=life[0];
+            if(strcmp(weapon[WarNum%3],"sword")==0){
+                record[WarNum].sword=true;
                 record[WarNum].SwordPower=record[WarNum].attack/5;
             }
-            else{               
-                record[WarNum].sword=false;
-            }
-            if(strcmp(weapon[WarNum%3],"arrow")==0){            
-                record[WarNum].arrow=3;         
-                record[WarNum].ArrowPower=ArrowPower;
-            }
-            else{           
-                record[WarNum].arrow=0;
-            }               
-            if(strcmp(weapon[WarNum%3],"bomb")==0){             
-                record[WarNum].bomb=true;
-            }
-            else{               
-                record[WarNum].bomb=false;
-            }           
-            record[WarNum].spirit=totallife*1.0/life[BlueNumOrder[i]];
-            cout<<"Its morale is "<<fixed<<setprecision(2)<<record[WarNum].spirit<<endl;
-        }
-        else if(strcmp(blueorder[i],"lion")==0){            
-            record[WarNum].loyalty=totallife;           
-            record[WarNum].attack=attackpower[3];           
-            record[WarNum].dec=DecLoyalty;      
-            record[WarNum].nowlife=life[3];         
-            cout<<"Its loyalty is "<<totallife<<endl;       
-        }
-        else if(strcmp(blueorder[i],"iceman")==0){      
-            record[WarNum].nowlife=life[2];     
-            record[WarNum].step=0;          
-            record[WarNum].attack=attackpower[2];
-            if(strcmp(weapon[WarNum%3],"sword")==0){                
-                record[WarNum].sword=true;              
-                record[WarNum].SwordPower=record[WarNum].attack/5;
-            }
-            else{           
+            else{
                 record[WarNum].sword=false;
             }
             if(strcmp(weapon[WarNum%3],"arrow")==0){
-                record[WarNum].arrow=3;             
+                record[WarNum].arrow=3;
                 record[WarNum].ArrowPower=ArrowPower;
             }
-            else{                   
+            else{
                 record[WarNum].arrow=0;
-            }               
-            if(strcmp(weapon[WarNum%3],"bomb")==0){         
+            }
+            if(strcmp(weapon[WarNum%3],"bomb")==0){
                 record[WarNum].bomb=true;
             }
-            else{               
+            else{
+                record[WarNum].bomb=false;
+            }
+            record[WarNum].spirit=totallife*1.0/life[BlueNumOrder[i]];
+            cout<<"Its morale is "<<fixed<<setprecision(2)<<record[WarNum].spirit<<endl;
+        }
+        else if(strcmp(blueorder[i],"lion")==0){
+            record[WarNum].loyalty=totallife;
+            record[WarNum].attack=attackpower[3];
+            record[WarNum].dec=DecLoyalty;
+            record[WarNum].nowlife=life[3];
+            cout<<"Its loyalty is "<<totallife<<endl;
+        }
+        else if(strcmp(blueorder[i],"iceman")==0){
+            record[WarNum].nowlife=life[2];
+            record[WarNum].step=0;
+            record[WarNum].attack=attackpower[2];
+            if(strcmp(weapon[WarNum%3],"sword")==0){
+                record[WarNum].sword=true;
+                record[WarNum].SwordPower=record[WarNum].attack/5;
+            }
+            else{
+                record[WarNum].sword=false;
+            }
+            if(strcmp(weapon[WarNum%3],"arrow")==0){
+                record[WarNum].arrow=3;
+                record[WarNum].ArrowPower=ArrowPower;
+            }
+            else{
+                record[WarNum].arrow=0;
+            }
+            if(strcmp(weapon[WarNum%3],"bomb")==0){
+                record[WarNum].bomb=true;
+            }
+            else{
                 record[WarNum].bomb=false;
             }
         }
-        else if(strcmp(blueorder[i],"wolf")==0){            
-            record[WarNum].bomb=false;          
-            record[WarNum].sword=false;         
-            record[WarNum].arrow=0;     
-            record[WarNum].attack=attackpower[4];       
-            record[WarNum].nowlife=life[4];         
+        else if(strcmp(blueorder[i],"wolf")==0){
+            record[WarNum].bomb=false;
+            record[WarNum].sword=false;
+            record[WarNum].arrow=0;
+            record[WarNum].attack=attackpower[4];
+            record[WarNum].nowlife=life[4];
         }
-        else if(strcmp(blueorder[i],"ninja")==0){           
-            record[WarNum].nowlife=life[1];     
+        else if(strcmp(blueorder[i],"ninja")==0){
+            record[WarNum].nowlife=life[1];
             record[WarNum].attack=attackpower[1];
-            if(strcmp(weapon[WarNum%3],"sword")==0||strcmp(weapon[(WarNum+1)%3],"sword")==0){               
-                record[WarNum].sword=true;              
+            if(strcmp(weapon[WarNum%3],"sword")==0||strcmp(weapon[(WarNum+1)%3],"sword")==0){
+                record[WarNum].sword=true;
                 record[WarNum].SwordPower=record[WarNum].attack/5;
             }
-            else{           
+            else{
                 record[WarNum].sword=false;
             }
-            if(strcmp(weapon[WarNum%3],"arrow")==0||strcmp(weapon[(WarNum+1)%3],"arrow")==0){           
-                record[WarNum].arrow=3;         
+            if(strcmp(weapon[WarNum%3],"arrow")==0||strcmp(weapon[(WarNum+1)%3],"arrow")==0){
+                record[WarNum].arrow=3;
                 record[WarNum].ArrowPower=ArrowPower;
             }
-            else{               
+            else{
                 record[WarNum].arrow=0;
-            }               
+            }
             if(strcmp(weapon[WarNum%3],"bomb")==0||strcmp(weapon[(WarNum+1)%3],"bomb")==0){
-                record[WarNum].bomb=true;               
+                record[WarNum].bomb=true;
             }
             else{
-                record[WarNum].bomb=false;              
+                record[WarNum].bomb=false;
             }
         }
-        WarNum++;   
+        WarNum++;
         return 0;
     }
     return 0;
@@ -403,7 +403,7 @@ int redheadquarter::LionRun(){
             printf("%03d:%02d red lion %d ran away\n",hour,minute,i);
         }
     }
-    return 0; 
+    return 0;
 }
 int blueheadquarter::LionRun(){
     for(int i=1;i<WarNum;i++){
@@ -413,34 +413,34 @@ int blueheadquarter::LionRun(){
             printf("%03d:%02d blue lion %d ran away\n",hour,minute,i);
         }
     }
-    return 0; 
+    return 0;
 }
 int redheadquarter::March(){
     city[nCity+1].RedNum=0;
     for(int i=1;i<WarNum;i++){
         if(record[i].Alive==true&&record[i].nowlife>0&&record[i].position!=nCity+1){
-            record[i].step++;       
+            record[i].step++;
             record[i].position++;
             if(record[i].position==nCity+1)
                 BlueEnemyNumber++;
-            city[record[i].position].RedNum=i;      
-            city[record[i].position-1].RedNum=0;                
+            city[record[i].position].RedNum=i;
+            city[record[i].position-1].RedNum=0;
             strcpy(city[record[i].position].redwar,record[i].Variety);
         }
     }
     return 0;
 }
 int blueheadquarter::March(){
-    city[0].BlueNum=0;  
-    for(int i=1;i<WarNum;i++){  
+    city[0].BlueNum=0;
+    for(int i=1;i<WarNum;i++){
         if(record[i].Alive==true&&record[i].nowlife>0&&record[i].position>0){
-            record[i].step++;       
+            record[i].step++;
             record[i].position--;
             if(record[i].position==0)
                 RedEnemyNumber++;
-            city[record[i].position].BlueNum=i;      
-            city[record[i].position+1].BlueNum=0;       
-            strcpy(city[record[i].position].bluewar,record[i].Variety);     
+            city[record[i].position].BlueNum=i;
+            city[record[i].position+1].BlueNum=0;
+            strcpy(city[record[i].position].bluewar,record[i].Variety);
         }
     }
     return 0;
@@ -459,23 +459,23 @@ int PrintMarch( redheadquarter& Red,blueheadquarter& Blue){
                 printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
             else if(strcmp(tmp,"lion")==0)
                 printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
-            else if(strcmp(tmp,"iceman")==0){           
+            else if(strcmp(tmp,"iceman")==0){
                 if(Blue.record[m].nowlife>9&&Blue.record[m].step%2==0){
-                    Blue.record[m].nowlife-=9;                  
-                    Blue.record[m].attack+=20;                  
+                    Blue.record[m].nowlife-=9;
+                    Blue.record[m].attack+=20;
                 }
                 else if((Blue.record[m].nowlife)<=9&&(Blue.record[m].step)%2==0){
                     Blue.record[m].nowlife=1;
                     Blue.record[m].attack+=20;
                 }
-                printf("%d elements and force %d\n",Blue.record[m].nowlife,Blue.record[m].attack);              
+                printf("%d elements and force %d\n",Blue.record[m].nowlife,Blue.record[m].attack);
             }
             else if(strcmp(tmp,"ninja")==0)
                 printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
             else if(strcmp(tmp,"wolf")==0)
                 printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
             if(RedEnemyNumber>=2)
-                printf("%03d:%02d red headquarter was taken\n",hour,minute);        
+                printf("%03d:%02d red headquarter was taken\n",hour,minute);
         }
         else if(i==nCity+1&&city[i].RedNum!=0&&Red.record[n].nowlife>0){
             printf("%03d:%02d red %s %d reached blue headquarter with ",hour,minute,Red.record[city[i].RedNum].Variety,city[i].RedNum);
@@ -484,9 +484,9 @@ int PrintMarch( redheadquarter& Red,blueheadquarter& Blue){
                 printf("%d elements and force %d\n",Red.record[city[i].RedNum].nowlife,Red.record[city[i].RedNum].attack);
             else if(strcmp(tmp,"lion")==0)
                 printf("%d elements and force %d\n",Red.record[city[i].RedNum].nowlife,Red.record[city[i].RedNum].attack);
-            else if(strcmp(tmp,"iceman")==0){           
+            else if(strcmp(tmp,"iceman")==0){
                 if(Red.record[n].nowlife>9&&Red.record[n].step%2==0){
-                    Red.record[n].nowlife-=9;               
+                    Red.record[n].nowlife-=9;
                     Red.record[n].attack+=20;
                 }
                 else if((Red.record[n].nowlife)<=9&&(Red.record[n].step)%2==0){
@@ -510,9 +510,9 @@ int PrintMarch( redheadquarter& Red,blueheadquarter& Blue){
                 printf("%d elements and force %d\n",Red.record[city[i].RedNum].nowlife,Red.record[city[i].RedNum].attack);
             else if(strcmp(tmp,"lion")==0)
                 printf("%d elements and force %d\n",Red.record[city[i].RedNum].nowlife,Red.record[city[i].RedNum].attack);
-            else if(strcmp(tmp,"iceman")==0){           
-                if((Red.record[n].nowlife)>9&&(Red.record[n].step)%2==0){               
-                    Red.record[n].nowlife-=9;                       
+            else if(strcmp(tmp,"iceman")==0){
+                if((Red.record[n].nowlife)>9&&(Red.record[n].step)%2==0){
+                    Red.record[n].nowlife-=9;
                     Red.record[n].attack+=20;
                 }
                 else if((Red.record[n].nowlife)<=9&&(Red.record[n].step)%2==0){
@@ -526,7 +526,7 @@ int PrintMarch( redheadquarter& Red,blueheadquarter& Blue){
             else if(strcmp(tmp,"wolf")==0)
                 printf("%d elements and force %d\n",Red.record[city[i].RedNum].nowlife,Red.record[city[i].RedNum].attack);
             }
-            if(city[i].BlueNum!=0&&Blue.record[city[i].BlueNum].nowlife>0){         
+            if(city[i].BlueNum!=0&&Blue.record[city[i].BlueNum].nowlife>0){
                 printf("%03d:%02d blue %s %d marched to city %d with ",hour,minute,
                         Blue.record[city[i].BlueNum].Variety,city[i].BlueNum,i);
                 strcpy(tmp,Blue.record[city[i].BlueNum].Variety);
@@ -534,9 +534,9 @@ int PrintMarch( redheadquarter& Red,blueheadquarter& Blue){
                     printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
                 else if(strcmp(tmp,"lion")==0)
                     printf("%d elements and force %d\n",Blue.record[city[i].BlueNum].nowlife,Blue.record[city[i].BlueNum].attack);
-                else if(strcmp(tmp,"iceman")==0){               
+                else if(strcmp(tmp,"iceman")==0){
                     if(Blue.record[m].nowlife>9&&(Blue.record[m].step)%2==0){
-                        Blue.record[m].nowlife-=9;                  
+                        Blue.record[m].nowlife-=9;
                         Blue.record[m].attack+=20;
                     }
                     else if((Blue.record[m].nowlife)<=9&&(Blue.record[m].step)%2==0){
@@ -559,7 +559,7 @@ int produce(){
         city[i].life+=10;
     }
     return 0;
-} 
+}
 int acquire(redheadquarter& Red, blueheadquarter& Blue){
     int n,m;
     for(int i=1;i<=nCity;i++){
@@ -571,7 +571,7 @@ int acquire(redheadquarter& Red, blueheadquarter& Blue){
         if(city[i].RedNum!=0){
             printf("%03d:%02d red %s %d earned %d elements for his headquarter\n",
                 hour,minute,Red.record[n].Variety,city[i].RedNum,city[i].life);
-            Red.totallife+=city[i].life;        
+            Red.totallife+=city[i].life;
             city[i].life=0;
         }
         else if(city[i].BlueNum!=0){
@@ -584,7 +584,7 @@ int acquire(redheadquarter& Red, blueheadquarter& Blue){
     return 0;
 }
 int redheadquarter::WarriorArrow(blueheadquarter& Blue){
-    int m,n; 
+    int m,n;
     for(int i=1;i<nCity;i++){
         n=city[i].RedNum; m=city[i+1].BlueNum;
         record[n].shot=false; city[i].redshot=false;
@@ -614,12 +614,12 @@ int blueheadquarter::WarriorArrow(redheadquarter& Red){
 }
 int ShowArrow(redheadquarter& Red,blueheadquarter& Blue){
     int n,m;
-    for(int i=1;i<nCity+1;i++){     
+    for(int i=1;i<nCity+1;i++){
         if(city[i].redshot==true){
             city[i].redshot=false;
             n=city[i].RedNum; m=city[i+1].BlueNum;
             printf("%03d:%02d red %s %d shot",hour,minute,Red.record[n].Variety,city[i].RedNum);
-            if(Blue.record[m].nowlife<=0&&Blue.record[m].Alive==true){          
+            if(Blue.record[m].nowlife<=0&&Blue.record[m].Alive==true){
                 printf(" and killed blue %s %d",Blue.record[m].Variety,city[i+1].BlueNum);
             }
             printf("\n");
@@ -628,7 +628,7 @@ int ShowArrow(redheadquarter& Red,blueheadquarter& Blue){
             city[i].blueshot=false;
             m=city[i].BlueNum; n=city[i-1].RedNum;
             printf("%03d:%02d blue %s %d shot",hour,minute,Blue.record[m].Variety,city[i].BlueNum);
-            if(Red.record[n].nowlife<=0&&Red.record[n].Alive==true){            
+            if(Red.record[n].nowlife<=0&&Red.record[n].Alive==true){
                 printf(" and killed red %s %d",Red.record[n].Variety,city[i-1].RedNum);
             }
             printf("\n");
@@ -639,7 +639,7 @@ int ShowArrow(redheadquarter& Red,blueheadquarter& Blue){
 int redheadquarter::BombDeath(blueheadquarter& Blue){
     int tmpn,tmpm;
     bool ifbomb;
-    bool redkilled,bluekilled; 
+    bool redkilled,bluekilled;
     for(int i=1;i<=nCity;i++){
         tmpn=city[i].RedNum; tmpm=city[i].BlueNum;
         redkilled=false; bluekilled=false;
@@ -648,7 +648,7 @@ int redheadquarter::BombDeath(blueheadquarter& Blue){
             || ( (Blue.record[tmpm].nowlife>record[tmpn].attack+(record[tmpn].sword)*(record[tmpn].SwordPower) )
             &&  (strcmp(Blue.record[tmpm].Variety,"ninja")!=0)
             && (record[tmpn].nowlife<=Blue.record[tmpm].attack/2+(Blue.record[tmpm].sword)*(Blue.record[tmpm].SwordPower) )
-            &&( (city[i].HaveFlag==false&&i%2==1)||(city[i].HaveFlag==true&&strcmp(city[i].flag,"red")==0) ) )){            
+            &&( (city[i].HaveFlag==false&&i%2==1)||(city[i].HaveFlag==true&&strcmp(city[i].flag,"red")==0) ) )){
                 redkilled=true;
             }
         if(((record[tmpn].attack+(record[tmpn].sword)*(record[tmpn].SwordPower)>=Blue.record[tmpm].nowlife)
@@ -711,8 +711,8 @@ int redheadquarter::ReportWeapon(){
                 printf("sword(%d)",record[i].SwordPower);
             }
             if(weaponnum==0)
-                printf("no weapon");        
-            printf("\n");           
+                printf("no weapon");
+            printf("\n");
         }
     }
     return 0;
@@ -741,8 +741,8 @@ int blueheadquarter::ReportWeapon(){
                 printf("sword(%d)",record[i].SwordPower);
             }
             if(weaponnum==0)
-                printf("no weapon");        
-            printf("\n");           
+                printf("no weapon");
+            printf("\n");
         }
     }
     return 0;
@@ -752,18 +752,18 @@ int redheadquarter::Fight(blueheadquarter& Blue){
     int n,m,tmp;
     bool ChangeFlags=false;
     for(int i=1;i<=nCity;i++){
-        city[i].ifredwin=false; city[i].ifbluewin=false; 
+        city[i].ifredwin=false; city[i].ifbluewin=false;
     }
     for(int i=1;i<=nCity;i++){
         n=city[i].RedNum; m=city[i].BlueNum;
         ChangeFlags=false;
         if(!(n!=0&&m!=0))
-            continue;   
+            continue;
         if(record[n].nowlife>0&&Blue.record[m].Alive==true&&Blue.record[m].nowlife<=0){
             Blue.record[m].Alive=false;
             city[i].bluewin=0;
             city[i].ifredwin=true; city[i].ifbluewin=false;
-            city[i].redwin++;       
+            city[i].redwin++;
             if(strcmp(record[n].Variety,"wolf")==0){
                 if(Blue.record[m].arrow>0&&record[n].arrow==0){
                     record[n].arrow=Blue.record[m].arrow;
@@ -792,18 +792,18 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                 redearn+=city[i].life;
                 printf("%03d:%02d red %s %d earned %d elements for his headquarter\n",hour,minute,record[n].Variety,n,city[i].life);
                 city[i].life=0;
-            }       
+            }
             if(city[i].redwin>=2&&strcmp(city[i].flag,"red")!=0){
                 city[i].HaveFlag=true;
                 strcpy(city[i].flag,"red");
                 printf("%03d:%02d red flag raised in city %d\n",hour,minute,i);
             }
-        }   
+        }
         if(Blue.record[m].nowlife>0&&record[n].Alive==true&&record[n].nowlife<=0){
             record[n].Alive=false;
             city[i].redwin=0;
             city[i].ifredwin=false; city[i].ifbluewin=true;
-            city[i].bluewin++;      
+            city[i].bluewin++;
             if(strcmp(Blue.record[m].Variety,"wolf")==0){
                 if(record[n].arrow>0&&Blue.record[m].arrow==0){
                     Blue.record[m].arrow=record[n].arrow;
@@ -833,7 +833,7 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                 printf("%03d:%02d blue %s %d earned %d elements for his headquarter\n",
                 hour,minute,Blue.record[m].Variety,m,city[i].life);
                 city[i].life=0;
-            }       
+            }
             if(city[i].bluewin>=2&&strcmp(city[i].flag,"blue")!=0){
                 city[i].HaveFlag=true;
                 strcpy(city[i].flag,"blue");
@@ -841,12 +841,12 @@ int redheadquarter::Fight(blueheadquarter& Blue){
             }
         }
         if(record[n].nowlife<=0||Blue.record[m].nowlife<=0)
-            continue;   
+            continue;
         if((city[i].HaveFlag==false&&i%2==1)||(city[i].HaveFlag==true&&strcmp(city[i].flag,"red")==0)){
             printf("%03d:%02d red %s %d attacked blue %s %d in city %d with %d elements and force %d\n",
                 hour,minute,record[n].Variety,n,Blue.record[m].Variety,m,i,record[n].nowlife,record[n].attack);
             int tmp=Blue.record[m].nowlife;
-            Blue.record[m].nowlife-=record[n].attack;           
+            Blue.record[m].nowlife-=record[n].attack;
             if(record[n].sword==true&&record[n].SwordPower>0){
                 Blue.record[m].nowlife-=record[n].SwordPower;
                 record[n].SwordPower=record[n].SwordPower*8/10;
@@ -855,21 +855,21 @@ int redheadquarter::Fight(blueheadquarter& Blue){
             }
             if(Blue.record[m].nowlife>0&&strcmp(record[n].Variety,"lion")==0){
                 record[n].loyalty-=record[n].dec;
-            }   
+            }
             if(Blue.record[m].nowlife>0&&strcmp(record[n].Variety,"dragon")==0){
                 record[n].spirit-=0.2;
-            }       
+            }
             if(Blue.record[m].nowlife<=0){
-                printf("%03d:%02d blue %s %d was killed in city %d\n",hour,minute,Blue.record[m].Variety,m,i);          
+                printf("%03d:%02d blue %s %d was killed in city %d\n",hour,minute,Blue.record[m].Variety,m,i);
                 Blue.record[m].Alive=false;
-                city[i].BlueNum=0;              
+                city[i].BlueNum=0;
                 city[i].redwin++;
                 city[i].ifredwin=true; city[i].ifbluewin=false;
                 city[i].bluewin=0;
                 if(strcmp(Blue.record[m].Variety,"lion")==0&&tmp>0){
-                    record[n].nowlife+=tmp;             
+                    record[n].nowlife+=tmp;
                     Blue.record[m].nowlife=0; tmp=0;
-                }           
+                }
                 if(strcmp(record[n].Variety,"wolf")==0){
                     if(Blue.record[m].arrow>0&&record[n].arrow<=0){
                         record[n].arrow=Blue.record[m].arrow;
@@ -899,27 +899,27 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                     printf("%03d:%02d red %s %d earned %d elements for his headquarter\n",
                     hour,minute,record[n].Variety,n,city[i].life);
                     city[i].life=0;
-                }       
+                }
                 if(city[i].redwin>=2&&strcmp(city[i].flag,"red")!=0){
                     city[i].HaveFlag=true;
                     strcpy(city[i].flag,"red");
                     printf("%03d:%02d red flag raised in city %d\n",hour,minute,i);
                 }
-            }           
+            }
             bool Rev=false;
             if(Blue.record[m].nowlife>0&&strcmp(Blue.record[m].Variety,"ninja")!=0){
                 Rev=true;
                 printf("%03d:%02d blue %s %d fought back against red %s %d in city %d\n",
                     hour,minute,Blue.record[m].Variety,m,record[n].Variety,n,i);
                 tmp=record[n].nowlife;
-                record[n].nowlife-=Blue.record[m].attack/2;             
+                record[n].nowlife-=Blue.record[m].attack/2;
                 if(Blue.record[m].sword==true&&Blue.record[m].SwordPower>0){
                     record[n].nowlife-=Blue.record[m].SwordPower;
                     Blue.record[m].SwordPower=Blue.record[m].SwordPower*8/10;
                     if(Blue.record[m].SwordPower<=0)
                         Blue.record[m].sword=false;
                 }
-            }       
+            }
             if(record[n].nowlife>0&&Blue.record[m].nowlife>0){
                 city[i].ifredwin=false; city[i].ifbluewin=false;
                 city[i].redwin=0; city[i].bluewin=0;
@@ -930,18 +930,18 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                 &&(Rev==true||(strcmp(Blue.record[m].Variety,"ninja")==0)&&(Blue.record[m].nowlife>0)) )
                 printf("%03d:%02d red dragon %d yelled in city %d\n",hour,minute,n,i);
             if(record[n].nowlife>0&&strcmp(Blue.record[m].Variety,"dragon")==0&&Blue.record[m].nowlife>0)
-                Blue.record[m].spirit-=0.2; 
+                Blue.record[m].spirit-=0.2;
             if(record[n].nowlife<=0){
                 printf("%03d:%02d red %s %d was killed in city %d\n",hour,minute,record[n].Variety,n,i);
                 record[n].Alive=false;
-                city[i].RedNum=0;               
+                city[i].RedNum=0;
                 city[i].redwin=0;
                 city[i].ifredwin=false; city[i].ifbluewin=true;
                 city[i].bluewin++;
                 if(strcmp(record[n].Variety,"lion")==0&&tmp>0){
                     Blue.record[m].nowlife+=tmp;
                     record[n].nowlife=0; tmp=0;
-                }           
+                }
                 if(strcmp(Blue.record[m].Variety,"wolf")==0){
                     if(record[n].arrow>0&&Blue.record[m].arrow==0){
                         Blue.record[m].arrow=record[n].arrow;
@@ -971,41 +971,41 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                     printf("%03d:%02d blue %s %d earned %d elements for his headquarter\n",
                     hour,minute,Blue.record[m].Variety,m,city[i].life);
                     city[i].life=0;
-                }       
+                }
                 if(city[i].bluewin>=2&&strcmp(city[i].flag,"blue")!=0){
                     city[i].HaveFlag=true;
                     ChangeFlags=true;
                     strcpy(city[i].flag,"blue");
                     printf("%03d:%02d blue flag raised in city %d\n",hour,minute,i);
                 }
-            }       
-        }       
+            }
+        }
         if((city[i].HaveFlag==false&&i%2==0)||(city[i].HaveFlag==true&&strcmp(city[i].flag,"blue")==0&&ChangeFlags==false)){
             printf("%03d:%02d blue %s %d attacked red %s %d in city %d with %d elements and force %d\n",
                 hour,minute,Blue.record[m].Variety,m,record[n].Variety,n,i,Blue.record[m].nowlife,Blue.record[m].attack);
-            tmp=record[n].nowlife;      
-            record[n].nowlife-=Blue.record[m].attack;           
+            tmp=record[n].nowlife;
+            record[n].nowlife-=Blue.record[m].attack;
             if(Blue.record[m].sword==true&&Blue.record[m].SwordPower>0){
-                record[n].nowlife-=Blue.record[m].SwordPower;               
-                Blue.record[m].SwordPower=Blue.record[m].SwordPower*8/10;               
+                record[n].nowlife-=Blue.record[m].SwordPower;
+                Blue.record[m].SwordPower=Blue.record[m].SwordPower*8/10;
                 if(Blue.record[m].SwordPower<=0)
                     Blue.record[m].sword=false;
-            }   
+            }
             if(record[n].nowlife>0&&strcmp(Blue.record[m].Variety,"lion")==0){
                 Blue.record[m].loyalty-=Blue.record[m].dec;
             }
             if(record[n].nowlife>0&&strcmp(Blue.record[m].Variety,"dragon")==0)
-                Blue.record[m].spirit-=0.2;             
+                Blue.record[m].spirit-=0.2;
             if(record[n].nowlife<=0){
-                printf("%03d:%02d red %s %d was killed in city %d\n",hour,minute,record[n].Variety,n,i);                
+                printf("%03d:%02d red %s %d was killed in city %d\n",hour,minute,record[n].Variety,n,i);
                 record[n].Alive=false;
-                city[i].RedNum=0;               
+                city[i].RedNum=0;
                 city[i].bluewin++; city[i].redwin=0;
-                city[i].ifredwin=false; city[i].ifbluewin=true;             
+                city[i].ifredwin=false; city[i].ifbluewin=true;
                 if(strcmp(record[n].Variety,"lion")==0&&tmp>0){
                     Blue.record[m].nowlife+=tmp;
                     record[n].nowlife=0; tmp=0;
-                }           
+                }
                 if(strcmp(Blue.record[m].Variety,"wolf")==0){
                     if(record[n].arrow>0&&Blue.record[m].arrow==0){
                         Blue.record[m].arrow=record[n].arrow;
@@ -1035,20 +1035,20 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                     printf("%03d:%02d blue %s %d earned %d elements for his headquarter\n",
                     hour,minute,Blue.record[m].Variety,m,city[i].life);
                     city[i].life=0;
-                }       
+                }
                 if(city[i].bluewin>=2&&strcmp(city[i].flag,"blue")!=0){
                     city[i].HaveFlag=true;
                     strcpy(city[i].flag,"blue");
                     printf("%03d:%02d blue flag raised in city %d\n",hour,minute,i);
                 }
-            }       
+            }
             bool Rev=false;
             if(record[n].nowlife>0&&strcmp(record[n].Variety,"ninja")!=0&&Blue.record[m].nowlife>0){
                 Rev=true;
                 printf("%03d:%02d red %s %d fought back against blue %s %d in city %d\n",
                     hour,minute,record[n].Variety,n,Blue.record[m].Variety,m,i);
                 tmp=Blue.record[m].nowlife;
-                Blue.record[m].nowlife-=record[n].attack/2;             
+                Blue.record[m].nowlife-=record[n].attack/2;
                 if(record[n].sword==true&&record[n].SwordPower>0){
                     Blue.record[m].nowlife-=record[n].SwordPower;
                     record[n].SwordPower=record[n].SwordPower*8/10;
@@ -1061,25 +1061,25 @@ int redheadquarter::Fight(blueheadquarter& Blue){
             }
             if(Blue.record[m].nowlife>0&&strcmp(Blue.record[m].Variety,"dragon")==0&&Blue.record[m].spirit>=0.8
             &&(Rev==true||(strcmp(record[n].Variety,"ninja")==0)&&(record[n].nowlife>0)) ){
-                printf("%03d:%02d blue dragon %d yelled in city %d\n",hour,minute,m,i);             
+                printf("%03d:%02d blue dragon %d yelled in city %d\n",hour,minute,m,i);
             }
             if(Blue.record[m].nowlife>0&&strcmp(record[n].Variety,"dragon")==0&&record[n].nowlife>0)
                 record[n].spirit-=0.2;
             if(record[n].nowlife>0&&Blue.record[m].nowlife>0){
                 city[i].ifredwin=false; city[i].ifbluewin=false;
                 city[i].redwin=0; city[i].bluewin=0;
-            }       
+            }
             if(Blue.record[m].nowlife<=0){
                 printf("%03d:%02d blue %s %d was killed in city %d\n",hour,minute,Blue.record[m].Variety,m,i);
                 Blue.record[m].Alive=false;
-                city[i].BlueNum=0;              
+                city[i].BlueNum=0;
                 city[i].bluewin=0;
                 city[i].ifredwin=true; city[i].ifbluewin=false;
                 city[i].redwin++;
                 if(strcmp(Blue.record[m].Variety,"lion")==0&&tmp>0){
                     record[n].nowlife+=tmp;
                     Blue.record[m].nowlife=0; tmp=0;
-                }           
+                }
                 if(strcmp(record[n].Variety,"wolf")==0){
                     if(Blue.record[m].arrow>0&&record[n].arrow==0){
                         record[n].arrow=Blue.record[m].arrow;
@@ -1109,15 +1109,15 @@ int redheadquarter::Fight(blueheadquarter& Blue){
                     printf("%03d:%02d red %s %d earned %d elements for his headquarter\n",
                     hour,minute,record[n].Variety,n,city[i].life);
                     city[i].life=0;
-                }       
+                }
                 if(city[i].redwin>=2&&strcmp(city[i].flag,"red")!=0){
                     city[i].HaveFlag=true;
                     strcpy(city[i].flag,"red");
                     printf("%03d:%02d red flag raised in city %d\n",hour,minute,i);
                 }
             }
-        }    
-    }   
+        }
+    }
     for(int i=nCity;i>=1;i--){
         if(totallife<8)
             break;
@@ -1128,7 +1128,7 @@ int redheadquarter::Fight(blueheadquarter& Blue){
             record[city[i].RedNum].nowlife+=8;
             totallife-=8;
         }
-    } 
+    }
     for(int i=1;i<=nCity;i++){
         if(Blue.totallife<8)
             break;
@@ -1142,4 +1142,4 @@ int redheadquarter::Fight(blueheadquarter& Blue){
     totallife+=redearn;
     Blue.totallife+=blueearn;
     return 0;
-} 
+}

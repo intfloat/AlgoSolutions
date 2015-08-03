@@ -294,3 +294,5 @@
 |[Restructuring Company](http://codeforces.com/problemset/problem/566/D) | 我自己YY出来了一个类似并查集的数据结构，然后pass system test了。。关键点在于区间合并要高效，因此可以记录每个节点最右边具有相同根的节点，避免遍历 | 并查集 数据结构 |
 |[Balancing Art](http://poj.org/problem?id=1655) | 第一次听说“树的重心”，渣渣。。naive要N * N，只记录子节点总数，再利用所有子节点和为常数dfs便可以线性搞 | 图论 |
 |[Untitled](http://acm.hdu.edu.cn/showproblem.php?pid=5339) | 太无聊了。。居然卡常数，用了一个builtin_popcount就TLE，不用就AC | 数论 |
+|[星际竞速](http://www.lydsy.com/JudgeOnline/problem.php?id=1927) | 想了一下是费用流，但是没想出怎么建图，渣渣。。对于普通边，从出边向入边连；对于跳跃边，从源点向入边连 | 最小费用最大流 |
+|[中位数图](http://www.lydsy.com/JudgeOnline/problem.php?id=1303) | 分别统计b左右两侧大于b和小于b的个数，然后简单组合计数就行了 | 计数 |

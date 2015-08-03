@@ -1,13 +1,13 @@
 
-const int MAX_N = 60000;
+const int MAX_N = 500;
+const int MAX_M = 50000;
 const int INF = INT_MAX / 2;
 int S, T;
-
 class MinCostMaxFlow {
 public:
-    int total, pv[MAX_N], pe[MAX_N], pnt[MAX_N];
-    int flow[MAX_N], cost[MAX_N];
-    int head[MAX_N], next[MAX_N];
+    int total, pv[MAX_N], pe[MAX_N], pnt[MAX_M];
+    int flow[MAX_M], cost[MAX_M];
+    int head[MAX_N], next[MAX_M];
     queue<int> q;
     bool visited[MAX_N];
     int dis[MAX_N];

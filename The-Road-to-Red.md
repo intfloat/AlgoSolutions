@@ -297,3 +297,7 @@
 |[星际竞速](http://www.lydsy.com/JudgeOnline/problem.php?id=1927) | 想了一下是费用流，但是没想出怎么建图，渣渣。。对于普通边，从出边向入边连；对于跳跃边，从源点向入边连 | 最小费用最大流 |
 |[中位数图](http://www.lydsy.com/JudgeOnline/problem.php?id=1303) | 分别统计b左右两侧大于b和小于b的个数，然后简单组合计数就行了 | 计数 |
 |[Mittens](http://codeforces.com/contest/370/problem/C) | 太神了。。一年之前木有AC，今天还旧帐。。很巧妙的构造算法，排下序再将整个数组rotate总长度的一半就行了，orzzzzz | 构造 考智商 |
+|[仪仗队](http://www.lydsy.com/JudgeOnline/problem.php?id=2190) | 仔细想想就知道是求连续区间的欧拉函数之和，用筛法求一发就好了 | 数论 |
+|[Poker Hand](http://usaco.org/index.php?page=viewproblem2&cpid=262) | 核心在于如何高效分治，其实用set维护就好，O(NlgN)复杂度 | 分治 |
+|[Farm Painting](http://usaco.org/index.php?page=viewproblem2&cpid=263) | 将矩形的左右边界排序，跑一发line sweep算法就好 | 几何 |
+|[The Cow Run](http://usaco.org/index.php?page=viewproblem2&cpid=264) | 红果果动态规划，usaco上的autograder似乎犯病了，test case 2离线测正确在线就挂了，不管了。。 | 动态规划 |

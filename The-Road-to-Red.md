@@ -301,3 +301,8 @@
 |[Poker Hand](http://usaco.org/index.php?page=viewproblem2&cpid=262) | 核心在于如何高效分治，其实用set维护就好，O(NlgN)复杂度 | 分治 |
 |[Farm Painting](http://usaco.org/index.php?page=viewproblem2&cpid=263) | 将矩形的左右边界排序，跑一发line sweep算法就好 | 几何 |
 |[The Cow Run](http://usaco.org/index.php?page=viewproblem2&cpid=264) | 红果果动态规划，usaco上的autograder似乎犯病了，test case 2离线测正确在线就挂了，不管了。。 | 动态规划 |
+|[Lineland Mail](http://codeforces.com/problemset/problem/567/A) | 随便搞搞就行。。 | 水 |
+|[Berland National Library](http://codeforces.com/problemset/problem/567/B) | key insight:当有一个从来没见过的id离开时，将当前最优值加一 | 水 |
+|[Geometric Progression](http://codeforces.com/problemset/problem/567/C) | 单纯计数是不够的，需要额外用一个哈希表记录a和之前a / k出现的总次数 | 计数 |
+|[One Dimensional Battle Sheep](http://codeforces.com/problemset/problem/567/D) | 显而易见的分治，但是naive算法时间效率不达标，注意到每次删掉一个点只可能影响现有的一个区间，用set维护O(lgN) | 分治 数据结构 |
+|[Mausoleum](http://codeforces.com/problemset/problem/567/F) | 我傻叉了。。。比赛的时候思路是对的，就是漏了一个判断条件。。。红果果动态规划，最小的数肯定是在最外围，每次转移判断是否有条件违背就好 | 动态规划 组合计数 |

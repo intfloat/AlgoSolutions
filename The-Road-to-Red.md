@@ -306,3 +306,4 @@
 |[Geometric Progression](http://codeforces.com/problemset/problem/567/C) | 单纯计数是不够的，需要额外用一个哈希表记录a和之前a / k出现的总次数 | 计数 |
 |[One Dimensional Battle Sheep](http://codeforces.com/problemset/problem/567/D) | 显而易见的分治，但是naive算法时间效率不达标，注意到每次删掉一个点只可能影响现有的一个区间，用set维护O(lgN) | 分治 数据结构 |
 |[Mausoleum](http://codeforces.com/problemset/problem/567/F) | 我傻叉了。。。比赛的时候思路是对的，就是漏了一个判断条件。。。红果果动态规划，最小的数肯定是在最外围，每次转移判断是否有条件违背就好 | 动态规划 组合计数 |
+|[Zipper](http://poj.org/problem?id=2192) | 有一个小陷阱。。从后往前匹配的线性算法可能得出错误答案，于是就来一发记忆化搜索好了 | 动态规划 |

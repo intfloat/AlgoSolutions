@@ -23,8 +23,8 @@
 using namespace std;
 
 int main(){
-    //freopen("msched.in", "r", stdin);
-    //freopen("msched.out", "w", stdout);
+    // freopen("msched.in", "r", stdin);
+    // freopen("msched.out", "w", stdout);
     int n;
     pair<int, int> cow[10005];
     cin>>n;

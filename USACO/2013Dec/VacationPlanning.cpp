@@ -23,8 +23,8 @@
 using namespace std;
 
 int main(){
-    //freopen("vacation.in", "r", stdin);
-    //freopen("vacation.out", "w", stdout);
+    // freopen("vacation.in", "r", stdin);
+    // freopen("vacation.out", "w", stdout);
     int INF = 600000000;
     int N, M, K, Q;
     int g[205][205];
@@ -59,7 +59,7 @@ int main(){
     long long cur = 0;
     for(int i=0; i<Q; i++){
         scanf("%d%d", &s, &d);
-        --s; --d;        
+        --s; --d;
         if(s<K || d<K) cur = g[s][d];
         else cur = ans[s][d];
         if(cur < INF){

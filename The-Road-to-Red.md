@@ -292,6 +292,8 @@
 |[Changing Change](http://community.topcoder.com/stat?c=problem_statement&pm=13847&rd=16512) | 膝盖跪烂。。删除操作可以通过生成函数表达，作为弱渣第一次碰到。。而且[神牛的解法](http://codeforces.com/blog/entry/19400)依赖一个组合计数的中间结论，我从来没见过的结论。。。 | 生成函数 组合计数 |
 |[Clique in Divisibility Graph](http://codeforces.com/problemset/problem/566/F) | 很好的题。。按照整除性进行动态规划，求出最大团 | 数论 图论 |
 |[Restructuring Company](http://codeforces.com/problemset/problem/566/D) | 我自己YY出来了一个类似并查集的数据结构，然后pass system test了。。关键点在于区间合并要高效，因此可以记录每个节点最右边具有相同根的节点，避免遍历 | 并查集 数据结构 |
+|[Replicating Process](http://codeforces.com/contest/566/problem/B) | 太神奇了。。。能选就随便选一个的greedy algo居然是对的，而且最坏复杂度看上去是O(N * N)，总之好神啊。。 | 贪心 |
+|[Matching Names](http://codeforces.com/contest/566/problem/A) | 膜拜Alioth大神的代码。。。将所有的字符串插入到trie中，然后在每个节点，选取通过该节点的group A和group B字符串的最小值。trie树的简洁表示以及dfs的过程第一次见，对神牛的膜拜之情难以言表。。。 | 贪心 前缀树 |
 |[Balancing Art](http://poj.org/problem?id=1655) | 第一次听说“树的重心”，渣渣。。naive要N * N，只记录子节点总数，再利用所有子节点和为常数dfs便可以线性搞 | 图论 |
 |[Untitled](http://acm.hdu.edu.cn/showproblem.php?pid=5339) | 太无聊了。。居然卡常数，用了一个builtin_popcount就TLE，不用就AC | 数论 |
 |[星际竞速](http://www.lydsy.com/JudgeOnline/problem.php?id=1927) | 想了一下是费用流，但是没想出怎么建图，渣渣。。对于普通边，从出边向入边连；对于跳跃边，从源点向入边连 | 最小费用最大流 |

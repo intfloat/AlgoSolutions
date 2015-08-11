@@ -314,3 +314,5 @@
 |[Inventory](http://codeforces.com/contest/569/problem/B) | 贪心来看，只要是与之前重复的都得rename | 贪心 |
 |[Primes or Palindromes](http://codeforces.com/contest/569/problem/C) | 搞了接近一个小时。。肯定不会无解，关键在于预处理到多大，三百万似乎是足够的我也不知道怎么证明反正是提心吊胆地AC了 | 数论 |
 |[Symmetric and Transitive](http://codeforces.com/contest/569/problem/D) | 膜拜Petr大爷，9分钟搞定。。观察到，只要是有数不会出现在集合中，就不可能构成等价关系，于是枚举个数，剩下的元素进行集合划分，百度了一下现成的算法。。。弱渣 | 动态规划 组合计数 |
+|[Bear Plays Div2](http://community.topcoder.com/stat?c=problem_statement&pm=13939) | 赤裸裸动态规划，注意到和是一个常数，因此只需要保存两个数的值就行了 |  动态规划 |
+|[Bear Sorts Div2](http://community.topcoder.com/stat?c=problem_statement&pm=13941) | 挺有意思的小题目，key insight:最终结果只跟LESS调用次数有关。于是按照新顺序模拟一发归并就好 | 概率 归并排序 |

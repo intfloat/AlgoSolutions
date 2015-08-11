@@ -310,3 +310,7 @@
 |[President and Roads](http://codeforces.com/problemset/problem/567/E) | 很好的图论问题，我太弱比赛时没做出来。。先forward和backward来一发dijkstra求最短路，然后在关键边中找桥 | 图论 |
 |[Mausoleum](http://codeforces.com/problemset/problem/567/F) | 我傻叉了。。。比赛的时候思路是对的，就是漏了一个判断条件。。。红果果动态规划，最小的数肯定是在最外围，每次转移判断是否有条件违背就好 | 动态规划 组合计数 |
 |[Zipper](http://poj.org/problem?id=2192) | 有一个小陷阱。。从后往前匹配的线性算法可能得出错误答案，于是就来一发记忆化搜索好了 | 动态规划 |
+|[Music](http://codeforces.com/contest/569/problem/A) | 稍微推导一下就能知道每一次restart之后的总长度，迭代直到达到目标值 | 数学 |
+|[Inventory](http://codeforces.com/contest/569/problem/B) | 贪心来看，只要是与之前重复的都得rename | 贪心 |
+|[Primes or Palindromes](http://codeforces.com/contest/569/problem/C) | 搞了接近一个小时。。肯定不会无解，关键在于预处理到多大，三百万似乎是足够的我也不知道怎么证明反正是提心吊胆地AC了 | 数论 |
+|[Symmetric and Transitive](http://codeforces.com/contest/569/problem/D) | 膜拜Petr大爷，9分钟搞定。。观察到，只要是有数不会出现在集合中，就不可能构成等价关系，于是枚举个数，剩下的元素进行集合划分，百度了一下现成的算法。。。弱渣 | 动态规划 组合计数 |

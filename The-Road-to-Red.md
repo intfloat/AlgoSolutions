@@ -316,3 +316,6 @@
 |[Symmetric and Transitive](http://codeforces.com/contest/569/problem/D) | 膜拜Petr大爷，9分钟搞定。。观察到，只要是有数不会出现在集合中，就不可能构成等价关系，于是枚举个数，剩下的元素进行集合划分，百度了一下现成的算法。。。弱渣 | 动态规划 组合计数 |
 |[Bear Plays Div2](http://community.topcoder.com/stat?c=problem_statement&pm=13939) | 赤裸裸动态规划，注意到和是一个常数，因此只需要保存两个数的值就行了 |  动态规划 |
 |[Bear Sorts Div2](http://community.topcoder.com/stat?c=problem_statement&pm=13941) | 挺有意思的小题目，key insight:最终结果只跟LESS调用次数有关。于是按照新顺序模拟一发归并就好 | 概率 归并排序 |
+|[Good Numbers](http://codeforces.com/problemset/gymProblem/203881/A) | 类似容斥原理，加加减减的，需要想清楚一点 | 数学 |
+|[Hamro and Array](http://codeforces.com/problemset/gymProblem/203881/B) | 求一下前缀和，然后判断奇偶决定是否反转符合就好 | 水 |
+|[Hamro and Tools](http://codeforces.com/problemset/gymProblem/203881/D) | 关键部分在于实现搞笑的集合合并操作，通过link list可以常数实现 | 数据结构 |

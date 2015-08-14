@@ -323,3 +323,5 @@
 |[Hamro and Izocup](http://codeforces.com/problemset/gymProblem/203881/G) | 初中数学。。实现一下就行 | 几何 |
 |[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | leetcode上的一题，还有点意思。凡是矩形交并的大概都是line sweep来搞，对每一个事件作出响应，可用multiset等平衡树来维护，注意最后还要去掉水平线段和重合的垂直线段 | 几何 数据结构 |
 |[Replacement](http://codeforces.com/problemset/problem/570/D) | 需要统计点的总数目和联通块总数，我一开始傻×了，维护的信息不一致居然都没有发现。。。 | 考智商？ |
+|[Tree Requests](http://codeforces.com/contest/570/problem/D) | 挺好的一道题，之前都没见过。。。通过对树进行dfs，然后每次借助于二分来找到所有深度为h的子节点，是一段连续区间，至于palindrome，只需要判断奇偶，通过异或运算来维护 | 图论 数据结构 |
+|[Pig and Palindromes](http://codeforces.com/problemset/problem/570/E) | 其实和USACO 2015 Open的是差不多的，通过动态规划来计数 | 动态规划 组合计数 |

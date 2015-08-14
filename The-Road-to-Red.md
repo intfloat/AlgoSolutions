@@ -325,3 +325,4 @@
 |[Replacement](http://codeforces.com/problemset/problem/570/D) | 需要统计点的总数目和联通块总数，我一开始傻×了，维护的信息不一致居然都没有发现。。。 | 考智商？ |
 |[Tree Requests](http://codeforces.com/contest/570/problem/D) | 挺好的一道题，之前都没见过。。。通过对树进行dfs，然后每次借助于二分来找到所有深度为h的子节点，是一段连续区间，至于palindrome，只需要判断奇偶，通过异或运算来维护 | 图论 数据结构 |
 |[Pig and Palindromes](http://codeforces.com/problemset/problem/570/E) | 其实和USACO 2015 Open的是差不多的，通过动态规划来计数 | 动态规划 组合计数 |
+|[Special Vertex](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/J) | 一开始又傻×了，以为像是树链剖分那样。。其实是点分治，每次找出树的重心，从而可以做到每次将数据规模减半 | 点分治 数据结构 |

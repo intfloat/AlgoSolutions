@@ -322,3 +322,4 @@
 |[Forfeit](http://codeforces.com/problemset/gymProblem/203881/F) | key insight: n很大的时候是无解的！！对于n规模小的情形，用动态规划来搞就行了，要注意处理复杂度，控制在O(n * k) | 动态规划 组合计数 |
 |[Hamro and Izocup](http://codeforces.com/problemset/gymProblem/203881/G) | 初中数学。。实现一下就行 | 几何 |
 |[The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | leetcode上的一题，还有点意思。凡是矩形交并的大概都是line sweep来搞，对每一个事件作出响应，可用multiset等平衡树来维护，注意最后还要去掉水平线段和重合的垂直线段 | 几何 数据结构 |
+|[Replacement](http://codeforces.com/problemset/problem/570/D) | 需要统计点的总数目和联通块总数，我一开始傻×了，维护的信息不一致居然都没有发现。。。 | 考智商？ |

@@ -327,3 +327,4 @@
 |[Pig and Palindromes](http://codeforces.com/problemset/problem/570/E) | 其实和USACO 2015 Open的是差不多的，通过动态规划来计数 | 动态规划 组合计数 |
 |[Special Vertex](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/J) | 一开始又傻×了，以为像是树链剖分那样。。其实是点分治，每次找出树的重心，从而可以做到每次将数据规模减半 | 点分治 数据结构 |
 |[Hamro and TheVampireDiaries](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/C) | 这题太鬼畜了。。考虑n能否被3整除的两种情况，写出和的表达式来，对开头的几个元素赋初始值就好了。 | 数学 |
+|[Its not so bad](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/L) | 在新的路径长度定义下，不再满足dijkstra算法所要求的最优子结构，但是贪心考察每一位，每次通过广度搜索来判断是否能够到达终点 | 图论 |

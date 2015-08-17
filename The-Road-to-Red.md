@@ -330,3 +330,4 @@
 |[Its not so bad](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/L) | 在新的路径长度定义下，不再满足dijkstra算法所要求的最优子结构，但是贪心考察每一位，每次通过广度搜索来判断是否能够到达终点 | 图论 |
 |[LCM Query](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/E) | 膝盖跪烂。。。60以内的lcm会超出long long范围，但是质因子不超过32个，所以可以用int来压缩表示，比较大小的时候用bitmask去掉重复的，就不会溢出了。。因为算符优先级搞错了，调了两个小时。。。累感不爱。。 | 数学 |
 |[A Bug Life](http://www.spoj.com/problems/BUGLIFE/) | 上一次写2-SAT还是13年coursera上的算法课，我真是太渣。。都给忘了，补上个模板。 | 2-SAT |
+|[New Language](http://codeforces.com/contest/568/problem/C) | 代码能力太弱了。。。这个代码写了长长的一坨且各种bug。。。基本思想就是按照长度贪心，每次贪心的时候通过2-SAT来判定是否有解 | 2-SAT 贪心 |

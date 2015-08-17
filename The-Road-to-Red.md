@@ -329,3 +329,4 @@
 |[Hamro and TheVampireDiaries](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/C) | 这题太鬼畜了。。考虑n能否被3整除的两种情况，写出和的表达式来，对开头的几个元素赋初始值就好了。 | 数学 |
 |[Its not so bad](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/L) | 在新的路径长度定义下，不再满足dijkstra算法所要求的最优子结构，但是贪心考察每一位，每次通过广度搜索来判断是否能够到达终点 | 图论 |
 |[LCM Query](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/E) | 膝盖跪烂。。。60以内的lcm会超出long long范围，但是质因子不超过32个，所以可以用int来压缩表示，比较大小的时候用bitmask去掉重复的，就不会溢出了。。因为算符优先级搞错了，调了两个小时。。。累感不爱。。 | 数学 |
+|[A Bug Life](http://www.spoj.com/problems/BUGLIFE/) | 上一次写2-SAT还是13年coursera上的算法课，我真是太渣。。都给忘了，补上个模板。 | 2-SAT |

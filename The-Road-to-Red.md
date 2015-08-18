@@ -333,3 +333,4 @@
 |[New Language](http://codeforces.com/contest/568/problem/C) | 代码能力太弱了。。。这个代码写了长长的一坨且各种bug。。。基本思想就是按照长度贪心，每次贪心的时候通过2-SAT来判定是否有解 | 2-SAT 贪心 |
 |[Tree](http://www.lydsy.com/JudgeOnline/problem.php?id=1468) | 最经典的点分治题目，第一次写。。struggle了好几个小时，真弱。。 | 点分治 |
 |[聪聪可可](http://www.lydsy.com/JudgeOnline/problem.php?id=2152) | 红果果点分治啦。。注意点对是考虑顺序的，权重可按照对3的余数分成三个等价类 | 点分治 |
+|[Guni](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/M) | 两个不同的区间查询，维护两个rmq就行了，每个查询logN得到结果，同时logN可实现在末尾的更新 | 数据结构 |

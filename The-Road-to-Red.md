@@ -337,3 +337,6 @@
 |[Cheque](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/O) | 暴力上最短路肯定超时，注意到k的值很小，就用动态规划好了。。。复杂度也不好分析，反正AC了。。另外，题目的数据范围似乎有误，反正改大数组之后才消除了runtime error | 动态规划 图论 |
 |[Mina](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/Q) | 动态规划求一下最坏情形解就好了，然后按照二分的过程来查询 | 动态规划 二分 |
 |[不重复数字](http://www.lydsy.com/JudgeOnline/problem.php?id=2761) | 只是闲的无聊。。 | 水 |
+|[Bags of Apples](https://www.hackerrank.com/contests/101hack28/challenges/bags-of-apples) | 枚举各种case似乎也是可以的，但还是动态规划简洁优美。。要注意判断解不可行的情况 | 动态规划 |
+|[Binary String](https://www.hackerrank.com/contests/101hack28/challenges/binary-string) | 注意所有的字符是可以按照mod k来分成k组的，然后从小到大贪心，能够在当前位置放1一定得放1才能保证字典序最大 | 贪心 |
+|[Squares and Points](https://www.hackerrank.com/contests/101hack28/challenges/squares-1) | 分成矩形进入、矩形离开、碰到点三种事件，跑一发line sweep算法，每次碰到点的时候，统计区间内的矩形数，可用树状数组维护。比赛时3 / 24挂了，后来发现是傻×地把排序比较函数写漏了一种情况，智商啊。。。 | 几何 数据结构 |

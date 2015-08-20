@@ -336,3 +336,4 @@
 |[Guni](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/M) | 两个不同的区间查询，维护两个rmq就行了，每个查询logN得到结果，同时logN可实现在末尾的更新 | 数据结构 |
 |[Cheque](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/O) | 暴力上最短路肯定超时，注意到k的值很小，就用动态规划好了。。。复杂度也不好分析，反正AC了。。另外，题目的数据范围似乎有误，反正改大数组之后才消除了runtime error | 动态规划 图论 |
 |[Mina](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/Q) | 动态规划求一下最坏情形解就好了，然后按照二分的过程来查询 | 动态规划 二分 |
+|[不重复数字](http://www.lydsy.com/JudgeOnline/problem.php?id=2761) | 只是闲的无聊。。 | 水 |

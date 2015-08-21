@@ -1,4 +1,3 @@
-
 const int MAX_N = 500;
 const int MAX_M = 50000;
 const int INF = INT_MAX / 2;
@@ -8,9 +7,6 @@ public:
     int total, pv[MAX_N], pe[MAX_N], pnt[MAX_M];
     int flow[MAX_M], cost[MAX_M];
     int head[MAX_N], next[MAX_M];
-    queue<int> q;
-    bool visited[MAX_N];
-    int dis[MAX_N];
     MinCostMaxFlow() {
         init();
     }
@@ -23,21 +19,21 @@ public:
         next[total] = head[t]; head[t] = total; pnt[total] = f; flow[total] = 0; cost[total++] = -cs;
     }
     int mincost(int& maxflow) {
+        queue<int> q;
+        bool visited[MAX_N];
+        int dis[MAX_N];
         int mincost = 0;
         maxflow = 0;
         while (true) {
-            memset(visited, false, sizeof(visited));
-            for (int i = 0; i < MAX_N; ++i) {
-                pv[i] = -1;
-                dis[i] = INF;
-            }
-            while (!q.empty()) q.pop();
+            memset(visited, false, sizeof visited);
+            memset(pv, -1, sizeof pv);
+            fill(dis, dis + MAX_N, INF);
             dis[S] = 0; q.push(S); visited[S] = true;
             while (!q.empty()) {
                 int cur = q.front(); q.pop(); visited[cur] = false;
                 for (int i = head[cur]; i >= 0; i = next[i]) {
                     int b = pnt[i];
-                    if (flow[i] > 0 && dis[b] > dis[cur]+cost[i]) {
+                    if (flow[i] > 0 && dis[b] > dis[cur] + cost[i]) {
                         dis[b] = dis[cur] + cost[i];
                         pv[b] = cur; pe[b] = i;
                         if (!visited[b]) { q.push(b); visited[b] = true; }

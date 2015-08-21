@@ -340,3 +340,5 @@
 |[Bags of Apples](https://www.hackerrank.com/contests/101hack28/challenges/bags-of-apples) | 枚举各种case似乎也是可以的，但还是动态规划简洁优美。。要注意判断解不可行的情况 | 动态规划 |
 |[Binary String](https://www.hackerrank.com/contests/101hack28/challenges/binary-string) | 注意所有的字符是可以按照mod k来分成k组的，然后从小到大贪心，能够在当前位置放1一定得放1才能保证字典序最大 | 贪心 |
 |[Squares and Points](https://www.hackerrank.com/contests/101hack28/challenges/squares-1) | 分成矩形进入、矩形离开、碰到点三种事件，跑一发line sweep算法，每次碰到点的时候，统计区间内的矩形数，可用树状数组维护。比赛时3 / 24挂了，后来发现是傻×地把排序比较函数写漏了一种情况，智商啊。。。 | 几何 数据结构 |
+|[Bus Company](https://www.hackerrank.com/contests/101hack28/challenges/bus-company) | 一看题，不是动态规划就是费用流。。。建图能力实在是渣渣。。 | 最小费用最大流 |
+|[Grid Maze](https://www.hackerrank.com/contests/101hack28/challenges/grid-maze) | 很好的图论题。。key insight: 对于最短路径，肯定是有一个T型的交叉点，虽然对于其他点可能会重复累加路径长度，但不会影响最短路径的。。。太神了。。 | 图论 |

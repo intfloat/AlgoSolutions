@@ -342,3 +342,7 @@
 |[Squares and Points](https://www.hackerrank.com/contests/101hack28/challenges/squares-1) | 分成矩形进入、矩形离开、碰到点三种事件，跑一发line sweep算法，每次碰到点的时候，统计区间内的矩形数，可用树状数组维护。比赛时3 / 24挂了，后来发现是傻×地把排序比较函数写漏了一种情况，智商啊。。。 | 几何 数据结构 |
 |[Bus Company](https://www.hackerrank.com/contests/101hack28/challenges/bus-company) | 一看题，不是动态规划就是费用流。。。建图能力实在是渣渣。。 | 最小费用最大流 |
 |[Grid Maze](https://www.hackerrank.com/contests/101hack28/challenges/grid-maze) | 很好的图论题。。key insight: 对于最短路径，肯定是有一个T型的交叉点，虽然对于其他点可能会重复累加路径长度，但不会影响最短路径的。。。太神了。。 | 图论 |
+|[Googol String](https://code.google.com/codejam/contest/4284486/dashboard) | 第一眼懵了几分钟，其实就是一个分治，判断是落在左半区间还是右半区间就好了 | 分治 |
+|[gCube](https://code.google.com/codejam/contest/4284486/dashboard#s=p1) | 小数据暴力二分就行，大数据二分的一个问题是乘法会溢出，我可能是有点紧张，比赛的时候居然没注意到。。。溢出的一个解决办法就是取对数，精度不好说，但是事实证明可以AC | 二分 |
+|[gCampus](https://code.google.com/codejam/contest/4284486/dashboard#s=p2) | 求一发all pair shortest path，然后枚举边和点对，判断是否是最短路上的边就好了 | 图论 |
+|[gSnake](https://code.google.com/codejam/contest/4284486/dashboard#s=p3) | 坑爹模拟题。。。关键在于如何高效模拟贪吃蛇的行为，身体可以用deque来维护，每次只需要更新头部和尾部，然后食物可以用set判断是否被吃掉了 | 模拟 数据结构 |

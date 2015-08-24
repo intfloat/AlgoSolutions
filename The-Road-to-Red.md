@@ -349,3 +349,5 @@
 |[Chef And XOR Number](https://www.codechef.com/COOK61/problems/XORNUBER) | 注意到只有末尾一连串1，其余位置没有1才有可能有解，1是一个corner case | 数学 |
 |[Godzilla and Ugly Number](http://codeforces.com/problemset/gymProblem/203881/V) | 把等号变成不等号，对于小于关系，枚举第一个数字是0目标是1的位，对于大于关系也是类似 | 数学 |
 |[严格n元树](http://www.lydsy.com/JudgeOnline/problem.php?id=1089) | 每次选择节点动态规划计数就好，用python就省去实现大数乘法了。。 | 动态规划 组合计数 |
+|[Lengthening Sticks](http://codeforces.com/problemset/problem/571/A) | 推了一个小时不等式无果。。。但如果从对立面计数就简单到爆，智商啊。。。 | 组合计数 考智商 |
+|[Minimization](http://codeforces.com/contest/571/problem/B) | 首先分组，然后注意到序列的划分不能交叉，剩下的就是红果果动态规划了。我这个傻×。。。一开始想了一个错误的状态表示都没发现。。 | 动态规划 |

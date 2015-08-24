@@ -346,3 +346,4 @@
 |[gCube](https://code.google.com/codejam/contest/4284486/dashboard#s=p1) | 小数据暴力二分就行，大数据二分的一个问题是乘法会溢出，我可能是有点紧张，比赛的时候居然没注意到。。。溢出的一个解决办法就是取对数，精度不好说，但是事实证明可以AC | 二分 |
 |[gCampus](https://code.google.com/codejam/contest/4284486/dashboard#s=p2) | 求一发all pair shortest path，然后枚举边和点对，判断是否是最短路上的边就好了 | 图论 |
 |[gSnake](https://code.google.com/codejam/contest/4284486/dashboard#s=p3) | 坑爹模拟题。。。关键在于如何高效模拟贪吃蛇的行为，身体可以用deque来维护，每次只需要更新头部和尾部，然后食物可以用set判断是否被吃掉了 | 模拟 数据结构 |
+|[Chef And XOR Number](https://www.codechef.com/COOK61/problems/XORNUBER) | 注意到只有末尾一连串1，其余位置没有1才有可能有解，1是一个corner case | 数学 |

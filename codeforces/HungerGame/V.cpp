@@ -17,14 +17,12 @@ int main() {
             xl = xl ^ (ii + (l & ~(ii - 1ll)));
             ll rl = ((x >> j) << j);
             rl = rl ^ ((r & ~(jj - 1ll)) - jj);
-            ll tmp = (rl & xl);
-            if ((i < j && tmp == rl) || (i > j && tmp == xl) || (i == j && xl == rl)) {
-                ll t = max(rl, xl);
-                ll d = (1ll << min(i, j)) - 1ll;
-                if ((t ^ x) <= l || (t ^ x) >= r || (x ^ (t + d)) <= l || (x ^ (t + d)) >= r) continue;
-                mn = min(mn, t);
-                mx = max(mx, t + d);
-            }
+            int cnt = max(i, j);
+            if ((xl >> cnt) != (rl >> cnt)) continue;
+            ll t = max(rl, xl);
+            ll d = (1ll << min(i, j)) - 1ll;
+            mn = min(mn, t);
+            mx = max(mx, t + d);
         }
     }
     cout << mn << " " << mx << endl;

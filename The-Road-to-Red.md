@@ -351,3 +351,15 @@
 |[严格n元树](http://www.lydsy.com/JudgeOnline/problem.php?id=1089) | 每次选择节点动态规划计数就好，用python就省去实现大数乘法了。。 | 动态规划 组合计数 |
 |[Lengthening Sticks](http://codeforces.com/problemset/problem/571/A) | 推了一个小时不等式无果。。。但如果从对立面计数就简单到爆，智商啊。。。 | 组合计数 考智商 |
 |[Minimization](http://codeforces.com/contest/571/problem/B) | 首先分组，然后注意到序列的划分不能交叉，剩下的就是红果果动态规划了。我这个傻×。。。一开始想了一个错误的状态表示都没发现。。 | 动态规划 |
+|[Aditya and Classes](https://www.hackerrank.com/contests/codex-15-0/challenges/aditya-and-classes) | 傻逼题 | 贪心 |
+|[Ravi and His Math Teacher](https://www.hackerrank.com/contests/codex-15-0/challenges/rearrange-the-arrangement) | 从左到右找到第一组连续的1，注意更新之后可能会产生新的连续1 | 贪心 |
+|[Here lies the Difference](https://www.hackerrank.com/contests/codex-15-0/challenges/here-lies-the-difference) | 解决了我很长时间来的一个疑惑：给定一个数组，找出一个最小的数A，不能由数组中元素的任意子集求和得到。背包是可以，但复杂度高，原来还有线性算法的！！维护一个0到up的区间就好了 | 数学 |
+|[Little Ronny and Prime Numbers](https://www.hackerrank.com/contests/codex-15-0/challenges/little-ronny-and-prime-numbers) | 晒素数，然后双指针线性扫描就好了 | 数学 双指针 |
+|[Placement Treat](https://www.hackerrank.com/contests/codex-15-0/challenges/placement-treat-1) | 转化成两个子问题，分别用背包求解 | 动态规划 |
+|[2048 1](https://www.hackerrank.com/contests/codex-15-0/challenges/2048-1) | 不会玩2048导致没看懂题目。。其实就是一个简单的背包 | 动态规划 |
+|[Design the Simple Tree](https://www.hackerrank.com/contests/codex-15-0/challenges/design-the-simple-tree) | 傻逼题 | 构造 |
+|[The Delicious Mess Food](https://www.hackerrank.com/contests/codex-15-0/challenges/the-delicious-mess-food) | 傻逼题 | 三维宽搜 |
+|[Monkey Choice of Numbers](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monks-choice-of-numbers-1/) | 傻逼题 | 数学 |
+|[Monkey and His Friends](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monk-and-his-friend/) | 傻逼题 | 数学 |
+|[Monkey in Magical Land](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monk-in-the-magical-land/) | 按位枚举 | 数学 |
+|[When Integers Got Upset](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/when-the-integers-got-upset/) | 朴素枚举会超时，进行数位动态规划就行了 | 动态规划 |

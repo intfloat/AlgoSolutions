@@ -363,3 +363,6 @@
 |[Monkey and His Friends](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monk-and-his-friend/) | 傻逼题 | 数学 |
 |[Monkey in Magical Land](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monk-in-the-magical-land/) | 按位枚举 | 数学 |
 |[When Integers Got Upset](https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/when-the-integers-got-upset/) | 朴素枚举会超时，进行数位动态规划就行了 | 动态规划 |
+|[Jesse Numbers](https://www.hackerrank.com/contests/sprint-debug/challenges/jesses-numbers) | 蛮机智的一个小结论，通过平方根可以常数时间判断一个数的因子个数的奇偶性 | 数学 |
+|[Helping Jesse](https://www.hackerrank.com/contests/sprint-debug/challenges/helping-jesse) | 对于每个数字，维护一个单调上升的序列，每次碰到连续的数字则通过对序列两端的操作更新 | 数据结构 |
+|[Jesse and Star Graphs](https://www.hackerrank.com/contests/sprint-debug/challenges/jesse-and-star-graphs) | 将每个顶点分裂成两个，根据题目约束建立流图，求一发最大流就是结果 | 最大流 |

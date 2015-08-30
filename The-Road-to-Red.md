@@ -366,3 +366,4 @@
 |[Jesse Numbers](https://www.hackerrank.com/contests/sprint-debug/challenges/jesses-numbers) | 蛮机智的一个小结论，通过平方根可以常数时间判断一个数的因子个数的奇偶性 | 数学 |
 |[Helping Jesse](https://www.hackerrank.com/contests/sprint-debug/challenges/helping-jesse) | 对于每个数字，维护一个单调上升的序列，每次碰到连续的数字则通过对序列两端的操作更新 | 数据结构 |
 |[Jesse and Star Graphs](https://www.hackerrank.com/contests/sprint-debug/challenges/jesse-and-star-graphs) | 将每个顶点分裂成两个，根据题目约束建立流图，求一发最大流就是结果 | 最大流 |
+|[Combination Lock](http://hihocoder.com/contest/hiho61/problem/1) | 红果果的线段树，代码又臭又长。。关键要正确实现lazy propagation的逻辑 | 线段树 |

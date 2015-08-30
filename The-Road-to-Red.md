@@ -367,3 +367,5 @@
 |[Helping Jesse](https://www.hackerrank.com/contests/sprint-debug/challenges/helping-jesse) | 对于每个数字，维护一个单调上升的序列，每次碰到连续的数字则通过对序列两端的操作更新 | 数据结构 |
 |[Jesse and Star Graphs](https://www.hackerrank.com/contests/sprint-debug/challenges/jesse-and-star-graphs) | 将每个顶点分裂成两个，根据题目约束建立流图，求一发最大流就是结果 | 最大流 |
 |[Combination Lock](http://hihocoder.com/contest/hiho61/problem/1) | 红果果的线段树，代码又臭又长。。关键要正确实现lazy propagation的逻辑 | 线段树 |
+|[不等式](http://hihocoder.com/contest/challenge14/problem/1) | 太坑爹了。。。X和C都不一定是整数啊。。文字游戏有意思么。。 | 阅读理解 |
+|[赛车](http://hihocoder.com/contest/challenge14/problem/2) | 不能形成环就要求新路径不能指向自己的父节点，枚举被指向的顶点，顺带记录非该子树的最长路径，dfs两遍就好 | 图论 |

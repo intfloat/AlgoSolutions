@@ -371,3 +371,7 @@
 |[Combination Lock](http://hihocoder.com/contest/hiho61/problem/1) | 红果果的线段树，代码又臭又长。。关键要正确实现lazy propagation的逻辑 | 线段树 |
 |[不等式](http://hihocoder.com/contest/challenge14/problem/1) | 太坑爹了。。。X和C都不一定是整数啊。。文字游戏有意思么。。 | 阅读理解 |
 |[赛车](http://hihocoder.com/contest/challenge14/problem/2) | 不能形成环就要求新路径不能指向自己的父节点，枚举被指向的顶点，顺带记录非该子树的最长路径，dfs两遍就好 | 图论 |
+|[Bear and Elections](http://codeforces.com/problemset/problem/574/A) | 傻逼题 | 枚举 |
+|[Bear and Three Musketeers](http://codeforces.com/problemset/problem/574/B) | 枚举三个点对要快一点 | 枚举 |
+|[Bear and Poker](http://codeforces.com/problemset/problem/573/A) | 注意到只要有两个数除掉公约数之外的部分不能被2和3除尽则不行 | 数论 |
+|[Bear and Blocks](http://codeforces.com/problemset/problem/573/B) | 我乱搞了一把，居然AC了。。。按高度排序，只有三种情形，一种是从高到低减为0，一种是从左边，一种是从右边，三种情况取最小值，用set维护一下就好 | 数据结构 考智商 |

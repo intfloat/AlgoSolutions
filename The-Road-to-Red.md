@@ -376,3 +376,4 @@
 |[Bear and Poker](http://codeforces.com/problemset/problem/573/A) | 注意到只要有两个数除掉公约数之外的部分不能被2和3除尽则不行 | 数论 |
 |[Bear and Blocks](http://codeforces.com/problemset/problem/573/B) | 我乱搞了一把，居然AC了。。。按高度排序，只有三种情形，一种是从高到低减为0，一种是从左边，一种是从右边，三种情况取最小值，用set维护一下就好 | 数据结构 考智商 |
 |[Hill Walk](http://usaco.org/index.php?page=viewproblem2&cpid=266) | key insight: 线段是不相交的，然后类似于line sweep去搞。心情烦躁，一直没有调通，不管了。。 | 几何 |
+|[Browser Caching](http://hihocoder.com/contest/hiho62/problem/1) | 蛮简单的，用一个set和一个map分别维护一发就行 | 数据结构 |

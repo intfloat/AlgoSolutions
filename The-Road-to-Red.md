@@ -377,3 +377,10 @@
 |[Bear and Blocks](http://codeforces.com/problemset/problem/573/B) | 我乱搞了一把，居然AC了。。。按高度排序，只有三种情形，一种是从高到低减为0，一种是从左边，一种是从右边，三种情况取最小值，用set维护一下就好 | 数据结构 考智商 |
 |[Hill Walk](http://usaco.org/index.php?page=viewproblem2&cpid=266) | key insight: 线段是不相交的，然后类似于line sweep去搞。心情烦躁，一直没有调通，不管了。。 | 几何 |
 |[Browser Caching](http://hihocoder.com/contest/hiho62/problem/1) | 蛮简单的，用一个set和一个map分别维护一发就行 | 数据结构 |
+|[Guess The Triangle](https://www.hackerearth.com/code-monk-computational-geometry/algorithm/guess-the-triangle/) | 求解一个简单的三元线性方程组就好 | 几何 |
+|[Integers Only Allowed](https://www.hackerearth.com/code-monk-computational-geometry/algorithm/integers-only-allowed/) | 第一次碰到[Pick Theorem](https://en.wikipedia.org/wiki/Pick%27s_theorem)的题目，整点多边形的内点数目、边界点数目、面积可以建立起一个等式关系来。对于一条线段上有多少个整点，用gcd可解 | 几何 Pick Theorem |
+|[Aqua Park](https://www.hackerearth.com/code-monk-computational-geometry/algorithm/aqua-park/) | 简单的几何模拟，暴力办法比较好写代码，usaco上hill walk是相同的设定，有更高效的模拟办法，不过在给定的数据范围下没有必要 | 几何 模拟 |
+|[Geometric Progression](http://acm.hdu.edu.cn/showproblem.php?pid=5429) | 卧槽！！！漏了“0 0 0 1”这么一种情况被hack了，太弱了。。 | 数学 高精度 |
+|[Reflect](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 稍微想一下就能发现本质上是求解小于(N + 1)且互质的个数，其实就是欧拉函数，我还傻×愣了一会儿。。 | 数论 几何 |
+|[AB String](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 第一次搞出最后一题真是感人肺腑。。。其实也不难，每个字符串可以视为一个二进制数字，然后子串被当成不可取的数字，先确定答案的长度，对于最终的答案，二分就好了 | 二分 字符串 |
+|[The Factor](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 太粗心了。。。漏写了一个return。。第一次犯这种傻×错误。。打素数表，然后求出最小的两个素数因子来就好了 | 数论 |

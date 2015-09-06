@@ -385,3 +385,6 @@
 |[Reflect](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 稍微想一下就能发现本质上是求解小于(N + 1)且互质的个数，其实就是欧拉函数，我还傻×愣了一会儿。。 | 数论 几何 |
 |[AB String](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 第一次搞出最后一题真是感人肺腑。。。其实也不难，每个字符串可以视为一个二进制数字，然后子串被当成不可取的数字，先确定答案的长度，对于最终的答案，二分就好了 | 二分 字符串 |
 |[The Factor](http://acm.hdu.edu.cn/showproblem.php?pid=5431) | 太粗心了。。。漏写了一个return。。第一次犯这种傻×错误。。打素数表，然后求出最小的两个素数因子来就好了 | 数论 |
+|[Find the Robot](https://www.hackerrank.com/contests/w17/challenges/find-the-robot) | 傻逼题 | 水 |
+|[Count Fridays the 13th](https://www.hackerrank.com/contests/w17/challenges/count-fridays-the-13-th) | 算日期的题目太无聊了。。直接用python的datetime module搞了搞 | 无聊 |
+|[Road Reform](https://www.hackerrank.com/contests/w17/challenges/roads-building) | 想了两个小时。。正反两遍dijkstra，然后对于每个顶点分别统计求和，需要推一推公式，暴力上会超时。。 | 图论 计数 |

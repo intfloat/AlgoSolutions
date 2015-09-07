@@ -390,3 +390,5 @@
 |[Road Reform](https://www.hackerrank.com/contests/w17/challenges/roads-building) | 想了两个小时。。正反两遍dijkstra，然后对于每个顶点分别统计求和，需要推一推公式，暴力上会超时。。 | 图论 计数 |
 |[Cross the River](https://www.hackerrank.com/contests/w17/challenges/cross-the-river) | 弱渣不会做，只能写简单的动态规划骗分，居然只挂了一组测试数据。。说正解，需要查询、更新区间最值，线段树可以搞定，这个地球人都知道。。关键问题在于dh的限制，key insight:X的范围比较小，可以在每个整点维护一个multiset，每次有point leave & point enter事件的时候更新multiset以及线段树，其实也不是那么难对吧。。 | 数据结构 |
 |[Garden Planning](https://www.hackerrank.com/contests/w17/challenges/garden-planning) | 膜拜anta神牛！！我看了editorial也码不出来。。。基本想法是按行进行状压动态规划，状态的表示单单用0/1是不够的，需要展示出分组信息 | 动态规划 计数 树 |
+|[Tablecity](http://codeforces.com/contest/575/problem/D) | 太感人了。。一个小时没憋出来，完全是智商不够没看穿问题的本质。key insight:敌人每个hour都会改变y坐标的奇偶性。分初始位置奇和偶两种情况讨论就行 | 考智商 |
+|[Bots](http://codeforces.com/contest/575/problem/H) | 朴素动态规划O(N^2)肯定挂，换个角度去求每一层因为不符合条件而删除的节点数，然后累加 | 动态规划 组合计数 |

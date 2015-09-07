@@ -388,3 +388,5 @@
 |[Find the Robot](https://www.hackerrank.com/contests/w17/challenges/find-the-robot) | 傻逼题 | 水 |
 |[Count Fridays the 13th](https://www.hackerrank.com/contests/w17/challenges/count-fridays-the-13-th) | 算日期的题目太无聊了。。直接用python的datetime module搞了搞 | 无聊 |
 |[Road Reform](https://www.hackerrank.com/contests/w17/challenges/roads-building) | 想了两个小时。。正反两遍dijkstra，然后对于每个顶点分别统计求和，需要推一推公式，暴力上会超时。。 | 图论 计数 |
+|[Cross the River](https://www.hackerrank.com/contests/w17/challenges/cross-the-river) | 弱渣不会做，只能写简单的动态规划骗分，居然只挂了一组测试数据。。说正解，需要查询、更新区间最值，线段树可以搞定，这个地球人都知道。。关键问题在于dh的限制，key insight:X的范围比较小，可以在每个整点维护一个multiset，每次有point leave & point enter事件的时候更新multiset以及线段树，其实也不是那么难对吧。。 | 数据结构 |
+|[Garden Planning](https://www.hackerrank.com/contests/w17/challenges/garden-planning) | 膜拜anta神牛！！我看了editorial也码不出来。。。基本想法是按行进行状压动态规划，状态的表示单单用0/1是不够的，需要展示出分组信息 | 动态规划 计数 树 |

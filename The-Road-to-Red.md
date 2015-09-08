@@ -392,3 +392,6 @@
 |[Garden Planning](https://www.hackerrank.com/contests/w17/challenges/garden-planning) | 膜拜anta神牛！！我看了editorial也码不出来。。。基本想法是按行进行状压动态规划，状态的表示单单用0/1是不够的，需要展示出分组信息 | 动态规划 计数 树 |
 |[Tablecity](http://codeforces.com/contest/575/problem/D) | 太感人了。。一个小时没憋出来，完全是智商不够没看穿问题的本质。key insight:敌人每个hour都会改变y坐标的奇偶性。分初始位置奇和偶两种情况讨论就行 | 考智商 |
 |[Bots](http://codeforces.com/contest/575/problem/H) | 朴素动态规划O(N^2)肯定挂，换个角度去求每一层因为不符合条件而删除的节点数，然后累加 | 动态规划 组合计数 |
+|[Godzilla and Chess](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/U) | WA on testcase 43, no idea why...根据Xellos大神的editorial，这他喵居然只是用bit mask做优化的图论题。。。无聊 | 图论 |
+|[Bulbo](http://codeforces.com/contest/575/problem/F) | 好题啊。。我太弱了。。key insight:只移动到端点不会影响最优解，于是可以用动态规划搞，每个点要么是从左边转移过来的，要么是从右边转移过来的，为了提高这一步的时间效率，转移过程中记录当前最优值并不断更新 | 动态规划 |
+|[Bribes](http://codeforces.com/contest/575/problem/B) | 跟我的水平刚好契合的一题！自己想不出来，看到editorial就是Aha moment！！注意到树上两个点之间的路径是唯一的，只需要记录每个点作为路径起始点、终止点、ancestor的次数，dfs一发就可以得出结果 | LCA 树 计数 |

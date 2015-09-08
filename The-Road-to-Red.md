@@ -395,3 +395,4 @@
 |[Godzilla and Chess](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/U) | WA on testcase 43, no idea why...根据Xellos大神的editorial，这他喵居然只是用bit mask做优化的图论题。。。无聊 | 图论 |
 |[Bulbo](http://codeforces.com/contest/575/problem/F) | 好题啊。。我太弱了。。key insight:只移动到端点不会影响最优解，于是可以用动态规划搞，每个点要么是从左边转移过来的，要么是从右边转移过来的，为了提高这一步的时间效率，转移过程中记录当前最优值并不断更新 | 动态规划 |
 |[Bribes](http://codeforces.com/contest/575/problem/B) | 跟我的水平刚好契合的一题！自己想不出来，看到editorial就是Aha moment！！注意到树上两个点之间的路径是唯一的，只需要记录每个点作为路径起始点、终止点、ancestor的次数，dfs一发就可以得出结果 | LCA 树 计数 |
+|[Run Beer](http://codeforces.com/contest/575/problem/G) | 神题。。。看似是最短路，但根本不符合动态规划的最优子结构。key insight:长度均小于10且时间是按10倍增的。因此可以进行广搜，更新最优解的时候，第一关键字是前向步数，第二关键字是等价类，第三关键字是后向步数。 | 图论 广度搜索 |

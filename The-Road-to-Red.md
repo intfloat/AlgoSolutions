@@ -402,3 +402,4 @@
 |[Candy Distribution](https://www.hackerearth.com/code-monk-revision/algorithm/candy-distribution/) | 枚举一个数的所有因子，然后递归求解，由于每次至少除以2，因此递归树的深度至多logN，但是每个节点最多会有sqrt(N)个子节点，复杂度具体也不好分析，反正是卡时间限制AC了。。 | 数论 |
 |[Mr President](https://www.hackerearth.com/code-monk-revision/algorithm/mr-president/) | 最小生成树简单变形了一下，注意处理图不连通的情况，每次选择road进行转换时，显然是要根据贪心原则去选择权重大的 | 图论 贪心 |
 |[奔小康赚大钱](http://acm.hdu.edu.cn/showproblem.php?pid=2255) | 第一次做带权图最大匹配的题目，我实在是太弱了。。。KM算法还是有点绕，尤其是slack的更新，并没有完全理解 | 二分图匹配 |
+|[Party](http://codeforces.com/problemset/problem/575/C) | 膜拜tourist的代码。。通过递归来动态构造二分图，然后跑km算法，超出我的目前能力范围。。 | 二分图匹配 |

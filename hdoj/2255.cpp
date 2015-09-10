@@ -36,8 +36,8 @@ inline int KM() {
     for (int x = 0; x < nx; ++x) {
         for (i = 0; i < ny; ++i) slack[i] = INF;
         while (true) {
-            memset(visx, 0, sizeof visx);
-            memset(visy, 0, sizeof visy);
+            memset(visx, false, nx);
+            memset(visy, false, ny);
             if (dfs(x)) break;
             int d = INF;
             for (i = 0; i < ny; ++i) {

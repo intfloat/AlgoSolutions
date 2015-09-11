@@ -403,3 +403,8 @@
 |[Mr President](https://www.hackerearth.com/code-monk-revision/algorithm/mr-president/) | 最小生成树简单变形了一下，注意处理图不连通的情况，每次选择road进行转换时，显然是要根据贪心原则去选择权重大的 | 图论 贪心 |
 |[奔小康赚大钱](http://acm.hdu.edu.cn/showproblem.php?pid=2255) | 第一次做带权图最大匹配的题目，我实在是太弱了。。。KM算法还是有点绕，尤其是slack的更新，并没有完全理解 | 二分图匹配 |
 |[Party](http://codeforces.com/problemset/problem/575/C) | 膜拜tourist的代码。。通过递归来动态构造二分图，然后跑km算法，超出我的目前能力范围。。 | 二分图匹配 |
+|[Multiplication Table](http://codeforces.com/problemset/problem/577/A) | 傻逼题 | 水 |
+|[Modulo Sum](http://codeforces.com/problemset/problem/577/B) | 当n不小于m的时候，是鸽巢原理的一个经典例题，一定有解。对于n比较小的情形，可以用动态规划求，类似于背包问题 | 数论 动态规划 |
+|[Vasya and Petya Game](http://codeforces.com/problemset/problem/576/A) | 看上去有点复杂，其实挺简单的，我这个傻×居然还想了半小时。。。唯一确定一个数的关键就在于确定每一个质因子的指数项，所以找出每一个质数最多可能出现多少次就ok了 | 数论 |
+|[Invariance Tree](http://codeforces.com/problemset/problem/576/B) | 构造题完全就是在考智商的。。首先把排列分解成置换群，通过YY可以知道：如果有长度为1的置换群，那么必然有解；否则，如果存在长度为奇数的置换群，必然无解；否则，只有在最小长度为2的情况下才有解，然后构造一下 | 代数结构 构造算法 图论 |
+|[Points on Plane](http://codeforces.com/problemset/problem/576/C) | 居然都忘记写return了难道是太紧张了么。。基本思想我比赛的时候想到了，就是对点集合进行分块，保证每一块内部的两个点之间相隔不会太远，证明在[editorial](http://codeforces.com/blog/entry/20226)上有，并不难 | 分块 排序 |

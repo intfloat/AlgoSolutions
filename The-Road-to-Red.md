@@ -408,3 +408,8 @@
 |[Vasya and Petya Game](http://codeforces.com/problemset/problem/576/A) | 看上去有点复杂，其实挺简单的，我这个傻×居然还想了半小时。。。唯一确定一个数的关键就在于确定每一个质因子的指数项，所以找出每一个质数最多可能出现多少次就ok了 | 数论 |
 |[Invariance Tree](http://codeforces.com/problemset/problem/576/B) | 构造题完全就是在考智商的。。首先把排列分解成置换群，通过YY可以知道：如果有长度为1的置换群，那么必然有解；否则，如果存在长度为奇数的置换群，必然无解；否则，只有在最小长度为2的情况下才有解，然后构造一下 | 代数结构 构造算法 图论 |
 |[Points on Plane](http://codeforces.com/problemset/problem/576/C) | 居然都忘记写return了难道是太紧张了么。。基本思想我比赛的时候想到了，就是对点集合进行分块，保证每一块内部的两个点之间相隔不会太远，证明在[editorial](http://codeforces.com/blog/entry/20226)上有，并不难 | 分块 排序 |
+|[World Cup Team Formation](https://www.hackerrank.com/contests/worldcup/challenges/world-cup-team-formation) | 傻逼题 | 水 |
+|[Swapping Bridges](https://www.hackerrank.com/contests/worldcup/challenges/swapping-bridges) | YY一分钟就会发现每次swap操作会合并两个环，所以求出有多少个环，减一就是答案 | 图论 |
+|[World Cup Game](https://www.hackerrank.com/contests/worldcup/challenges/game-on-tree) | 先手可以选择一个树根，后手的最优解是权重最大的子树，因此dfs一遍就行了，和点分治里面最重子节点的求法类似 | 图论 博弈论 |
+|[Bishop War](https://www.hackerrank.com/contests/worldcup/challenges/bishop-war) | 一开始还以为是N queen问题的简单推广，结果TLE了。。。注意到其实只需要知道当前行的那些列不能放，以及这些阻碍点的发展方向。用记忆化搜索就ok | 动态规划 组合计数 |
+|[Modify Sequence](http://www.spoj.com/problems/NITK06/) | 傻逼题 | 贪心 |

@@ -417,3 +417,5 @@
 |[Modify Sequence](http://www.spoj.com/problems/NITK06/) | 傻逼题 | 贪心 |
 |[Pyramid Split](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1001) | 对高度进行二分就行了，差点忘了三位几何图形体积的求法 | 几何 二分 |
 |[Xiao Ming Climbing](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1002) | 那种最粗暴的广搜不行，于是我就写了一发dijkstra最短路。。其实也可以用广搜的，只不过要把剩余的战斗力值当成状态表示的一部分 | 图论 |
+|[Peace Small Chess](http://acm.hdu.edu.cn/showproblem.php?pid=5434) | 比赛的时候感觉好难，完全没有思路，扫了一眼editorial瞬间觉得好简单。。不考虑n的范围，就是一红果果按行动态规划，并且只有相邻两行之间会发生关系，由于n很大，于是可以整理成矩阵形式，跑快速幂 | 动态规划 矩阵快速幂 |
+|[A Serious Math Problem](http://acm.hdu.edu.cn/showproblem.php?pid=5435) | 很好的题目。。正解简洁，数位dp的关键在于如何定义状态，用f(i, j)来表示i位数字异或值为j的数目，最后再按照位数进行累加求和 | 动态规划 |

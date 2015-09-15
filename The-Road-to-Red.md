@@ -413,3 +413,5 @@
 |[World Cup Game](https://www.hackerrank.com/contests/worldcup/challenges/game-on-tree) | 先手可以选择一个树根，后手的最优解是权重最大的子树，因此dfs一遍就行了，和点分治里面最重子节点的求法类似 | 图论 博弈论 |
 |[Bishop War](https://www.hackerrank.com/contests/worldcup/challenges/bishop-war) | 一开始还以为是N queen问题的简单推广，结果TLE了。。。注意到其实只需要知道当前行的那些列不能放，以及这些阻碍点的发展方向。用记忆化搜索就ok | 动态规划 组合计数 |
 |[Modify Sequence](http://www.spoj.com/problems/NITK06/) | 傻逼题 | 贪心 |
+|[Pyramid Split](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1001) | 对高度进行二分就行了，差点忘了三位几何图形体积的求法 | 几何 二分 |
+|[Xiao Ming Climbing](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1002) | 那种最粗暴的广搜不行，于是我就写了一发dijkstra最短路。。其实也可以用广搜的，只不过要把剩余的战斗力值当成状态表示的一部分 | 图论 |

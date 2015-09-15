@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define FOR(i, n) for (int i = 0; i < n; ++i)
+#define FOR(i, n) for (int i = 0; i < (int)n; ++i)
 using namespace std;
 typedef long long ll;
 inline void solve() {

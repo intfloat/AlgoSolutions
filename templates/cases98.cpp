@@ -21,7 +21,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <cassert>
-#define FOR(i, n) for (int i = 0; i < n; ++i)
+#define FOR(i, n) for (int i = 0; i < (int)n; ++i)
 using namespace std;
 typedef long long ll;
 inline void solve() {

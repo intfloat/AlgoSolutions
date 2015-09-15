@@ -412,6 +412,8 @@
 |[Swapping Bridges](https://www.hackerrank.com/contests/worldcup/challenges/swapping-bridges) | YY一分钟就会发现每次swap操作会合并两个环，所以求出有多少个环，减一就是答案 | 图论 |
 |[World Cup Game](https://www.hackerrank.com/contests/worldcup/challenges/game-on-tree) | 先手可以选择一个树根，后手的最优解是权重最大的子树，因此dfs一遍就行了，和点分治里面最重子节点的求法类似 | 图论 博弈论 |
 |[Bishop War](https://www.hackerrank.com/contests/worldcup/challenges/bishop-war) | 一开始还以为是N queen问题的简单推广，结果TLE了。。。注意到其实只需要知道当前行的那些列不能放，以及这些阻碍点的发展方向。用记忆化搜索就ok | 动态规划 组合计数 |
+|[Ikball Array](https://www.hackerrank.com/contests/worldcup/challenges/two-arrays-1) | 很容易就YY到线段树，保存的变量无非就是两个数组的区间和以及乘积的和，一开始困扰我的地方在于不明白lazy propagation该怎么搞，a和b交错相加怎么办？其实这是一个很幼稚的问题。。。最终的序列显然跟query的顺序根本没关系。。所以只维护两个delta值是完全Okay的 | 线段树 |
+|[Alien Age](https://www.hackerrank.com/contests/worldcup/challenges/aliens) | 看了editorial之后发现，我离得出正解就差一步了。。。智商是硬伤。。两遍dp，第二遍dp要确定该点所处的最大尺寸子脚印 | 动态规划 |
 |[Modify Sequence](http://www.spoj.com/problems/NITK06/) | 傻逼题 | 贪心 |
 |[Pyramid Split](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1001) | 对高度进行二分就行了，差点忘了三位几何图形体积的求法 | 几何 二分 |
 |[Xiao Ming Climbing](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1002) | 那种最粗暴的广搜不行，于是我就写了一发dijkstra最短路。。其实也可以用广搜的，只不过要把剩余的战斗力值当成状态表示的一部分 | 图论 |

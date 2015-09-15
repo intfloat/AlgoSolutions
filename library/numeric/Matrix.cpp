@@ -1,47 +1,39 @@
-#include <iostream>
-#define FOR(i, n) for (int i = 0; i < n; ++i) 
-using namespace std;  
-
-// all operations are in MOD space
-const int MOD = 100000007;
-const int MAXN = 31;
-const int n = MAXN;
+#include <bits/stdc++.h>
+#define FOR(i, n) for (int i = 0; i < (int)n; ++i)
+using namespace std;
+typedef long long ll;
+const int MOD = 1000000007;
+const int MAX_N = 31;
+const int n = MAX_N;
 struct MATRIX {
-    int matrix[MAXN][MAXN];  
+    int matrix[MAX_N][MAX_N];
+    MATRIX() {
+        memset(this->matrix, 0, sizeof this->matrix);
+    }
 };
-
-// adding operation for matrix
-MATRIX matrix_add(MATRIX a, MATRIX b){  
-    MATRIX tmp;  
-    FOR(i, n) FOR(j, n)    
-        tmp.matrix[i][j] = (a.matrix[i][j] + b.matrix[i][j])%MOD;  
-    return tmp;
-}  
-
-// multiplication for matrix
-MATRIX matrix_mul(MATRIX a, MATRIX b){  
-    MATRIX res;  
-    FOR(i, n) FOR(j, n) 
-        res.matrix[i][j] = 0;  
-    FOR(i, n) FOR(j, n) FOR(k, n) {
-        res.matrix[i][j] += (a.matrix[i][k] * b.matrix[k][j])%MOD;
-        res.matrix[i][j] %= MOD;
-    }  
-    return res;  
-}  
-
-// fast power operation for matrix
-// use divide and conquer strategy
-MATRIX matrix_mi(MATRIX ma, int p){  
-    MATRIX tmp;  
-    if(p == 1)  return ma;  
-    tmp = matrix_mi(ma, p / 2);  
-    tmp = matrix_mul(tmp, tmp);  
-    if(p & 1) tmp = matrix_mul(tmp, ma);
-    return tmp; 
+MATRIX matrix_add(const MATRIX& a, const MATRIX& b){
+    MATRIX res;
+    FOR(i, n) FOR(j, n)
+        res.matrix[i][j] = (a.matrix[i][j] + b.matrix[i][j]) % MOD;
+    return res;
 }
-
-int main(){   
-    // TODO: need to add some test code
-    return 0;  
+MATRIX matrix_mul(const MATRIX& a, const MATRIX& b) {
+    MATRIX res;
+    FOR(i, n) FOR(j, n) FOR(k, n) {
+        res.matrix[i][j] += ((ll)a.matrix[i][k] * (ll)b.matrix[k][j]) % MOD;
+        res.matrix[i][j] %= MOD;
+    }
+    return res;
+}
+// p > 0
+MATRIX matrix_power(MATRIX ma, int p) {
+    MATRIX res;
+    if (p == 1) return ma;
+    res = matrix_power(ma, p / 2);
+    res = matrix_mul(res, res);
+    if (p & 1) res = matrix_mul(res, ma);
+    return res;
+}
+int main() {
+    return 0;
 }

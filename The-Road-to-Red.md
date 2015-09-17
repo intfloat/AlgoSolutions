@@ -419,3 +419,8 @@
 |[Xiao Ming Climbing](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=629&pid=1002) | 那种最粗暴的广搜不行，于是我就写了一发dijkstra最短路。。其实也可以用广搜的，只不过要把剩余的战斗力值当成状态表示的一部分 | 图论 |
 |[Peace Small Chess](http://acm.hdu.edu.cn/showproblem.php?pid=5434) | 比赛的时候感觉好难，完全没有思路，扫了一眼editorial瞬间觉得好简单。。不考虑n的范围，就是一红果果按行动态规划，并且只有相邻两行之间会发生关系，由于n很大，于是可以整理成矩阵形式，跑快速幂 | 动态规划 矩阵快速幂 |
 |[A Serious Math Problem](http://acm.hdu.edu.cn/showproblem.php?pid=5435) | 很好的题目。。正解简洁，数位dp的关键在于如何定义状态，用f(i, j)来表示i位数字异或值为j的数目，最后再按照位数进行累加求和 | 动态规划 |
+|[Weakness and Poorness](http://codeforces.com/problemset/problem/578/C) | 二分的while条件设错了。。。要不然就AC了！！！！有一点像gradient descent，函数曲线大概就是一个抛物线。每次验证的时候，只需要求出最大值和最小值来就行了 | 二分 梯度下降 数值优化 |
+|[Or Game](http://codeforces.com/problemset/problem/578/B) | key insight: x > 2，所以最优解肯定是把所有的x都乘到一个数上，枚举这个数就行 | 考智商 |
+|[A Problem About Polyline](http://codeforces.com/problemset/problem/578/A) | 列出不等式来，推导一下，就能找到最优解 | 几何 代数 |
+|[Raising Bacteria](http://codeforces.com/problemset/problem/579/A) | 傻逼题 | 水 |
+|[Finding Team Members](http://codeforces.com/problemset/problem/579/B) | 平衡博弈下，肯定是最高的两个在一起，次高的两个在一起，依次类推 | 贪心 考智商 |

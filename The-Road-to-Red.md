@@ -424,3 +424,6 @@
 |[A Problem About Polyline](http://codeforces.com/problemset/problem/578/A) | 列出不等式来，推导一下，就能找到最优解 | 几何 代数 |
 |[Raising Bacteria](http://codeforces.com/problemset/problem/579/A) | 傻逼题 | 水 |
 |[Finding Team Members](http://codeforces.com/problemset/problem/579/B) | 平衡博弈下，肯定是最高的两个在一起，次高的两个在一起，依次类推 | 贪心 考智商 |
+|[Travel](https://code.google.com/codejam/contest/10214486/dashboard#s=p0) | 最短路稍微变了一下形，由于约束条件的存在，还是跑spfa就行 | 图论 |
+|[gWheels](https://code.google.com/codejam/contest/10214486/dashboard#s=p1) | 题意真是晦涩难懂啊。。。看明白之后发现这是一个数论题，需要凑出一个指定的分数来，由于数据规模大，用set来实现快速查找 | 数论 数据结构 |
+|[gNumbers](https://code.google.com/codejam/contest/10214486/dashboard#s=p2) | 红果果的博弈，尽管n很大，但是它的质因子个数不会超过13个，所以递归是不会超出时间限制的。 | 数论 博弈 |

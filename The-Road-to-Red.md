@@ -427,3 +427,4 @@
 |[Travel](https://code.google.com/codejam/contest/10214486/dashboard#s=p0) | 最短路稍微变了一下形，由于约束条件的存在，还是跑spfa就行 | 图论 |
 |[gWheels](https://code.google.com/codejam/contest/10214486/dashboard#s=p1) | 题意真是晦涩难懂啊。。。看明白之后发现这是一个数论题，需要凑出一个指定的分数来，由于数据规模大，用set来实现快速查找 | 数论 数据结构 |
 |[gNumbers](https://code.google.com/codejam/contest/10214486/dashboard#s=p2) | 红果果的博弈，尽管n很大，但是它的质因子个数不会超过13个，所以递归是不会超出时间限制的。 | 数论 博弈 |
+|[Albocede DNA](https://code.google.com/codejam/contest/10214486/dashboard#s=p3) | 一看就是动态规划，但是想不到状态表示和状态转移啊。。。膜拜kcm大神的代码，很简洁。。在状态表示中包含a的个数、b的个数、当前扫描到哪个位置 | 动态规划 组合计数 |

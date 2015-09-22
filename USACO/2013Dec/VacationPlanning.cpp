@@ -1,30 +1,9 @@
-#include <vector>
-#include <list>
-#include <limits.h>
-#include <map>
-#include <set>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <bitset>
-#include <algorithm>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <string.h>
-#include <stdlib.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-    // freopen("vacation.in", "r", stdin);
-    // freopen("vacation.out", "w", stdout);
+    freopen("vacation.in", "r", stdin);
+    freopen("vacation.out", "w", stdout);
     int INF = 600000000;
     int N, M, K, Q;
     int g[205][205];
@@ -66,7 +45,6 @@ int main(){
             ++number;
             res += cur;
         }
-        //cout<<cur<<endl;
     }
     cout<<number<<endl;
     cout<<res<<endl;

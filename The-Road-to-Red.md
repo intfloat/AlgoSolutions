@@ -431,3 +431,12 @@
 |[Record Keeping](http://usaco.org/index.php?page=viewproblem2&cpid=358) | 傻逼题 | 水 |
 |[Cow Baseball](http://usaco.org/index.php?page=viewproblem2&cpid=359) | 傻逼题 | 二分 |
 |[Wormholes](http://usaco.org/index.php?page=viewproblem2&cpid=360) | 枚举每一种可能的pair，然后再验证即可，一开始在验证上傻逼了，只考虑进入顶点才对。。 | 图论？ 智商？ |
+|[Count Leaderboard](https://www.hackerearth.com/code-monk-number-theory-ii/algorithm/count-leaderboards-monk/description/) | 一开始是想先进行整数划分，然后对每一种划分进行计数并累加，但是复杂度是O(N^3)的，56分。。换个角度，将点看作是一个一个动态添加进去的，就很容易把复杂度降到O(N^2)，智商低没想到。。。 | 动态规划 组合计数 |
+|[Xenny and Random Cubes](https://www.hackerearth.com/code-monk-number-theory-ii/algorithm/xenny-and-random-cubes-monk/) | 写了一个状压的动态规划，不知道为啥只有85分，后来换成爆搜就满分了。。 | 计数 |
+|[Barcode](https://www.hackerearth.com/code-monk-number-theory-ii/algorithm/barcode-monk-1/) | 这个还挺有意思的，首先是求解一个背包问题，得到有哪些长度是能够通过涂色得到的，然后再跑动态规划，枚举前一个白色的位置 | 动态规划 计数 |
+|[Give me my test](https://www.hackerearth.com/code-monk-number-theory-ii/algorithm/give-me-my-test-monk/) | 先把问题简化一下，只考虑L = R的情形，相当于先求出一个组合数，然后再乘上错位排列的结果。 | 错位排列 计数 |
+|[Three Sum](https://www.hackerearth.com/code-monk-number-theory-ii/algorithm/three-sum-monk/) | 枚举最小的两个数对，然后通过二分数一下剩下的那个数有多少个就行 | 二分 概率 组合计数 |
+|[Kefa and First Steps](http://codeforces.com/contest/580/problem/A) | 水 | 动态规划 |
+|[Kefa and Company](http://codeforces.com/contest/580/problem/B) | 可以用双指针线性搞定，简单一点直接二分也行 | 二分 |
+|[Kefa and Park](http://codeforces.com/contest/580/problem/C) | 对树进行一遍深搜，然后记录中间的诸如“还剩多少个节点”之类的信息 | 图论 |
+|[Kefa and Dishes](http://codeforces.com/contest/580/problem/D) | 再经典不过的状态压缩动态规划了 | 动态规划 |

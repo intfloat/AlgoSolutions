@@ -440,3 +440,4 @@
 |[Kefa and Company](http://codeforces.com/contest/580/problem/B) | 可以用双指针线性搞定，简单一点直接二分也行 | 二分 |
 |[Kefa and Park](http://codeforces.com/contest/580/problem/C) | 对树进行一遍深搜，然后记录中间的诸如“还剩多少个节点”之类的信息 | 图论 |
 |[Kefa and Dishes](http://codeforces.com/contest/580/problem/D) | 再经典不过的状态压缩动态规划了 | 动态规划 |
+|[Kefa and Watch](http://codeforces.com/contest/580/problem/E) | 第一道字符串哈希题目！！hashing真的是非常强大。。以前有一个弯没转过来，就是怎么维护一个区间的哈希值，特别是除法很烦人，原来把低位都补零就行了。。。 | 字符串 哈希 |

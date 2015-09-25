@@ -441,3 +441,6 @@
 |[Kefa and Park](http://codeforces.com/contest/580/problem/C) | 对树进行一遍深搜，然后记录中间的诸如“还剩多少个节点”之类的信息 | 图论 |
 |[Kefa and Dishes](http://codeforces.com/contest/580/problem/D) | 再经典不过的状态压缩动态规划了 | 动态规划 |
 |[Kefa and Watch](http://codeforces.com/contest/580/problem/E) | 第一道字符串哈希题目！！hashing真的是非常强大。。以前有一个弯没转过来，就是怎么维护一个区间的哈希值，特别是除法很烦人，原来把低位都补零就行了。。。 | 字符串 哈希 |
+|[Palindrome](http://acdream.info/problem?pid=1019) | 还是一个string hashing的问题，和上一个的差别在于，这个是单点修改 + 回文串判断，分别记录正向和逆向的哈希值，并且不要低位补零。。代码就不写了，线段树太罗嗦。。 | 字符串 哈希 线段树 |
+|[Number of Palindrome](http://www.spoj.com/problems/NUMOFPAL/) | 学习了一个新的数据结构：回文树（Palindromic Tree），和AC自动机有点像，慢慢体会。。 | 回文树 |
+|[Is it A Tree](http://www.spoj.com/problems/PT07Y/) | 这个标题总是让我想起第一次参加ACM都不知道什么是“树”。。。其实超简单，边数等于定点数减一并且图应当连通 | 图论 |

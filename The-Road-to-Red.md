@@ -444,3 +444,6 @@
 |[Palindrome](http://acdream.info/problem?pid=1019) | 还是一个string hashing的问题，和上一个的差别在于，这个是单点修改 + 回文串判断，分别记录正向和逆向的哈希值，并且不要低位补零。。代码就不写了，线段树太罗嗦。。 | 字符串 哈希 线段树 |
 |[Number of Palindrome](http://www.spoj.com/problems/NUMOFPAL/) | 学习了一个新的数据结构：回文树（Palindromic Tree），和AC自动机有点像，慢慢体会。。 | 回文树 |
 |[Is it A Tree](http://www.spoj.com/problems/PT07Y/) | 这个标题总是让我想起第一次参加ACM都不知道什么是“树”。。。其实超简单，边数等于定点数减一并且图应当连通 | 图论 |
+|[Conturbatio](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1001) | 当且仅当横向或者纵向里面有一个和等于边长的时候答案才会是YES，我傻叉了。。写了一个树状数组，虽然也AC了。。 | 考智商 |
+|[Desiderium](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1002) | 这个还挺有意思的，根据期望的线性性质，考虑每一段不可再分的小区间，然后计算它在多少个子集中出现就好 | 概率 期望 |
+|[Numquam Vincer](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1003) | 虽然字符表可能很大，但目标字符串很短，只需要计算出有多少个本质不同的字符，然后应用组合数公式进行计数 | 字符串 组合计数 |

@@ -447,3 +447,4 @@
 |[Conturbatio](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1001) | 当且仅当横向或者纵向里面有一个和等于边长的时候答案才会是YES，我傻叉了。。写了一个树状数组，虽然也AC了。。 | 考智商 |
 |[Desiderium](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1002) | 这个还挺有意思的，根据期望的线性性质，考虑每一段不可再分的小区间，然后计算它在多少个子集中出现就好 | 概率 期望 |
 |[Numquam Vincer](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1003) | 虽然字符表可能很大，但目标字符串很短，只需要计算出有多少个本质不同的字符，然后应用组合数公式进行计数 | 字符串 组合计数 |
+|[Nux Walpurgis](http://acm.hdu.edu.cn/showproblem.php?pid=5483) | 非常感人的一道题目。。。一条边有可能不在最小生成树上当且仅当又能够覆盖它的权重相等的非树边，枚举每一个根节点，更新覆盖边的权重最小值就行了 | 图论 生成树 |

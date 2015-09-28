@@ -4,10 +4,10 @@ const int MAX_N = 1005;
 typedef int E;
 E f[MAX_N];
 int n;
-void init(){
+void init() {
     memset(f, 0, sizeof f);
 }
-void update(int pos, E val){
+void update(int pos, E val) {
     if (pos == 0) return;
     while (pos <= n) {
         f[pos] += val;

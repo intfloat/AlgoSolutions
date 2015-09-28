@@ -1,4 +1,4 @@
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 const int MAX_N = 50005;
 int val[MAX_N], dp[MAX_N][20], N;

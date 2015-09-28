@@ -448,3 +448,7 @@
 |[Desiderium](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1002) | 这个还挺有意思的，根据期望的线性性质，考虑每一段不可再分的小区间，然后计算它在多少个子集中出现就好 | 概率 期望 |
 |[Numquam Vincer](http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=633&pid=1003) | 虽然字符表可能很大，但目标字符串很短，只需要计算出有多少个本质不同的字符，然后应用组合数公式进行计数 | 字符串 组合计数 |
 |[Nux Walpurgis](http://acm.hdu.edu.cn/showproblem.php?pid=5483) | 非常感人的一道题目。。。一条边有可能不在最小生成树上当且仅当又能够覆盖它的权重相等的非树边，枚举每一个根节点，更新覆盖边的权重最小值就行了 | 图论 生成树 |
+|[Vasya and Hipster](http://codeforces.com/contest/581/problem/A) | 傻逼题 | 水 |
+|[Luxurious Houses](http://codeforces.com/contest/581/problem/B) | 傻逼题 | 水 |
+|[Developing Skills](http://codeforces.com/contest/581/problem/C) | key insight:一旦所有的skill值都是10的倍数，那么元素之间就没有任何本质差别了。在一开始不是10的倍数，需要按照余数降序排列，贪心选择 | 贪心 |
+|[Three Logos](http://codeforces.com/contest/581/problem/D) | 自行YY几分钟可以发现，可能的排列方式只有两种，一种是三个叠加，一种是一个logo叠加在另外两个logo上面，思路简单，写了一大坨代码。。 | 几何 |

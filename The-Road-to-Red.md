@@ -452,3 +452,4 @@
 |[Luxurious Houses](http://codeforces.com/contest/581/problem/B) | 傻逼题 | 水 |
 |[Developing Skills](http://codeforces.com/contest/581/problem/C) | key insight:一旦所有的skill值都是10的倍数，那么元素之间就没有任何本质差别了。在一开始不是10的倍数，需要按照余数降序排列，贪心选择 | 贪心 |
 |[Three Logos](http://codeforces.com/contest/581/problem/D) | 自行YY几分钟可以发现，可能的排列方式只有两种，一种是三个叠加，一种是一个logo叠加在另外两个logo上面，思路简单，写了一大坨代码。。 | 几何 |
+|[Zublicanes and Mumocrates](http://codeforces.com/contest/581/problem/F) | 膜拜fwm94大神的代码。。。自认为能想明白算法但就是写不出代码来【分明就是不懂好嘛。。对于树上的每一个节点，对它的子节点进行类似背包的动态规划，总觉得别扭。。 | 图论 动态规划 |

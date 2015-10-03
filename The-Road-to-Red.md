@@ -453,3 +453,7 @@
 |[Developing Skills](http://codeforces.com/contest/581/problem/C) | key insight:一旦所有的skill值都是10的倍数，那么元素之间就没有任何本质差别了。在一开始不是10的倍数，需要按照余数降序排列，贪心选择 | 贪心 |
 |[Three Logos](http://codeforces.com/contest/581/problem/D) | 自行YY几分钟可以发现，可能的排列方式只有两种，一种是三个叠加，一种是一个logo叠加在另外两个logo上面，思路简单，写了一大坨代码。。 | 几何 |
 |[Zublicanes and Mumocrates](http://codeforces.com/contest/581/problem/F) | 膜拜fwm94大神的代码。。。自认为能想明白算法但就是写不出代码来【分明就是不懂好嘛。。对于树上的每一个节点，对它的子节点进行类似背包的动态规划，总觉得别扭。。 | 图论 动态规划 |
+|[Have Lunch Together](http://hihocoder.com/contest/hiho66/problem/1) | 傻逼题 | 宽搜 |
+|[LCS](http://acm.hdu.edu.cn/showproblem.php?pid=5495) | 卧槽。。。至今未想明白为什么长度n的循环节可以得到n - 1的LCS。。 | 代数结构 |
+|[Beauty of Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5496) | 关键就在于计算一个元素在多少个子序列中有贡献，用概率算算就行了。。 | 概率 |
+|[Inversion](http://acm.hdu.edu.cn/showproblem.php?pid=5497) | 这个没AC其实不能全怪我，我的办法是用归并树，复杂度O(N * lgN * lgN)，注意到元素的取值范围有限，于是可以用两个bit分别维护前缀和后缀，复杂度就降到了O(N * lgN)。。 | 数据结构 |

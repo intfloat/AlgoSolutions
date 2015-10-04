@@ -459,3 +459,6 @@
 |[Inversion](http://acm.hdu.edu.cn/showproblem.php?pid=5497) | 这个没AC其实不能全怪我，我的办法是用归并树，复杂度O(N * lgN * lgN)，注意到元素的取值范围有限，于是可以用两个bit分别维护前缀和后缀，复杂度就降到了O(N * lgN)。。 | 数据结构 |
 |[GCD Table](http://codeforces.com/contest/583/problem/C) | 最大的元素肯定是数组中最大的数，然后除掉已有数的约数剩下来最大的数一定是数组中的数，得解 | 数论 贪心 |
 |[Once Again](http://codeforces.com/contest/583/problem/D) | 我比赛的时候在边界条件上傻×了一个半小时。。。当T很大的时候，最优解肯定是先上升，然后很长一段时间都是平的，最后可能上升一下 | 动态规划 二分 |
+|[Asphalting Roads](http://codeforces.com/contest/583/problem/A) | 傻逼题 | 水 |
+|[Robot Task](http://codeforces.com/contest/583/problem/B) | 傻逼题 | 贪心 |
+|[Superior Periodic Subarrays](http://codeforces.com/contest/583/problem/E) | 其实我已经想到对约数进行分组了，但是比赛的时候没想出来怎么去高效计算每一个约数的贡献。用two pointers分段就可以解决，智商啊。。 | 数论 双指针 |

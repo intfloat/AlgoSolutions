@@ -463,3 +463,4 @@
 |[Asphalting Roads](http://codeforces.com/contest/583/problem/A) | 傻逼题 | 水 |
 |[Robot Task](http://codeforces.com/contest/583/problem/B) | 傻逼题 | 贪心 |
 |[Superior Periodic Subarrays](http://codeforces.com/contest/583/problem/E) | 其实我已经想到对约数进行分组了，但是比赛的时候没想出来怎么去高效计算每一个约数的贡献。用two pointers分段就可以解决，智商啊。。 | 数论 双指针 |
+|[Highways](http://www.spoj.com/problems/HIGH/) | Kirchhoff theorem模板题 | 生成树计数 |

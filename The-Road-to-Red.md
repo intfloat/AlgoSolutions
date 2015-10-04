@@ -457,3 +457,5 @@
 |[LCS](http://acm.hdu.edu.cn/showproblem.php?pid=5495) | 卧槽。。。至今未想明白为什么长度n的循环节可以得到n - 1的LCS。。 | 代数结构 |
 |[Beauty of Sequence](http://acm.hdu.edu.cn/showproblem.php?pid=5496) | 关键就在于计算一个元素在多少个子序列中有贡献，用概率算算就行了。。 | 概率 |
 |[Inversion](http://acm.hdu.edu.cn/showproblem.php?pid=5497) | 这个没AC其实不能全怪我，我的办法是用归并树，复杂度O(N * lgN * lgN)，注意到元素的取值范围有限，于是可以用两个bit分别维护前缀和后缀，复杂度就降到了O(N * lgN)。。 | 数据结构 |
+|[GCD Table](http://codeforces.com/contest/583/problem/C) | 最大的元素肯定是数组中最大的数，然后除掉已有数的约数剩下来最大的数一定是数组中的数，得解 | 数论 贪心 |
+|[Once Again](http://codeforces.com/contest/583/problem/D) | 我比赛的时候在边界条件上傻×了一个半小时。。。当T很大的时候，最优解肯定是先上升，然后很长一段时间都是平的，最后可能上升一下 | 动态规划 二分 |

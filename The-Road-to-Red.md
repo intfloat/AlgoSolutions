@@ -464,3 +464,9 @@
 |[Robot Task](http://codeforces.com/contest/583/problem/B) | 傻逼题 | 贪心 |
 |[Superior Periodic Subarrays](http://codeforces.com/contest/583/problem/E) | 其实我已经想到对约数进行分组了，但是比赛的时候没想出来怎么去高效计算每一个约数的贡献。用two pointers分段就可以解决，智商啊。。 | 数论 双指针 |
 |[Highways](http://www.spoj.com/problems/HIGH/) | Kirchhoff theorem模板题 | 生成树计数 |
+|[Kieszonkowe](http://www.lydsy.com/JudgeOnline/problem.php?id=4291) | 傻逼题 | 贪心 |
+|[Olesya and Rodion](http://codeforces.com/contest/584/problem/A) | 傻逼题 | 构造 |
+|[Kolya and Tanya](http://codeforces.com/contest/584/problem/B) | 中学计数题目。。注意到每组之间其实都是相互独立的。找对立面 | 计数 |
+|[Marina and Vasya](http://codeforces.com/contest/584/problem/C) | 比较麻烦的构造题，反正基本思想就是如果剩下的距离不是很少，那就每个位置制造距离1，否则每两个位置制造距离1 | 构造 贪心 |
+|[Dima and Lisa](http://codeforces.com/contest/584/problem/D) | 比较水的D。。对小数暴力搜，对大数，只要找到一个跟它邻近的素数，然后剩下的小数部分爆搜就行了 | 数论 |
+|[Anton and Ira](http://codeforces.com/contest/584/problem/E) | 这他喵完全是考智商。。。对于每一个不在原位的数，根据鸽巢原理，后面肯定有一个比当前位置小的数，这样交换之后，两个的距离都减小了，双赢局面。。 | 贪心 |

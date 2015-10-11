@@ -474,3 +474,5 @@
 |[Reorder the Book](http://acm.hdu.edu.cn/showproblem.php?pid=5500) | 注意到编号最大的书肯定是不需要动的，然后n - 1如果在上边也不需要动，依次类推，剩余的都得至少移动一次，并且可以构造出只移动一次的解 | 贪心 |
 |[The Highest Mark](http://acm.hdu.edu.cn/showproblem.php?pid=5501) | 挺好的题目。。。在确定选择那些题目的前提下，肯定是按照B / C降序的顺序来做，可以用贪心来证明。但关键是选那些题目呢，这个就变成了一个经典的背包问题，每次在末尾追加区间。 | 贪心 动态规划 |
 |[Candy Game](http://acm.hdu.edu.cn/showproblem.php?pid=5502) | 其实也不是那么难。。。朴素的概率dp时间复杂度是O(N ^ 3)的，观察到相邻项之间有公共表达式，于是复杂度可以降到O(N ^ 2)，比赛的时候没搞出来的原因就是把概率转移方程写错了。。。概率统计学的真是渣渣啊。。 | 概率 动态规划 |
+|[Best Route in a Grid](http://hihocoder.com/problemset/problem/1241) | 简直被自己渣哭了。。。分别对2和5跑一发dp，最小的那个肯定是答案啊。。那个很挫的二分其实也对，结果数据溢出了都没注意到。。。 | 动态规划 数学 |
+|[MX Loves Game](http://hihocoder.com/problemset/problem/1242) | 其实也不难。。行和列是独立的，所以只需要枚举A中哪一行和B中第一行相对应，然后剩余的列用hash判断判断就又变成了一个置换问题，最少的交换次数是n - 循环节的个数 | 排列组合 哈希 |

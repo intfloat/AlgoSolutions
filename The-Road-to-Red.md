@@ -470,3 +470,6 @@
 |[Marina and Vasya](http://codeforces.com/contest/584/problem/C) | 比较麻烦的构造题，反正基本思想就是如果剩下的距离不是很少，那就每个位置制造距离1，否则每两个位置制造距离1 | 构造 贪心 |
 |[Dima and Lisa](http://codeforces.com/contest/584/problem/D) | 比较水的D。。对小数暴力搜，对大数，只要找到一个跟它邻近的素数，然后剩下的小数部分爆搜就行了 | 数论 |
 |[Anton and Ira](http://codeforces.com/contest/584/problem/E) | 这他喵完全是考智商。。。对于每一个不在原位的数，根据鸽巢原理，后面肯定有一个比当前位置小的数，这样交换之后，两个的距离都减小了，双赢局面。。 | 贪心 |
+|[Earth Cup](http://acm.hdu.edu.cn/showproblem.php?pid=5503) | 神题啊。。结论超级简单，虽然推理过程比较复杂。二分图是否有完美匹配可以通过Hall Theorem来判定，具体操作可以贪心来搞，对于数据规模比较小的情形，可以通过建立网络流模型来判断是否有可行解。 | 图论 二分图完美匹配 |
+|[Reorder the Book](http://acm.hdu.edu.cn/showproblem.php?pid=5500) | 注意到编号最大的书肯定是不需要动的，然后n - 1如果在上边也不需要动，依次类推，剩余的都得至少移动一次，并且可以构造出只移动一次的解 | 贪心 |
+|[The Highest Mark](http://acm.hdu.edu.cn/showproblem.php?pid=5501) | 挺好的题目。。。在确定选择那些题目的前提下，肯定是按照B / C降序的顺序来做，可以用贪心来证明。但关键是选那些题目呢，这个就变成了一个经典的背包问题，每次在末尾追加区间。 | 贪心 动态规划 |

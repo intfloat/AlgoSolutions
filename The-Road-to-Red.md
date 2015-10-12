@@ -477,3 +477,4 @@
 |[Best Route in a Grid](http://hihocoder.com/problemset/problem/1241) | 简直被自己渣哭了。。。分别对2和5跑一发dp，最小的那个肯定是答案啊。。那个很挫的二分其实也对，结果数据溢出了都没注意到。。。 | 动态规划 数学 |
 |[MX Loves Game](http://hihocoder.com/problemset/problem/1242) | 其实也不难。。行和列是独立的，所以只需要枚举A中哪一行和B中第一行相对应，然后剩余的列用hash判断判断就又变成了一个置换问题，最少的交换次数是n - 循环节的个数 | 排列组合 哈希 |
 |[MX Loves Bomb](http://hihocoder.com/contest/challenge15/problem/3) | 这他喵的居然叫做“简单题”。。。膜拜jiry_2大神的代码。。。树上dp，状态定义和转移方程不好想，智商不够。。 | 树形dp |
+|[VLATTICE](http://www.spoj.com/problems/VLATTICE/) | 第一次接触mobius反演。。有一点在整除格上做容斥原理的意思好像。。。顺道膜拜kuangbin神牛的代码。。 | mobius反演 |

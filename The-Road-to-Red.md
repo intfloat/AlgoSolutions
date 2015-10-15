@@ -488,3 +488,4 @@
 |[LongLong](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/longlong/) | 还是赤裸裸的suffix array... 出题人不长点心。。 | 后缀数组 |
 |[UpUp](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/upup/) | 傻逼题 | 水 |
 |[PrefPref](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/prefpref/) | 傻逼题 | 水 |
+|[Alice, Bob, Oranges and Apples](http://codeforces.com/problemset/problem/586/E) | 解答倒是很简洁，至今未明白到底是怎么一回事。。。 | 数论 |

@@ -484,3 +484,7 @@
 |[Gennady and Dentist](http://codeforces.com/problemset/problem/585/A) | 傻逼题居然整数溢出了。。 | 水 |
 |[Phillips and Train](http://codeforces.com/problemset/problem/585/B) | 高中物理？？根据相对运动的原理，把火车看成不动的，然后一步一步进行状态转移 | 动态规划 |
 |[Lizard Era Beginnning](http://codeforces.com/problemset/problem/585/D) | 我也想到meet in the middle了，有一点双向广搜的味道。。但是代码写的渣。。死活TLE，time limit 2s，渣代码跑5s。。 | meet-in-the-middle 搜索 |
+|[DifDif](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/difdif/) | 赤裸裸的suffix array | 后缀数组 |
+|[LongLong](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/longlong/) | 还是赤裸裸的suffix array... 出题人不长点心。。 | 后缀数组 |
+|[UpUp](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/upup/) | 傻逼题 | 水 |
+|[PrefPref](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/prefpref/) | 傻逼题 | 水 |

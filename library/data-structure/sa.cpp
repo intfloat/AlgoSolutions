@@ -5,11 +5,9 @@ const int maxn = 1000;
 int wb[maxn], wv[maxn], wss[maxn];
 int n, r[maxn], sa[maxn], _rank[maxn], h[maxn];
 string s;
-
 bool cmp(int *r, int a, int b, int l) {
     return r[a] == r[b] && r[a + l] == r[b + l];
 }
-
 /*
  * r is an array
  * sa is an array storing result
@@ -23,7 +21,6 @@ inline void da(int *r, int *sa, int n, int m) {
     for (i = 1; i < m; ++i) wss[i] += wss[i - 1];
     for (i = n - 1; i >= 0; --i)
        sa[--wss[x[i]]] = i;
-
     for (j = 1, p = 1; p < n; j *= 2, m = p) {
         for (p = 0, i = n - j; i < n; ++i) y[p++] = i;
         for (i = 0; i < n; ++i) if(sa[i] >= j) y[p++] = sa[i] - j;
@@ -35,7 +32,6 @@ inline void da(int *r, int *sa, int n, int m) {
         for (t = x, x = y, y = t, p = 1, x[sa[0]] = 0, i = 1; i < n; ++i)
         x[sa[i]] = cmp(y, sa[i - 1], sa[i], j)? p - 1 : p++;
     }
-    return;
 }
 inline void height() {
     int j, k = 0;
@@ -44,7 +40,6 @@ inline void height() {
         for (k > 0? k--:0, j = sa[_rank[i] - 1]; r[i + k] == r[j + k]; ++k);
         h[_rank[i]] = k;
     }
-    return;
 }
 int rmq[maxn][18];
 inline void rmq_init() {
@@ -53,7 +48,6 @@ inline void rmq_init() {
         for (int i = 1; i + (1 << p) <= n; ++i)
             rmq[i][p] = min(rmq[i][p - 1], rmq[i + (1 << (p - 1))][p - 1]);
     }
-    return;
 }
 // longest common prefix
 inline int lcp(int x, int y) {
@@ -69,7 +63,7 @@ inline int lcp(int x, int y) {
 int main() {
     s = "ccabababc";
     n = s.size();
-    for(int i = 0; i < n; ++i) r[i] = s[i] - 'a' + 1;
+    for (int i = 0; i < n; ++i) r[i] = s[i] - 'a' + 1;
     r[n] = 0;
     da(r, sa, n + 1, 27);
     height();

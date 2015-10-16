@@ -489,3 +489,7 @@
 |[UpUp](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/upup/) | 傻逼题 | 水 |
 |[PrefPref](https://www.hackerearth.com/code-monk-string-algorithms/algorithm/prefpref/) | 傻逼题 | 水 |
 |[Alice, Bob, Oranges and Apples](http://codeforces.com/problemset/problem/586/E) | 解答倒是很简洁，至今未明白到底是怎么一回事。。。 | 数论 |
+|[Easy School](https://www.hackerrank.com/contests/hourrank-1/challenges/easy-school) | 神题。。有一点利用单调性的意味，朴素的办法是枚举要bribe的人数，然后从前缀中取若干个最小值。利用了单调性之后就可以用multiset高效维护 | 数据结构 |
+|[Beautiful Array](https://www.hackerrank.com/contests/hourrank-1/challenges/shafaet-and-array) | 对目标值进行枚举，超过目标值的只能-1，别无选择，剩下的小于目标值的只能+1 | 枚举 贪心 |
+|[XOR Groups](https://www.hackerrank.com/contests/hourrank-1/challenges/xor-groups) | 窝太笨了。。如果一个序列的xor结果为0，那么随便分成连个子序列，它们的xor值必然相等，多么显而易见的事实。。。 | 数学 智商 |
+|[GCD Groups](https://www.hackerrank.com/contests/hourrank-1/challenges/gcd-groups) | 是栽在了复杂度分析上，想到了正解但是以为会TLE但其实并不。。。每个数的质因子最多O(logP)个，因此出现超过n / 2次的质因子不会超过 2 * logP，这个数很小，成对枚举一把就行了。。。 | 数论 |

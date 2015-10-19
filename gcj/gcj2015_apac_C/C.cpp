@@ -3,38 +3,34 @@
 using namespace std;
 typedef long long ll;
 typedef pair<int, int> pii;
-int g[20][20], total;
+int g[20][20], total, prob[20][20];
 vector<int> perm;
-int cnt = 0;
 bool ok, visited[20];
 void dfs(int pos) {
     if (ok || pos == total) {
         ok = true;
         return;
     }
-    if (cnt > 200000000) return;
-    ++cnt;
     for (int i = 1; i < total; ++i) {
-        if (visited[i]) continue;
+        if (visited[i] || prob[pos][i] > 0) continue;
         if (i % 2 && !visited[i - 1]) continue;
-        bool cc = true;
-        FOR(j, pos) {
-            if (g[pos][j] <= 0) continue;
-            int t = ~((1 << g[pos][j]) - 1);
-            int a = t & i;
-            int b = t & perm[j];
-            if (a == b) {
-                cc = false;
-                break;
+        visited[i] = true;
+        perm[pos] = i;
+        for (int j = pos + 1; j < total; ++j) {
+            if (g[pos][j] > 0) {
+                int cur = i - i % (1 << g[pos][j]);
+                FOR(k, 1 << g[pos][j]) ++prob[j][k + cur];
             }
         }
-        if (cc) {
-            visited[i] = true;
-            perm[pos] = i;
-            dfs(pos + 1);
-            if (ok) return;
-            visited[i] = false;
+        dfs(pos + 1);
+        if (ok) return;
+        for (int j = pos + 1; j < total; ++j) {
+            if (g[pos][j] > 0) {
+                int cur = i - i % (1 << g[pos][j]);
+                FOR(k, 1 << g[pos][j]) --prob[j][k + cur];
+            }
         }
+        visited[i] = false;
     }
 }
 void solve() {
@@ -56,8 +52,16 @@ void solve() {
     total = (1 << N);
     perm.resize(total);
     memset(visited, false, sizeof visited);
+    memset(prob, 0, sizeof prob);
     perm[0] = 0; visited[0] = true;
-    cnt = 0; ok = false; dfs(1);
+    FOR(i, total) {
+        if (g[0][i] > 0) {
+            for (int j = 0; j < (1 << g[0][i]); ++j) {
+                ++prob[i][j];
+            }
+        }
+    }
+    ok = false; dfs(1);
     if (ok) printf("YES\n");
     else printf("NO\n");
     return;

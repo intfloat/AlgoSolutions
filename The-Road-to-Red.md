@@ -504,3 +504,6 @@
 |[Bouveland](http://codeforces.com/problemset/problem/589/D) | 只需要确定两个人是否相遇就可以了，然后列个等式求解一下 | 数学 |
 |[Hiring](http://codeforces.com/problemset/problem/589/G) | 按照准备时间升序枚举，然后去掉所有小于准备时间的work day，朴素会超时，需要用bit或者segment tree维护 | 数据结构 |
 |[Gourmet and Banquet](http://codeforces.com/problemset/problem/589/F) | 最终答案显然满足二分性质，对于每一个可能的值，通过贪心来验证，优先把时间分配给结束时间早得dish | 二分 贪心 |
+|[Tourist Guide](http://codeforces.com/problemset/problem/589/H) | 原来我读错题了。。。endpoint是"端点"的意思，不是"终点"。。对于一个连通图，一定可以找到k / 2条不相交得路径，通过在树上归纳就行 | 树 |
+|[Polycarp Masterpiece](http://codeforces.com/problemset/problem/589/C) | 注意到肯定是在前64次操作范围之内的，然后k的倍数的部分可以直接算，剩下的部分递归求解就好了 | 分治 |
+|[Task Processing](http://codeforces.com/problemset/problem/589/K) | 太神了。。。只检验剩余最小时间 + sqrt(10^5)的范围就可以了。。。对数学公式的敏感度不够 | 数学 |

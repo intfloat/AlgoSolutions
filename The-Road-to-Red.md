@@ -495,7 +495,7 @@
 |[GCD Groups](https://www.hackerrank.com/contests/hourrank-1/challenges/gcd-groups) | 是栽在了复杂度分析上，想到了正解但是以为会TLE但其实并不。。。每个数的质因子最多O(logP)个，因此出现超过n / 2次的质因子不会超过 2 * logP，这个数很小，成对枚举一把就行了。。。 | 数论 |
 |[gRanks](https://code.google.com/codejam/contest/4284487/dashboard#s=p0) | 傻逼题 | 水 |
 |[gFiles](https://code.google.com/codejam/contest/4284487/dashboard#s=p1) | 写出不等式，更新上界和下界就好 | 数学 |
-|[gGames](https://code.google.com/codejam/contest/4284487/dashboard#s=p2) | 不会动态规划。。。只能暴力搜索 + 剪枝 | 动态规划 |
+|[gGames](https://code.google.com/codejam/contest/4284487/dashboard#s=p2) | 用动态规划编码，每次对半分，备忘录记录一下就好 | 动态规划 |
 |[gMatrix](https://code.google.com/codejam/contest/4284487/dashboard#s=p3) | 二维的 sliding window，对行和列分别用双端队列维护一发就行 | 单调队列 |
 |[Lottery](http://codeforces.com/problemset/problem/589/I) | 傻逼题 | 水 |
 |[Email Alias](http://codeforces.com/problemset/problem/589/A) | 注意bmail.com 和 bmailcom的特殊情况就好 | 字符串 |

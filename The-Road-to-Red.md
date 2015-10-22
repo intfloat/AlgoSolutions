@@ -507,3 +507,6 @@
 |[Tourist Guide](http://codeforces.com/problemset/problem/589/H) | 原来我读错题了。。。endpoint是"端点"的意思，不是"终点"。。对于一个连通图，一定可以找到k / 2条不相交得路径，通过在树上归纳就行 | 树 |
 |[Polycarp Masterpiece](http://codeforces.com/problemset/problem/589/C) | 注意到肯定是在前64次操作范围之内的，然后k的倍数的部分可以直接算，剩下的部分递归求解就好了 | 分治 |
 |[Task Processing](http://codeforces.com/problemset/problem/589/K) | 太神了。。。只检验剩余最小时间 + sqrt(10^5)的范围就可以了。。。对数学公式的敏感度不够 | 数学 |
+|[Four Primes](https://www.hackerrank.com/contests/101hack30/challenges/four-primes) | 因为一个越界错误调了一个小时，渣渣啊。。。根据当前的可行解递推就好，类似于广度优先搜索 | 递推 bfs |
+|[Sergy and Homework](https://www.hackerrank.com/contests/101hack30/challenges/sergey-and-homework) | 膜拜adamant神牛。。。朴素模拟肯定挂，但是可以对最终结果里面的max(A * B)二分，二分之后可能有些余数还需要模拟，但是最多模拟O(N)次 | 二分 考智商 |
+|[How Many Solvable Puzzles](https://www.hackerrank.com/contests/101hack30/challenges/solving-the-puzzle-1) | 再次膜拜adamant神牛。。。15数码可解要求0到第4行的奇偶性与序列的逆序数奇偶性相同，其实这个结论也可以推广到N数码，剩下的就是状压动归了 | 状态压缩 动态规划 |

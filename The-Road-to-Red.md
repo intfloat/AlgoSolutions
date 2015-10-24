@@ -510,3 +510,16 @@
 |[Four Primes](https://www.hackerrank.com/contests/101hack30/challenges/four-primes) | 因为一个越界错误调了一个小时，渣渣啊。。。根据当前的可行解递推就好，类似于广度优先搜索 | 递推 bfs |
 |[Sergy and Homework](https://www.hackerrank.com/contests/101hack30/challenges/sergey-and-homework) | 膜拜adamant神牛。。。朴素模拟肯定挂，但是可以对最终结果里面的max(A * B)二分，二分之后可能有些余数还需要模拟，但是最多模拟O(N)次 | 二分 考智商 |
 |[How Many Solvable Puzzles](https://www.hackerrank.com/contests/101hack30/challenges/solving-the-puzzle-1) | 再次膜拜adamant神牛。。。15数码可解要求0到第4行的奇偶性与序列的逆序数奇偶性相同，其实这个结论也可以推广到N数码，剩下的就是状压动归了 | 状态压缩 动态规划 |
+|[Games with Coins](https://www.hackerrank.com/contests/infinitum13/challenges/game-with-coins) | 分初始状态奇偶、奇奇、偶偶三种情况来讨论，第一是先手必胜，第二是后手必胜，第三是后手必胜 | 博弈 数学 |
+|[Integral Points](https://www.hackerrank.com/contests/infinitum13/challenges/integral-points) | 就是一红果果Pick theorem | 计算几何 |
+|[The Deletion Game](https://www.hackerrank.com/contests/infinitum13/challenges/deletion-game) | 如果奇数的个数是偶数，最终的结果肯定是偶数，并且用归纳法可以证明是一个连续的区间 | 数学 |
+|[Movement in Tree II](https://www.hackerrank.com/contests/infinitum13/challenges/movement-in-tree-ii) | 只有到原点距离和k的差值为偶数的点可达，用一个等比数列求和就好（我还挣扎了一个小时。。。高中数学怎么学的。。）然后k > h时还需要考虑根的特殊情况，减掉多计数的部分 | 树 组合计数 |
+|[Multiply](https://www.hackerrank.com/contests/infinitum13/challenges/multiply) | 很神奇的性质。。原来一个数的所有因子的和有一个解析表达式的。。然后每次query就更新相应的统计变量 | 数论 |
+|[AHB](http://codeforces.com/gym/100796/problem/A) | 傻逼题 | 水 |
+|[Journey](http://codeforces.com/gym/100796/problem/D) | 就是一spfa求最短路。。 | 图论 |
+|[Unusual Sum](http://codeforces.com/gym/100796/problem/F) | 高中数学经常考的代数式变形。。。超简单 | 数学 |
+|[Robot Walk](http://codeforces.com/gym/100796/problem/G) | 傻逼题 | 水 |
+|[Game of Corners](http://codeforces.com/gym/100796/problem/H) | 又他喵的考智商。。。YY一段时间发现，结果就是水平线和竖直线当中总数小的那个 | 考智商 |
+|[Shell Game](http://codeforces.com/gym/100796/problem/I) | 让我想起了高一的几何。。。对球的半径二分再检验就行 | 几何 二分 |
+|[Profact](http://codeforces.com/gym/100796/problem/K) | 有点像背包吧，对于一个数有两种选择，要么选择当前阶乘值，要么不选，递归一发。。 | 递归 |
+|[Emoticons](http://codeforces.com/gym/100796/problem/L) | 傻逼题 | 水 |

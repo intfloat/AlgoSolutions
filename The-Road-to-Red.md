@@ -515,6 +515,7 @@
 |[The Deletion Game](https://www.hackerrank.com/contests/infinitum13/challenges/deletion-game) | 如果奇数的个数是偶数，最终的结果肯定是偶数，并且用归纳法可以证明是一个连续的区间 | 数学 |
 |[Movement in Tree II](https://www.hackerrank.com/contests/infinitum13/challenges/movement-in-tree-ii) | 只有到原点距离和k的差值为偶数的点可达，用一个等比数列求和就好（我还挣扎了一个小时。。。高中数学怎么学的。。）然后k > h时还需要考虑根的特殊情况，减掉多计数的部分 | 树 组合计数 |
 |[Multiply](https://www.hackerrank.com/contests/infinitum13/challenges/multiply) | 很神奇的性质。。原来一个数的所有因子的和有一个解析表达式的。。然后每次query就更新相应的统计变量 | 数论 |
+|[Pairwise GCD](https://www.hackerrank.com/contests/infinitum13/challenges/pairwise-gcd) | 晚上睡觉的时候突然想起来的。。。如果能高效求出每个gcd的个数，问题就迎刃而解了，我们可以sqrt(N)求出一个数的所有因子，然后N * lnN去做一遍筛选，去掉那些是当前数的倍数的数对 | 数论 |
 |[AHB](http://codeforces.com/gym/100796/problem/A) | 傻逼题 | 水 |
 |[Journey](http://codeforces.com/gym/100796/problem/D) | 就是一spfa求最短路。。 | 图论 |
 |[Unusual Sum](http://codeforces.com/gym/100796/problem/F) | 高中数学经常考的代数式变形。。。超简单 | 数学 |

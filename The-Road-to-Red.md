@@ -524,3 +524,5 @@
 |[Shell Game](http://codeforces.com/gym/100796/problem/I) | 让我想起了高一的几何。。。对球的半径二分再检验就行 | 几何 二分 |
 |[Profact](http://codeforces.com/gym/100796/problem/K) | 有点像背包吧，对于一个数有两种选择，要么选择当前阶乘值，要么不选，递归一发。。 | 递归 |
 |[Emoticons](http://codeforces.com/gym/100796/problem/L) | 傻逼题 | 水 |
+|[Median Smoothing](http://codeforces.com/problemset/problem/590/A) | 关键在于注意到只有0 / 1交错的时候才会影响，分段统计，每一段所花的收敛时间都是长度的一半 | 考智商 |
+|[Three States](http://codeforces.com/problemset/problem/590/C) | 这个有运气的成分，在hackerrank上看过一个类似的题目，有两种情况：一是两条不相交得线；二是三条线交于一点。用bfs求出每个点到每个城市的距离，然后枚举一发就好 | 图论 搜索 |

@@ -529,3 +529,4 @@
 |[Wizards Duel](http://codeforces.com/problemset/problem/591/A) | 两次相碰的坐标其实是一样的。。。 | 脑筋急转弯？ |
 |[Rebranding](http://codeforces.com/problemset/problem/591/B) | 记录一下当前的每个字母对应于最开始的哪个字母就好 | 水 |
 |[Chip Dale Rescue Rangers](http://codeforces.com/contest/590/problem/B) | 我的智商被狗吃了么。。。明明对时间进行二分就好了啊 | 二分 |
+|[Top Secret Task](http://codeforces.com/problemset/problem/590/D) | 一看就是动归好嘛。。。假定选择哪些数已经确定了，那么相对顺序肯定是不能变的。所以用状态记录一下当前i长的序列用j步所能得到的最佳结果，要么不选择当前元素，要么选择，将目标序列长度减1， 一步步递推。。 | 动态规划 |

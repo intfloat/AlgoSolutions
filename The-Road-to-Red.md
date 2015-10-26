@@ -526,3 +526,6 @@
 |[Emoticons](http://codeforces.com/gym/100796/problem/L) | 傻逼题 | 水 |
 |[Median Smoothing](http://codeforces.com/problemset/problem/590/A) | 关键在于注意到只有0 / 1交错的时候才会影响，分段统计，每一段所花的收敛时间都是长度的一半 | 考智商 |
 |[Three States](http://codeforces.com/problemset/problem/590/C) | 这个有运气的成分，在hackerrank上看过一个类似的题目，有两种情况：一是两条不相交得线；二是三条线交于一点。用bfs求出每个点到每个城市的距离，然后枚举一发就好 | 图论 搜索 |
+|[Wizards Duel](http://codeforces.com/problemset/problem/591/A) | 两次相碰的坐标其实是一样的。。。 | 脑筋急转弯？ |
+|[Rebranding](http://codeforces.com/problemset/problem/591/B) | 记录一下当前的每个字母对应于最开始的哪个字母就好 | 水 |
+|[Chip Dale Rescue Rangers](http://codeforces.com/contest/590/problem/B) | 我的智商被狗吃了么。。。明明对时间进行二分就好了啊 | 二分 |

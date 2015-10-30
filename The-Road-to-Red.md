@@ -530,3 +530,11 @@
 |[Rebranding](http://codeforces.com/problemset/problem/591/B) | 记录一下当前的每个字母对应于最开始的哪个字母就好 | 水 |
 |[Chip Dale Rescue Rangers](http://codeforces.com/contest/590/problem/B) | 我的智商被狗吃了么。。。明明对时间进行二分就好了啊 | 二分 |
 |[Top Secret Task](http://codeforces.com/problemset/problem/590/D) | 一看就是动归好嘛。。。假定选择哪些数已经确定了，那么相对顺序肯定是不能变的。所以用状态记录一下当前i长的序列用j步所能得到的最佳结果，要么不选择当前元素，要么选择，将目标序列长度减1， 一步步递推。。 | 动态规划 |
+|[绝世好题](http://www.lydsy.com/JudgeOnline/problem.php?id=4300) | 这种水题还傻×了一会儿。。。对于每个数，更新有1的地方的计数值，然后再统一更新一遍最大值 | 动态规划 |
+|[Emma Notebook](https://www.hackerrank.com/contests/codestorm/challenges/emmas-notebook) | 傻逼题 | 水 |
+|[Save Quantumland](https://www.hackerrank.com/contests/codestorm/challenges/save-quantumland) | 我傻叉了半个小时。。分别考虑每一个未被覆盖的区间，归纳法总结出一个规律来算一下就行 | 考智商？ |
+|[Counting Triangles](https://www.hackerrank.com/contests/codestorm/challenges/ilia) | 分别用平方关系和边长关系去卡，朴素枚举复杂度O(N ^ 2 * lgN)，不知道能不能AC，用two pointer可以降到O(N ^ 2) | 双指针 几何 |
+|[Game with Boomerang](https://www.hackerrank.com/contests/codestorm/challenges/game-with-a-boomerang) | 原型是经典的Joseph问题，然而O(N)的算法也架不住N到10^18。。。然后我打印出了前1000的结果，发现了一个4 * n + 1的规律，至今不知怎么证明，然而AC了。。 | 数学 找规律？ |
+|[Independent Vertex Cover](https://www.hackerrank.com/contests/codestorm/challenges/independent-vertex-cover) | 非常感人的一道题目。。。 考虑最后一个点，前面所有大于等于它的数必须组成一个严格递增序列，然后YY可以发现小于它的数也必须严格单调递增。于是就类似于广搜不停向左边界传递，说不清楚。。大概就是这样。。 | 图论 考智商？ |
+|[Little Alexey Tree](https://www.hackerrank.com/contests/codestorm/challenges/little-alexeys-tree) | 只会O(N^2)的算法，不出意外TLE了。。。 | 图论 计数 |
+|[A Game of Reduction](https://www.hackerrank.com/contests/codestorm/challenges/a-game-of-reduction) | 尚不清楚为什么只有15 / 90分，感觉就是一典型博弈论 + 数学，后手必胜当且仅当最终的序列中先手必胜的数字为偶数 | 博弈 数学 |

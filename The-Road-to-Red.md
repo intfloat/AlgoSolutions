@@ -538,3 +538,4 @@
 |[Independent Vertex Cover](https://www.hackerrank.com/contests/codestorm/challenges/independent-vertex-cover) | 非常感人的一道题目。。。 考虑最后一个点，前面所有大于等于它的数必须组成一个严格递增序列，然后YY可以发现小于它的数也必须严格单调递增。于是就类似于广搜不停向左边界传递，说不清楚。。大概就是这样。。 | 图论 考智商？ |
 |[Little Alexey Tree](https://www.hackerrank.com/contests/codestorm/challenges/little-alexeys-tree) | 只会O(N^2)的算法，不出意外TLE了。。。 | 图论 计数 |
 |[A Game of Reduction](https://www.hackerrank.com/contests/codestorm/challenges/a-game-of-reduction) | 尚不清楚为什么只有15 / 90分，感觉就是一典型博弈论 + 数学，后手必胜当且仅当最终的序列中先手必胜的数字为偶数 | 博弈 数学 |
+|[Divided Product](http://hihocoder.com/contest/hiho70/problem/1) | 比较经典的dp，和整数划分相结合，要把还剩余需要包括的因子放到状态中去 | 动态规划 数学 |

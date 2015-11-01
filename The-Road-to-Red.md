@@ -542,3 +542,7 @@
 |[Subtrees](http://acm.hdu.edu.cn/showproblem.php?pid=5524) | 请叫我傻×。。。完全二叉树任何一个节点的左右子树中，必然有一个是满二叉树。。。于是递归状态数只有log N，智商啊智商。。 | 图论 |
 |[Product](http://acm.hdu.edu.cn/showproblem.php?pid=5525) | 公式都是对的。。算出来死活不对。。拷贝了AC代码随机数据对拍了很多组，一点diff都没有，然而还是WA。。出题人真是蛋疼 | 数论 |
 |[Game](http://acm.hdu.edu.cn/showproblem.php?pid=5523) | 主要是考虑S和T位置相同，以及在边界上、相邻的情形 | 找规律？ |
+|[Pawn Chess](http://codeforces.com/problemset/problem/592/A) | 傻逼题 | 水 |
+|[The Monster and The Squirrel](http://codeforces.com/problemset/problem/592/B) | 注意到每画一条线区域数目就会增加1，于是分别算一下每个顶点会画多少条线就可以，重复的不算 | 考智商找规律 |
+|[The Big Race](http://codeforces.com/problemset/problem/592/C) | 按照LCM来进行划分，只有前min(w, b)个是可行解，最后需要去掉0，处理后面不足一个lcm的边界 | 数论 |
+|[Super M](http://codeforces.com/problemset/problem/592/D) | 对每个节点来说，目标解就是总长度减去最长路径，于是对树两遍dfs维护这些统计量，第一遍dfs维护子节点，第二遍维护父节点。不过editorial里面利用树的直径的方法更简洁。。 | 图论 树 |

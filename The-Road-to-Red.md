@@ -546,3 +546,4 @@
 |[The Monster and The Squirrel](http://codeforces.com/problemset/problem/592/B) | 注意到每画一条线区域数目就会增加1，于是分别算一下每个顶点会画多少条线就可以，重复的不算 | 考智商找规律 |
 |[The Big Race](http://codeforces.com/problemset/problem/592/C) | 按照LCM来进行划分，只有前min(w, b)个是可行解，最后需要去掉0，处理后面不足一个lcm的边界 | 数论 |
 |[Super M](http://codeforces.com/problemset/problem/592/D) | 对每个节点来说，目标解就是总长度减去最长路径，于是对树两遍dfs维护这些统计量，第一遍dfs维护子节点，第二遍维护父节点。不过editorial里面利用树的直径的方法更简洁。。 | 图论 树 |
+|[Palindrome Query](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/W) | 泪流满面，一直以来都看错题了。。。p它喵的原来是个数，我还以为就是一个字符p。。。用bit来维护字符串hash，查找最长回文串的时候对长度进行二分就行 | 字符串哈希 数据结构 二分 |

@@ -547,3 +547,6 @@
 |[The Big Race](http://codeforces.com/problemset/problem/592/C) | 按照LCM来进行划分，只有前min(w, b)个是可行解，最后需要去掉0，处理后面不足一个lcm的边界 | 数论 |
 |[Super M](http://codeforces.com/problemset/problem/592/D) | 对每个节点来说，目标解就是总长度减去最长路径，于是对树两遍dfs维护这些统计量，第一遍dfs维护子节点，第二遍维护父节点。不过editorial里面利用树的直径的方法更简洁。。 | 图论 树 |
 |[Palindrome Query](http://codeforces.com/group/qcIqFPYhVr/contest/203881/problem/W) | 泪流满面，一直以来都看错题了。。。p它喵的原来是个数，我还以为就是一个字符p。。。用bit来维护字符串hash，查找最长回文串的时候对长度进行二分就行 | 字符串哈希 数据结构 二分 |
+|[Guga Function](https://www.hackerrank.com/contests/hourrank-2/challenges/gugas-function) | 对于每一个位置，计算向左延伸的101, 1001...出现的总次数，累加求和 | 计数 |
+|[Jane is Traveling](https://www.hackerrank.com/contests/hourrank-2/challenges/jane-traveling) | 用bfs去搜，碰到已经遇到过的状态就pass，一旦碰到目标状态就ok退出 | 动态规划 图论 |
+|[Square Segments](https://www.hackerrank.com/contests/hourrank-2/challenges/square-segments) | 很好的题目。。。一个连续区间是平方数当且仅当所有质因子出现偶数次，这个地球人都知道。。关键是怎么高效判断，计算哈希的时候不可能附带记录每个质数出现的奇偶次数。很巧妙的地方来了！！奇变偶，偶变奇可以通过异或运算实现，只需要把每个质因子hash一把！！hash真是个强大的东东 | 哈希 数论 |

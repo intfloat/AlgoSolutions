@@ -552,3 +552,7 @@
 |[Square Segments](https://www.hackerrank.com/contests/hourrank-2/challenges/square-segments) | 很好的题目。。。一个连续区间是平方数当且仅当所有质因子出现偶数次，这个地球人都知道。。关键是怎么高效判断，计算哈希的时候不可能附带记录每个质数出现的奇偶次数。很巧妙的地方来了！！奇变偶，偶变奇可以通过异或运算实现，只需要把每个质因子hash一把！！hash真是个强大的东东 | 哈希 数论 |
 |[Prime Intervals](http://www.spoj.com/problems/PRINT/) | 是经典素数筛法的一个简单变形，每次筛的时候从位于[L, U]区间的最小倍数位置开始就行了 | 数论 |
 |[Prime Generators](http://www.spoj.com/problems/PRIME1/) | 傻逼题 | 数论 |
+|[Happy Tree Party](http://codeforces.com/contest/593/problem/D) | 神烦这种卡常数的题。。。注意到如果大于1的边在路径上的出现次数超过64次则结果必然为0，于是只需要借助于并查集维护非1的路径就行 | 数据结构 图论 |
+|[2Char](http://codeforces.com/contest/593/problem/A) | 傻逼题 | 水 |
+|[Anton and Lines](http://codeforces.com/contest/593/problem/B) | 不存在交点当且仅当在两侧直线的y值排序相同，为了避免处理边界，用eps卡一下就好 | 几何 |
+|[Strange Calculation and Cats](http://codeforces.com/problemset/problem/593/E) | 很容易想到动态规划啦。。然后t很大，每一个时刻的状态又至于前一时间的状态值相关，于是可以用矩阵快速幂来加快迭代速度 | 动态规划 矩阵快速幂 |

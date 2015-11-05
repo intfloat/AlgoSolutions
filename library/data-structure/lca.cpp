@@ -12,6 +12,7 @@ inline void init() {
     ptr = 0;
     memset(head, -1, sizeof head);
 }
+// dfs(1, 1, 0), DO NOT set p = -1
 void dfs(int cur, int p, int dep) {
     fa[cur][0] = p;
     d[cur] = dep;

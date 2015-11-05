@@ -11,6 +11,12 @@ struct MATRIX {
         memset(this->matrix, 0, sizeof this->matrix);
     }
 };
+static MATRIX get_eye() {
+    MATRIX res;
+    FOR(i, MAX_N) res.matrix[i][i] = 1;
+    return res;
+}
+const MATRIX eye = get_eye();
 MATRIX matrix_add(const MATRIX& a, const MATRIX& b){
     MATRIX res;
     FOR(i, n) FOR(j, n)
@@ -25,11 +31,11 @@ MATRIX matrix_mul(const MATRIX& a, const MATRIX& b) {
     }
     return res;
 }
-// p > 0
+// p >= 0
 MATRIX matrix_power(MATRIX ma, int p) {
-    MATRIX res;
+    if (p == 0) return eye;
     if (p == 1) return ma;
-    res = matrix_power(ma, p / 2);
+    MATRIX res = matrix_power(ma, p / 2);
     res = matrix_mul(res, res);
     if (p & 1) res = matrix_mul(res, ma);
     return res;

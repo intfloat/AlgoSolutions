@@ -556,3 +556,5 @@
 |[2Char](http://codeforces.com/contest/593/problem/A) | 傻逼题 | 水 |
 |[Anton and Lines](http://codeforces.com/contest/593/problem/B) | 不存在交点当且仅当在两侧直线的y值排序相同，为了避免处理边界，用eps卡一下就好 | 几何 |
 |[Strange Calculation and Cats](http://codeforces.com/problemset/problem/593/E) | 很容易想到动态规划啦。。然后t很大，每一个时刻的状态又至于前一时间的状态值相关，于是可以用矩阵快速幂来加快迭代速度 | 动态规划 矩阵快速幂 |
+|[普通平衡树](http://www.lydsy.com/JudgeOnline/problem.php?id=3224) | 比较常规的平衡树，就不多说了。。注意删除的时候可能元素不存在 | treap |
+|[文艺平衡树](http://www.lydsy.com/JudgeOnline/problem.php?id=3223) | 如何高效实现一个区间的翻转是困扰我很长时间的一个问题了，真是弱。。。用treap或者splay首先把对应的区间分割出来，然后标记一下，查找的时候再去做pushdown操作 | treap |

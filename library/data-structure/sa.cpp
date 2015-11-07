@@ -45,7 +45,7 @@ int rmq[maxn][18];
 inline void rmq_init() {
     for (int i = 1; i <= n; ++i) rmq[i][0] = h[i];
     for (int p = 1; (1 << p) <= n; ++p) {
-        for (int i = 1; i + (1 << p) <= n; ++i)
+        for (int i = 1; i + (1 << p) <= n + 1; ++i)
             rmq[i][p] = min(rmq[i][p - 1], rmq[i + (1 << (p - 1))][p - 1]);
     }
 }

@@ -562,3 +562,7 @@
 |[Shil and LCP pairs](https://www.hackerearth.com/code-monk-triessuffix-tree/algorithm/shil-and-lcp-pairsmonk/) | 在trie里面额外附加一个统计次数的变量，然后用类似前缀和的东东算 | 前缀树 |
 |[Search Engine](https://www.hackerearth.com/code-monk-triessuffix-tree/algorithm/search-engine/) | 在trie的每个节点附加最高权重就好 | 前缀树 |
 |[Power of String](https://www.hackerearth.com/code-monk-triessuffix-tree/algorithm/power-of-string-3/) | 建立height数组，然后对相邻的K长度区间去做rmq查询，一开始死活过不了原来是library code有一个边界bug。。。 | 后缀树 rmq |
+|[Dynamic Grid](https://code.google.com/codejam/contest/11214486/dashboard#s=p0) | 傻逼题 | 宽搜 |
+|[gBalloon](https://code.google.com/codejam/contest/11214486/dashboard#s=p1) | 对时间二分就行 | 二分 |
+|[IP Address Summarization](https://code.google.com/codejam/contest/11214486/dashboard#s=p2) | 这个其实不难，就是实现起来麻烦。。在相邻IP地址段合并的时候没把情况考虑周全，挂掉了大数据。。。 | 实现 |
+|[Virtual Rabbit](https://code.google.com/codejam/contest/11214486/dashboard#s=p3) | YY一会儿就可以发现最优方案必定是贪心去做，然后D很大的时候会超时，不过可以利用周期性，周期不会超过24 * 60 * 60，最后一个问题就是边界，最后一个周期的最后一步有可能是不必要的，要不是被这个坑了就搞出大数据了。。。 | 贪心 |

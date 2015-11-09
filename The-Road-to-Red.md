@@ -566,3 +566,6 @@
 |[gBalloon](https://code.google.com/codejam/contest/11214486/dashboard#s=p1) | 对时间二分就行 | 二分 |
 |[IP Address Summarization](https://code.google.com/codejam/contest/11214486/dashboard#s=p2) | 这个其实不难，就是实现起来麻烦。。在相邻IP地址段合并的时候没把情况考虑周全，挂掉了大数据。。。 | 实现 |
 |[Virtual Rabbit](https://code.google.com/codejam/contest/11214486/dashboard#s=p3) | YY一会儿就可以发现最优方案必定是贪心去做，然后D很大的时候会超时，不过可以利用周期性，周期不会超过24 * 60 * 60，最后一个问题就是边界，最后一个周期的最后一步有可能是不必要的，要不是被这个坑了就搞出大数据了。。。 | 贪心 |
+|[Edo and Magnets](http://codeforces.com/problemset/problem/594/C) | 这个其实挺无聊的，根据greedy的原则，肯定是移除k个矩形，并且一定是边界上的，于是对每一种整数划分枚举一下就行 | 贪心 枚举 |
+|[Pasha and Phone](http://codeforces.com/problemset/problem/595/B) | 先不考虑B算一个，然后去掉B所限制的部分，然后用乘法原理搞搞 | 数学 |
+|[Vitaly and Night](http://codeforces.com/problemset/problem/595/A) | 傻逼题 | 水 |

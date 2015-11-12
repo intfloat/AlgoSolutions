@@ -569,3 +569,7 @@
 |[Edo and Magnets](http://codeforces.com/problemset/problem/594/C) | 这个其实挺无聊的，根据greedy的原则，肯定是移除k个矩形，并且一定是边界上的，于是对每一种整数划分枚举一下就行 | 贪心 枚举 |
 |[Pasha and Phone](http://codeforces.com/problemset/problem/595/B) | 先不考虑B算一个，然后去掉B所限制的部分，然后用乘法原理搞搞 | 数学 |
 |[Vitaly and Night](http://codeforces.com/problemset/problem/595/A) | 傻逼题 | 水 |
+|[Warrior and Archer](http://codeforces.com/problemset/problem/594/A) | 挺有意思的一个博弈题目。首先目标点之间的点肯定都是后手选的，因此相距肯定是N / 2，然后先手肯定有办法让最终的解不比a[N / 2 + i] - a[i]的最小值差，因此这就是最优解 | 博弈 |
+|[Divisibility](http://codeforces.com/contest/597/problem/A) | 特殊考虑0和负数的情形 | 数学 |
+|[Restaurant](http://codeforces.com/contest/597/problem/B) | 傻逼题 | 贪心 |
+|[Subsequences](http://codeforces.com/contest/597/problem/C) | 把所有数先排序，于是以当前值为终点长为k的序列个数，就是一个前缀和，用bit维护一下 | 数据结构 动态规划 |

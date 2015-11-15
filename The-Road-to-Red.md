@@ -573,3 +573,8 @@
 |[Divisibility](http://codeforces.com/contest/597/problem/A) | 特殊考虑0和负数的情形 | 数学 |
 |[Restaurant](http://codeforces.com/contest/597/problem/B) | 傻逼题 | 贪心 |
 |[Subsequences](http://codeforces.com/contest/597/problem/C) | 把所有数先排序，于是以当前值为终点长为k的序列个数，就是一个前缀和，用bit维护一下 | 数据结构 动态规划 |
+|[Tricky Sum](http://codeforces.com/problemset/problem/598/A) | 傻逼题 | 数学 |
+|[Queries on String](http://codeforces.com/problemset/problem/598/B) | 就STL里的标注rotate。。 | 水 |
+|[Nearest Vectors](http://codeforces.com/problemset/problem/598/C) | 计算各个向量的角度，然后排序求最小差就行。被精度搞死。。。非long double不AC。 | 几何 |
+|[Igor in the Museum](http://codeforces.com/problemset/problem/598/D) | 对图中的每个连通分量而言，结果都一样，于是先搜一把，然后O(1)处理每一个query | bfs |
+|[Chocolate Bar](http://codeforces.com/problemset/problem/598/E) | 一看就是dp啦。。以行数、列数、目标数三维作为状态，进行状态转移 | 动态规划 |

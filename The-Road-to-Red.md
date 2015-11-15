@@ -578,3 +578,6 @@
 |[Nearest Vectors](http://codeforces.com/problemset/problem/598/C) | 计算各个向量的角度，然后排序求最小差就行。被精度搞死。。。非long double不AC。 | 几何 |
 |[Igor in the Museum](http://codeforces.com/problemset/problem/598/D) | 对图中的每个连通分量而言，结果都一样，于是先搜一把，然后O(1)处理每一个query | bfs |
 |[Chocolate Bar](http://codeforces.com/problemset/problem/598/E) | 一看就是dp啦。。以行数、列数、目标数三维作为状态，进行状态转移 | 动态规划 |
+|[Clarke and five point star](http://acm.hdu.edu.cn/showproblem.php?pid=5563) | 先求个凸包，再判断相邻点之间的距离是否相等。。虽然可以不用求凸包的。。 | 几何 |
+|[Clarke and digits](http://acm.hdu.edu.cn/showproblem.php?pid=5564) | 可以列出dp方程，然而范围太大，只好用矩阵快速幂，然后还要求前缀和，于是在状态里面额外加一些累加前缀的部分 | 动态规划 矩阵快速幂 |
+|[Clarke and baton](http://acm.hdu.edu.cn/showproblem.php?pid=5565) | 其实O(NlgN)和O(N)的差距并不大，干嘛一定要把前者给卡死。。 注意到数据的和有限，可以用计数排序实现O(N)排序，然后线性扫描处理operation | 计数排序 |

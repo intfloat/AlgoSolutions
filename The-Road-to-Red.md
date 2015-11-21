@@ -584,3 +584,7 @@
 |[Wilbue and Swimming Pool](http://codeforces.com/problemset/problem/596/A) | 傻逼题 | 水 |
 |[Wilbur and Array](http://codeforces.com/problemset/problem/596/B) | 从左到右，凡是左边进行的操作肯定会反映到右边，于是就有贪心策略，把绝对值差加起来就行 | 贪心 |
 |[Wilbur and Points](http://codeforces.com/problemset/problem/596/C) | 首先把所有点按照(y - x)分组，每次取数的时候肯定从队列头部取数，然而并不能保证满足约束。。还需要对这个唯一的排列做一遍check，由于是若干个矩形的并，因此只需要check左边和下方的点就好 | 构造 贪心 几何 |
+|[Patrick and Shopping](http://codeforces.com/problemset/problem/599/A) | 傻逼题还让我WA了一发。。 | 简单图论？ |
+|[Spongebob and Joke](http://codeforces.com/problemset/problem/599/B) | 很多人被hack了。。关键就在ambiguity要扫描完整个序列没有冲突之后才能下判断 | 数学 |
+|[Day at the Beach](http://codeforces.com/problemset/problem/599/C) | 升序排列后，一个位置能够切分当且仅当前缀序号最大的等于前缀长度，然后划分之间互相独立，贪心一发。。 | 贪心 |
+|[Spongebob and Squares](http://codeforces.com/problemset/problem/599/D) | 先假设n, m固定就能推出一个比较简单的数学等式来，YY几分钟就可以发现我们只需要对min(n, m)从1枚举到不到2e6筛选 | 数学 |

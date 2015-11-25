@@ -588,3 +588,7 @@
 |[Spongebob and Joke](http://codeforces.com/problemset/problem/599/B) | 很多人被hack了。。关键就在ambiguity要扫描完整个序列没有冲突之后才能下判断 | 数学 |
 |[Day at the Beach](http://codeforces.com/problemset/problem/599/C) | 升序排列后，一个位置能够切分当且仅当前缀序号最大的等于前缀长度，然后划分之间互相独立，贪心一发。。 | 贪心 |
 |[Spongebob and Squares](http://codeforces.com/problemset/problem/599/D) | 先假设n, m固定就能推出一个比较简单的数学等式来，YY几分钟就可以发现我们只需要对min(n, m)从1枚举到不到2e6筛选 | 数学 |
+|[Two Bases](http://codeforces.com/problemset/problem/602/A) | 傻逼题 | 数学 |
+|[Approximating Constant Range](http://codeforces.com/problemset/problem/602/B) | 用两个单调队列分别维护最大值和最小值，然后如果违背了约束，就从左端删除，反之从右端插入，取所有中间状态的最优值 | 单调队列 |
+|[The Two Routes](http://codeforces.com/problemset/problem/601/A) | 边的并集是完全图，所以肯定有一条路径的长度就是1，对剩下的那个bfs一发 | 图论 |
+|[Kleofas and n-thlon](http://codeforces.com/problemset/problem/601/C) | 定义f(i, j)为前i轮分数不超过j的概率，利用前缀和之类的东东就可以实现O(1)的转移 | 概率 动态规划 |

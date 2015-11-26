@@ -593,3 +593,6 @@
 |[The Two Routes](http://codeforces.com/problemset/problem/601/A) | 边的并集是完全图，所以肯定有一条路径的长度就是1，对剩下的那个bfs一发 | 图论 |
 |[Kleofas and n-thlon](http://codeforces.com/problemset/problem/601/C) | 定义f(i, j)为前i轮分数不超过j的概率，利用前缀和之类的东东就可以实现O(1)的转移 | 概率 动态规划 |
 |[Lipshitz Sequence](http://codeforces.com/problemset/problem/601/B) | 还是智商不够。。。斜率最大的地方一定是相邻点之间，预处理一下左右边界，对每个查询扫描累加一发 | 几何 计数 |
+|[Sequence2](http://acm.hdu.edu.cn/showproblem.php?pid=5568) | LIS计数，dp随便搞搞就行了，高精度就上java。。 | 动态规划 |
+|[Matrix](http://acm.hdu.edu.cn/showproblem.php?pid=5569) | 还是dp。。偶数的地方记录前面的最小值，奇数的位置累加 | 动态规划 |
+|[Balls](http://acm.hdu.edu.cn/showproblem.php?pid=5570) | 有一个很裸的按列概率dp，然而显然会TLE。。x ^ 2可以看成是color相同的有序对的期望数，然后就能凑出和式的形式。。 | 概率 |

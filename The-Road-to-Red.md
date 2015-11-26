@@ -580,7 +580,7 @@
 |[Chocolate Bar](http://codeforces.com/problemset/problem/598/E) | 一看就是dp啦。。以行数、列数、目标数三维作为状态，进行状态转移 | 动态规划 |
 |[Clarke and five point star](http://acm.hdu.edu.cn/showproblem.php?pid=5563) | 先求个凸包，再判断相邻点之间的距离是否相等。。虽然可以不用求凸包的。。 | 几何 |
 |[Clarke and digits](http://acm.hdu.edu.cn/showproblem.php?pid=5564) | 可以列出dp方程，然而范围太大，只好用矩阵快速幂，然后还要求前缀和，于是在状态里面额外加一些累加前缀的部分 | 动态规划 矩阵快速幂 |
-|[Clarke and baton](http://acm.hdu.edu.cn/showproblem.php?pid=5565) | 其实O(NlgN)和O(N)的差距并不大，干嘛一定要把前者给卡死。。 注意到数据的和有限，可以用计数排序实现O(N)排序，然后线性扫描处理operation | 计数排序 |
+|[Clarke and baton](http://acm.hdu.edu.cn/showproblem.php?pid=5565) | 注意到数据的和有限，可以用计数排序实现O(N)排序，然后线性扫描处理operation | 计数排序 |
 |[Wilbue and Swimming Pool](http://codeforces.com/problemset/problem/596/A) | 傻逼题 | 水 |
 |[Wilbur and Array](http://codeforces.com/problemset/problem/596/B) | 从左到右，凡是左边进行的操作肯定会反映到右边，于是就有贪心策略，把绝对值差加起来就行 | 贪心 |
 |[Wilbur and Points](http://codeforces.com/problemset/problem/596/C) | 首先把所有点按照(y - x)分组，每次取数的时候肯定从队列头部取数，然而并不能保证满足约束。。还需要对这个唯一的排列做一遍check，由于是若干个矩形的并，因此只需要check左边和下方的点就好 | 构造 贪心 几何 |

@@ -77,7 +77,6 @@ ll get(ll p) {
             }
         }
     }
-    // cout << p << " " << ret << endl;
     return ret;
 }
 inline void solve() {

@@ -596,3 +596,8 @@
 |[Sequence2](http://acm.hdu.edu.cn/showproblem.php?pid=5568) | LIS计数，dp随便搞搞就行了，高精度就上java。。 | 动态规划 |
 |[Matrix](http://acm.hdu.edu.cn/showproblem.php?pid=5569) | 还是dp。。偶数的地方记录前面的最小值，奇数的位置累加 | 动态规划 |
 |[Balls](http://acm.hdu.edu.cn/showproblem.php?pid=5570) | 有一个很裸的按列概率dp，然而显然会TLE。。x ^ 2可以看成是color相同的有序对的期望数，然后就能凑出和式的形式。。 | 概率 |
+|[Duff and Beach](http://codeforces.com/contest/588/problem/D) | 定义状态f(i, j)表示长度为i并且最后一个数是arr[i]的数目，然后为了加快转移，需要维护一个前缀和，我傻叉了半个小时才发现有个地方溢出了。。。 | 动态规划 计数 |
+|[Duff and Meat](http://codeforces.com/contest/588/problem/A) | 傻逼题 | 贪心 |
+|[Duff in Love](http://codeforces.com/contest/588/problem/B) | 很显然，每个质因子只能出现一次。。 | 数论 |
+|[Duff and Weight Lifting](http://codeforces.com/contest/588/problem/C) | 贪心去选择，类似于进位制那种东东 | 贪心 数学 |
+|[Duff in Army](http://codeforces.com/contest/588/problem/E) | 注意到a并不大，所以在通常求lca的过程当中顺便记录最小的不超过10个值就行，每次查询lg N | 图论 lca |

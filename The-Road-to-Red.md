@@ -601,3 +601,8 @@
 |[Duff in Love](http://codeforces.com/contest/588/problem/B) | 很显然，每个质因子只能出现一次。。 | 数论 |
 |[Duff and Weight Lifting](http://codeforces.com/contest/588/problem/C) | 贪心去选择，类似于进位制那种东东 | 贪心 数学 |
 |[Duff in Army](http://codeforces.com/contest/588/problem/E) | 注意到a并不大，所以在通常求lca的过程当中顺便记录最小的不超过10个值就行，每次查询lg N | 图论 lca |
+|[Extract Numbers](http://codeforces.com/contest/600/problem/A) | python大法好。。。C++就得写一大坨。。 | 水 |
+|[Queries about LE Numbers](http://codeforces.com/contest/600/problem/B) | 傻逼题 | 二分 |
+|[Make Palindrome](http://codeforces.com/contest/600/problem/C) | 统计奇数的字母，然后为了保证字典序最小，肯定是把大的转化成小的 | 贪心 |
+|[Areas of Two Circle Intersection](http://codeforces.com/contest/600/problem/D) | 傻逼题。。卡精度有意思么。。 | 几何 |
+|[Lomsat Gelral](http://codeforces.com/contest/600/problem/E) | 这个很赞。。朴素的合并代价是O(N * N)必然要TLE，然而对于每个节点，它的最大的子节点可以直接利用，我比赛的时候也想到了，但是不确定复杂度。每个点每次合并都会属于size变成至少2倍的集合，于是每个点至多合并log N次，总复杂度就是O(N * lgN * lgN)了 | 图论 |

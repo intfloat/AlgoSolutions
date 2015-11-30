@@ -606,3 +606,4 @@
 |[Make Palindrome](http://codeforces.com/contest/600/problem/C) | 统计奇数的字母，然后为了保证字典序最小，肯定是把大的转化成小的 | 贪心 |
 |[Areas of Two Circle Intersection](http://codeforces.com/contest/600/problem/D) | 傻逼题。。卡精度有意思么。。 | 几何 |
 |[Lomsat Gelral](http://codeforces.com/contest/600/problem/E) | 这个很赞。。朴素的合并代价是O(N * N)必然要TLE，然而对于每个节点，它的最大的子节点可以直接利用，我比赛的时候也想到了，但是不确定复杂度。每个点每次合并都会属于size变成至少2倍的集合，于是每个点至多合并log N次，总复杂度就是O(N * lgN * lgN)了 | 图论 |
+|[Edge Coloring of Bipartite Graph](http://codeforces.com/contest/600/problem/F) | 膜mattew99。。二分图似乎总是跟交错路径联系在一起，碰到一条边，如果能够染色就染，否则就去找交错路径不断修正 | 二分图 图染色 |

@@ -1,6 +1,6 @@
 # AlgoSolutions
 
-My handle is [BananaTree](codeforces.com/profile/BananaTree) aross major sites,
+My handle is [BananaTree](http://codeforces.com/profile/BananaTree) aross major sites,
 super fan for competitive programming.
 
 ## related websites

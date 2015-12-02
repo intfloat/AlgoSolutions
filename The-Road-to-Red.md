@@ -607,3 +607,8 @@
 |[Areas of Two Circle Intersection](http://codeforces.com/contest/600/problem/D) | 傻逼题。。卡精度有意思么。。 | 几何 |
 |[Lomsat Gelral](http://codeforces.com/contest/600/problem/E) | 这个很赞。。朴素的合并代价是O(N * N)必然要TLE，然而对于每个节点，它的最大的子节点可以直接利用，我比赛的时候也想到了，但是不确定复杂度。每个点每次合并都会属于size变成至少2倍的集合，于是每个点至多合并log N次，总复杂度就是O(N * lgN * lgN)了 | 图论 |
 |[Edge Coloring of Bipartite Graph](http://codeforces.com/contest/600/problem/F) | 膜mattew99。。二分图似乎总是跟交错路径联系在一起，碰到一条边，如果能够染色就染，否则就去找交错路径不断修正 | 二分图 图染色 |
+|[Uncowed Forces](http://codeforces.com/problemset/problem/604/A) | 不知道出题人在想什么。。 | 水 |
+|[More Cowbell](http://codeforces.com/problemset/problem/604/B) | 对答案二分，每次用贪心去验证 | 二分 贪心 |
+|[Alternative Thinking](http://codeforces.com/problemset/problem/603/A) | 有长度为3的段或者两个长度为2的段必然会 + 2， 有1个长为2的段 + 1， 其余不变 | 考智商？ |
+|[Modular Arithmetic](http://codeforces.com/problemset/problem/603/B) | k = 0是特殊情况，然后由于p是素数，因此拆成循环节之后，快速幂的结果是1就有p个符合条件的，反之只有0符合 | 数论 |
+|[Lieges of Legendre](http://codeforces.com/problemset/problem/603/C) | 泪目啊。。k为偶数时的nim函数值求错了。。 | 博弈论 |

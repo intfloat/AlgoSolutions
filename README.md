@@ -18,6 +18,6 @@ super fan for competitive programming.
 | Hackerrank                         | [hackerrank](http://hackerrank.com)                     |
 | Vijos                              | [vijos](http://vijos.org)                               |
 | Sphere Online Judge                | [spoj](http://www.spoj.com/)                            |
-| Bestcoder                          | [bestcoder](bestcoder.hdu.edu.cn)                       |
+| Bestcoder                          | [bestcoder](http://bestcoder.hdu.edu.cn)                       |
 
 ## Happy Coding~

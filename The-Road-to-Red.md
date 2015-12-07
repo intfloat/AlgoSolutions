@@ -612,3 +612,6 @@
 |[Alternative Thinking](http://codeforces.com/problemset/problem/603/A) | 有长度为3的段或者两个长度为2的段必然会 + 2， 有1个长为2的段 + 1， 其余不变 | 考智商？ |
 |[Modular Arithmetic](http://codeforces.com/problemset/problem/603/B) | k = 0是特殊情况，然后由于p是素数，因此拆成循环节之后，快速幂的结果是1就有p个符合条件的，反之只有0符合 | 数论 |
 |[Lieges of Legendre](http://codeforces.com/problemset/problem/603/C) | 泪目啊。。k为偶数时的nim函数值求错了。。 | 博弈论 |
+|[Sum](http://acm.hdu.edu.cn/showproblem.php?pid=5586) | 隐藏的最大连续字段和问题 | 动态规划 |
+|[Array](http://acm.hdu.edu.cn/showproblem.php?pid=5587) | 注意长度是指数增长的，因此迭代次数不会超过64，递归去缩小问题规模就ok | 递归 |
+|[ZYB Game](http://acm.hdu.edu.cn/showproblem.php?pid=5591) | game中一般都要维持一个恒定不变的地方，如果目标总在中间位置，那么先手必败，反之总能让后手面对目标总在中间位置的局面，直至输掉 | 博弈论 |

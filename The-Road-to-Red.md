@@ -615,3 +615,9 @@
 |[Sum](http://acm.hdu.edu.cn/showproblem.php?pid=5586) | 隐藏的最大连续字段和问题 | 动态规划 |
 |[Array](http://acm.hdu.edu.cn/showproblem.php?pid=5587) | 注意长度是指数增长的，因此迭代次数不会超过64，递归去缩小问题规模就ok | 递归 |
 |[ZYB Game](http://acm.hdu.edu.cn/showproblem.php?pid=5591) | game中一般都要维持一个恒定不变的地方，如果目标总在中间位置，那么先手必败，反之总能让后手面对目标总在中间位置的局面，直至输掉 | 博弈论 |
+|[Switch on the Lights](http://usaco.org/index.php?page=viewproblem2&cpid=570) | 把light的位置维护在一个队列中，然后用并查集维护一下和第一个灯的相对关系 | 数据结构 |
+|[High Card Wins](http://usaco.org/index.php?page=viewproblem2&cpid=571) | 经典的田忌赛马问题，贪心去搞就行了。。 | 贪心 |
+|[Breed Counting](http://usaco.org/index.php?page=viewproblem2&cpid=572) | 傻逼题。。维护前缀和 | 水 |
+|[High Card Low Card](http://usaco.org/index.php?page=viewproblem2&cpid=573) | YY一会儿就能发现，肯定是最高的一半用在前半部分，最低的一半用在后一部分，每一个子问题又变成了田忌赛马问题 | 贪心 |
+|[Fruit Feast](http://usaco.org/index.php?page=viewproblem2&cpid=574) | 一看就是动态规划好嘛。。。背包问题的变形，需要额外加一维来表示是否执行了减半操作 | 动态规划 |
+|[Bessie Dream](http://usaco.org/index.php?page=viewproblem2&cpid=575) | 我是傻叉么。。怎么会企图用dfs去做呢。。红果果的bfs好嘛。。 | 搜索 |

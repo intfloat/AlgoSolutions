@@ -621,3 +621,5 @@
 |[High Card Low Card](http://usaco.org/index.php?page=viewproblem2&cpid=573) | YY一会儿就能发现，肯定是最高的一半用在前半部分，最低的一半用在后一部分，每一个子问题又变成了田忌赛马问题 | 贪心 |
 |[Fruit Feast](http://usaco.org/index.php?page=viewproblem2&cpid=574) | 一看就是动态规划好嘛。。。背包问题的变形，需要额外加一维来表示是否执行了减半操作 | 动态规划 |
 |[Bessie Dream](http://usaco.org/index.php?page=viewproblem2&cpid=575) | 我是傻叉么。。怎么会企图用dfs去做呢。。红果果的bfs好嘛。。 | 搜索 |
+|[Max Flow](http://usaco.org/index.php?page=viewproblem2&cpid=576) | 求个LCA，更新一下每个树节点上的统计量 | 树 LCA |
+|[Counting Haybales](http://usaco.org/index.php?page=viewproblem2&cpid=578) | 赤裸裸的线段树with lazy propagation，不多说了。。 | 线段树 |

@@ -623,3 +623,8 @@
 |[Bessie Dream](http://usaco.org/index.php?page=viewproblem2&cpid=575) | 我是傻叉么。。怎么会企图用dfs去做呢。。红果果的bfs好嘛。。 | 搜索 |
 |[Max Flow](http://usaco.org/index.php?page=viewproblem2&cpid=576) | 求个LCA，更新一下每个树节点上的统计量 | 树 LCA |
 |[Counting Haybales](http://usaco.org/index.php?page=viewproblem2&cpid=578) | 赤裸裸的线段树with lazy propagation，不多说了。。 | 线段树 |
+|[Text Splitting](http://codeforces.com/contest/612/problem/A) | 傻逼题 | 枚举 |
+|[HDD is outdate Technology](http://codeforces.com/contest/612/problem/B) | 傻逼题 | 水 |
+|[Replace to Make Regular Bracket Sequence](http://codeforces.com/contest/612/problem/C) | 傻逼题 | 栈 |
+|[The Union of k-segments](http://codeforces.com/contest/612/problem/D) | 将所有的进入、离开事件排序，然后计数 | 扫描线 |
+|[Square Root of Permutation](http://codeforces.com/contest/612/problem/E) | 用置换群映射两次，其实就相当于把原来的循环节隔2取出元素。因此，必须是两个长度相等的偶数合并，或者一个奇数长度的循环节跳跃还原 | 群论 |

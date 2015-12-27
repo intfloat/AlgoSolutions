@@ -628,3 +628,7 @@
 |[Replace to Make Regular Bracket Sequence](http://codeforces.com/contest/612/problem/C) | 傻逼题 | 栈 |
 |[The Union of k-segments](http://codeforces.com/contest/612/problem/D) | 将所有的进入、离开事件排序，然后计数 | 扫描线 |
 |[Square Root of Permutation](http://codeforces.com/contest/612/problem/E) | 用置换群映射两次，其实就相当于把原来的循环节隔2取出元素。因此，必须是两个长度相等的偶数合并，或者一个奇数长度的循环节跳跃还原 | 群论 |
+|[Pasha and Stick](http://codeforces.com/problemset/problem/610/A) | 分奇偶性讨论一发。。 | 小学数学？ |
+|[Vika and Squares](http://codeforces.com/problemset/problem/610/B) | 关键就在于考虑瓶颈的部分，最优解的最后一遍扫描一定是两个瓶颈点之间 | 贪心 |
+|[Harmony Analysis](http://codeforces.com/problemset/problem/610/C) | 线性代数里面有结论，但我早就忘了。。于是很神奇地，通过观察小数据总结出了规律。。然后AC了。。 | 构造 线性代数 |
+|[Vika and Segments](http://codeforces.com/problemset/problem/610/D) | 首先用line sweep把重合的线段合并了，然后关键问题就是计算交点数目，枚举必然要挂，但借助于line sweep和树状数组就能优化时间效率 | 扫描线 树状数组 几何 |

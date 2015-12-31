@@ -633,3 +633,7 @@
 |[Harmony Analysis](http://codeforces.com/problemset/problem/610/C) | 线性代数里面有结论，但我早就忘了。。于是很神奇地，通过观察小数据总结出了规律。。然后AC了。。 | 构造 线性代数 |
 |[Vika and Segments](http://codeforces.com/problemset/problem/610/D) | 首先用line sweep把重合的线段合并了，然后关键问题就是计算交点数目，枚举必然要挂，但借助于line sweep和树状数组就能优化时间效率 | 扫描线 树状数组 几何 |
 |[Alphabet Permutations](http://codeforces.com/contest/610/problem/E) | Aha moment的好题。。原来只通过一个相邻矩阵就能知道需要重复多少次了。。。知道了这个，剩下的就是线段树了，尽管傻×如我还把pushdown的调用位置写错了。。 | 线段树 字符串 |
+|[New Year and Days](http://codeforces.com/contest/611/problem/A) | ++！看错了isoweekday的返回值范围，resubmit了一发。。 | 水 |
+|[New Year and Old Property](http://codeforces.com/contest/611/problem/B) | 满足要求的数是很少的，从小到大枚举出来，做前缀查询 | 位运算 |
+|[New Year and Domino](http://codeforces.com/contest/611/problem/C) | 维护前缀和，但是边界的地方需要特殊处理一下 | 动态规划 |
+|[New Year and Ancient Prophecy](http://codeforces.com/contest/611/problem/D) | 赤裸裸动态规划，需要把复杂度从O(N^3)降到O(N^2)，用后缀数组搞了搞，虽然其实可以不用这么麻烦的 | 动态规划 字符串 |

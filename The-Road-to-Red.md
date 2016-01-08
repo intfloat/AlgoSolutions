@@ -637,3 +637,8 @@
 |[New Year and Old Property](http://codeforces.com/contest/611/problem/B) | 满足要求的数是很少的，从小到大枚举出来，做前缀查询 | 位运算 |
 |[New Year and Domino](http://codeforces.com/contest/611/problem/C) | 维护前缀和，但是边界的地方需要特殊处理一下 | 动态规划 |
 |[New Year and Ancient Prophecy](http://codeforces.com/contest/611/problem/D) | 赤裸裸动态规划，需要把复杂度从O(N^3)降到O(N^2)，用后缀数组搞了搞，虽然其实可以不用这么麻烦的 | 动态规划 字符串 |
+|[Professor Numerico and the Divisors](https://www.hackerrank.com/contests/hourrank-3/challenges/divisor-exploration-4) | 非常赞的数论题目，除了X为质数的情形，所要求的n如果存在，都只能存在至多一个大于10^6的质数因子，大大缩小问题规模。其余的还是看editorial好了 | 数论 |
+|[Bulbs](http://codeforces.com/problemset/problem/615/A) | 傻逼题 | 水 |
+|[Longtail Hedgedog](http://codeforces.com/problemset/problem/615/B) | 题意有点晦涩难懂。。。先在图上计算一下最长上升序列的长度，然后枚举一下顶点就好 | 图论 |
+|[Running Track](http://codeforces.com/problemset/problem/615/C) | 就一动态规划，每次贪心移动指针。。 | 动态规划 贪心 字符串 |
+|[Multipliers](http://codeforces.com/problemset/problem/615/D) | 赤裸裸的数论，关键在于求2的逆元不能用2^(MOD - 2)来算，因为MOD已经不是质数了。。所以利用分子奇偶性消除分母上的2 | 数论 |

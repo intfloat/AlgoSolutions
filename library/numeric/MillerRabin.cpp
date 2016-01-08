@@ -32,8 +32,7 @@ class MillerRabin {
     bool witness(ll a, ll d, ll s, ll n) {
         ll r = bigmod(a, d, n);
         if (r == 1 || r == n - 1) return false;
-        int i;
-        for (i = 0; i < s - 1; i++) {
+        for (int i = 0; i < s - 1; ++i) {
             r = mulmod(r, r, n);
             if (r == 1) return true;
             if (r == n - 1) return false;
@@ -46,7 +45,6 @@ public:
     }
     bool test(ll n) {
         if (n <= 1) return false;
-        int i;
         ll p = n - 1;
         ll s = 0;
         while (!(p & 1)) {
@@ -55,7 +53,7 @@ public:
         }
         ll d = p;
         p = n - 1;
-        for (i = 0; i < (int)prime.size() && prime[i] < n; ++i) {
+        for (int i = 0; i < (int)prime.size() && prime[i] < n; ++i) {
             if (witness(prime[i], d, s, n)) return false;
         }
         return true;

@@ -643,3 +643,4 @@
 |[Running Track](http://codeforces.com/problemset/problem/615/C) | 就一动态规划，每次贪心移动指针。。 | 动态规划 贪心 字符串 |
 |[Multipliers](http://codeforces.com/problemset/problem/615/D) | 赤裸裸的数论，关键在于求2的逆元不能用2^(MOD - 2)来算，因为MOD已经不是质数了。。所以利用分子奇偶性消除分母上的2 | 数论 |
 |[Hexagons](http://codeforces.com/contest/615/problem/E) | 基本就是看图找规律。。 | 二分 几何 |
+|[The Cowardly Sage](https://www.hackerrank.com/contests/hourrank-3/challenges/the-cowardly-sage) | 很赞的博弈论题目，首先注意到可以转化成一个二分图，然后每次操作就是选一个点删除，把二分图按照环和链拆开，分别计算sg函数值 | 博弈论 图论 几何 |

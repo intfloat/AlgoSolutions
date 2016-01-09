@@ -642,3 +642,4 @@
 |[Longtail Hedgedog](http://codeforces.com/problemset/problem/615/B) | 题意有点晦涩难懂。。。先在图上计算一下最长上升序列的长度，然后枚举一下顶点就好 | 图论 |
 |[Running Track](http://codeforces.com/problemset/problem/615/C) | 就一动态规划，每次贪心移动指针。。 | 动态规划 贪心 字符串 |
 |[Multipliers](http://codeforces.com/problemset/problem/615/D) | 赤裸裸的数论，关键在于求2的逆元不能用2^(MOD - 2)来算，因为MOD已经不是质数了。。所以利用分子奇偶性消除分母上的2 | 数论 |
+|[Hexagons](http://codeforces.com/contest/615/problem/E) | 基本就是看图找规律。。 | 二分 几何 |

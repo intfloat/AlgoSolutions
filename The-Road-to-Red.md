@@ -644,3 +644,6 @@
 |[Multipliers](http://codeforces.com/problemset/problem/615/D) | 赤裸裸的数论，关键在于求2的逆元不能用2^(MOD - 2)来算，因为MOD已经不是质数了。。所以利用分子奇偶性消除分母上的2 | 数论 |
 |[Hexagons](http://codeforces.com/contest/615/problem/E) | 基本就是看图找规律。。 | 二分 几何 |
 |[The Cowardly Sage](https://www.hackerrank.com/contests/hourrank-3/challenges/the-cowardly-sage) | 很赞的博弈论题目，首先注意到可以转化成一个二分图，然后每次操作就是选一个点删除，把二分图按照环和链拆开，分别计算sg函数值 | 博弈论 图论 几何 |
+|[New Year Party](https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-party) | 保持当前时间指针，然后贪心更新 | 贪心 |
+|[New Year Chaos](https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-chaos) | YY一会儿就能发现，最优的策略是从左到右依次bribe | 贪心 |
+|[New Year Game](https://www.hackerrank.com/contests/hourrank-4/challenges/newyear-game) | 挺有意思的博弈论。。智商需要充值。。首先注意到数的值不重要，对3的余数才是关键。然后目标就是对半分，于是如果1和2都是偶数，先手不停模仿后手就行了 | 博弈 |

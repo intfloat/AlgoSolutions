@@ -647,3 +647,12 @@
 |[New Year Party](https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-party) | 保持当前时间指针，然后贪心更新 | 贪心 |
 |[New Year Chaos](https://www.hackerrank.com/contests/hourrank-4/challenges/new-year-chaos) | YY一会儿就能发现，最优的策略是从左到右依次bribe | 贪心 |
 |[New Year Game](https://www.hackerrank.com/contests/hourrank-4/challenges/newyear-game) | 挺有意思的博弈论。。智商需要充值。。首先注意到数的值不重要，对3的余数才是关键。然后目标就是对半分，于是如果1和2都是偶数，先手不停模仿后手就行了 | 博弈 |
+|[Comparing Two Long Integers](http://codeforces.com/contest/616/problem/A) | 傻逼题 | 水 |
+|[Dinner with Emma](http://codeforces.com/contest/616/problem/B) | 傻逼题 | 水 |
+|[The Labyrinth](http://codeforces.com/contest/616/problem/C) | 现求一发并查集，然后对于每个点，将四周所有点所属几何的大小累加 | 并查集 |
+|[Longest K-good segments](http://codeforces.com/contest/616/problem/D) | 稍微YY就能发现可以从左到右贪心去做，用map来维护一下当前见到的distinct element数目 | 贪心 |
+|[Sum of Remainders](http://codeforces.com/contest/616/problem/E) | 和bzoj上的一道题目是一样的。。。把所有的数分解成小于sqrt(N)和 除以N不超过sqrt(N)的，挺巧妙的一个思想 | 数学 |
+|[Boomerang Constellation](https://www.facebook.com/hackercup/problem/910374079035613/) | 枚举一发。。。居然跑了2分钟。。 | 几何 |
+|[High Security](https://www.facebook.com/hackercup/problem/1527664744192390/) | 我脑子进水了。。只能想到一种dp的方法，其实写麻烦了，可以贪心去做的 | 动态规划 贪心 |
+|[The Price is Correct](https://www.facebook.com/hackercup/problem/881509321917182/) | 求一下前缀和，二分一下就行了。。 | 二分 |
+|[Text Editor](https://www.facebook.com/hackercup/problem/1525154397757404/) | 假设要选取的字符串确定了，那么一定是按照字典序贪心选择的，这样可以保证最大程度利用公共前缀来减少操作次数。然后到底要选那些字符串？用动态规划搞搞就行了，其中涉及求lcp的部分，我怕测试数据比较变态就写了一个后缀数组，事实证明暴力求lcp就行。。 | 字符串 贪心 动态规划 后缀数组 |

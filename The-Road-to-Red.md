@@ -656,3 +656,8 @@
 |[High Security](https://www.facebook.com/hackercup/problem/1527664744192390/) | 我脑子进水了。。只能想到一种dp的方法，其实写麻烦了，可以贪心去做的 | 动态规划 贪心 |
 |[The Price is Correct](https://www.facebook.com/hackercup/problem/881509321917182/) | 求一下前缀和，二分一下就行了。。 | 二分 |
 |[Text Editor](https://www.facebook.com/hackercup/problem/1525154397757404/) | 假设要选取的字符串确定了，那么一定是按照字典序贪心选择的，这样可以保证最大程度利用公共前缀来减少操作次数。然后到底要选那些字符串？用动态规划搞搞就行了，其中涉及求lcp的部分，我怕测试数据比较变态就写了一个后缀数组，事实证明暴力求lcp就行。。 | 字符串 贪心 动态规划 后缀数组 |
+|[Percolation](http://algorithm.openjudge.cn/final/1/) | 很经典的并查集 | 数据结构 |
+|[Dynamic Median](http://algorithm.openjudge.cn/final/2/) | 分别用大根堆和小根堆维护就好了，对于更一般的问题可以用平衡树 | 数据结构 |
+|[最小路径覆盖](http://algorithm.openjudge.cn/final/3/) | 不会。。。后来找了一下，原来就是做一下二部图匹配。。图论学的渣渣。 | 图论 |
+|[Dual Core CPU](http://algorithm.openjudge.cn/final/5/) | 就是最大流。。然而总是TLE。。无解 | 最大流 |
+|[Cable TV Network](http://algorithm.openjudge.cn/final/4/) | 固定源点，枚举汇点，求最小割，然而还是TLE。。 | 最大流 |

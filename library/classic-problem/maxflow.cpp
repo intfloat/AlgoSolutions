@@ -3,10 +3,12 @@ using namespace std;
 
 int S, T;
 const int INF = INT_MAX / 2;
-const int MAX_N = 60000;
+const int MAX_N = 200;
+const int MAX_M = 40000;
 class MaxFlow {
 private:
-    int nt[MAX_N], head[MAX_N], pnf[MAX_N], pnt[MAX_N], flow[MAX_N], ptr, pv[MAX_N], mn[MAX_N];
+    int nt[MAX_M], pnf[MAX_M], pnt[MAX_M], flow[MAX_M], ptr;
+    int head[MAX_N], pv[MAX_N], mn[MAX_N];
     bool visited[MAX_N];
 public:
     MaxFlow() {

@@ -661,3 +661,7 @@
 |[最小路径覆盖](http://algorithm.openjudge.cn/final/3/) | 不会。。。后来找了一下，原来就是做一下二部图匹配。。图论学的渣渣。 | 图论 |
 |[Dual Core CPU](http://algorithm.openjudge.cn/final/5/) | 就是最大流。。然而总是TLE。。无解 | 最大流 |
 |[Cable TV Network](http://algorithm.openjudge.cn/final/4/) | 固定源点，枚举汇点，求最小割，然而还是TLE。。 | 最大流 |
+|[Coding Contest Creation](https://www.facebook.com/hackercup/problem/798506286925018/) | 动态规划，分各种情况讨论。。 | 动态规划 |
+|[Laundro, Matt](https://www.facebook.com/hackercup/problem/1611251319125133/) | 选择的策略肯定是贪心的，为了加快选择速度就用优先队列维护一下 | 数据结构 贪心 |
+|[Yachtzee](https://www.facebook.com/hackercup/problem/512731402225321/) | YY一会儿就能发现其实就是计算一系列小三角形和梯形的面积之和 | 几何 |
+|[Boomerang Tournament](https://www.facebook.com/hackercup/problem/1424196571244550/) | 过了fb上的测试数据，死活过不了cf上的。。已弃疗。。一眼就是动态规划，但是状态不想好。。 | 动态规划 |

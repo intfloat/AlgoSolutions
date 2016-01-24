@@ -665,3 +665,6 @@
 |[Laundro, Matt](https://www.facebook.com/hackercup/problem/1611251319125133/) | 选择的策略肯定是贪心的，为了加快选择速度就用优先队列维护一下 | 数据结构 贪心 |
 |[Yachtzee](https://www.facebook.com/hackercup/problem/512731402225321/) | YY一会儿就能发现其实就是计算一系列小三角形和梯形的面积之和 | 几何 |
 |[Boomerang Tournament](https://www.facebook.com/hackercup/problem/1424196571244550/) | 过了fb上的测试数据，死活过不了cf上的。。已弃疗。。一眼就是动态规划，但是状态不想好。。 | 动态规划 |
+|[Carnival Coins](https://www.facebook.com/hackercup/problem/1627951250755660/) | 根据递推公式计算组合的概率，然后跑dp | 概率 动态规划 |
+|[Boomerang Decoration](https://www.facebook.com/hackercup/problem/424794494381569/) | 肯定是先在中间某个地方分开，然后不停缩短长度，用dp求一下，然后枚举 | 动态规划 字符串 |
+|[Snakes and Ladders](https://www.facebook.com/hackercup/problem/1640119959603837/) | 关键点在于如何高效求解x ^ 2的和，完全平方式展开之后就能发现，只需要维护和、平方和，每次查询求一下区间和再更新维护量 | 数学 贪心 |

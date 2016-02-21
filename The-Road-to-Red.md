@@ -668,3 +668,8 @@
 |[Carnival Coins](https://www.facebook.com/hackercup/problem/1627951250755660/) | 根据递推公式计算组合的概率，然后跑dp | 概率 动态规划 |
 |[Boomerang Decoration](https://www.facebook.com/hackercup/problem/424794494381569/) | 肯定是先在中间某个地方分开，然后不停缩短长度，用dp求一下，然后枚举 | 动态规划 字符串 |
 |[Snakes and Ladders](https://www.facebook.com/hackercup/problem/1640119959603837/) | 关键点在于如何高效求解x ^ 2的和，完全平方式展开之后就能发现，只需要维护和、平方和，每次查询求一下区间和再更新维护量 | 数学 贪心 |
+|[Far Relative Birthday Cake](http://codeforces.com/problemset/problem/629/A) | 每一行每一列C(n, 2)累加就好了 | 水 |
+|[Far Relative Problem](http://codeforces.com/problemset/problem/629/B) | 傻逼题 | 水 |
+|[Famil Door and Brackets](http://codeforces.com/problemset/problem/629/C) | 两边的长度可以枚举，最后累加求和。对于一个确定的前缀长度，还需要把左括号多出来的个数编码进状态里，然后dp搞搞 | 动态规划 字符串 |
+|[Babaei and Birthday Cake](http://codeforces.com/problemset/problem/629/D) | 和LIS有点像，不过需要一个在前缀求体积小于某个值的最大值，暴力肯定挂，先排序再用个线段树维护一发 | 线段树 |
+|[Famil Door and Roads](http://codeforces.com/problemset/problem/629/E) | 其实不难，就是维护一些数学统计量，dfs预处理，然后对每个查询，找一下lca，然后算算就好了。。。 | LCA 数学 |

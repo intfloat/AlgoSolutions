@@ -673,3 +673,8 @@
 |[Famil Door and Brackets](http://codeforces.com/problemset/problem/629/C) | 两边的长度可以枚举，最后累加求和。对于一个确定的前缀长度，还需要把左括号多出来的个数编码进状态里，然后dp搞搞 | 动态规划 字符串 |
 |[Babaei and Birthday Cake](http://codeforces.com/problemset/problem/629/D) | 和LIS有点像，不过需要一个在前缀求体积小于某个值的最大值，暴力肯定挂，先排序再用个线段树维护一发 | 线段树 |
 |[Famil Door and Roads](http://codeforces.com/problemset/problem/629/E) | 其实不难，就是维护一些数学统计量，dfs预处理，然后对每个查询，找一下lca，然后算算就好了。。。 | LCA 数学 |
+|[Grandma Laura and Apples](http://codeforces.com/contest/632/problem/A) | 从后往前倒推 | 数学 |
+|[Alice, Bob and Two Teams](http://codeforces.com/contest/632/problem/B) | 枚举一下前缀和后缀就可以了 | 枚举 |
+|[The Smallest String Concatenation](http://codeforces.com/contest/632/problem/C) | 我tm还想了好长时间。。。不能按照裸的字典序排列，但是当相邻的两个串交换可以得到更优解时就得交换，于是就变成了一个排序问题 | 贪心 字符串 |
+|[Longest Subsequence](http://codeforces.com/contest/632/problem/D) | 大脑短路了么。。。对于一个数a， lcm取a, a * 2, a * 3...一定可以把它包括进来 | 数论 |
+|[Thief in Shop](http://codeforces.com/contest/632/problem/E) | 很好的题目。。。关键是要注意到所有的组合都可以通过k个min替换最多k步得到，于是就变成了一个类似于bfs的问题了。 | 数学 bfs |

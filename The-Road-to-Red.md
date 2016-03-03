@@ -678,3 +678,4 @@
 |[The Smallest String Concatenation](http://codeforces.com/contest/632/problem/C) | 我tm还想了好长时间。。。不能按照裸的字典序排列，但是当相邻的两个串交换可以得到更优解时就得交换，于是就变成了一个排序问题 | 贪心 字符串 |
 |[Longest Subsequence](http://codeforces.com/contest/632/problem/D) | 大脑短路了么。。。对于一个数a， lcm取a, a * 2, a * 3...一定可以把它包括进来 | 数论 |
 |[Thief in Shop](http://codeforces.com/contest/632/problem/E) | 很好的题目。。。关键是要注意到所有的组合都可以通过k个min替换最多k步得到，于是就变成了一个类似于bfs的问题了。 | 数学 bfs |
+|[Magic Matrix](http://codeforces.com/problemset/problem/632/F) | 很好的题目。。。居然能跟MST沾上边，数学上敏感度太差了。。最小生成树就是把两个点之间所有路径上最大值给最小化了 | 生成树 LCA |

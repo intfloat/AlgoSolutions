@@ -679,3 +679,7 @@
 |[Longest Subsequence](http://codeforces.com/contest/632/problem/D) | 大脑短路了么。。。对于一个数a， lcm取a, a * 2, a * 3...一定可以把它包括进来 | 数论 |
 |[Thief in Shop](http://codeforces.com/contest/632/problem/E) | 很好的题目。。。关键是要注意到所有的组合都可以通过k个min替换最多k步得到，于是就变成了一个类似于bfs的问题了。 | 数学 bfs |
 |[Magic Matrix](http://codeforces.com/problemset/problem/632/F) | 很好的题目。。。居然能跟MST沾上边，数学上敏感度太差了。。最小生成树就是把两个点之间所有路径上最大值给最小化了 | 生成树 LCA |
+|[Joysticks](http://codeforces.com/contest/651/problem/A) | 贪心一步步模拟 | 贪心 |
+|[Beautiful Paintings](http://codeforces.com/contest/651/problem/B) | 很奇怪，换了一种似乎等价的写法就AC了 | 构造 |
+|[Watchmen](http://codeforces.com/contest/651/problem/C) | 两个点只要x或者y坐标相等就可以满足条件，枚举当然tle，用map维护一下，我还傻×地想了20分钟。。。 | 计数 |
+|[Image Preview](http://codeforces.com/contest/651/problem/D) | 其实也不难。。最优的情况肯定是先抛到一边，然后折回到另一边，用two pointers利用单调性可以把复杂度降到线性，我傻叉地把一个边界条件写错了。。。 | 贪心 |

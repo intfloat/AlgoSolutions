@@ -683,3 +683,6 @@
 |[Beautiful Paintings](http://codeforces.com/contest/651/problem/B) | 很奇怪，换了一种似乎等价的写法就AC了 | 构造 |
 |[Watchmen](http://codeforces.com/contest/651/problem/C) | 两个点只要x或者y坐标相等就可以满足条件，枚举当然tle，用map维护一下，我还傻×地想了20分钟。。。 | 计数 |
 |[Image Preview](http://codeforces.com/contest/651/problem/D) | 其实也不难。。最优的情况肯定是先抛到一边，然后折回到另一边，用two pointers利用单调性可以把复杂度降到线性，我傻叉地把一个边界条件写错了。。。 | 贪心 |
+|[Parliament of Berland](http://codeforces.com/problemset/problem/644/A) | 那个国际象棋棋谱就完美符合约束条件 | 构造 |
+|[Processing Queries](http://codeforces.com/problemset/problem/644/B) | 用个队列一步一步模拟就可以了 | 模拟 |
+|[Hostname Aliases](http://codeforces.com/problemset/problem/644/C) | 字符串哈希不靠谱啊。。。又冲突了。。还是老老实实排序保AC | 字符串 |

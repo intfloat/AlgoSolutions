@@ -686,3 +686,5 @@
 |[Parliament of Berland](http://codeforces.com/problemset/problem/644/A) | 那个国际象棋棋谱就完美符合约束条件 | 构造 |
 |[Processing Queries](http://codeforces.com/problemset/problem/644/B) | 用个队列一步一步模拟就可以了 | 模拟 |
 |[Hostname Aliases](http://codeforces.com/problemset/problem/644/C) | 字符串哈希不靠谱啊。。。又冲突了。。还是老老实实排序保AC | 字符串 |
+|[Card Game](http://usaco.org/index.php?page=viewproblem2&cpid=577) | 如果确定分割的位置，那么就好好办了。在不确定的情况下，就用线段树去做online version的模拟，智商硬伤啊。。 | 线段树 贪心 |
+|[Table Compression](http://codeforces.com/contest/650/problem/C) | 有很naive的dp解法，为了提高效率，注意到只需要检查一行一列中紧靠在一个数前面的就可以了，用dsu维护一发 | 动态规划 并查集 |

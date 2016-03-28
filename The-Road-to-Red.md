@@ -691,3 +691,4 @@
 |[Run Away](http://poj.org/problem?id=1379) | 大家都管这个叫做模拟退火，可明明就是随机搜索啊。。。 | 模拟退火 随机算法 |
 |[Strange function](http://acm.hdu.edu.cn/showproblem.php?pid=2899) | 本来说是要模拟退火的。。。可是二分太明显了就懒得写sa。。 | 二分 数学 |
 |[A Star not a Tree](http://poj.org/problem?id=2420) | 还是随机搜索 | 随机算法 |
+|[Costly Labels](https://www.facebook.com/hackercup/problem/566729860132273/) | 借鉴了tourist的hungarian算法代码。。。树上dp，考虑相邻节点颜色各异与有相同颜色两种情况，颜色可以重复时可以独立计算，颜色各异时是一个组合优化问题，可以通过MCMF或者带权图最小匹配来求解 | 动态规划 带权图匹配 |

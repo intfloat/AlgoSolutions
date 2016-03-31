@@ -692,3 +692,14 @@
 |[Strange function](http://acm.hdu.edu.cn/showproblem.php?pid=2899) | 本来说是要模拟退火的。。。可是二分太明显了就懒得写sa。。 | 二分 数学 |
 |[A Star not a Tree](http://poj.org/problem?id=2420) | 还是随机搜索 | 随机算法 |
 |[Costly Labels](https://www.facebook.com/hackercup/problem/566729860132273/) | 借鉴了tourist的hungarian算法代码。。。树上dp，考虑相邻节点颜色各异与有相同颜色两种情况，颜色可以重复时可以独立计算，颜色各异时是一个组合优化问题，可以通过MCMF或者带权图最小匹配来求解 | 动态规划 带权图匹配 |
+|[Round House](http://codeforces.com/contest/659/problem/A) | 傻逼题 | 水 |
+|[Qualifying Contest](http://codeforces.com/contest/659/problem/B) | 看看第二大的和第三大的是不是相等就可以了 | 水 |
+|[Tanya and Toys](http://codeforces.com/contest/659/problem/C) | YY一会儿就能发现，最优策略肯定是先选最小的 | 贪心 |
+|[Bicycle Race](http://codeforces.com/contest/659/problem/D) | 被我给搞复杂了，我解了一个推广版本的问题。。。判断点是否在一个多边形内，
+我傻叉地想了快一个小时。。。连两条射线之间的夹角都给求错了。。 | 几何 |
+|[New Reform](http://codeforces.com/contest/659/problem/E) | CC之间是独立的，然后如果是tree的话，答案肯定是1，如果在tree的基础上还有其它边，答案肯定是0 | 图论 考智商 |
+|[Polycarp and Hay](http://codeforces.com/contest/659/problem/F) | 如果最终的值确定，那么更小的肯定要都删掉，大的可以选择性保留。于是可以从大到小扫描，用dsu维护一下数据，同时记录当前值所在的并查集最大rank，最后bfs输出答案就ok了，代码比较繁琐 | 并查集 贪心 |
+|[Fence Divercity](http://codeforces.com/contest/659/problem/G) | 一看就是dp去做组合计数，仔细设计状态以及状态之间的转移就可以了 | 组合计数 动态规划 |
+|[Bear and Reverse Radewoosh](http://codeforces.com/problemset/problem/658/A) | 傻逼题 | 水 |
+|[Bear and Displayed Friends](http://codeforces.com/problemset/problem/658/B) | k很小，暴力维护就好了 | 水 |
+|[Bear and Forgotten Tree 3](http://codeforces.com/problemset/problem/658/C) | 注意h == d以及h = d = 1等特殊情况就好了 | 构造算法 树 |

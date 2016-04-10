@@ -703,3 +703,16 @@
 |[Bear and Reverse Radewoosh](http://codeforces.com/problemset/problem/658/A) | 傻逼题 | 水 |
 |[Bear and Displayed Friends](http://codeforces.com/problemset/problem/658/B) | k很小，暴力维护就好了 | 水 |
 |[Bear and Forgotten Tree 3](http://codeforces.com/problemset/problem/658/C) | 注意h == d以及h = d = 1等特殊情况就好了 | 构造算法 树 |
+|[Counting Sheep](https://code.google.com/codejam/contest/6254486/dashboard#s=p0) | 注意除了0必定会在少于100步内遍历所有数字，所以枚举就好了 | 枚举 |
+|[Revenge of Pancakes](https://code.google.com/codejam/contest/6254486/dashboard#s=p1) | 当前要求解得问题是把所有pancake樊城正面所需要的步数，最末尾的肯定不懂，所以就变成了把前面的部分都翻成反面所需要的步数 + 1，递归求解就好，本质是贪心 | 贪心 |
+|[Coin Jam](https://code.google.com/codejam/contest/6254486/dashboard#s=p2) | 我是傻×。。。溢出了都没发现。。。素数的检测可以做到很高效，然而大素数的分解却是一个难题。注意到符合要求的数有很多，假如一个大素数在有限步数还没找到因子，直接放弃就好了 | 数论 |
+|[Font Size](http://hihocoder.com/problemset/problem/1288) | 对目标大小去做二分 | 二分 |
+|[403 Forbidden](http://hihocoder.com/problemset/problem/1289) | 很有意思的一道题目，把所有的前缀加入到trie中，由于前面的规则优先级高，于是从后往前插入，让前面的覆盖后面的规则 | 贪心 前缀树 |
+|[Demo Day](http://hihocoder.com/problemset/problem/1290) | 就一个赤裸裸的动态规划，注意不要让状态产生循环，导致无限递归 | 动态规划 |
+|[Building in Sandbox](http://hihocoder.com/problemset/problem/1291) | 没有写代码，但思路应该就是从后往前做dsu，如果发现一个位置和无限远处的点不在一个set里面，就证明是invalid | 并查集 |
+|[Co-Prime Array](http://codeforces.com/problemset/problem/660/A) | 发现不符合要求的插入1就好了。。 | 简单数论 |
+|[Seating on Bus](http://codeforces.com/problemset/problem/660/B) | 傻逼题 | 模拟 |
+|[Hard Process](http://codeforces.com/problemset/problem/660/C) | 枚举每一个起始位置，然后去找之后k个1的位置，取最优就好了 | 枚举 |
+|[Number of Parallelograms](http://codeforces.com/problemset/problem/660/D) | 中学的平行四边形判定定理。。。只要中点是相同的就肯定组成平行四边形了，于是map维护一发就好。。 | 几何 计数 |
+|[京东笔试第一题](...) | 固定type 1的数量，type 2的最优数量肯定是确定的，枚举就好了。但是不一定是字典序最优的解，然而很神奇得了满分。。 | 枚举 |
+|[京东笔试第二题](...) | 优先队列贪心维护就好了。。。水 | 贪心 |

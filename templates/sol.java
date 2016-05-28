@@ -17,7 +17,7 @@ public class Main {
         OutputStream outputStream = System.out;
         InputReader in = new InputReader(inputStream);
         PrintWriter out = new PrintWriter(outputStream);
-        TaskB solver = new TaskA();
+        TaskA solver = new TaskA();
         solver.solve(1, in, out);
         out.close();
     }

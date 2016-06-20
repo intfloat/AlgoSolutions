@@ -716,3 +716,5 @@
 |[Number of Parallelograms](http://codeforces.com/problemset/problem/660/D) | 中学的平行四边形判定定理。。。只要中点是相同的就肯定组成平行四边形了，于是map维护一发就好。。 | 几何 计数 |
 |[京东笔试第一题](...) | 固定type 1的数量，type 2的最优数量肯定是确定的，枚举就好了。但是不一定是字典序最优的解，然而很神奇得了满分。。 | 枚举 |
 |[京东笔试第二题](...) | 优先队列贪心维护就好了。。。水 | 贪心 |
+|[出入栈](http://ac.jobdu.com/problem.php?pid=1547) | 组合数学里面的经典吧，卡特兰数 | 组合数学 |
+|[The Fraction](http://codeforces.com/problemset/problem/683/G) | 我真是好弱啊。。。都不知道怎么从小数的无限循环形式恢复到分数形式，左移之后的相似性非常重要 | 数学 |

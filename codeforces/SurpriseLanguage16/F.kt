@@ -19,7 +19,7 @@ fun main(args: Array<String>) {
     var res = ""
     for (i in 0..r.length - 1) {
         // remove space before any comma or period
-        if (r.get(i) == ' ' && (i + 1) < r.length && (r.get(i + 1) == ',' || r.get(i + 1) == '.')) {
+        if (r[i] == ' ' && (i + 1) < r.length && (r.get(i + 1) == ',' || r.get(i + 1) == '.')) {
             continue
         }
         else if (i == 0 || (i - 2 >= 0 && r.get(i - 2) == '.')) {

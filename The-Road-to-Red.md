@@ -695,8 +695,7 @@
 |[Round House](http://codeforces.com/contest/659/problem/A) | 傻逼题 | 水 |
 |[Qualifying Contest](http://codeforces.com/contest/659/problem/B) | 看看第二大的和第三大的是不是相等就可以了 | 水 |
 |[Tanya and Toys](http://codeforces.com/contest/659/problem/C) | YY一会儿就能发现，最优策略肯定是先选最小的 | 贪心 |
-|[Bicycle Race](http://codeforces.com/contest/659/problem/D) | 被我给搞复杂了，我解了一个推广版本的问题。。。判断点是否在一个多边形内，
-我傻叉地想了快一个小时。。。连两条射线之间的夹角都给求错了。。 | 几何 |
+|[Bicycle Race](http://codeforces.com/contest/659/problem/D) | 被我给搞复杂了，我解了一个推广版本的问题。。。判断点是否在一个多边形内，我傻叉地想了快一个小时。。。连两条射线之间的夹角都给求错了。。 | 几何 |
 |[New Reform](http://codeforces.com/contest/659/problem/E) | CC之间是独立的，然后如果是tree的话，答案肯定是1，如果在tree的基础上还有其它边，答案肯定是0 | 图论 考智商 |
 |[Polycarp and Hay](http://codeforces.com/contest/659/problem/F) | 如果最终的值确定，那么更小的肯定要都删掉，大的可以选择性保留。于是可以从大到小扫描，用dsu维护一下数据，同时记录当前值所在的并查集最大rank，最后bfs输出答案就ok了，代码比较繁琐 | 并查集 贪心 |
 |[Fence Divercity](http://codeforces.com/contest/659/problem/G) | 一看就是dp去做组合计数，仔细设计状态以及状态之间的转移就可以了 | 组合计数 动态规划 |
@@ -718,3 +717,6 @@
 |[京东笔试第二题](...) | 优先队列贪心维护就好了。。。水 | 贪心 |
 |[出入栈](http://ac.jobdu.com/problem.php?pid=1547) | 组合数学里面的经典吧，卡特兰数 | 组合数学 |
 |[The Fraction](http://codeforces.com/problemset/problem/683/G) | 我真是好弱啊。。。都不知道怎么从小数的无限循环形式恢复到分数形式，左移之后的相似性非常重要 | 数学 |
+|[Sherlock and Parentheses](https://code.google.com/codejam/contest/5254487/dashboard#s=p0) | 都按照()来排列的情况下，可能的子串最多 | 考智商？ |
+|[Sherlock and Watson Gym Secrets](https://code.google.com/codejam/contest/5254487/dashboard#s=p1) | 关键时注意到K的值并不大，而且i^A % K和(i + K)^A % K两个是相等的，也就是余数是有周期的，然后根据乘法原理计数就可以了。 | 组合数学 数论 |
+|[Watson and Intervals](https://code.google.com/codejam/contest/5254487/dashboard#s=p2) | 对于小数据的情况，显然是可以枚举的，对于大数据，本质就是要快速求解哪个线段独立覆盖的点数最多，可以用类似于扫描线的那种算法，当前只有一个线段时就进行计数的累加。感觉边界比较恶心，也可能是我太弱了不知道怎么优雅处理。。 | 扫描线 |

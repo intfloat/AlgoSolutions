@@ -720,3 +720,8 @@
 |[Sherlock and Parentheses](https://code.google.com/codejam/contest/5254487/dashboard#s=p0) | 都按照()来排列的情况下，可能的子串最多 | 考智商？ |
 |[Sherlock and Watson Gym Secrets](https://code.google.com/codejam/contest/5254487/dashboard#s=p1) | 关键时注意到K的值并不大，而且i^A % K和(i + K)^A % K两个是相等的，也就是余数是有周期的，然后根据乘法原理计数就可以了。 | 组合数学 数论 |
 |[Watson and Intervals](https://code.google.com/codejam/contest/5254487/dashboard#s=p2) | 对于小数据的情况，显然是可以枚举的，对于大数据，本质就是要快速求解哪个线段独立覆盖的点数最多，可以用类似于扫描线的那种算法，当前只有一个线段时就进行计数的累加。感觉边界比较恶心，也可能是我太弱了不知道怎么优雅处理。。 | 扫描线 |
+|[Bus to Udayland](http://codeforces.com/contest/711/problem/A) | 傻逼题 | 水 |
+|[Chris and Magic Square](http://codeforces.com/contest/711/problem/B) | 傻逼题居然还被我WA了。。。int溢出没留意到。。 | 数学 |
+|[Coloring Trees](http://codeforces.com/contest/711/problem/C) | 一看就是动态规划啦，把编号、颜色、段数编码到状态里就好了 | 动态规划 |
+|[Directed Roads](http://codeforces.com/contest/711/problem/D) | 如果把边看成无向的，那么就是若干个连通分量，对于每个连通分量必定有一个环，不在环上的边方向可以随意改变，在环上的边只有 全部保持不变 和 全部翻转 两种情况不满足约束 | 图论 计数 |
+|[ZS and the Birthday Paradox](http://codeforces.com/contest/711/problem/E) | 生日悖论的解析表达式很容易写出来，在算法导论上也有，然后就是一个纯数学问题了。。。注意到k很大的时候，根据鸽巢原理，分子必定取模为0，然后约分的2的个数完全是由(k - 1)!决定的，根据勒让德定理算一下就好了。 | 数论 概率 |

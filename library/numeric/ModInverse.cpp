@@ -23,11 +23,12 @@ ll modInv(ll a, ll m) {
 }
 const ll MOD = (ll)(1e9 + 7);
 ll fast_power(ll num, int p) {
-  if (p == 0) return 1ll;
-  if (p == 1) return num % MOD;
-  ll ret = fast_power(num, p / 2);
-  ret = (ret * ret) % MOD;
-  if (p & 1) ret = (ret * num) % MOD;
+  ll ret = 1, val = num;
+  while (p > 0) {
+    if (p & 1) ret = (ret * val) % MOD;
+    val = (val * val) % MOD;
+    p >>= 1;
+  }
   return ret;
 }
 inline ll inv(ll num) {

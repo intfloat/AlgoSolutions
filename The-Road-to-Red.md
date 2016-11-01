@@ -728,3 +728,9 @@
 |[360校招A题](...) | 一个简单的内存管理器，已分配内存可用map来维护，分配内存遍历set，回收内存需要考虑区间合并，整理内存做一下排序就可以了 | 数据结构 |
 |[360校招B题](...) | 就是一个字符串匹配的问题，为了提高匹配效率，可以用rabin-karp计算hash值 | 字符串 |
 |[SPF](http://poj.org/problem?id=1523) | 弱爆了。。。一个简单的tarjan算法求无向图割点都没搞出来，这么多年白混了。。 | 无向图割点 |
+|[Drivers Dissatisfaction](http://codeforces.com/problemset/problem/733/F) | 首先注意到，肯定会把所有预算花在一条路上，然后依次枚举每条路，如果不在MST上，就需要通过LCA找到那条权重最大的边 | 图论 |
+|[Sleep in Class](http://codeforces.com/problemset/problem/733/E) | 关键点是 运动过程是来回震荡的，每次会消灭一个反方向的指示 | 数学 |
+|[Kostya and Skulpter](http://codeforces.com/problemset/problem/733/D) | 对于单个立方体的情形，很容易处理；对于两个立方体的情形，只有在瓶颈边上补才会有用，而且一定要贪心去选第三边最长的那个，用map维护一下就好 | 贪心 几何 |
+|[Epidemic in Monstropolis](http://codeforces.com/problemset/problem/733/C) | 关键的地方就在于 不管怎么合并，顺序是不会变的，因此可以实现a数组一个子序列到b一个元素的对应，而这个子问题仅在a中子序列所有元素相等的情况下无解 | 构造 考智商 |
+|[Parade](http://codeforces.com/problemset/problem/733/B) | 傻逼题 | 数学 |
+|[Grasshopper and the String](http://codeforces.com/problemset/problem/733/A) | Y竟然是一个元音字母。。。 | 水 |

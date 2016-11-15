@@ -734,3 +734,4 @@
 |[Epidemic in Monstropolis](http://codeforces.com/problemset/problem/733/C) | 关键的地方就在于 不管怎么合并，顺序是不会变的，因此可以实现a数组一个子序列到b一个元素的对应，而这个子问题仅在a中子序列所有元素相等的情况下无解 | 构造 考智商 |
 |[Parade](http://codeforces.com/problemset/problem/733/B) | 傻逼题 | 数学 |
 |[Grasshopper and the String](http://codeforces.com/problemset/problem/733/A) | Y竟然是一个元音字母。。。 | 水 |
+|[Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | 一道很有意思的leetcode题目，死活没有想出来，贪心的基本思路：如果当前的值小于前一个数值，并且k还没有用尽，那么必须要剔除前面那个数字。配合stack就可以了 | 贪心 |

@@ -1,7 +1,6 @@
 # AlgoSolutions
 
-My handle is [BananaTree](http://codeforces.com/profile/BananaTree) aross major sites,
-super fan for competitive programming.
+My code for algorithmic problems.
 
 ## related websites
 

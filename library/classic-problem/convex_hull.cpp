@@ -4,15 +4,24 @@ using namespace std;
 typedef pair<int, int> point;
 vector<point> hull;
 point mn;
-inline int cross(point a, point b, point c) {
+inline int cross(const point& a, const point& b, const point& c) {
     int dx1 = a.first - c.first, dy1 = a.second - c.second;
     int dx2 = b.first - c.first, dy2 = b.second - c.second;
     return dx1 * dy2 - dx2 * dy1;
 }
+inline int squared_distance(const point& a, const point& b) {
+    int dx = a.first - b.first, dy = a.second - b.second;
+    return dx * dx + dy * dy;
+}
 bool cmp(const point& a, const point& b) {
     if (a == mn) return true;
     if (b == mn) return false;
-    return cross(a, b, mn) >= 0;
+    int m = cross(a, b, mn);
+    if (m == 0) {
+        return squared_distance(a, mn) < squared_distance(b, mn);
+    } else {
+        return m > 0;
+    }
 }
 void convex_hull(vector<point>& cur) {
     mn = cur[0];

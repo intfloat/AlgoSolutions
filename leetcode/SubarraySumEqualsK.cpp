@@ -10,9 +10,9 @@ public:
         map<int, int> cnt;
         int acc = 0;
         int res = 0;
+        cnt[0] = 1;
         for (int i = 0; i < nums.size(); ++i) {
             acc += nums[i];
-            res += acc == k;
             res += cnt[acc - k];
             ++cnt[acc];
         }

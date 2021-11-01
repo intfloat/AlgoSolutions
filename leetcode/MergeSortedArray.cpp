@@ -1,32 +1,25 @@
 class Solution {
 public:
-    void merge(int A[], int m, int B[], int n) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        
-        if(n==0)
-            return;
-        if(m==0){
-        for(int i=0; i<n; i++)
-                A[i] = B[i];
-            return;
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int ptr = m + n - 1;
+        int ptr1 = m - 1, ptr2 = n - 1;
+
+        while (ptr1 >= 0 && ptr2 >= 0) {
+            if (nums1[ptr1] >= nums2[ptr2]) {
+                nums1[ptr] = nums1[ptr1];
+                --ptr;
+                --ptr1;
+            } else {
+                nums1[ptr] = nums2[ptr2];
+                --ptr;
+                --ptr2;
+            }
         }
-        
-        int *tmp = new int[m];
-        for(int i=0; i<m; i++)
-            tmp[i] = A[i];
-        int ptr = 0;
-        int ptr1=0, ptr2=0;
-        while(ptr1<m && ptr2<n){
-            if(tmp[ptr1] < B[ptr2])
-                A[ptr++] = tmp[ptr1++];
-            else
-                A[ptr++] = B[ptr2++];
+
+        while (ptr2 >= 0) {
+            nums1[ptr] = nums2[ptr2];
+            --ptr;
+            --ptr2;
         }
-        while(ptr1 < m)
-            A[ptr++] = tmp[ptr1++];
-        while(ptr2 < n)
-            A[ptr++] = B[ptr2++];
-        return;
     }
 };
